@@ -1,0 +1,5 @@
+[
+  {"name": "OpenAI", "type": "feed", "url": "https://openai.com/news/rss.xml"},
+  {"name": "Hugging Face", "type": "feed", "url": "https://huggingface.co/blog/feed.xml"},
+  {"name": "Hacker News", "type": "hackernews", "url": "https://hacker-news.firebaseio.com/v0/"}
+]

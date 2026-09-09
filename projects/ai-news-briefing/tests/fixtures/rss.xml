@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<rss version="2.0"><channel><title>Example</title>
+<item><title><![CDATA[Hello <b>AI</b>]]></title><guid>https://example.com/post?utm_source=feed&amp;model=small#section</guid><pubDate>Tue, 09 Sep 2025 07:00:00 GMT</pubDate><description><![CDATA[<p>Brief &amp; useful.</p><script>steal()</script><style>body{}</style><p>More.</p>]]></description></item>
+<item><title>No permalink</title><guid isPermaLink="false">https://example.com/not-a-link</guid></item>
+<item><title>Invalid date</title><link>https://example.com/invalid-date</link><pubDate>not a date</pubDate></item>
+<item><title>Future</title><link>https://example.com/future</link><pubDate>Wed, 09 Sep 2099 07:00:00 GMT</pubDate></item>
+</channel></rss>
