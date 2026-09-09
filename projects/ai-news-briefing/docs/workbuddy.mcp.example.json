@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ai-news": {
+      "type": "http",
+      "url": "REPLACE_WITH_ACTUAL_API_BASE_URL/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_READ_TOKEN"
+      }
+    }
+  }
+}

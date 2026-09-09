@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fictional digest test feed</title>
+    <item>
+      <title>[AINews] Fixture model discussion</title>
+      <link>https://example.com/digest?utm_source=rss</link>
+      <pubDate>Tue, 09 Sep 2025 07:00:00 GMT</pubDate>
+      <description>Unrelated sponsor teaser, not the recap.</description>
+      <content:encoded><![CDATA[
+        <p>Do not select this sponsor introduction.</p>
+        <h1>AI <strong>Twitter</strong> Recap</h1>
+        <h2>Model discussion</h2>
+        <p>Builders discuss a <a href="https://example.com/post">fictional model</a>.</p>
+        <script>UNTRUSTED_SCRIPT</script><style>UNTRUSTED_STYLE</style>
+        <h1>AI Reddit Recap</h1>
+        <h2>Local inference</h2><p>Community members compare memory requirements.</p>
+        <h1>AI Discords</h1><p>Historical placeholder, not current coverage.</p>
+        <h1>Subscribe</h1><p>Unrelated footer.</p>
+      ]]></content:encoded>
+    </item>
+    <item>
+      <title>Unrelated podcast</title><link>https://example.com/podcast</link>
+      <content:encoded><![CDATA[<h1>AI Twitter Recap</h1><p>Should not select a different publication.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
