@@ -2,6 +2,7 @@
 """Collect public feed metadata and send it to the private briefing service."""
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import hashlib
@@ -23,6 +24,8 @@ from defusedxml import ElementTree
 
 MAX_RESPONSE_BYTES = 3 * 1024 * 1024
 MAX_ITEMS = 25
+MAX_SOURCES = 30
+COLLECTION_WORKERS = 4
 HN_ITEMS = 15
 TIMEOUT = 20
 INTERVAL = 0.3
@@ -202,7 +205,8 @@ def parse_feed(data):
             date = child_text(entry, "pubDate") or child_text(entry, "date")
             excerpt = markup_text(entry, "description")
         rows.append({"url": url, "title": markup_text(entry, "title"),
-                     "published_at": date, "excerpt": excerpt})
+                     "published_at": date, "excerpt": excerpt,
+                     "announce_type": child_text(entry, "announce_type")})
     return rows
 
 
@@ -275,16 +279,35 @@ class HTTPClient:
             self.sleep(delay)
         raise CollectorError("network request failed")
 
-    def get_json(self, url):
+    def get_json(self, url, token=None):
         try:
-            return json.loads(self.request(url))
+            return json.loads(self.request(url, token=token) if token else self.request(url))
         except (ValueError, UnicodeError):
             raise CollectorError("invalid JSON response") from None
 
 
+def valid_release_url(url):
+    return isinstance(url, str) and re.fullmatch(
+        r"https://api\.github\.com/repos/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/releases", url) is not None
+
+
 def collect_source(config, client, now):
-    if config["type"] == "feed":
+    if config["type"] in ("feed", "arxiv"):
         raw = parse_feed(client.request(config["url"]))
+        if config["type"] == "arxiv":
+            raw = [row for row in raw if row["announce_type"] == "new"]
+    elif config["type"] == "github_releases":
+        if not valid_release_url(config["url"]):
+            raise CollectorError("invalid GitHub releases endpoint")
+        releases = client.get_json(config["url"] + "?per_page=25", token=os.environ.get("GITHUB_TOKEN") or None)
+        if not isinstance(releases, list):
+            raise CollectorError("invalid release list")
+        raw = [{"url": release.get("html_url"),
+                "title": release.get("name") or release.get("tag_name"),
+                "published_at": release.get("published_at"),
+                "excerpt": release.get("body", "")}
+               for release in releases[:MAX_ITEMS] if isinstance(release, dict)
+               and not release.get("draft") and not release.get("prerelease")]
     elif config["type"] == "hackernews":
         base = config["url"].rstrip("/") + "/"
         ids = client.get_json(base + "topstories.json")
@@ -310,20 +333,30 @@ def collect_source(config, client, now):
     return sorted(unique.values(), key=lambda item: item["published_at"] or "", reverse=True)[:MAX_ITEMS]
 
 
-def collect(sources, client, now=None):
+def collect(sources, client, now=None, workers=1):
     now = now or utc_now()
     report = {"run_id": str(uuid.uuid4()), "started_at": iso_date(now), "sources": []}
-    items = {}
-    for source in sources:
+
+    def fetch_source(source):
         name = clean_text(source["name"], 64)
         try:
-            rows = collect_source(source, client, now)
-            report["sources"].append({"source": name, "status": "ok", "count": len(rows)})
-            for item in rows:
-                items.setdefault(item["id"], item)
+            source_client = client if workers == 1 else HTTPClient()
+            rows = collect_source(source, source_client, now)
+            return rows, {"source": name, "status": "ok", "count": len(rows)}
         except Exception as exc:
             error = str(exc) if isinstance(exc, CollectorError) else "source processing failed"
-            report["sources"].append({"source": name, "status": "error", "count": 0, "error": error[:160]})
+            return [], {"source": name, "status": "error", "count": 0, "error": error[:160]}
+
+    if workers == 1:
+        results = [fetch_source(source) for source in sources]
+    else:
+        with ThreadPoolExecutor(max_workers=min(max(1, workers), COLLECTION_WORKERS)) as pool:
+            results = list(pool.map(fetch_source, sources))
+    items = {}
+    for rows, source_report in results:
+        report["sources"].append(source_report)
+        for item in rows:
+            items.setdefault(item["id"], item)
     report["finished_at"] = iso_date(utc_now())
     return list(items.values()), report
 
@@ -356,14 +389,18 @@ def load_sources(path):
         if len(data) > 64 * 1024:
             raise ValueError()
         sources = json.loads(data)
-        if not isinstance(sources, list) or not 1 <= len(sources) <= 20:
+        if not isinstance(sources, list) or not 1 <= len(sources) <= MAX_SOURCES:
             raise ValueError()
         names = set()
         for source in sources:
             if not isinstance(source, dict) or not isinstance(source.get("name"), str):
                 raise ValueError()
             name = clean_text(source["name"], 64)
-            if not name or name in names or source.get("type") not in ("feed", "hackernews") or not canonical_url(source.get("url")):
+            if not name or name in names or source.get("type") not in ("feed", "arxiv", "github_releases", "hackernews") or not canonical_url(source.get("url")):
+                raise ValueError()
+            if source["type"] == "github_releases" and not valid_release_url(source["url"]):
+                raise ValueError()
+            if source.get("category") not in (None, "official_ai", "engineering", "research", "releases", "media", "community"):
                 raise ValueError()
             names.add(name)
         return sources
@@ -387,7 +424,7 @@ def main(argv=None):
             if not token or any(c.isspace() or ord(c) < 32 or ord(c) == 127 for c in token):
                 raise CollectorError("missing or invalid INGEST_TOKEN")
         client = HTTPClient()
-        items, report = collect(sources, client)
+        items, report = collect(sources, client, workers=COLLECTION_WORKERS)
         if args.dry_run:
             document = json.dumps({"items": items, "run": report}, ensure_ascii=False, indent=2) + "\n"
             if args.output:

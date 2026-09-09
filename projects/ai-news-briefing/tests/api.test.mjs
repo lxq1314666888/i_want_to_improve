@@ -143,6 +143,10 @@ test('official MCP client initializes, discovers and invokes both read-only tool
     assert.equal(JSON.parse(result.content[0].text).items.length, 1);
     const status = await client.callTool({ name: 'get_collection_status', arguments: {} });
     assert.equal(JSON.parse(status.content[0].text).latest_run.succeeded_sources, 0);
+    const filtered = await client.callTool({ name: 'get_news', arguments: { category: 'research', offset: 0, per_source_limit: 2 } });
+    assert.ok(!filtered.isError);
+    assert.equal(JSON.parse(filtered.content[0].text).category, 'research');
+    assert.equal(JSON.parse(filtered.content[0].text).per_source_limit, 2);
     const invalid = await client.callTool({ name: 'get_news', arguments: { limit: 1000 } });
     assert.equal(invalid.isError, true);
   } finally { await client.close(); }
@@ -166,4 +170,36 @@ upload(HTTPClient(interval=0), os.environ['API_BASE_URL'], os.environ['INGEST_TO
   const result = await (await request('/api/news?source=Python%20integration')).json();
   assert.equal(result.items.length, 1);
   assert.equal(result.status.latest_run.succeeded_sources, 1);
+});
+
+test('category queries diversify sources and provide bounded pagination', async () => {
+  const items = ['OpenAI', 'Google AI', 'TechCrunch'].flatMap(source => Array.from({ length: 8 }, (_, i) =>
+    article(`https://example.com/catalog/${source.replaceAll(' ', '-')}/${i}`, { source, published_at: new Date(Date.now() - i * 1000).toISOString() })));
+  assert.equal((await request('/api/ingest', { token: WRITE, body: { items } })).status, 200);
+  const balanced = await (await request('/api/news?category=official_ai&limit=50')).json();
+  assert.equal(balanced.items.length, 6);
+  assert.ok(balanced.items.every(item => ['OpenAI', 'Google AI'].includes(item.source)));
+  assert.equal(balanced.items.filter(item => item.source === 'OpenAI').length, 3);
+  const page1 = await (await request('/api/news?category=official_ai&limit=5&per_source_limit=10')).json();
+  assert.equal(page1.has_more, true);
+  assert.equal(page1.next_offset, 5);
+  const page2 = await (await request(`/api/news?category=official_ai&limit=5&per_source_limit=10&offset=${page1.next_offset}`)).json();
+  assert.ok(page2.items.every(item => !page1.items.some(previous => previous.id === item.id)));
+  const last = await (await request('/api/news?category=official_ai&limit=5&per_source_limit=10&offset=15')).json();
+  assert.equal(last.items.length, 1);
+  assert.equal(last.has_more, false);
+  assert.equal(last.next_offset, null);
+  const single = await (await request('/api/news?source=OpenAI&limit=50')).json();
+  assert.equal(single.items.length, 8);
+  assert.equal(single.per_source_limit, null);
+  for (const path of ['/api/news?category=invalid', '/api/news?offset=-1', '/api/news?offset=1001', '/api/news?per_source_limit=11']) {
+    assert.equal((await request(path)).status, 400);
+  }
+});
+
+test('source discovery includes all 27 sources in six categories', async () => {
+  const status = await (await request('/api/status')).json();
+  assert.equal(status.configured_sources.length, 27);
+  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 6);
+  assert.ok(status.configured_sources.some(source => source.name === 'vLLM Releases' && source.type === 'github_releases'));
 });

@@ -26,3 +26,4 @@ jobs:
         env:
           API_BASE_URL: ${{ vars.API_BASE_URL }}
           INGEST_TOKEN: ${{ secrets.INGEST_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}

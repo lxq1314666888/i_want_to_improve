@@ -8,9 +8,10 @@
 
 ```text
 GitHub Actions（Python，每日北京时间 07:17）
-  ├─ OpenAI 官方 RSS
-  ├─ Hugging Face 官方 RSS
-  └─ Hacker News 官方 API，前 15 条故事
+  ├─ AI 官方发布与研究机构（7 个源）
+  ├─ 工程博客（4 个源）、论文公告（3 个源）
+  ├─ GitHub 项目 Releases（6 个源）
+  └─ 科技媒体（5 个源）、开发者社区（2 个源）
        ↓ 限流、超时、去重、提取元数据与简短摘录
 POST /api/ingest + POST /api/runs（写入密钥）
        ↓
@@ -25,8 +26,10 @@ WorkBuddy → 中文日报 → 本地文件 / 由用户自行开启的小程序�
 
 ### 首版范围
 
-- 先接 3 个已明确入口的来源，不宣称覆盖所有国际社媒或所有 AI 新闻。
-- OpenAI、Hugging Face 每源最多保留最近 30 天内的 25 条；HN 最多请求 15 条热门故事，包含泛科技内容。相关性由 WorkBuddy 判断。
+- 默认接入 **27 个来源、6 个分类**，见[完整来源清单与采集规则](docs/sources.md)。来源可配置，总数上限 30，与运行报告接口一致；不宣称覆盖所有国际社媒。
+- 每源最多保留 25 条最近 30 天的内容；HN 最多请求 15 条热门故事。四个来源并发采集，单源失败独立记录，输出顺序和跨源去重结果保持确定性。
+- GitHub Releases 使用官方 REST API，只取返回的最近 25 个 Release 中的非草稿、非预发布版本，使用 `published_at` 而不是 commit/更新日期。Actions 自带的只读 `GITHUB_TOKEN` 仅发送到严格校验的 GitHub API 端点，无需新增个人 Token。
+- arXiv 只保留 `new` 类型的论文公告，跳过修改版与跨类再公告，避免把旧论文更新当新论文。这里的发布时间指 arXiv 首次公告时间，不是投稿时间；每类采样最多 25 篇，不是完整论文列表。
 - 不调用付费模型，服务端不需要 OpenAI API Key；WorkBuddy 自身积分/套餐另算。
 - 不接登录态、付费墙、私信和受限接口。X、Reddit、YouTube 等以后按授权、预算和平台条款独立接入。
 - 不做完整文章镜像，不下载视频或论文全文；摘要所依据的输入为标题和最多 500 字符的来源摘录，可能不足以判断详细结论。
@@ -65,11 +68,24 @@ WorkBuddy → 中文日报 → 本地文件 / 由用户自行开启的小程序�
 | 路径 | 方法 | 鉴权 | 作用 |
 |---|---|---|---|
 | `/health` | GET | 无 | 仅检查程序存活，不代表采集成功 |
-| `/api/news?hours=24&limit=20` | GET | `READ_TOKEN` | 最近资讯；hours 1–168、limit 1–50，可按 source 精确过滤 |
-| `/api/status` | GET | `READ_TOKEN` | 最近成功时间、运行与来源健康情况 |
+| `/api/news?hours=24&limit=20` | GET | `READ_TOKEN` | 资讯检索，支持分类、来源、多样性上限和分页 |
+| `/api/status` | GET | `READ_TOKEN` | 全部配置来源/分类、最近成功时间、运行与来源健康情况 |
 | `/mcp` | POST | `READ_TOKEN` | 无状态 Streamable HTTP MCP |
 | `/api/ingest` | POST | `INGEST_TOKEN` | 每批最多 25 条，输入体最多 128KiB |
 | `/api/runs` | POST | `INGEST_TOKEN` | 提交本次各源结果，触发保留期清理 |
+
+`get_news` 与 `/api/news` 使用相同查询参数：
+
+| 参数 | 规则 |
+|---|---|
+| `hours` | 1–168，默认 24 |
+| `limit` | 每页 1–50，默认 20，不一次性把所有内容塞给模型 |
+| `category` | `official_ai`、`engineering`、`research`、`releases`、`media`、`community` |
+| `source` | 来源名称精确匹配，可从 `configured_sources` 获取 |
+| `per_source_limit` | 未指定 source 时默认每源最多 3 条，可设 1–10，防止高频媒体占满结果；单源查询忽略此参数 |
+| `offset` | 0–1000，默认 0；按返回的 `next_offset` 翻页并保持其他参数不变 |
+
+返回 `has_more`、`next_offset`。分页只针对当前时间范围、分类和每源上限内的结果，并非全文数据库快照；采集更新或时间窗口滑动时，连续翻页可能变化。需要深入某个源时按 source 单独查询。日常日报建议按六个分类分别取每源 2 条，而不是只读总榜前 50 条。
 
 鉴权格式是 HTTP Header `Authorization: Bearer <密钥>`，不是 URL 查询参数。两把密钥必须不同。未配置或短密钥返回 503；鉴权失败返回 401。除了 `/health`，不会匿名公开数据。
 
@@ -112,6 +128,10 @@ python scripts/collect.py --dry-run --output collection-output.json
 - 免费 `workers.dev` 域名不能保证中国大陆网络可达，自定义域名也不保证。一定先从 WorkBuddy 所在电脑测试 `/health` 和带鉴权的 MCP。
 - 若已经在付费 Cloudflare/GitHub 账号中部署，计费规则以账号实际套餐为准；脚本不会切换套餐。
 - 本项目保持自用、私有部署。将来公开代码前另行选择开源许可证；将来公开数据前另行核查来源授权、隐私及所在地适用要求。
+
+## 论文数据致谢
+
+Thank you to arXiv for use of its open access interoperability.
 
 ## 安全边界
 

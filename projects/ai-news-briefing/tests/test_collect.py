@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import tempfile
 import threading
+import time
 import unittest
 from unittest.mock import Mock, patch
 import urllib.error
@@ -125,6 +126,71 @@ class FeedTests(unittest.TestCase):
 
 
 class CollectionTests(unittest.TestCase):
+    def test_github_releases_use_publication_time_and_skip_unstable(self):
+        config = {"name": "vLLM Releases", "type": "github_releases", "url": "https://api.github.com/repos/vllm-project/vllm/releases"}
+        release = {"html_url": "https://github.com/vllm-project/vllm/releases/tag/v1", "name": "v1",
+                   "published_at": c.iso_date(NOW), "created_at": c.iso_date(NOW - timedelta(days=10)), "body": "Release notes"}
+        client = Mock()
+        client.get_json.return_value = [release, dict(release, draft=True), dict(release, prerelease=True), None]
+        with patch.dict("os.environ", {"GITHUB_TOKEN": "scoped-actions-token"}):
+            items = c.collect_source(config, client, NOW)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["published_at"], c.iso_date(NOW))
+        client.get_json.assert_called_once_with(config["url"] + "?per_page=25", token="scoped-actions-token")
+
+    def test_github_credentials_never_sent_to_configured_arbitrary_hosts(self):
+        client = Mock()
+        for url in ("https://api.github.com.evil/repos/o/r/releases", "https://api.github.com/repos/o/r/releases?redirect=bad", "https://user@api.github.com/repos/o/r/releases", "http://api.github.com/repos/o/r/releases"):
+            with self.subTest(url=url), self.assertRaisesRegex(c.CollectorError, "endpoint"):
+                c.collect_source({"name": "Untrusted", "type": "github_releases", "url": url}, client, NOW)
+        client.get_json.assert_not_called()
+
+    def test_arxiv_only_keeps_new_announcements_not_updates(self):
+        xml = b'''<rss xmlns:arxiv="http://arxiv.org/schemas/atom"><channel>
+          <item><title>New paper</title><link>https://arxiv.org/abs/1</link><arxiv:announce_type>new</arxiv:announce_type></item>
+          <item><title>Updated paper</title><link>https://arxiv.org/abs/2</link><arxiv:announce_type>replace</arxiv:announce_type></item>
+          <item><title>Cross listing</title><link>https://arxiv.org/abs/3</link><arxiv:announce_type>cross</arxiv:announce_type></item>
+        </channel></rss>'''
+        client = Mock()
+        client.request.return_value = xml
+        items = c.collect_source({"name": "arXiv", "type": "arxiv", "url": "https://rss.arxiv.org/rss/cs.AI"}, client, NOW)
+        self.assertEqual([item["title"] for item in items], ["New paper"])
+
+    def test_parallel_collection_is_bounded_and_preserves_source_order(self):
+        lock = threading.Lock()
+        active = 0
+        peak = 0
+        configs = [dict(SOURCES[0], name=f"Source {i}") for i in range(9)]
+        def collect_one(config, client, now):
+            nonlocal active, peak
+            with lock:
+                active += 1
+                peak = max(peak, active)
+            time.sleep(0.02)
+            with lock:
+                active -= 1
+            if config["name"] == "Source 2":
+                raise c.CollectorError("HTTP 503")
+            return [c.normalize({"url": "https://example.com/shared", "title": config["name"]}, config["name"], now)]
+        with patch.object(c, "collect_source", side_effect=collect_one), patch.object(c, "HTTPClient"):
+            items, report = c.collect(configs, Mock(), NOW, workers=99)
+        self.assertGreaterEqual(peak, 2)
+        self.assertLessEqual(peak, 4)
+        self.assertEqual([source["source"] for source in report["sources"]], [config["name"] for config in configs])
+        self.assertEqual(report["sources"][2]["status"], "error")
+        self.assertEqual(items[0]["source"], "Source 0")
+        self.assertEqual(len(items), 1)
+
+    def test_source_limit_remains_bounded_and_matches_api_run_limit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.json"
+            configs = [dict(SOURCES[0], name=f"Source {i}") for i in range(30)]
+            path.write_text(json.dumps(configs))
+            self.assertEqual(len(c.load_sources(path)), 30)
+            path.write_text(json.dumps(configs + [dict(SOURCES[0], name="Source 31")]))
+            with self.assertRaises(c.CollectorError):
+                c.load_sources(path)
+
     def test_hn_bounded_sequential_and_skips(self):
         client = Mock()
         base = "https://hacker-news.firebaseio.com/v0/"
@@ -211,7 +277,9 @@ class CollectionTests(unittest.TestCase):
 
     def test_default_sources_relative_to_script(self):
         sources = c.load_sources(c.DEFAULT_SOURCES)
-        self.assertEqual([s["name"] for s in sources], ["OpenAI", "Hugging Face", "Hacker News"])
+        self.assertEqual(len(sources), 27)
+        self.assertTrue({"OpenAI", "Hugging Face", "Hacker News"}.issubset({s["name"] for s in sources}))
+        self.assertEqual(len({s["category"] for s in sources}), 6)
         self.assertEqual(c.DEFAULT_SOURCES, ROOT / "sources.json")
 
 

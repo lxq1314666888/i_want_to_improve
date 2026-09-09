@@ -75,3 +75,4 @@ jobs:
         env:
           API_BASE_URL: ${{ steps.prepare.outputs.api_base_url }}
           INGEST_TOKEN: ${{ secrets.INGEST_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
