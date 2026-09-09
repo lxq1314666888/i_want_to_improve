@@ -197,9 +197,33 @@ test('category queries diversify sources and provide bounded pagination', async 
   }
 });
 
-test('source discovery includes all 27 sources in six categories', async () => {
+test('source discovery includes 28 sources in seven categories with explicit aggregation provenance', async () => {
   const status = await (await request('/api/status')).json();
-  assert.equal(status.configured_sources.length, 27);
-  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 6);
+  assert.equal(status.configured_sources.length, 28);
+  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 7);
   assert.ok(status.configured_sources.some(source => source.name === 'vLLM Releases' && source.type === 'github_releases'));
+  const digest = status.configured_sources.find(source => source.type === 'ainews');
+  assert.equal(digest.category, 'social');
+  assert.equal(digest.provenance.kind, 'aggregated_digest');
+  assert.deepEqual(digest.provenance.platforms, ['x', 'reddit']);
+});
+
+test('REST and MCP expose social digests without mislabelling original-post dates', async () => {
+  const item = article('https://example.com/social-digest', { source: 'AINews via Latent Space', excerpt: 'X via AINews: Model discussion. | Reddit via AINews: Local inference.' });
+  assert.equal((await request('/api/ingest', { token: WRITE, body: { items: [item] } })).status, 200);
+  const result = await (await request('/api/news?category=social')).json();
+  assert.equal(result.items.length, 1);
+  assert.equal(result.items[0].url, item.url);
+  assert.equal(result.items[0].published_at, item.published_at);
+  assert.equal(result.items[0].provenance.publication_time, 'digest_publication_not_original_posts');
+  assert.match(result.content_notice, /secondhand/);
+  const client = new Client({ name: 'social-test', version: '1.0.0' });
+  try {
+    await client.connect(new StreamableHTTPClientTransport(new URL(`${base}/mcp`), { requestInit: { headers: { Authorization: `Bearer ${READ}` } } }));
+    const toolResult = await client.callTool({ name: 'get_news', arguments: { category: 'social', hours: 24 } });
+    assert.ok(!toolResult.isError);
+    const digest = JSON.parse(toolResult.content[0].text).items[0];
+    assert.deepEqual(digest.provenance, result.items[0].provenance);
+    assert.equal(digest.excerpt, item.excerpt);
+  } finally { await client.close(); }
 });

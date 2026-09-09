@@ -172,7 +172,7 @@ def markup_text(element, name):
         ElementTree.tostring(n, encoding="unicode") for n in node)
 
 
-def parse_feed(data):
+def parse_feed(data, include_content=False):
     if len(data) > MAX_RESPONSE_BYTES:
         raise CollectorError("response exceeds size limit")
     try:
@@ -207,7 +207,76 @@ def parse_feed(data):
         rows.append({"url": url, "title": markup_text(entry, "title"),
                      "published_at": date, "excerpt": excerpt,
                      "announce_type": child_text(entry, "announce_type")})
+        if include_content:
+            rows[-1]["content"] = (markup_text(entry, "content") if entry_kind == "entry"
+                                   else child_text(entry, "encoded"))
     return rows
+
+
+class SocialRecap(HTMLParser):
+    """Read only named recap sections from the publisher's public RSS body."""
+
+    SECTIONS = {"ai twitter recap": "X", "ai reddit recap": "Reddit"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.section = None
+        self.section_level = 0
+        self.heading = None
+        self.hidden = []
+        self.parts = {name: [] for name in self.SECTIONS.values()}
+        self.remaining = {name: 1000 for name in self.parts}
+
+    def add(self, text):
+        if self.section and self.remaining[self.section] > 0:
+            value = text[:self.remaining[self.section]]
+            self.parts[self.section].append(value)
+            self.remaining[self.section] -= len(value)
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self.hidden.append(tag)
+        if self.hidden:
+            return
+        if re.fullmatch(r"h[1-6]", tag):
+            self.heading = (int(tag[1]), [])
+        elif tag in ("p", "br", "div", "li"):
+            self.add(" ")
+
+    def handle_endtag(self, tag):
+        if self.hidden:
+            if tag == self.hidden[-1]:
+                self.hidden.pop()
+            return
+        if re.fullmatch(r"h[1-6]", tag) and self.heading:
+            level, parts = self.heading
+            text = " ".join("".join(parts).split())
+            if text.casefold() in self.SECTIONS:
+                self.section = self.SECTIONS[text.casefold()]
+                self.section_level = level
+            elif level <= self.section_level:
+                self.section = None
+            else:
+                self.add(text + ". ")
+            self.heading = None
+        elif tag in ("p", "div", "li"):
+            self.add(" ")
+
+    def handle_data(self, text):
+        if self.hidden:
+            return
+        if self.heading:
+            self.heading[1].append(text)
+        else:
+            self.add(text)
+
+
+def social_excerpt(content):
+    parser = SocialRecap()
+    parser.feed(content or "")
+    parser.close()
+    excerpts = [(name, clean_text("".join(parts), 215)) for name, parts in parser.parts.items()]
+    return " | ".join(f"{name} via AINews: {text}" for name, text in excerpts if text)
 
 
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
@@ -296,6 +365,17 @@ def collect_source(config, client, now):
         raw = parse_feed(client.request(config["url"]))
         if config["type"] == "arxiv":
             raw = [row for row in raw if row["announce_type"] == "new"]
+    elif config["type"] == "ainews":
+        entries = parse_feed(client.request(config["url"]), include_content=True)
+        raw = []
+        for row in entries:
+            if not clean_text(row["title"], 300).startswith("[AINews]"):
+                continue
+            excerpt = social_excerpt(row["content"])
+            if excerpt:
+                raw.append(dict(row, excerpt=excerpt))
+        if entries and not raw:
+            raise CollectorError("AINews public recap sections unavailable")
     elif config["type"] == "github_releases":
         if not valid_release_url(config["url"]):
             raise CollectorError("invalid GitHub releases endpoint")
@@ -396,11 +476,11 @@ def load_sources(path):
             if not isinstance(source, dict) or not isinstance(source.get("name"), str):
                 raise ValueError()
             name = clean_text(source["name"], 64)
-            if not name or name in names or source.get("type") not in ("feed", "arxiv", "github_releases", "hackernews") or not canonical_url(source.get("url")):
+            if not name or name in names or source.get("type") not in ("feed", "arxiv", "github_releases", "hackernews", "ainews") or not canonical_url(source.get("url")):
                 raise ValueError()
             if source["type"] == "github_releases" and not valid_release_url(source["url"]):
                 raise ValueError()
-            if source.get("category") not in (None, "official_ai", "engineering", "research", "releases", "media", "community"):
+            if source.get("category") not in (None, "official_ai", "engineering", "research", "releases", "media", "community", "social"):
                 raise ValueError()
             names.add(name)
         return sources

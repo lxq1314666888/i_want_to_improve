@@ -125,6 +125,63 @@ class FeedTests(unittest.TestCase):
         self.assertEqual(items[0]["url"], "https://example.com/39")
 
 
+class SocialDigestTests(unittest.TestCase):
+    CONFIG = {"name": "AINews via Latent Space", "category": "social", "type": "ainews",
+              "url": "https://www.latent.space/feed?sectionId=327741"}
+
+    def test_public_recap_body_not_teaser_and_no_social_credentials(self):
+        client = Mock()
+        client.request.return_value = (FIXTURES / "ainews.xml").read_bytes()
+        with patch.dict("os.environ", {"GITHUB_TOKEN": "never-send-to-aggregator"}):
+            items = c.collect_source(self.CONFIG, client, NOW)
+        self.assertEqual(len(items), 1)
+        item = items[0]
+        self.assertEqual(item["url"], "https://example.com/digest")
+        self.assertEqual(item["published_at"], "2025-09-09T07:00:00Z")
+        self.assertEqual(item["source"], self.CONFIG["name"])
+        self.assertIn("X via AINews: Model discussion.", item["excerpt"])
+        self.assertIn("Reddit via AINews: Local inference.", item["excerpt"])
+        for excluded in ("sponsor", "UNTRUSTED", "Historical", "footer", "different publication"):
+            self.assertNotIn(excluded, item["excerpt"])
+        self.assertLessEqual(len(item["excerpt"]), 500)
+        client.request.assert_called_once_with(self.CONFIG["url"])
+        client.get_json.assert_not_called()
+
+    def test_long_first_platform_does_not_crowd_out_second(self):
+        body = "<h1>AI Twitter Recap</h1><p>" + "X" * 10000 + "</p><h1>AI Reddit Recap</h1><p>" + "R" * 10000 + "</p>"
+        excerpt = c.social_excerpt(body)
+        self.assertIn("Reddit via AINews:", excerpt)
+        self.assertLessEqual(len(excerpt), 500)
+
+    def test_missing_platform_not_claimed_and_nested_headings_supported(self):
+        excerpt = c.social_excerpt("<h2>AI Reddit Recap</h2><h3>Local models</h3><p>Discussion.</p><h2>Other</h2><p>Outside.</p>")
+        self.assertEqual(excerpt, "Reddit via AINews: Local models. Discussion.")
+        self.assertNotIn("X via", excerpt)
+        self.assertEqual(c.social_excerpt("<p>AI Twitter Recap</p><h1>AI Discords</h1><p>Old.</p>"), "")
+
+    def test_missing_public_sections_are_reported_as_failure(self):
+        client = Mock()
+        client.request.return_value = b'<rss><channel><item><title>[AINews] Fixture</title><description>Subscribe to read.</description></item></channel></rss>'
+        items, report = c.collect([self.CONFIG], client, NOW)
+        self.assertEqual(items, [])
+        self.assertEqual(report["sources"][0]["status"], "error")
+        self.assertIn("recap sections unavailable", report["sources"][0]["error"])
+
+    def test_old_digests_and_empty_feed_are_valid_zero_results(self):
+        client = Mock()
+        client.request.return_value = (FIXTURES / "ainews.xml").read_bytes()
+        self.assertEqual(c.collect_source(self.CONFIG, client, NOW + timedelta(days=31)), [])
+        client.request.return_value = b'<rss><channel/></rss>'
+        self.assertEqual(c.collect_source(self.CONFIG, client, NOW), [])
+
+    def test_full_content_is_opt_in_and_not_normalized_or_uploaded(self):
+        xml = (FIXTURES / "ainews.xml").read_bytes()
+        self.assertNotIn("content", c.parse_feed(xml)[0])
+        row = c.parse_feed(xml, include_content=True)[0]
+        self.assertIn("content", row)
+        self.assertNotIn("content", c.normalize(row, "Fixture", NOW))
+
+
 class CollectionTests(unittest.TestCase):
     def test_github_releases_use_publication_time_and_skip_unstable(self):
         config = {"name": "vLLM Releases", "type": "github_releases", "url": "https://api.github.com/repos/vllm-project/vllm/releases"}
@@ -277,9 +334,9 @@ class CollectionTests(unittest.TestCase):
 
     def test_default_sources_relative_to_script(self):
         sources = c.load_sources(c.DEFAULT_SOURCES)
-        self.assertEqual(len(sources), 27)
-        self.assertTrue({"OpenAI", "Hugging Face", "Hacker News"}.issubset({s["name"] for s in sources}))
-        self.assertEqual(len({s["category"] for s in sources}), 6)
+        self.assertEqual(len(sources), 28)
+        self.assertTrue({"OpenAI", "Hugging Face", "Hacker News", "AINews via Latent Space"}.issubset({s["name"] for s in sources}))
+        self.assertEqual(len({s["category"] for s in sources}), 7)
         self.assertEqual(c.DEFAULT_SOURCES, ROOT / "sources.json")
 
 

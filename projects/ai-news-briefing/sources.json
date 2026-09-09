@@ -25,5 +25,17 @@
   {"name": "MIT Technology Review", "category": "media", "type": "feed", "url": "https://www.technologyreview.com/feed/"},
   {"name": "IEEE Spectrum AI", "category": "media", "type": "feed", "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"},
   {"name": "Hacker News", "category": "community", "type": "hackernews", "url": "https://hacker-news.firebaseio.com/v0/"},
-  {"name": "Simon Willison", "category": "community", "type": "feed", "url": "https://simonwillison.net/atom/everything/"}
+  {"name": "Simon Willison", "category": "community", "type": "feed", "url": "https://simonwillison.net/atom/everything/"},
+  {
+    "name": "AINews via Latent Space",
+    "category": "social",
+    "type": "ainews",
+    "url": "https://www.latent.space/feed?sectionId=327741",
+    "provenance": {
+      "kind": "aggregated_digest",
+      "platforms": ["x", "reddit"],
+      "publication_time": "digest_publication_not_original_posts",
+      "coverage_note": "Selected public X/Reddit recap excerpts, not direct platform access or complete coverage. Availability varies per issue. Follow the digest link for its original-post references. Does not cover Telegram or current Discord discussions."
+    }
+  }
 ]
