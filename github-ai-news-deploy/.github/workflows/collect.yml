@@ -1,0 +1,41 @@
+name: Collect AI news
+
+on:
+  schedule:
+    # 每天北京时间 07:17 触发（UTC+8），GitHub 可能排队延迟，不保证准点
+    - cron: "17 23 * * *"
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check collection enabled
+        id: check
+        run: |
+          if [ "$AI_NEWS_ENABLED" != "true" ]; then
+            echo "AI_NEWS_ENABLED 未设为 true，本次跳过（不视为失败）。"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          elif [ -z "$API_BASE_URL" ]; then
+            echo "::error::API_BASE_URL 未设置：请先在仓库 Variables 中填写部署输出的基础地址。"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          AI_NEWS_ENABLED: ${{ vars.AI_NEWS_ENABLED }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+
+      - name: Run collection
+        if: steps.check.outputs.skip == 'false'
+        run: node scripts/collect.js
+        env:
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+          INGEST_TOKEN: ${{ secrets.INGEST_TOKEN }}
+          NEWS_HOURS: "24"

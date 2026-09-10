@@ -1,0 +1,43 @@
+{
+  "comment": "AI 科技资讯来源配置。type: rss/atom/json/reddit/github；urls 为候选地址，按顺序尝试；json 类型用 path 指向条目数组。social 类为 AINews 二手摘要，X/Reddit 仅经二手转述覆盖，Telegram/Discord 未接入。",
+  "sources": [
+    { "name": "Google AI Blog", "category": "official_ai", "type": "rss", "urls": ["https://blog.google/technology/ai/rss/"] },
+    { "name": "Google DeepMind", "category": "official_ai", "type": "rss", "urls": ["https://deepmind.google/blog/rss.xml"] },
+    { "name": "Google Research", "category": "official_ai", "type": "rss", "urls": ["https://research.google/blog/rss/"] },
+    { "name": "OpenAI News", "category": "official_ai", "type": "rss", "urls": ["https://openai.com/news/rss.xml", "https://openai.com/blog/rss.xml"] },
+    { "name": "Anthropic", "category": "official_ai", "type": "rss", "urls": ["https://www.anthropic.com/rss.xml"] },
+    { "name": "Meta AI", "category": "official_ai", "type": "rss", "urls": ["https://ai.meta.com/blog/rss/"] },
+    { "name": "Microsoft AI Blog", "category": "official_ai", "type": "rss", "urls": ["https://blogs.microsoft.com/ai/feed/"] },
+    { "name": "Hugging Face Blog", "category": "official_ai", "type": "rss", "urls": ["https://huggingface.co/blog/feed.xml"] },
+    { "name": "NVIDIA Blog", "category": "official_ai", "type": "rss", "urls": ["https://blogs.nvidia.com/feed/"] },
+    { "name": "AWS ML Blog", "category": "official_ai", "type": "rss", "urls": ["https://aws.amazon.com/blogs/machine-learning/feed/"] },
+
+    { "name": "Cloudflare Blog", "category": "engineering", "type": "rss", "urls": ["https://blog.cloudflare.com/rss/"] },
+    { "name": "GitHub Blog", "category": "engineering", "type": "rss", "urls": ["https://github.blog/feed/"] },
+    { "name": "Meta Engineering", "category": "engineering", "type": "rss", "urls": ["https://engineering.fb.com/feed/"] },
+    { "name": "Netflix TechBlog", "category": "engineering", "type": "rss", "urls": ["https://netflixtechblog.com/feed"] },
+
+    { "name": "arXiv cs.AI", "category": "research", "type": "atom", "urls": ["http://export.arxiv.org/api/query?search_query=cat:cs.AI&sortBy=submittedDate&sortOrder=descending&max_results=50"] },
+    { "name": "Nature Machine Intelligence", "category": "research", "type": "rss", "urls": ["https://www.nature.com/natmachintell.rss"] },
+    { "name": "Science Robotics", "category": "research", "type": "rss", "urls": ["https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=scirobotics"] },
+    { "name": "IEEE Spectrum AI", "category": "research", "type": "rss", "urls": ["https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"] },
+    { "name": "Papers with Code", "category": "research", "type": "rss", "urls": ["https://paperswithcode.com/research-ai.xml"] },
+
+    { "name": "TechCrunch AI", "category": "media", "type": "rss", "urls": ["https://techcrunch.com/category/artificial-intelligence/feed/"] },
+    { "name": "The Verge AI", "category": "media", "type": "rss", "urls": ["https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"] },
+    { "name": "VentureBeat AI", "category": "media", "type": "rss", "urls": ["https://venturebeat.com/category/ai/feed/"] },
+    { "name": "MIT Tech Review AI", "category": "media", "type": "rss", "urls": ["https://www.technologyreview.com/topic/artificial-intelligence/feed"] },
+    { "name": "Wired AI", "category": "media", "type": "rss", "urls": ["https://www.wired.com/feed/tag/ai/latest/rss"] },
+    { "name": "Ars Technica AI", "category": "media", "type": "rss", "urls": ["https://arstechnica.com/ai/feed/"] },
+
+    { "name": "AINews", "category": "social", "type": "rss", "urls": ["https://www.ainews.com/rss.xml", "https://ainews.com/rss", "https://www.ainews.com/feed"] },
+    { "name": "AINews (reader)", "category": "social", "type": "html-links", "urls": ["https://r.jina.ai/https://www.ainews.com/"] },
+    { "name": "Reddit r/MachineLearning", "category": "social", "type": "reddit", "urls": ["https://www.reddit.com/r/MachineLearning/hot.json?limit=25", "https://old.reddit.com/r/MachineLearning/hot.json?limit=25"] },
+
+    { "name": "Hacker News", "category": "community", "type": "json", "urls": ["https://hn.algolia.com/api/v1/search_by_date?query=AI%20OR%20LLM%20OR%20machine%20learning&tags=story&hitsPerPage=50", "https://hnrss.org/newest?q=AI&count=40"], "path": "hits" },
+    { "name": "Reddit r/LocalLLaMA", "category": "community", "type": "reddit", "urls": ["https://www.reddit.com/r/LocalLLaMA/hot.json?limit=25", "https://old.reddit.com/r/LocalLLaMA/hot.json?limit=25"] },
+
+    { "name": "AI 开源项目 Releases", "category": "releases", "type": "github", "repos": ["ollama/ollama", "huggingface/transformers", "langchain-ai/langchain", "vllm-project/vllm", "ggml-org/llama.cpp"] },
+    { "name": "OpenAI Changelog", "category": "releases", "type": "rss", "urls": ["https://openai.com/changelog/rss.xml", "https://openai.com/news/rss.xml"] }
+  ]
+}
