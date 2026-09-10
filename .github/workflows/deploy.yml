@@ -69,6 +69,8 @@ jobs:
           sed -i "s/^database_id = .*/database_id = \"$DB_ID\"/" wrangler.toml
           echo "db_id=$DB_ID" >> "$GITHUB_OUTPUT"
           echo "database_id 已写入 wrangler.toml"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Apply D1 schema
         run: wrangler d1 execute "${{ steps.cfg.outputs.resource }}" --remote --file=schema.sql
