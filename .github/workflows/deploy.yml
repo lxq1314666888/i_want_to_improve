@@ -82,7 +82,7 @@ jobs:
         run: |
           OUT=$(wrangler deploy 2>&1 | tee /tmp/deploy.log)
           echo "$OUT"
-          URL=$(grep -oE 'https://[a-z0-9-]+\.workers\.dev' /tmp/deploy.log | head -1)
+          URL=$(grep -oE 'https://[^ ]+' /tmp/deploy.log | grep 'workers\.dev' | head -1)
           if [ -z "$URL" ]; then
             echo "::error::无法从部署输出解析 workers.dev 地址，请检查 CLOUDFLARE_ACCOUNT_ID 与子域名配置"
             exit 1
