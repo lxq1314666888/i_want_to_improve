@@ -1,9 +1,0 @@
-# 部署时由 GitHub Actions 动态参数化 name / database_name / database_id
-name = "workbuddy-ai-news"
-main = "src/index.js"
-compatibility_date = "2026-09-09"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "workbuddy-ai-news"
-database_id = "YOUR_DATABASE_ID_HERE"
