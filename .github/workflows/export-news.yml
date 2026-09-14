@@ -26,7 +26,7 @@ jobs:
             echo "base_host=$(echo "$BASE" | sed 's|https\?://||' | cut -d/ -f1)"
             echo "token_present=$([ -n "$READ_TOKEN" ] && echo yes || echo no)"
           } > ai-news-digest/_debug.txt
-          s_code=$(curl -sS -m 60 -o /tmp/status.json -w '%{http_code}' -H "Authorization: Bearer $READ_TOKEN" "$BASE/api/collection/status" 2>>ai-news-digest/_debug.txt || echo 000)
+          s_code=$(curl -sS -m 60 -o /tmp/status.json -w '%{http_code}' -H "Authorization: Bearer $READ_TOKEN" "$BASE/api/status" 2>>ai-news-digest/_debug.txt || echo 000)
           n_code=$(curl -sS -m 60 -o /tmp/news.json -w '%{http_code}' -H "Authorization: Bearer $READ_TOKEN" "$BASE/api/news?hours=72&limit=80" 2>>ai-news-digest/_debug.txt || echo 000)
           echo "status_http=$s_code news_http=$n_code" >> ai-news-digest/_debug.txt
           {
