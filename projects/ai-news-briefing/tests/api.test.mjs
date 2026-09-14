@@ -197,7 +197,7 @@ test('category queries diversify sources and provide bounded pagination', async 
   }
 });
 
-test('source discovery includes 30 sources in seven categories with explicit aggregation provenance', async () => {
+test('source discovery includes 29 sources in seven categories with explicit aggregation provenance', async () => {
   const status = await (await request('/api/status')).json();
   assert.equal(status.configured_sources.length, 30);
   assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 7);

@@ -334,7 +334,7 @@ class CollectionTests(unittest.TestCase):
 
     def test_default_sources_relative_to_script(self):
         sources = c.load_sources(c.DEFAULT_SOURCES)
-        self.assertEqual(len(sources), 30)
+        self.assertEqual(len(sources), 29)
         self.assertTrue({"OpenAI", "Hugging Face", "Hacker News", "AINews via Latent Space"}.issubset({s["name"] for s in sources}))
         self.assertEqual(len({s["category"] for s in sources}), 7)
         self.assertEqual(c.DEFAULT_SOURCES, ROOT / "sources.json")
