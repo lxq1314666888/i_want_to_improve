@@ -199,7 +199,7 @@ test('category queries diversify sources and provide bounded pagination', async 
 
 test('source discovery includes 29 sources in seven categories with explicit aggregation provenance', async () => {
   const status = await (await request('/api/status')).json();
-  assert.equal(status.configured_sources.length, 30);
+  assert.equal(status.configured_sources.length, 29);
   assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 7);
   assert.ok(status.configured_sources.some(source => source.name === 'vLLM Releases' && source.type === 'github_releases'));
   const digest = status.configured_sources.find(source => source.type === 'ainews');
