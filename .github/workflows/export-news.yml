@@ -1,0 +1,59 @@
+name: Export AI news digest
+
+on:
+  push:
+    paths:
+      - ".github/workflows/export-news.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch digest from Worker
+        env:
+          BASE: ${{ vars.API_BASE_URL }}
+          READ_TOKEN: ${{ secrets.READ_TOKEN }}
+        run: |
+          mkdir -p ai-news-digest
+          BASE="${BASE%/}"
+          {
+            echo "base_host=$(echo "$BASE" | sed 's|https\?://||' | cut -d/ -f1)"
+            echo "token_present=$([ -n "$READ_TOKEN" ] && echo yes || echo no)"
+          } > ai-news-digest/_debug.txt
+          s_code=$(curl -sS -m 60 -o /tmp/status.json -w '%{http_code}' -H "Authorization: Bearer $READ_TOKEN" "$BASE/api/collection/status" 2>>ai-news-digest/_debug.txt || echo 000)
+          n_code=$(curl -sS -m 60 -o /tmp/news.json -w '%{http_code}' -H "Authorization: Bearer $READ_TOKEN" "$BASE/api/news?hours=72&limit=80" 2>>ai-news-digest/_debug.txt || echo 000)
+          echo "status_http=$s_code news_http=$n_code" >> ai-news-digest/_debug.txt
+          {
+            echo "# AI 资讯摘要（$(date -u +'%Y-%m-%d %H:%M') UTC）"
+            echo
+            echo "## 采集状态"
+            echo '```json'
+            head -c 1500 /tmp/status.json 2>/dev/null || echo '(no data)'
+            echo
+            echo '```'
+            echo
+            echo "## 资讯列表"
+            jq -r '(if type=="array" then . else (.items // .data // []) end) | group_by(.category)[] | "\n### " + (.[0].category // "uncategorized") + " (" + (length|tostring) + ")\n" + (map("- [" + ((.title // "")|gsub("\n";" ")|.[0:180]) + "](" + (.url // "") + ") — " + (.source // "") + " · " + (.published_at // .created_at // "")) | join("\n"))' /tmp/news.json 2>/dev/null || (echo '```json'; head -c 800 /tmp/news.json; echo '```')
+          } > ai-news-digest/latest.md
+
+      - name: Commit digest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f ai-news-digest
+          git commit -m "chore: AI news digest $(date -u +%Y-%m-%dT%H:%MZ)" || echo "nothing to commit"
+          git push || echo "PUSH_FAILED"
+
+      - name: Show head in log
+        if: always()
+        run: |
+          head -c 3000 ai-news-digest/latest.md || echo "(no digest file)"
+          echo
+          echo "----- debug -----"
+          cat ai-news-digest/_debug.txt || true
