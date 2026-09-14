@@ -19,11 +19,13 @@
   {"name": "LangChain Releases", "category": "releases", "type": "github_releases", "url": "https://api.github.com/repos/langchain-ai/langchain/releases"},
   {"name": "llama.cpp Releases", "category": "releases", "type": "github_releases", "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases"},
   {"name": "PyTorch Releases", "category": "releases", "type": "github_releases", "url": "https://api.github.com/repos/pytorch/pytorch/releases"},
+  {"name": "OpenAI Changelog", "category": "releases", "type": "feed", "url": "https://openai.com/changelog/rss.xml"},
   {"name": "TechCrunch", "category": "media", "type": "feed", "url": "https://techcrunch.com/feed/"},
   {"name": "Ars Technica", "category": "media", "type": "feed", "url": "https://feeds.arstechnica.com/arstechnica/index"},
   {"name": "The Verge", "category": "media", "type": "feed", "url": "https://www.theverge.com/rss/index.xml"},
   {"name": "MIT Technology Review", "category": "media", "type": "feed", "url": "https://www.technologyreview.com/feed/"},
   {"name": "IEEE Spectrum AI", "category": "media", "type": "feed", "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"},
+  {"name": "Wired AI", "category": "media", "type": "feed", "url": "https://www.wired.com/feed/tag/ai/latest/rss"},
   {"name": "Hacker News", "category": "community", "type": "hackernews", "url": "https://hacker-news.firebaseio.com/v0/"},
   {"name": "Simon Willison", "category": "community", "type": "feed", "url": "https://simonwillison.net/atom/everything/"},
   {

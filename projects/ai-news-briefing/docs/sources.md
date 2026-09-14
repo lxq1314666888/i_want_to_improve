@@ -1,6 +1,6 @@
 # 信息源清单与扩展规则
 
-默认配置为 `sources.json`，共 **28 个源、7 类**。以下链接是实际配置的采集入口，不是示例地址；每个源的成功、失败、零条结果由运行报告如实记录。
+默认配置为 `sources.json`，共 **30 个源、7 类**。以下链接是实际配置的采集入口，不是示例地址；每个源的成功、失败、零条结果由运行报告如实记录。
 
 ## AI 官方发布与研究机构 · `official_ai`（7）
 
@@ -37,7 +37,7 @@
 
 Thank you to arXiv for use of its open access interoperability.
 
-## 开源项目发布 · `releases`（6）
+## 开源项目发布 · `releases`（7）
 
 | 来源 | 官方项目 | 采集入口 |
 |---|---|---|
@@ -47,12 +47,13 @@ Thank you to arXiv for use of its open access interoperability.
 | LangChain Releases | [LangChain](https://github.com/langchain-ai/langchain) | [Releases API](https://api.github.com/repos/langchain-ai/langchain/releases) |
 | llama.cpp Releases | [llama.cpp](https://github.com/ggml-org/llama.cpp) | [Releases API](https://api.github.com/repos/ggml-org/llama.cpp/releases) |
 | PyTorch Releases | [PyTorch](https://github.com/pytorch/pytorch) | [Releases API](https://api.github.com/repos/pytorch/pytorch/releases) |
+| OpenAI Changelog | [OpenAI](https://openai.com/) | [官方 RSS](https://openai.com/changelog/rss.xml) |
 
 使用 [GitHub 官方 Releases API](https://docs.github.com/en/rest/releases/releases)，不用未受正式支持的 `releases.atom`。每次请求 `per_page=25`，排除草稿和预发布，再按近 30 天保留，因此并不保证覆盖每一个稳定版本。例如仓库近期全部发布 nightly/prerelease 时，该源会返回零条；这是筛选结果，不是假装抓取失败。
 
 GitHub Actions 的只读 `GITHUB_TOKEN` 用于提高配额，由平台自动提供，不需要用户填写新的 PAT。代码只在 URL 严格匹配 `https://api.github.com/repos/<owner>/<repo>/releases` 时才使用该凭据，所有带凭据的重定向都被拒绝。其他来源不收到它。本地没有该环境变量时使用匿名读取，可能遇到 GitHub IP 共享限流。
 
-## 科技媒体 · `media`（5）
+## 科技媒体 · `media`（6）
 
 | 来源 | 入口 | 主要内容 |
 |---|---|---|
@@ -61,6 +62,7 @@ GitHub Actions 的只读 `GITHUB_TOKEN` 用于提高配额，由平台自动提�
 | The Verge | [Feed](https://www.theverge.com/rss/index.xml) | 科技产品、平台与行业 |
 | MIT Technology Review | [RSS](https://www.technologyreview.com/feed/) | 技术影响与研究报道 |
 | IEEE Spectrum AI | [AI 主题 RSS](https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss) | AI、机器人与工程 |
+| Wired AI | [AI 主题 RSS](https://www.wired.com/feed/tag/ai/latest/rss) | AI 深度报道与行业观察 |
 
 只读取公开 Feed，不代表可以绕过文章付费墙、下载全文或再分发。公开运营前须核查各自许可；例如 [TechCrunch 有专门的 RSS 条款](https://techcrunch.com/rss-terms-of-use/)。保持原文链接和来源归属，不把媒体报道伪装成官方发布。
 
