@@ -6,4 +6,7 @@ __pycache__/
 .venv/
 *.pyc
 collection-output*.json
+probe.json
+dist/
+wrangler.local.json
 .workbuddy/

@@ -7,27 +7,31 @@
 ## 方案
 
 ```text
-GitHub Actions（Python，每日北京时间 07:17）
-  ├─ AI 官方发布与研究机构（7 个源）
-  ├─ 工程博客（4 个源）、论文公告（3 个源）
-  ├─ GitHub 项目 Releases（6 个源）
-  ├─ 科技媒体（5 个源）、开发者社区（2 个源）
-  └─ AINews 社媒聚合摘要（1 个源：X / Reddit）
-       ↓ 限流、超时、去重、提取元数据与简短摘录
+config/ ← 你只改这里
+  ├─ sources.json   采集源（增删改、启停、分类、语言）
+  ├─ topics.json    主题分组（id / 中文名 / 选题角度）
+  └─ settings.json  调度、关键词过滤、产物参数、目标平台
+       │ push 触发 ai-news-apply-config.yml：校验 → 测试 → 部署 Worker
+       ↓
+GitHub Actions（Python，每日北京时间 07:17；cron 写在 settings.json）
+  └─ 按 config/sources.json 并发采集，支持 7 种源类型
+       ↓ 限流、超时、去重、提取元数据与简短摘录、关键词过滤
 POST /api/ingest + POST /api/runs（写入密钥）
        ↓
 Cloudflare D1，保留约 30 天数据
        ↑
-Cloudflare Worker
+Cloudflare Worker（配置编译进 Worker，所以改配置必须重新部署）
   ├─ REST：/api/news、/api/status
   └─ MCP：/mcp → get_news、get_collection_status（只读密钥）
        ↑
-WorkBuddy → 中文日报 → 本地文件 / 由用户自行开启的小程序推送
+WorkBuddy → 按 config/ 的参数生成选题简报 → 本地文件
 ```
 
-### 首版范围
+### 当前范围
 
-- 默认接入 **29 个来源、7 个分类**，见[完整来源清单与采集规则](docs/sources.md)。其中 AINews 通过公开聚合 RSS 提供 X/Reddit 摘要，不要求用户拥有社媒账号；Telegram、Discord 未接入。来源可配置，总数上限 30，与运行报告接口一致；不宣称覆盖所有国际社媒。
+- 默认启用 **44 个来源、6 个主题**，其中中文源 12 个（含 4 个热榜）。另有 4 个待验证源以 `enabled: false` 占位，**不占用数量配额**。见[采集规则与扩展方式](docs/sources.md)。
+- 支持 7 种源类型：`feed`、`arxiv`、`github_releases`、`hackernews`、`ainews`，以及抓取型的 `hot_api`（热搜 JSON 接口）与 `html_scrape`（静态网页列表）。
+- AINews 通过公开聚合 RSS 提供 X/Reddit 摘要，不要求用户拥有社媒账号；Telegram、Discord 未接入。来源可配置，总数上限由 `settings.json` 的 `collection.max_sources` 决定（默认 60）；不宣称覆盖所有国际社媒。
 - 每源最多保留 25 条最近 30 天的内容；HN 最多请求 15 条热门故事。四个来源并发采集，单源失败独立记录，输出顺序和跨源去重结果保持确定性。
 - GitHub Releases 使用官方 REST API，只取返回的最近 25 个 Release 中的非草稿、非预发布版本，使用 `published_at` 而不是 commit/更新日期。Actions 自带的只读 `GITHUB_TOKEN` 仅发送到严格校验的 GitHub API 端点，无需新增个人 Token。
 - arXiv 只保留 `new` 类型的论文公告，跳过修改版与跨类再公告，避免把旧论文更新当新论文。这里的发布时间指 arXiv 首次公告时间，不是投稿时间；每类采样最多 25 篇，不是完整论文列表。
@@ -35,6 +39,59 @@ WorkBuddy → 中文日报 → 本地文件 / 由用户自行开启的小程序�
 - 不接登录态、付费墙、私信和受限接口。X/Reddit 当前仅通过聚合发布者的公开摘要间接覆盖，直接平台接口与其他社媒仍需分别核实授权、预算和条款。
 - 不做完整文章镜像，不下载视频或论文全文；摘要所依据的输入为标题和最多 500 字符的来源摘录，可能不足以判断详细结论。
 - 第一版交付 API/MCP，不包含资讯浏览网页。
+
+## 如何定制
+
+只有三步：改配置 → 校验 → push。校验通过后 `ai-news-apply-config.yml` 自动部署 Worker，配置即刻生效，**不需要改代码**。
+
+### 加 / 删一个采集源
+
+编辑 `config/sources.json`，一条长这样：
+
+```json
+{
+  "name": "量子位",
+  "type": "feed",
+  "url": "https://www.qbitai.com/feed",
+  "category": "ai_industry",
+  "lang": "zh",
+  "enabled": true
+}
+```
+
+- `name` 必须唯一，重复会被校验拦下
+- `category` 必须是 `config/topics.json` 里已定义的 id
+- 想临时停用某个源，把 `enabled` 改成 `false`——**不占数量配额**，也不用删掉它，以后想恢复改回来即可
+- 本地先验证两步：
+
+```sh
+python scripts/validate_config.py          # 逐项报错，指出哪个文件哪一项有问题
+python scripts/collect.py --dry-run --output probe.json   # 实测这个源能不能真采到
+```
+
+### 换选题方向 / 加一个主题
+
+编辑 `config/topics.json`，加一个新 id、中文名和它的 `angle`（这个主题怎么判断值不值得做）。再回 `sources.json` 把相关源的 `category` 指过去。
+
+### 改过滤规则
+
+`config/settings.json` 的 `filter.exclude_keywords` 是合规红线，命中的条目在采集阶段就丢掉，不会入库。默认已覆盖美股港股、币圈合约杠杆、外汇、赌博、色情、诈骗刷单等。`include_keywords` 留空表示不额外过滤；填了就只保留命中的。
+
+### 改产物形态
+
+`config/settings.json` 的 `digest` 段决定每主题选几条、主题顺序、每个选题至少要有几个数字；`targets` 段决定产出哪几个平台的稿子以及各自字数与语气。生成产物的提示词见 [docs/workbuddy.md](docs/workbuddy.md)——**提示词里不含选题参数**，改配置就等于改产物。
+
+### 改采集时间
+
+`config/settings.json` 的 `collection.schedule_cron`（UTC，默认 `17 23 * * *` 即北京 07:17）。注意 GitHub 只认 workflow 文件里的 cron 表达式，所以改完要**同时**改 `.github/workflows/ai-news-collect.yml`——配置里的值用于校验与记录，不会自动注入 workflow。
+
+### 配置改动如何生效
+
+| 改了什么 | 生效方式 |
+|---|---|
+| `config/**`、`src/**`、`scripts/collect.py` | push 后自动触发 `ai-news-apply-config.yml`：校验 → 构建 → 部署 |
+| 首次部署或重建资源 | 手动触发 `ai-news-deploy.yml`，填 `resource_name` 并勾选 `allow_update` |
+| 只改了采集逻辑、不碰 Worker | 仍会走部署流程，多花一次部署，但保证两侧一致 |
 
 ## 数据准确性与维护
 
@@ -81,7 +138,7 @@ WorkBuddy → 中文日报 → 本地文件 / 由用户自行开启的小程序�
 |---|---|
 | `hours` | 1–168，默认 24 |
 | `limit` | 每页 1–50，默认 20，不一次性把所有内容塞给模型 |
-| `category` | `official_ai`、`engineering`、`research`、`releases`、`media`、`community`、`social` |
+| `category` | `ai_industry`、`ai_tools`、`indie`、`creator`、`ai_tech`、`ai_releases`，取值由 `config/topics.json` 定义 |
 | `source` | 来源名称精确匹配，可从 `configured_sources` 获取 |
 | `per_source_limit` | 未指定 source 时默认每源最多 3 条，可设 1–10，防止高频媒体占满结果；单源查询忽略此参数 |
 | `offset` | 0–1000，默认 0；按返回的 `next_offset` 翻页并保持其他参数不变 |
