@@ -591,30 +591,30 @@
     "category": "ai_tools",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20agent",
     "canonical_host": "x.com",
-    "note": "关键词「AI agent」的实时推文流，比盯固定账号更容易撞到突发话题。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+    "note": "选词 AI agent 偏技术向，产出的多是工程讨论。已由「X 搜索·AI 副业」等替代"
   },
   {
     "name": "X 搜索·AI 创业",
     "category": "indie",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20startup",
     "canonical_host": "x.com",
-    "note": "关键词「AI startup」的实时推文流，比盯固定账号更容易撞到突发话题。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+    "note": "选词 AI startup 是创业/投资视角，不是'普通人能做什么'"
   },
   {
     "name": "X 搜索·大模型",
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=LLM",
     "canonical_host": "x.com",
-    "note": "关键词「LLM」的实时推文流，比盯固定账号更容易撞到突发话题。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+    "note": "选词 LLM 纯技术向，产出论文与模型细节。普通人不看"
   },
   {
     "name": "GitHub Trending",
@@ -723,5 +723,55 @@
     "enabled": false,
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
     "note": "HTTP 404 —— 同上"
+  },
+  {
+    "name": "X 搜索·AI 副业",
+    "category": "ai_sidehustle",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20side%20hustle",
+    "canonical_host": "x.com",
+    "note": "实测 14/14 命中副业实操。全是'我靠什么赚到钱'这类可上手内容"
+  },
+  {
+    "name": "X 搜索·无脸做号",
+    "category": "creator",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20faceless%20channel",
+    "canonical_host": "x.com",
+    "note": "实测 16/17 命中。不露脸做号是普通人做自媒体的主流玩法，产出多为真实账号案例"
+  },
+  {
+    "name": "X 搜索·AI 代运营",
+    "category": "ai_sidehustle",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20automation%20agency",
+    "canonical_host": "x.com",
+    "note": "实测 12/20 命中。给中小企业做 AI 自动化的接单模式，含获客与报价讨论"
+  },
+  {
+    "name": "X 搜索·AI 做内容",
+    "category": "creator",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20content%20creator",
+    "canonical_host": "x.com",
+    "note": "实测 12/19 命中。自媒体运营向：选题、涨粉、变现路径"
+  },
+  {
+    "name": "X 搜索·AI变现中文",
+    "category": "ai_sidehustle",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20%E5%8F%98%E7%8E%B0",
+    "canonical_host": "x.com",
+    "note": "中文内容，实测有 YouTube 运营系统、选题验证器等可用干货（注意：'AI 副业'这个词实测 0/15、全是灰产，已弃用）"
   }
 ]
