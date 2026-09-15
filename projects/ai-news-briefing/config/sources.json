@@ -350,7 +350,7 @@
     "category": "ai_tools",
     "type": "feed",
     "lang": "zh",
-    "enabled": true,
+    "enabled": false,
     "url": "https://juejin.cn/rss",
     "include_keywords": [
       "AI",
@@ -382,7 +382,8 @@
       "Kimi",
       "生成式",
       "提示词"
-    ]
+    ],
+    "note": "返回内容不是合法 XML，疑似已改 HTML 或启用反爬"
   },
   {
     "name": "Hacker News Show HN",
@@ -638,9 +639,9 @@
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://huggingface.co/papers/feed",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 401 —— HF 该端点已要求凭据。改用已配置的 Hugging Face 官方博客源"
   },
   {
     "name": "Reddit r/LocalLLaMA",
@@ -656,36 +657,36 @@
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.reddit.com/r/MachineLearning/.rss",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 429 —— Reddit 对 Actions 出口 IP 限流，可逐个轮换启用"
   },
   {
     "name": "Reddit r/OpenAI",
     "category": "ai_industry",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.reddit.com/r/OpenAI/.rss",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 429 —— 同上"
   },
   {
     "name": "Reddit r/artificial",
     "category": "ai_industry",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.reddit.com/r/artificial/.rss",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 429 —— 同上"
   },
   {
     "name": "Reddit r/SideProject",
     "category": "indie",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.reddit.com/r/SideProject/.rss",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 429 —— 同上"
   },
   {
     "name": "Interconnects",
@@ -701,26 +702,26 @@
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://importai.substack.com/feed",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 403 —— Substack 拒绝 Actions 出口 IP"
   },
   {
     "name": "Lex Fridman 播客",
     "category": "creator",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 404 —— channel_id 有误，且本机 youtube.com 不可达无法核对，待确认后启用"
   },
   {
     "name": "Two Minute Papers",
     "category": "creator",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "HTTP 404 —— 同上"
   }
 ]
