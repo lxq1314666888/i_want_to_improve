@@ -12,8 +12,9 @@
     "category": "ai_industry",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
-    "url": "https://huggingface.co/blog/feed.xml"
+    "enabled": false,
+    "url": "https://huggingface.co/blog/feed.xml",
+    "note": "模型与开源实践，偏技术"
   },
   {
     "name": "Google DeepMind",
@@ -198,56 +199,63 @@
     "category": "ai_tech",
     "type": "arxiv",
     "lang": "en",
-    "enabled": true,
-    "url": "https://rss.arxiv.org/rss/cs.AI"
+    "enabled": false,
+    "url": "https://rss.arxiv.org/rss/cs.AI",
+    "note": "论文，与「普通人怎么用」无关"
   },
   {
     "name": "arXiv cs.LG",
     "category": "ai_tech",
     "type": "arxiv",
     "lang": "en",
-    "enabled": true,
-    "url": "https://rss.arxiv.org/rss/cs.LG"
+    "enabled": false,
+    "url": "https://rss.arxiv.org/rss/cs.LG",
+    "note": "论文，与「普通人怎么用」无关"
   },
   {
     "name": "arXiv cs.CL",
     "category": "ai_tech",
     "type": "arxiv",
     "lang": "en",
-    "enabled": true,
-    "url": "https://rss.arxiv.org/rss/cs.CL"
+    "enabled": false,
+    "url": "https://rss.arxiv.org/rss/cs.CL",
+    "note": "论文，与「普通人怎么用」无关"
   },
   {
     "name": "Google Research",
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
-    "url": "https://research.google/blog/rss"
+    "enabled": false,
+    "url": "https://research.google/blog/rss",
+    "note": "研究向，普通人不看"
   },
   {
     "name": "NVIDIA Developer Blog",
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
-    "url": "https://developer.nvidia.com/blog/feed/"
+    "enabled": false,
+    "url": "https://developer.nvidia.com/blog/feed/",
+    "note": "工程向，普通人不看"
   },
   {
     "name": "AWS Machine Learning",
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
-    "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+    "enabled": false,
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "note": "工程向，普通人不看"
   },
   {
     "name": "Cloudflare Blog",
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
-    "url": "https://blog.cloudflare.com/rss/"
+    "enabled": false,
+    "url": "https://blog.cloudflare.com/rss/",
+    "note": "工程向，普通人不看"
   },
   {
     "name": "GitHub Blog",
@@ -262,72 +270,81 @@
     "category": "ai_tech",
     "type": "feed",
     "lang": "zh",
-    "enabled": true,
-    "url": "https://www.infoq.cn/feed"
+    "enabled": false,
+    "url": "https://www.infoq.cn/feed",
+    "note": "架构与工程，普通人不看"
   },
   {
     "name": "vLLM Releases",
     "category": "ai_releases",
     "type": "github_releases",
     "lang": "en",
-    "enabled": true,
-    "url": "https://api.github.com/repos/vllm-project/vllm/releases"
+    "enabled": false,
+    "url": "https://api.github.com/repos/vllm-project/vllm/releases",
+    "note": "开发者版本号，普通人不看"
   },
   {
     "name": "Ollama Releases",
     "category": "ai_releases",
     "type": "github_releases",
     "lang": "en",
-    "enabled": true,
-    "url": "https://api.github.com/repos/ollama/ollama/releases"
+    "enabled": false,
+    "url": "https://api.github.com/repos/ollama/ollama/releases",
+    "note": "开发者版本号，普通人不看"
   },
   {
     "name": "Transformers Releases",
     "category": "ai_releases",
     "type": "github_releases",
     "lang": "en",
-    "enabled": true,
-    "url": "https://api.github.com/repos/huggingface/transformers/releases"
+    "enabled": false,
+    "url": "https://api.github.com/repos/huggingface/transformers/releases",
+    "note": "开发者版本号，普通人不看"
   },
   {
     "name": "LangChain Releases",
     "category": "ai_releases",
     "type": "github_releases",
     "lang": "en",
-    "enabled": true,
-    "url": "https://api.github.com/repos/langchain-ai/langchain/releases"
+    "enabled": false,
+    "url": "https://api.github.com/repos/langchain-ai/langchain/releases",
+    "note": "开发者版本号，普通人不看"
   },
   {
     "name": "llama.cpp Releases",
     "category": "ai_releases",
     "type": "github_releases",
     "lang": "en",
-    "enabled": true,
-    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases"
+    "enabled": false,
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases",
+    "note": "开发者版本号，普通人不看"
   },
   {
     "name": "PyTorch Releases",
     "category": "ai_releases",
     "type": "github_releases",
     "lang": "en",
-    "enabled": true,
-    "url": "https://api.github.com/repos/pytorch/pytorch/releases"
+    "enabled": false,
+    "url": "https://api.github.com/repos/pytorch/pytorch/releases",
+    "note": "开发者版本号，普通人不看"
   },
   {
     "name": "Hacker News",
     "category": "ai_tools",
     "type": "hackernews",
     "lang": "en",
-    "enabled": true,
-    "url": "https://hacker-news.firebaseio.com/v0/"
+    "enabled": false,
+    "url": "https://hacker-news.firebaseio.com/v0/",
+    "note": "技术社区首页噪音大（其 Show HN 另算）"
   },
   {
     "name": "Simon Willison",
     "category": "ai_tools",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
-    "url": "https://simonwillison.net/atom/everything/"
+    "enabled": false,
+    "url": "https://simonwillison.net/atom/everything/",
+    "note": "技术博客，普通人不看"
   },
   {
     "name": "Product Hunt",
@@ -387,7 +404,7 @@
   },
   {
     "name": "Hacker News Show HN",
-    "category": "indie",
+    "category": "ai_tools",
     "type": "feed",
     "lang": "en",
     "enabled": true,
@@ -400,7 +417,7 @@
     "lang": "en",
     "enabled": false,
     "url": "https://www.indiehackers.com/feed.xml",
-    "note": "本机大陆网络超时，未验证；GitHub Actions 海外网络可试。确认可采后改 enabled=true"
+    "note": "开发者项目"
   },
   {
     "name": "V2EX",
@@ -409,7 +426,7 @@
     "lang": "zh",
     "enabled": false,
     "url": "https://www.v2ex.com/index.xml",
-    "note": "本机大陆网络超时，未验证；Actions 海外网络可试"
+    "note": "开发者社区"
   },
   {
     "name": "The Rundown AI",
@@ -578,7 +595,7 @@
   },
   {
     "name": "X @swyx",
-    "category": "indie",
+    "category": "ai_tools",
     "type": "feed",
     "lang": "en",
     "enabled": true,
@@ -648,9 +665,9 @@
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
-    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+    "note": "本地模型部署，技术向"
   },
   {
     "name": "Reddit r/MachineLearning",
@@ -693,9 +710,9 @@
     "category": "ai_tech",
     "type": "feed",
     "lang": "en",
-    "enabled": true,
+    "enabled": false,
     "url": "https://www.interconnects.ai/feed",
-    "note": "Nathan Lambert 的模型与开源分析，本机实测可用"
+    "note": "模型技术分析，普通人不看"
   },
   {
     "name": "Import AI",
@@ -773,5 +790,52 @@
     "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20%E5%8F%98%E7%8E%B0",
     "canonical_host": "x.com",
     "note": "实测带进灰产（套现usdt）与币圈内容，搞钱命中率仅 4/20。中文搞钱语境的噪音远高于英文，停用；需要中文副业内容时改用具体平台玩法类关键词"
+  },
+  {
+    "name": "极客公园",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.geekpark.net/rss",
+    "note": "国内科技媒体，本机实测 30 条可用。覆盖新工具与新玩法"
+  },
+  {
+    "name": "国务院最新政策",
+    "category": "policy",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://rsshub.app/gov/zhengce/zuixin",
+    "note": "RSSHub 公共实例路由。本机被墙不通，GitHub Actions 海外环境待验证；若长期不稳，可自建 RSSHub 或改用 html_scrape"
+  },
+  {
+    "name": "工信部文件公示",
+    "category": "policy",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://rsshub.app/gov/miit/wjgs",
+    "note": "同上，待 Actions 验证"
+  },
+  {
+    "name": "X 搜索·AI 做小生意",
+    "category": "ai_sidehustle",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20for%20small%20business",
+    "note": "直接搜「AI 用于小生意」，最贴近「新变量×老场景」的组合；英文产出质量高于中文",
+    "canonical_host": "x.com"
+  },
+  {
+    "name": "X 搜索·平台算法变化",
+    "category": "platform",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=platform%20algorithm%20change",
+    "note": "平台规则一变就有一批人先吃到红利，这类讨论集中在英文圈",
+    "canonical_host": "x.com"
   }
 ]
