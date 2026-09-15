@@ -837,5 +837,41 @@
     "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=creator%20economy%20policy",
     "note": "原词 platform algorithm change 混入大量编程内容（实测出现 Big-O 复杂度这类），换成 creator economy policy，聚焦创作者侧的平台政策与规则变化",
     "canonical_host": "x.com"
+  },
+  {
+    "name": "IT之家",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.ithome.com/rss/",
+    "note": "本机实测 60 条 / 2.35s。数码与科技资讯量最大，覆盖面广"
+  },
+  {
+    "name": "界面新闻",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://a.jiemian.com/index.php?m=article&a=rss",
+    "note": "本机实测 30 条 / 0.34s。商业与财经视角，含企业动态"
+  },
+  {
+    "name": "新浪科技",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "http://rss.sina.com.cn/tech/rollnews.xml",
+    "note": "本机实测 15 条 / 0.3s。综合科技滚动新闻"
+  },
+  {
+    "name": "Solidot",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.solidot.org/index.rss",
+    "note": "本机实测 20 条 / 1.07s。奇客资讯，偏技术与社会交叉话题"
   }
 ]
