@@ -11,4 +11,6 @@ dist/
 wrangler.local.json
 backup/
 ops/samples/
+data/
+digests/
 .workbuddy/
