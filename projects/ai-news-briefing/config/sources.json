@@ -769,9 +769,9 @@
     "category": "ai_sidehustle",
     "type": "feed",
     "lang": "zh",
-    "enabled": true,
+    "enabled": false,
     "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20%E5%8F%98%E7%8E%B0",
     "canonical_host": "x.com",
-    "note": "中文内容，实测有 YouTube 运营系统、选题验证器等可用干货（注意：'AI 副业'这个词实测 0/15、全是灰产，已弃用）"
+    "note": "实测带进灰产（套现usdt）与币圈内容，搞钱命中率仅 4/20。中文搞钱语境的噪音远高于英文，停用；需要中文副业内容时改用具体平台玩法类关键词"
   }
 ]
