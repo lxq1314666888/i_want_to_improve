@@ -805,18 +805,18 @@
     "category": "policy",
     "type": "feed",
     "lang": "zh",
-    "enabled": true,
+    "enabled": false,
     "url": "https://rsshub.app/gov/zhengce/zuixin",
-    "note": "RSSHub 公共实例路由。本机被墙不通，GitHub Actions 海外环境待验证；若长期不稳，可自建 RSSHub 或改用 html_scrape"
+    "note": "RSSHub 公共实例返回 HTTP 403（本机是 40s 超时，Actions 侧能连上但被拒）。政策类目前没有稳定 RSS 通道：短期依赖 ai_industry 里中文媒体的政策转述，长期可自建 RSSHub，或用 html_scrape 抓政府网静态栏目"
   },
   {
     "name": "工信部文件公示",
     "category": "policy",
     "type": "feed",
     "lang": "zh",
-    "enabled": true,
+    "enabled": false,
     "url": "https://rsshub.app/gov/miit/wjgs",
-    "note": "同上，待 Actions 验证"
+    "note": "RSSHub 公共实例返回 HTTP 403（本机是 40s 超时，Actions 侧能连上但被拒）。政策类目前没有稳定 RSS 通道：短期依赖 ai_industry 里中文媒体的政策转述，长期可自建 RSSHub，或用 html_scrape 抓政府网静态栏目"
   },
   {
     "name": "X 搜索·AI 做小生意",
@@ -829,13 +829,13 @@
     "canonical_host": "x.com"
   },
   {
-    "name": "X 搜索·平台算法变化",
+    "name": "X 搜索·创作者经济",
     "category": "platform",
     "type": "feed",
     "lang": "en",
     "enabled": true,
-    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=platform%20algorithm%20change",
-    "note": "平台规则一变就有一批人先吃到红利，这类讨论集中在英文圈",
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=creator%20economy%20policy",
+    "note": "原词 platform algorithm change 混入大量编程内容（实测出现 Big-O 复杂度这类），换成 creator economy policy，聚焦创作者侧的平台政策与规则变化",
     "canonical_host": "x.com"
   }
 ]
