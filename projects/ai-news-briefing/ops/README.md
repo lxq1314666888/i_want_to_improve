@@ -19,13 +19,16 @@ env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY NO_PROXY="*" \
   "C:/Users/11600493/.workbuddy/binaries/node/versions/22.22.2-3/node.exe" ops/gh-check.cjs
 ```
 
-## 三个脚本
+## 四个脚本
 
 | 脚本 | 用途 |
 |---|---|
 | `gh-check.cjs` | **只读**检查登录态、仓库可访问性、是否有 Add file 权限。改动前先跑它确认通道可用 |
-| `gh-push.cjs` | 按仓库目录分组批量上传。`--only=<子串>` 只处理目录名匹配的组；`--dry` 只打开页面报告 DOM，不提交 |
+| `gh-push.cjs` | 按仓库目录分组批量上传。`--only=<组名>` 精确选取（组名见脚本内 `GROUPS`）；`--dry` 只打开页面报告 DOM，不提交 |
+| `gh-delete.cjs <仓库相对路径>` | 删除文件。**删除前自动归档到 `backup/`**，删除后匿名回读确认 404 才算成功 |
 | `gh-run.cjs <workflow文件名>` | 触发 `workflow_dispatch`，如 `gh-run.cjs ai-news-collect.yml` |
+
+> 新增脚本后记得同步 `gh-push.cjs` 里的 `GROUPS` 数组，否则它不会被推送上去。
 
 用法示例：
 
@@ -49,6 +52,15 @@ node ops/gh-run.cjs ai-news-apply-config.yml
 
 - **按文件名逐个等待渲染完成**（`getByText(...).waitFor()`），而不是固定 sleep；
 - **提交后匿名回读仓库文件比对字节数**（`verifyUploaded()`），不再以 URL 变化为判据。
+
+## 删除文件是两步操作
+
+`gh-delete.cjs` 走 GitHub 的 `/delete/<branch>/<path>` 页面。注意该页的按钮文本是
+**`Commit changes...`（带省略号）**，点它只是**展开**提交面板；真正的提交按钮在展开后才出现，
+文本是 `Commit changes`（**不带**省略号）。用一条 `has-text` 一次匹配会命中不可见元素并超时，
+所以脚本先展开、再用精确文本匹配提交。
+
+删除前脚本一定先把文件内容归档到 `backup/`，归档失败就中止删除——**不留不可恢复的删除**。
 
 ## 变更流程
 

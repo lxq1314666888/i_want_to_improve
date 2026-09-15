@@ -28,7 +28,7 @@ const GROUPS = [
   { name: 'tests', dir: `${PREFIX}/tests`, files: ['tests/api.test.mjs', 'tests/test_collect.py'] },
   { name: 'migrations', dir: `${PREFIX}/migrations`, files: ['migrations/0002_filtered_out.sql'] },
   { name: 'docs', dir: `${PREFIX}/docs`, files: ['docs/sources.md', 'docs/workbuddy.md', 'docs/定制速查卡.html'] },
-  { name: 'ops', dir: `${PREFIX}/ops`, files: ['ops/gh-check.cjs', 'ops/gh-push.cjs', 'ops/gh-run.cjs', 'ops/README.md'] },
+  { name: 'ops', dir: `${PREFIX}/ops`, files: ['ops/gh-check.cjs', 'ops/gh-push.cjs', 'ops/gh-delete.cjs', 'ops/gh-run.cjs', 'ops/README.md'] },
   { name: 'root', dir: PREFIX, files: ['README.md', '.gitignore'] },
   { name: 'workflows', dir: '.github/workflows', files: ['.github/workflows/ai-news-apply-config.yml'] },
 ];
