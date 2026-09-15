@@ -176,6 +176,20 @@ python scripts/collect.py --dry-run --output collection-output.json
 
 手动调试服务时先运行 `npm run db:local`，通过本地 `.dev.vars` 配置独立的 `READ_TOKEN`、`INGEST_TOKEN`，再运行 `npm run dev`。本地文件已加入忽略规则。不要使用生产密钥做测试。
 
+## 运维脚本与备份
+
+本机 `git` 协议访问 `github.com` 被网络层拦截，因此推送、触发、核验走 Playwright 驱动**已登录的 Edge**：
+
+| 路径 | 内容 |
+|---|---|
+| `ops/gh-check.cjs` | 只读检查浏览器登录态与仓库写权限，改动前先跑 |
+| `ops/gh-push.cjs` | 按仓库目录分组批量上传改动。**判成功以回读仓库比对字节数为准**，不看 URL 变化 |
+| `ops/gh-run.cjs` | 触发 `workflow_dispatch` |
+| `ops/README.md` | 用法、前置条件，以及「假成功」这个坑的完整记录 |
+| `backup/` | 改造前的线上 Worker 源码，回滚核对用 |
+
+`backup/` 与 `ops/samples/` 已 gitignore，不会推到仓库。
+
 ## 费用、连通性与限制
 
 - [Workers 免费版](https://developers.cloudflare.com/workers/platform/limits/)当前每天 10 万请求，每次 **10ms CPU**；网络等待不算 CPU。免费额度不等于可运行任意复杂任务。

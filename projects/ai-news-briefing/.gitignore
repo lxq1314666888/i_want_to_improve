@@ -9,4 +9,6 @@ collection-output*.json
 probe.json
 dist/
 wrangler.local.json
+backup/
+ops/samples/
 .workbuddy/
