@@ -24,13 +24,17 @@ from defusedxml import ElementTree
 
 MAX_RESPONSE_BYTES = 3 * 1024 * 1024
 MAX_ITEMS = 25
-MAX_SOURCES = 30
+MAX_SOURCES = 60
 COLLECTION_WORKERS = 4
 HN_ITEMS = 15
 TIMEOUT = 20
 INTERVAL = 0.3
 USER_AGENT = "PersonalAINewsBriefing/1.0 (public RSS/API metadata collector)"
-DEFAULT_SOURCES = Path(__file__).resolve().parent.parent / "sources.json"
+CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
+DEFAULT_SOURCES = CONFIG_DIR / "sources.json"
+DEFAULT_TOPICS = CONFIG_DIR / "topics.json"
+DEFAULT_SETTINGS = CONFIG_DIR / "settings.json"
+SOURCE_TYPES = ("feed", "arxiv", "github_releases", "hackernews", "ainews", "hot_api", "html_scrape")
 UTC = timezone.utc
 
 
@@ -360,6 +364,70 @@ def valid_release_url(url):
         r"https://api\.github\.com/repos/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/releases", url) is not None
 
 
+def valid_hot_api_url(url):
+    return isinstance(url, str) and re.fullmatch(r"https://[A-Za-z0-9.\-]+(:\d+)?(/[^\s]*)?", url) is not None
+
+
+def collect_hot_api(config, client, now):
+    """热搜类 JSON 接口：约定 {"data": [{"title": ..., "link"?: ..., "hot_value"?: ...}]}。
+
+    这类条目没有独立发布时间与正文摘要，因此 published_at 记为 null（不伪造时间），
+    热度数值放进 excerpt 供排序参考。条目缺少 link 时可用 link_template 的 {title} 占位符构造。
+    """
+    payload = client.get_json(config["url"])
+    if not isinstance(payload, dict):
+        raise CollectorError("invalid hot list response")
+    rows = payload.get("data")
+    if not isinstance(rows, list):
+        rows = payload.get("result") if isinstance(payload.get("result"), list) else None
+    if not isinstance(rows, list):
+        raise CollectorError("invalid hot list payload")
+    template = config.get("link_template") or ""
+    raw = []
+    for entry in rows[:MAX_ITEMS]:
+        if not isinstance(entry, dict):
+            continue
+        title = entry.get("title") or entry.get("name") or entry.get("word")
+        link = entry.get("link") or entry.get("url") or entry.get("mobileUrl")
+        if not link and template and title:
+            link = template.replace("{title}", urllib.parse.quote(str(title)))
+        hot = entry.get("hot_value") or entry.get("hot_value_desc") or entry.get("heat")
+        raw.append({"url": link, "title": title,
+                    "published_at": entry.get("published_at") or entry.get("event_time_at"),
+                    "excerpt": ("热度 " + str(hot)) if hot else ""})
+    return raw
+
+
+LINK_PATTERN = re.compile(r'<a\s[^>]*href\s*=\s*["\']([^"\']+)["\'][^>]*>(.*?)</a>', re.I | re.S)
+
+
+def collect_html_scrape(config, client, now):
+    """静态 HTML 列表页：抽取链接与锚文本。
+
+    只适用于服务端渲染、链接直接出现在 HTML 里的页面。依赖 JavaScript 渲染的站点
+    （36氪、机器之心等）拿到的只是空壳，本适配器无效——这类站点需要单独适配其数据接口。
+    """
+    html = client.request(config["url"]).decode("utf-8", "replace")
+    base = config.get("base_url") or config["url"]
+    minimum = config.get("min_title_length") or 6
+    host = urllib.parse.urlsplit(base).hostname or ""
+    raw = []
+    for href, inner in LINK_PATTERN.findall(html):
+        title = clean_text(inner, 300)
+        if len(title) < minimum:
+            continue
+        url = urllib.parse.urljoin(base, href)
+        parsed = urllib.parse.urlsplit(url)
+        if parsed.scheme not in ("http", "https") or not parsed.hostname:
+            continue
+        # 站点内部链接优先，外链保留但排在后面由上游统一截断
+        raw.append((parsed.hostname != host, {"url": url, "title": title,
+                                              "published_at": None, "excerpt": ""}))
+        if len(raw) >= MAX_ITEMS * 3:
+            break
+    return [row for _, row in sorted(raw, key=lambda pair: pair[0])[:MAX_ITEMS * 2]]
+
+
 def collect_source(config, client, now):
     if config["type"] in ("feed", "arxiv"):
         raw = parse_feed(client.request(config["url"]))
@@ -403,6 +471,10 @@ def collect_source(config, client, now):
             raw.append({"url": item.get("url") or "https://news.ycombinator.com/item?id=" + str(item_id),
                         "title": item.get("title"), "published_at": item.get("time"),
                         "excerpt": item.get("text", "")})
+    elif config["type"] == "hot_api":
+        raw = collect_hot_api(config, client, now)
+    elif config["type"] == "html_scrape":
+        raw = collect_html_scrape(config, client, now)
     else:
         raise CollectorError("unsupported source type")
     unique = {}
@@ -413,7 +485,37 @@ def collect_source(config, client, now):
     return sorted(unique.values(), key=lambda item: item["published_at"] or "", reverse=True)[:MAX_ITEMS]
 
 
-def collect(sources, client, now=None, workers=1):
+def apply_filters(items, filters):
+    """按关键词与标题长度过滤。过滤只影响入库内容，不改写来源元数据。"""
+    if not filters:
+        return items
+    include, exclude, minimum = filters
+    if not include and not exclude and not minimum:
+        return items
+    kept = []
+    for item in items:
+        title = item.get("title") or ""
+        if minimum and len(title) < minimum:
+            continue
+        if exclude and any(word in title for word in exclude):
+            continue
+        if include and not any(word in title for word in include):
+            continue
+        kept.append(item)
+    return kept
+
+
+def load_limits(path=DEFAULT_SETTINGS):
+    """从 settings.json 读取采集上限。未配置的项不返回，由调用方用常量兜底。"""
+    document = load_config(path)
+    section = document.get("collection") if isinstance(document, dict) else None
+    if not isinstance(section, dict):
+        return {}
+    return {key: section[key] for key in ("max_sources", "max_items_per_source")
+            if isinstance(section.get(key), int) and section[key] > 0}
+
+
+def collect(sources, client, now=None, workers=1, filters=None):
     now = now or utc_now()
     report = {"run_id": str(uuid.uuid4()), "started_at": iso_date(now), "sources": []}
 
@@ -422,6 +524,12 @@ def collect(sources, client, now=None, workers=1):
         try:
             source_client = client if workers == 1 else HTTPClient()
             rows = collect_source(source, source_client, now)
+            # 源级关键词收窄。热搜类来源没有主题边界，不收窄就会把社会娱乐内容灌进选题池
+            keywords = source.get("include_keywords")
+            if isinstance(keywords, list) and keywords:
+                rows = [row for row in rows
+                        if any(word in (row.get("title") or "") for word in keywords
+                               if isinstance(word, str) and word)]
             return rows, {"source": name, "status": "ok", "count": len(rows)}
         except Exception as exc:
             error = str(exc) if isinstance(exc, CollectorError) else "source processing failed"
@@ -432,13 +540,16 @@ def collect(sources, client, now=None, workers=1):
     else:
         with ThreadPoolExecutor(max_workers=min(max(1, workers), COLLECTION_WORKERS)) as pool:
             results = list(pool.map(fetch_source, sources))
-    items = {}
+    merged = {}
     for rows, source_report in results:
         report["sources"].append(source_report)
         for item in rows:
-            items.setdefault(item["id"], item)
+            merged.setdefault(item["id"], item)
+    collected = list(merged.values())
+    items = apply_filters(collected, filters)
+    report["filtered_out"] = len(collected) - len(items)
     report["finished_at"] = iso_date(utc_now())
-    return list(items.values()), report
+    return items, report
 
 
 def validate_api_base(base):
@@ -462,25 +573,73 @@ def upload(client, base, token, items, report):
     client.request(base + "/api/runs", report, token)
 
 
-def load_sources(path):
+def load_config(path):
+    """读取可选配置文件。缺失或损坏时返回 None，由调用方回退到默认行为。"""
     try:
         with open(path, "rb") as handle:
-            data = handle.read(64 * 1024 + 1)
-        if len(data) > 64 * 1024:
+            data = handle.read(256 * 1024 + 1)
+        if len(data) > 256 * 1024:
+            return None
+        return json.loads(data)
+    except (OSError, ValueError, TypeError):
+        return None
+
+
+def load_topic_ids(path=DEFAULT_TOPICS):
+    """返回合法 category id 集合。配置不可读时返回 None，表示不校验分类。"""
+    document = load_config(path)
+    topics = document.get("topics") if isinstance(document, dict) else None
+    if not isinstance(topics, list):
+        return None
+    ids = {topic["id"] for topic in topics
+           if isinstance(topic, dict) and isinstance(topic.get("id"), str) and topic["id"]}
+    return ids or None
+
+
+def load_filters(path=DEFAULT_SETTINGS):
+    """返回 (include_keywords, exclude_keywords, min_title_length)。
+
+    exclude 命中标题即丢弃，用于合规过滤与降噪；include 非空时只保留命中的条目。
+    """
+    document = load_config(path)
+    rules = document.get("filter") if isinstance(document, dict) else None
+    if not isinstance(rules, dict):
+        return (), (), 0
+
+    def words(key):
+        value = rules.get(key)
+        return tuple(word for word in value if isinstance(word, str) and word) if isinstance(value, list) else ()
+
+    minimum = rules.get("min_title_length")
+    return (words("include_keywords"), words("exclude_keywords"),
+            minimum if isinstance(minimum, int) and minimum > 0 else 0)
+
+
+def load_sources(path, allowed_topics=None, max_sources=MAX_SOURCES):
+    try:
+        with open(path, "rb") as handle:
+            data = handle.read(256 * 1024 + 1)
+        if len(data) > 256 * 1024:
             raise ValueError()
         sources = json.loads(data)
-        if not isinstance(sources, list) or not 1 <= len(sources) <= MAX_SOURCES:
+        if not isinstance(sources, list):
+            raise ValueError()
+        # 先剔除显式停用的源，再校验数量，避免停用项占用配额
+        sources = [source for source in sources
+                   if not (isinstance(source, dict) and source.get("enabled") is False)]
+        if not 1 <= len(sources) <= max_sources:
             raise ValueError()
         names = set()
         for source in sources:
             if not isinstance(source, dict) or not isinstance(source.get("name"), str):
                 raise ValueError()
             name = clean_text(source["name"], 64)
-            if not name or name in names or source.get("type") not in ("feed", "arxiv", "github_releases", "hackernews", "ainews") or not canonical_url(source.get("url")):
+            if not name or name in names or source.get("type") not in SOURCE_TYPES or not canonical_url(source.get("url")):
                 raise ValueError()
             if source["type"] == "github_releases" and not valid_release_url(source["url"]):
                 raise ValueError()
-            if source.get("category") not in (None, "official_ai", "engineering", "research", "releases", "media", "community", "social"):
+            category = source.get("category")
+            if category is not None and allowed_topics is not None and category not in allowed_topics:
                 raise ValueError()
             names.add(name)
         return sources
@@ -497,14 +656,17 @@ def main(argv=None):
     if args.output and not args.dry_run:
         parser.error("--output requires --dry-run")
     try:
-        sources = load_sources(args.sources)
+        limits = load_limits()
+        sources = load_sources(args.sources, allowed_topics=load_topic_ids(),
+                               max_sources=limits.get("max_sources", MAX_SOURCES))
+        filters = load_filters()
         if not args.dry_run:
             base = validate_api_base(os.environ.get("API_BASE_URL", ""))
             token = os.environ.get("INGEST_TOKEN", "")
             if not token or any(c.isspace() or ord(c) < 32 or ord(c) == 127 for c in token):
                 raise CollectorError("missing or invalid INGEST_TOKEN")
         client = HTTPClient()
-        items, report = collect(sources, client, workers=COLLECTION_WORKERS)
+        items, report = collect(sources, client, workers=COLLECTION_WORKERS, filters=filters)
         if args.dry_run:
             document = json.dumps({"items": items, "run": report}, ensure_ascii=False, indent=2) + "\n"
             if args.output:
