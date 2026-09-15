@@ -23,11 +23,11 @@ const DRY = process.argv.includes('--dry');
 // （原先用 dir 子串匹配，--only=ai-news-briefing 会同时命中所有子目录）
 const GROUPS = [
   { name: 'config', dir: `${PREFIX}/config`, files: ['config/sources.json', 'config/topics.json', 'config/settings.json'] },
-  { name: 'scripts', dir: `${PREFIX}/scripts`, files: ['scripts/collect.py', 'scripts/validate_config.py'] },
+  { name: 'scripts', dir: `${PREFIX}/scripts`, files: ['scripts/collect.py', 'scripts/validate_config.py', 'scripts/export_run.py'] },
   { name: 'src', dir: `${PREFIX}/src`, files: ['src/worker.js'] },
   { name: 'tests', dir: `${PREFIX}/tests`, files: ['tests/api.test.mjs', 'tests/test_collect.py'] },
   { name: 'migrations', dir: `${PREFIX}/migrations`, files: ['migrations/0002_filtered_out.sql'] },
-  { name: 'docs', dir: `${PREFIX}/docs`, files: ['docs/sources.md', 'docs/workbuddy.md', 'docs/定制速查卡.html'] },
+  { name: 'docs', dir: `${PREFIX}/docs`, files: ['docs/sources.md', 'docs/workbuddy.md', 'docs/定制速查卡.html', 'docs/工作流图解.html'] },
   { name: 'ops', dir: `${PREFIX}/ops`, files: ['ops/gh-check.cjs', 'ops/gh-push.cjs', 'ops/gh-delete.cjs', 'ops/gh-run.cjs', 'ops/README.md'] },
   { name: 'root', dir: PREFIX, files: ['README.md', '.gitignore'] },
   { name: 'workflows', dir: '.github/workflows', files: ['.github/workflows/ai-news-apply-config.yml'] },
