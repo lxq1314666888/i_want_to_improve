@@ -241,10 +241,10 @@ class CollectionTests(unittest.TestCase):
     def test_source_limit_remains_bounded_and_matches_api_run_limit(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "sources.json"
-            configs = [dict(SOURCES[0], name=f"Source {i}") for i in range(30)]
+            configs = [dict(SOURCES[0], name=f"Source {i}") for i in range(c.MAX_SOURCES)]
             path.write_text(json.dumps(configs))
-            self.assertEqual(len(c.load_sources(path)), 30)
-            path.write_text(json.dumps(configs + [dict(SOURCES[0], name="Source 31")]))
+            self.assertEqual(len(c.load_sources(path)), c.MAX_SOURCES)
+            path.write_text(json.dumps(configs + [dict(SOURCES[0], name="Source overflow")]))
             with self.assertRaises(c.CollectorError):
                 c.load_sources(path)
 
@@ -334,10 +334,30 @@ class CollectionTests(unittest.TestCase):
 
     def test_default_sources_relative_to_script(self):
         sources = c.load_sources(c.DEFAULT_SOURCES)
-        self.assertEqual(len(sources), 29)
+        self.assertEqual(len(sources), 44)
         self.assertTrue({"OpenAI", "Hugging Face", "Hacker News", "AINews via Latent Space"}.issubset({s["name"] for s in sources}))
-        self.assertEqual(len({s["category"] for s in sources}), 7)
-        self.assertEqual(c.DEFAULT_SOURCES, ROOT / "sources.json")
+        self.assertEqual(len({s["category"] for s in sources}), 6)
+        self.assertEqual(c.DEFAULT_SOURCES, ROOT / "config" / "sources.json")
+        # enabled=false 的源不参与采集，也不占用数量配额
+        with open(c.DEFAULT_SOURCES, encoding="utf-8") as handle:
+            declared = json.load(handle)
+        disabled = [s["name"] for s in declared if s.get("enabled") is False]
+        self.assertEqual(len(declared), len(sources) + len(disabled))
+        self.assertTrue(disabled, "配置中应保留待验证源的停用占位")
+
+    def test_topic_and_filter_configuration_drive_collection(self):
+        topics = c.load_topic_ids()
+        self.assertIn("ai_industry", topics)
+        self.assertNotIn("official_ai", topics, "旧分类不应出现在新主题体系中")
+        filters = c.load_filters()
+        include, exclude, minimum = filters
+        self.assertEqual(include, ())
+        self.assertIn("美股", exclude)
+        self.assertGreater(minimum, 0)
+        items = [{"title": "OpenAI 融资 10 亿美元"}, {"title": "美股 AI 概念股大涨"}, {"title": "短"}]
+        kept = c.apply_filters(items, filters)
+        self.assertEqual([item["title"] for item in kept], ["OpenAI 融资 10 亿美元"])
+        self.assertEqual(c.apply_filters(items, None), items)
 
 
 @contextlib.contextmanager

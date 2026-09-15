@@ -143,9 +143,9 @@ test('official MCP client initializes, discovers and invokes both read-only tool
     assert.equal(JSON.parse(result.content[0].text).items.length, 1);
     const status = await client.callTool({ name: 'get_collection_status', arguments: {} });
     assert.equal(JSON.parse(status.content[0].text).latest_run.succeeded_sources, 0);
-    const filtered = await client.callTool({ name: 'get_news', arguments: { category: 'research', offset: 0, per_source_limit: 2 } });
+    const filtered = await client.callTool({ name: 'get_news', arguments: { category: 'ai_tech', offset: 0, per_source_limit: 2 } });
     assert.ok(!filtered.isError);
-    assert.equal(JSON.parse(filtered.content[0].text).category, 'research');
+    assert.equal(JSON.parse(filtered.content[0].text).category, 'ai_tech');
     assert.equal(JSON.parse(filtered.content[0].text).per_source_limit, 2);
     const invalid = await client.callTool({ name: 'get_news', arguments: { limit: 1000 } });
     assert.equal(invalid.isError, true);
@@ -173,19 +173,19 @@ upload(HTTPClient(interval=0), os.environ['API_BASE_URL'], os.environ['INGEST_TO
 });
 
 test('category queries diversify sources and provide bounded pagination', async () => {
-  const items = ['OpenAI', 'Google AI', 'TechCrunch'].flatMap(source => Array.from({ length: 8 }, (_, i) =>
+  const items = ['OpenAI', 'Google AI'].flatMap(source => Array.from({ length: 8 }, (_, i) =>
     article(`https://example.com/catalog/${source.replaceAll(' ', '-')}/${i}`, { source, published_at: new Date(Date.now() - i * 1000).toISOString() })));
   assert.equal((await request('/api/ingest', { token: WRITE, body: { items } })).status, 200);
-  const balanced = await (await request('/api/news?category=official_ai&limit=50')).json();
+  const balanced = await (await request('/api/news?category=ai_industry&limit=50')).json();
   assert.equal(balanced.items.length, 6);
   assert.ok(balanced.items.every(item => ['OpenAI', 'Google AI'].includes(item.source)));
   assert.equal(balanced.items.filter(item => item.source === 'OpenAI').length, 3);
-  const page1 = await (await request('/api/news?category=official_ai&limit=5&per_source_limit=10')).json();
+  const page1 = await (await request('/api/news?category=ai_industry&limit=5&per_source_limit=10')).json();
   assert.equal(page1.has_more, true);
   assert.equal(page1.next_offset, 5);
-  const page2 = await (await request(`/api/news?category=official_ai&limit=5&per_source_limit=10&offset=${page1.next_offset}`)).json();
+  const page2 = await (await request(`/api/news?category=ai_industry&limit=5&per_source_limit=10&offset=${page1.next_offset}`)).json();
   assert.ok(page2.items.every(item => !page1.items.some(previous => previous.id === item.id)));
-  const last = await (await request('/api/news?category=official_ai&limit=5&per_source_limit=10&offset=15')).json();
+  const last = await (await request('/api/news?category=ai_industry&limit=5&per_source_limit=10&offset=15')).json();
   assert.equal(last.items.length, 1);
   assert.equal(last.has_more, false);
   assert.equal(last.next_offset, null);
@@ -197,13 +197,17 @@ test('category queries diversify sources and provide bounded pagination', async 
   }
 });
 
-test('source discovery includes 29 sources in seven categories with explicit aggregation provenance', async () => {
+test('source discovery reflects the enabled config and aggregation provenance', async () => {
   const status = await (await request('/api/status')).json();
-  assert.equal(status.configured_sources.length, 29);
-  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 7);
+  assert.equal(status.configured_sources.length, 44);
+  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 6);
+  assert.ok(status.configured_sources.every(source => source.category !== 'official_ai'), '旧分类不应存在');
   assert.ok(status.configured_sources.some(source => source.name === 'vLLM Releases' && source.type === 'github_releases'));
+  assert.ok(status.configured_sources.some(source => source.lang === 'zh'), '应包含中文源');
+  assert.equal(status.topics.length, 6);
+  assert.ok(status.topics.some(topic => topic.id === 'ai_industry' && topic.name));
   const digest = status.configured_sources.find(source => source.type === 'ainews');
-  assert.equal(digest.category, 'social');
+  assert.equal(digest.category, 'ai_industry');
   assert.equal(digest.provenance.kind, 'aggregated_digest');
   assert.deepEqual(digest.provenance.platforms, ['x', 'reddit']);
 });
@@ -211,7 +215,7 @@ test('source discovery includes 29 sources in seven categories with explicit agg
 test('REST and MCP expose social digests without mislabelling original-post dates', async () => {
   const item = article('https://example.com/social-digest', { source: 'AINews via Latent Space', excerpt: 'X via AINews: Model discussion. | Reddit via AINews: Local inference.' });
   assert.equal((await request('/api/ingest', { token: WRITE, body: { items: [item] } })).status, 200);
-  const result = await (await request('/api/news?category=social')).json();
+  const result = await (await request('/api/news?category=ai_industry')).json();
   assert.equal(result.items.length, 1);
   assert.equal(result.items[0].url, item.url);
   assert.equal(result.items[0].published_at, item.published_at);
@@ -220,7 +224,7 @@ test('REST and MCP expose social digests without mislabelling original-post date
   const client = new Client({ name: 'social-test', version: '1.0.0' });
   try {
     await client.connect(new StreamableHTTPClientTransport(new URL(`${base}/mcp`), { requestInit: { headers: { Authorization: `Bearer ${READ}` } } }));
-    const toolResult = await client.callTool({ name: 'get_news', arguments: { category: 'social', hours: 24 } });
+    const toolResult = await client.callTool({ name: 'get_news', arguments: { category: 'ai_industry', hours: 24 } });
     assert.ok(!toolResult.isError);
     const digest = JSON.parse(toolResult.content[0].text).items[0];
     assert.deepEqual(digest.provenance, result.items[0].provenance);
