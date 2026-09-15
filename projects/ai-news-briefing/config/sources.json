@@ -524,5 +524,203 @@
       "GPT"
     ],
     "note": "60s 公开 API 对 GitHub Actions 的数据中心 IP 返回 HTTP 403（本机访问正常，三种 UA 实测均 200），因此 Actions 侧不可用。要恢复需自建 RSSHub/反向代理，或改由本机定时任务采集。"
+  },
+  {
+    "name": "X @sama",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/sama/rss",
+    "canonical_host": "x.com",
+    "note": "Sam Altman（OpenAI）。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X @OpenAI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/OpenAI/rss",
+    "canonical_host": "x.com",
+    "note": "OpenAI 官方。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X @AnthropicAI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/AnthropicAI/rss",
+    "canonical_host": "x.com",
+    "note": "Anthropic 官方。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X @karpathy",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/karpathy/rss",
+    "canonical_host": "x.com",
+    "note": "Andrej Karpathy。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X @_akhaliq",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/_akhaliq/rss",
+    "canonical_host": "x.com",
+    "note": "AK：论文与工具速递。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X @swyx",
+    "category": "indie",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/swyx/rss",
+    "canonical_host": "x.com",
+    "note": "Swyx（Latent Space）。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X 搜索·AI Agent",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20agent",
+    "canonical_host": "x.com",
+    "note": "关键词「AI agent」的实时推文流，比盯固定账号更容易撞到突发话题。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X 搜索·AI 创业",
+    "category": "indie",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20startup",
+    "canonical_host": "x.com",
+    "note": "关键词「AI startup」的实时推文流，比盯固定账号更容易撞到突发话题。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "X 搜索·大模型",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://nitter.jaydenha.uk/search/rss?f=tweets&q=LLM",
+    "canonical_host": "x.com",
+    "note": "关键词「LLM」的实时推文流，比盯固定账号更容易撞到突发话题。经 Nitter 镜像 nitter.jaydenha.uk 读取 X。X 官方免费层每月仅 1500 条、无实用价值，付费层 $200/月起，故走镜像 RSS。实例稳定性是最大变量，失效时换 wiki 上的其他实例"
+  },
+  {
+    "name": "GitHub Trending",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+    "note": "每日 GitHub 趋势榜，本机实测可用"
+  },
+  {
+    "name": "Hacker News 高分",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://hnrss.org/newest?points=100",
+    "note": "HN 100 分以上新帖，本机实测可用"
+  },
+  {
+    "name": "Hugging Face Papers",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://huggingface.co/papers/feed",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Reddit r/LocalLLaMA",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Reddit r/MachineLearning",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.reddit.com/r/MachineLearning/.rss",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Reddit r/OpenAI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.reddit.com/r/OpenAI/.rss",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Reddit r/artificial",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.reddit.com/r/artificial/.rss",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Reddit r/SideProject",
+    "category": "indie",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.reddit.com/r/SideProject/.rss",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Interconnects",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.interconnects.ai/feed",
+    "note": "Nathan Lambert 的模型与开源分析，本机实测可用"
+  },
+  {
+    "name": "Import AI",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://importai.substack.com/feed",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Lex Fridman 播客",
+    "category": "creator",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
+  },
+  {
+    "name": "Two Minute Papers",
+    "category": "creator",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
+    "note": "本机大陆直连超时（网络阻断），GitHub Actions 海外环境可正常访问"
   }
 ]

@@ -7,7 +7,7 @@
     "schedule_cron": "17 23 * * *",
     "schedule_note": "UTC 23:17 = 北京时间 07:17。GitHub Actions 的 cron 是 UTC。",
     "max_items_per_source": 25,
-    "max_sources": 60,
+    "max_sources": 100,
     "retention_days": 30,
     "concurrency": 4,
     "request_interval_sec": 0.3,
