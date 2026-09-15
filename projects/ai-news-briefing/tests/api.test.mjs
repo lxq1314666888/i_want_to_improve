@@ -13,12 +13,15 @@ import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/
 const READ = 'test-read-only-token-never-use-in-production-0001';
 const WRITE = 'test-ingest-token-never-use-in-production-0002';
 const executable = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+// Windows 上 Node 执行 .cmd 必须经 shell（CVE-2024-27980 之后的行为），
+// 否则 spawn 直接失败、status 为 null，本地跑测试会得到误导性的断言错误。
+const shell = process.platform === 'win32';
 let worker, temporary, base, output = '';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 before(async () => {
   temporary = await mkdtemp(join(tmpdir(), 'workbuddy-news-tests-'));
-  const migration = spawnSync(executable, ['wrangler', 'd1', 'migrations', 'apply', 'DB', '--local', '--persist-to', temporary], { encoding: 'utf8' });
+  const migration = spawnSync(executable, ['wrangler', 'd1', 'migrations', 'apply', 'DB', '--local', '--persist-to', temporary], { encoding: 'utf8', shell });
   assert.equal(migration.status, 0, migration.stdout + migration.stderr);
   const socket = createServer();
   await new Promise(resolve => socket.listen(0, '127.0.0.1', resolve));
@@ -26,7 +29,7 @@ before(async () => {
   await new Promise(resolve => socket.close(resolve));
   base = `http://127.0.0.1:${port}`;
   worker = spawn(executable, ['wrangler', 'dev', '--local', '--ip', '127.0.0.1', '--port', String(port), '--persist-to', temporary,
-    '--var', `READ_TOKEN:${READ}`, '--var', `INGEST_TOKEN:${WRITE}`], { stdio: ['ignore', 'pipe', 'pipe'], detached: process.platform !== 'win32' });
+    '--var', `READ_TOKEN:${READ}`, '--var', `INGEST_TOKEN:${WRITE}`], { stdio: ['ignore', 'pipe', 'pipe'], shell, detached: process.platform !== 'win32' });
   for (const stream of [worker.stdout, worker.stderr]) stream.on('data', data => { output = (output + data.toString()).slice(-30000); });
   for (let i = 0; i < 120; i++) {
     try { if ((await fetch(`${base}/health`)).ok) return; } catch {}
@@ -215,19 +218,24 @@ test('source discovery reflects the enabled config and aggregation provenance', 
 test('REST and MCP expose social digests without mislabelling original-post dates', async () => {
   const item = article('https://example.com/social-digest', { source: 'AINews via Latent Space', excerpt: 'X via AINews: Model discussion. | Reddit via AINews: Local inference.' });
   assert.equal((await request('/api/ingest', { token: WRITE, body: { items: [item] } })).status, 200);
-  const result = await (await request('/api/news?category=ai_industry')).json();
-  assert.equal(result.items.length, 1);
-  assert.equal(result.items[0].url, item.url);
-  assert.equal(result.items[0].published_at, item.published_at);
-  assert.equal(result.items[0].provenance.publication_time, 'digest_publication_not_original_posts');
+  const result = await (await request('/api/news?category=ai_industry&limit=50')).json();
+  // ai_industry 下还有 OpenAI 等源，前序用例已写入数据，因此按 id 定位本条，
+  // 不能假设分类查询只返回这一条。
+  const digestItem = result.items.find(value => value.id === item.id);
+  assert.ok(digestItem, 'AINews 条目应出现在 ai_industry 分类下');
+  assert.equal(digestItem.url, item.url);
+  assert.equal(digestItem.published_at, item.published_at);
+  assert.equal(digestItem.provenance.publication_time, 'digest_publication_not_original_posts');
   assert.match(result.content_notice, /secondhand/);
   const client = new Client({ name: 'social-test', version: '1.0.0' });
   try {
     await client.connect(new StreamableHTTPClientTransport(new URL(`${base}/mcp`), { requestInit: { headers: { Authorization: `Bearer ${READ}` } } }));
-    const toolResult = await client.callTool({ name: 'get_news', arguments: { category: 'ai_industry', hours: 24 } });
+    const toolResult = await client.callTool({ name: 'get_news', arguments: { category: 'ai_industry', hours: 24, limit: 50 } });
     assert.ok(!toolResult.isError);
-    const digest = JSON.parse(toolResult.content[0].text).items[0];
-    assert.deepEqual(digest.provenance, result.items[0].provenance);
-    assert.equal(digest.excerpt, item.excerpt);
+    const toolItems = JSON.parse(toolResult.content[0].text).items;
+    const toolDigest = toolItems.find(value => value.id === item.id);
+    assert.ok(toolDigest, 'MCP 的 get_news 也应返回该条目');
+    assert.deepEqual(toolDigest.provenance, digestItem.provenance);
+    assert.equal(toolDigest.excerpt, item.excerpt);
   } finally { await client.close(); }
 });
