@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 选题采集工作流 · 速查卡</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#fff; --ink:#1f2328; --sub:#57606a; --line:#d8dee4;
+    --accent:#0969da; --ok:#1a7f37; --warn:#9a6700; --danger:#cf222e; --code:#f0f3f6;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+  .wrap{max-width:940px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:25px;margin:0 0 6px;letter-spacing:-.2px}
+  h2{font-size:18px;margin:36px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-size:15px;margin:20px 0 8px}
+  p{margin:8px 0}
+  .lead{color:var(--sub);margin:0 0 4px}
+  .meta{color:var(--sub);font-size:13px;margin-top:10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:12px 0}
+  code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:13px;
+       font-family:ui-monospace,Consolas,monospace}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:8px;
+      padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.55;
+      font-family:ui-monospace,Consolas,monospace;margin:10px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#eef1f4;font-weight:600}
+  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;
+       border:1px solid var(--line);background:#fff;color:var(--sub);margin-left:6px}
+  .ok{color:var(--ok);font-weight:600}
+  .warn{color:var(--warn);font-weight:600}
+  .danger{color:var(--danger);font-weight:600}
+  /* 链路图 */
+  .flow{display:grid;gap:8px;margin:14px 0}
+  .node{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+        border-radius:8px;padding:10px 14px}
+  .node b{font-size:14px}
+  .node span{display:block;color:var(--sub);font-size:13px}
+  .arrow{text-align:center;color:var(--sub);font-size:13px;line-height:1}
+  .hilite{border-left-color:var(--ok)}
+  .nums{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+  .num{flex:1 1 132px;background:var(--card);border:1px solid var(--line);
+       border-radius:8px;padding:12px 14px}
+  .num b{display:block;font-size:22px;letter-spacing:-.5px}
+  .num span{color:var(--sub);font-size:12px}
+  ul{margin:8px 0;padding-left:22px}
+  li{margin:4px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>AI 选题采集工作流 · 速查卡</h1>
+  <p class="lead">GitHub 采集 → Cloudflare 存储 → Agent 出选题。定制只碰 <code>config/</code> 三个文件。</p>
+  <p class="meta">仓库 <code>lxq1314666888/i_want_to_improve</code> · 路径 <code>projects/ai-news-briefing</code> · 状态核对于 2026-09-15</p>
+
+  <h2>一、链路：改哪里，怎么生效</h2>
+  <div class="flow">
+    <div class="node hilite">
+      <b>① config/ ← 你只改这里</b>
+      <span>sources.json 采集源 · topics.json 主题分组 · settings.json 调度与过滤</span>
+    </div>
+    <div class="arrow">↓ push 到 main 自动触发</div>
+    <div class="node">
+      <b>② ai-news-apply-config.yml</b>
+      <span>校验配置 → 打包 Worker → 单元测试 → 注入 D1 id → 迁移+部署 → 验证线上 API</span>
+    </div>
+    <div class="arrow">↓ 配置被编译进 Worker，所以只改仓库文件不够，必须重新部署</div>
+    <div class="node">
+      <b>③ 每日 07:17（北京）定时采集</b>
+      <span>ai-news-collect.yml 按 sources.json 并发采集 → 关键词过滤 → 写 Cloudflare D1</span>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="node">
+      <b>④ Cloudflare D1 + Worker</b>
+      <span>D1 存 30 天数据 · Worker 提供 /api/news、/api/status 与只读 MCP</span>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="node">
+      <b>⑤ Agent 读 API → 按 config 参数出选题简报</b>
+      <span>提示词见 docs/workbuddy.md，其中不含选题参数——改配置即改产物</span>
+    </div>
+  </div>
+  <p><span class="tag">关键</span> 现在改源、改分类、改过滤都<b>不需要改代码</b>。改造前这三处全部硬编码，改配置等于改程序。</p>
+
+  <h2>二、三个常见定制动作</h2>
+
+  <h3>1. 加一个采集源</h3>
+  <p>编辑 <code>config/sources.json</code>，追加一条：</p>
+  <pre>{
+  "name": "量子位",
+  "type": "feed",
+  "url": "https://www.qbitai.com/feed",
+  "category": "ai_industry",
+  "lang": "zh",
+  "enabled": true
+}</pre>
+  <ul>
+    <li><code>name</code> 必须唯一，重复会被校验拦下</li>
+    <li><code>category</code> 必须是 <code>config/topics.json</code> 里已定义的 id</li>
+    <li>想临时停用：把 <code>enabled</code> 改成 <code>false</code>，<b>不占数量配额</b>，也不用删</li>
+    <li>本地先验两步：<code>python scripts/validate_config.py</code>，再 <code>python scripts/collect.py --dry-run --output probe.json</code></li>
+  </ul>
+
+  <h3>2. 加主题 / 换选题方向</h3>
+  <p>编辑 <code>config/topics.json</code> 加一个 id、中文名和 <code>angle</code>（这个主题怎么判断值不值得做），再回 sources.json 把相关源的 category 指过去。</p>
+
+  <h3>3. 改过滤与产物</h3>
+  <p><code>config/settings.json</code>：</p>
+  <ul>
+    <li><code>filter.exclude_keywords</code> — 合规红线，命中的条目采集阶段就丢掉（默认已覆盖美股港股、币圈合约杠杆、外汇、赌博、色情、诈骗刷单）</li>
+    <li><code>filter.include_keywords</code> — 留空表示不过滤；填了就只保留命中的</li>
+    <li><code>digest.*</code> — 每主题几条、主题顺序、每个选题至少几个数字</li>
+    <li><code>targets</code> — 产出公众号 / 抖音 / 小红书哪些平台的稿子及其字数与语气</li>
+  </ul>
+  <p>另外，<b>单个源也能加 <code>include_keywords</code></b>（源级收窄）。热搜榜、泛科技媒体这类来源没有主题边界，不收窄就会把非相关内容灌进选题池。</p>
+
+  <h2>三、当前实测状态 <span class="tag">2026-09-15</span></h2>
+  <div class="nums">
+    <div class="num"><b>69</b><span>配置条目</span></div>
+    <div class="num"><b>52</b><span>启用源</span></div>
+    <div class="num"><b>9</b><span>X 源</span></div>
+    <div class="num"><b>6</b><span>主题</span></div>
+    <div class="num"><b>807</b><span>单次采集条数</span></div>
+  </div>
+  <p>最近一次采集：<b>52 源成功 / 9 源失败</b>（失败源已逐个定性并停用）· 关键词过滤拦掉 3 条。</p>
+  <p><b>可用的源类型</b>：<code>feed</code>（RSS/Atom）、<code>arxiv</code>、<code>github_releases</code>、<code>hackernews</code>、<code>ainews</code>、<code>hot_api</code>（热搜 JSON 接口）、<code>html_scrape</code>（静态网页列表）。</p>
+
+  <h3>X（Twitter）是怎么采的</h3>
+  <p>官方 API 免费层每月仅 1500 条、Basic 档 $200/月起，不划算。改为经 <b>Nitter 镜像</b>读取——每个实例都提供 RSS，直接当 <code>feed</code> 源用，不需要任何账号或密钥：</p>
+  <pre>https://nitter.jaydenha.uk/sama/rss                          → 账号时间线
+https://nitter.jaydenha.uk/search/rss?f=tweets&q=AI%20agent  → 关键词实时流</pre>
+  <p>配置里给这类源加了 <code>canonical_host: "x.com"</code>，把镜像链接归一化成原站链接。作用有两个：<b>跨实例的同一推文能正确去重</b>（否则多实例冗余毫无意义），以及你引用到的是 <code>x.com</code> 原链而不是镜像链。</p>
+  <p><span class="tag">实测</span> Actions 上 <b>9 个 X 源全部成功</b>（6 个账号 + 3 个关键词，约 154 条）。Nitter 实例的稳定性是最大变量——X Corp 虽在 2026-08 发过 cease-and-desist，但项目已恢复运营、可用实例数超过封杀前。<b>实例失效时只需换这一处 URL</b>，实例列表在 Nitter wiki 上。</p>
+  <p><span class="tag">注意</span> 部署在 Actions 上的源，<b>本机大陆网络测不通不代表不可用</b>。Reddit、YouTube、Hugging Face 本机全部超时，但在 Actions 上 Reddit 和 Hugging Face 都能通。判断可用性一律以 Actions 实采结果为准。</p>
+
+  <h2>四、已知限制（都已实测确认）</h2>
+  <table>
+    <tr><th>限制</th><th>实测结论与出路</th></tr>
+    <tr>
+      <td><span class="danger">热搜源在 Actions 上 403</span></td>
+      <td>60s 公开 API 对 GitHub Actions 的数据中心 IP 返回 403；本机访问正常（三种 UA 均 200），所以不是请求头问题。四个热榜源已置 <code>enabled: false</code> 避免每天产生失败噪音。<br>要恢复：自建 RSSHub / 反代，或改由本机定时任务采集。</td>
+    </tr>
+    <tr>
+      <td><span class="danger">workers.dev 在大陆不可达</span></td>
+      <td>DNS 被污染（解析到 108.160.169.185）+ 直连超时，因此本机无法直连 Worker API。<br>验证一律走 GitHub Actions（<code>smoke.mjs</code> 就是干这个的）。要让本机/手机能访问，需绑自定义域名。</td>
+    </tr>
+    <tr>
+      <td><span class="warn">36氪 / 机器之心 RSS 已下线</span></td>
+      <td>请求 <code>/feed</code>、<code>/rss</code> 返回的是 HTML 页面而非 XML。已标 <code>html_scrape</code> 待适配，但这两站是 JS 渲染，抓不到内容，需改用其数据接口。当前置停用。</td>
+    </tr>
+    <tr>
+      <td><span class="warn">Indie Hackers / V2EX 待验证</span></td>
+      <td>本机（大陆）网络超时，未能确认。Actions 海外网络可再试，确认可采后把 <code>enabled</code> 改回 true。</td>
+    </tr>
+    <tr>
+      <td><span class="warn">泛科技源会带进非 AI 内容</span></td>
+      <td>钛媒体、稀土掘金已加 29 个 AI 关键词收窄。觉得过滤太狠就删掉该项的 <code>include_keywords</code>。</td>
+    </tr>
+  </table>
+
+  <h2>五、排查</h2>
+  <table>
+    <tr><th>现象</th><th>先查这里</th></tr>
+    <tr><td>push 后没部署</td><td>改的文件是否落在触发路径内：<code>config/**</code>、<code>src/**</code>、<code>scripts/collect.py</code>。只改 tests/ 或 docs/ 不会触发部署，这是有意设计。</td></tr>
+    <tr><td>Actions 报配置校验失败</td><td>本地跑 <code>python scripts/validate_config.py</code>，它会逐项指出哪个文件、哪一项、什么问题。</td></tr>
+    <tr><td>某个源一直是 0 条</td><td>0 条且状态 ok = 源正常但没新内容或全被关键词过滤，不等于故障。看 <code>/api/status</code> 的 <code>latest_run.sources</code> 区分。</td></tr>
+    <tr><td>线上数据像旧的</td><td>看 <code>stale</code> 字段与 <code>last_success_at</code>；<code>filtered_out</code> 字段说明有多少条被合规规则挡掉。</td></tr>
+    <tr><td>部署失败要回滚</td><td>Cloudflare 控制台可回滚到上一版本；本次改造前的线上源码已备份在本地 <code>_backup/cloud-2026-09-15-worker.js</code>。</td></tr>
+  </table>
+
+  <h2>六、相关文件</h2>
+  <ul>
+    <li><code>README.md</code> — 项目总览与完整定制说明</li>
+    <li><code>docs/sources.md</code> — 各源类型的采集规则、许可边界、如何加源</li>
+    <li><code>docs/workbuddy.md</code> — MCP 接入步骤与选题简报提示词</li>
+    <li><code>config/</code> — 三个配置文件，唯一需要改的地方</li>
+    <li><code>scripts/validate_config.py</code> — 配置校验器，改完先跑它</li>
+  </ul>
+
+</div>
+</body>
+</html>
