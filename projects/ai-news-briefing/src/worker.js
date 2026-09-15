@@ -4,9 +4,11 @@ import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/
 import { z } from 'zod';
 import sourceCatalog from '../config/sources.json';
 import topicCatalog from '../config/topics.json';
+import settingsCatalog from '../config/settings.json';
 
 const MAX_BODY_BYTES = 128 * 1024;
-const MAX_SOURCES = 60;
+// 源上限跟随 config/settings.json，避免 settings / collect.py / worker 三处各写一个数字
+const MAX_SOURCES = settingsCatalog.collection?.max_sources ?? 60;
 // 主题与源清单来自 config/*.json，改配置后需重新部署以保持一致
 const TOPIC_IDS = topicCatalog.topics.map(topic => topic.id);
 const ENABLED_SOURCES = sourceCatalog.filter(source => source.enabled !== false);
