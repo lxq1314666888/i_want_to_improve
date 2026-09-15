@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>这套系统是干嘛的 · 图解</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#fff; --ink:#1f2328; --sub:#57606a; --line:#d8dee4;
+    --blue:#0969da; --gray:#6e7781;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:36px 20px 72px}
+  h1{font-size:26px;margin:0 0 10px;letter-spacing:-.3px}
+  h2{font-size:18px;margin:44px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .lead{color:var(--sub);font-size:15px;margin:0}
+  p{margin:10px 0}
+  .legend{display:flex;gap:20px;flex-wrap:wrap;margin:10px 0 0;font-size:13px;color:var(--sub)}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;
+            vertical-align:middle;border:1px solid var(--line)}
+  .sw-blue{background:#E6F1FB;border-color:#85B7EB}
+  .sw-gray{background:#F1EFE8;border-color:#B4B2A9}
+  .figure{background:var(--card);border:1px solid var(--line);border-radius:12px;
+          padding:22px 18px;margin:16px 0}
+  code{background:#f0f3f6;padding:1px 6px;border-radius:4px;font-size:13px;
+       font-family:ui-monospace,Consolas,monospace}
+  pre{background:#f0f3f6;border:1px solid var(--line);border-radius:8px;padding:12px 14px;
+      overflow-x:auto;font-size:13px;line-height:1.6;font-family:ui-monospace,Consolas,monospace}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  th{background:#eef1f4;font-weight:600}
+  .qa{margin:16px 0}
+  .qa b{display:block;margin-bottom:2px}
+  .qa span{color:var(--sub)}
+  .key{background:#fff8e6;border:1px solid #f0dca8;border-radius:10px;padding:14px 18px;margin:18px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>这套系统是干嘛的</h1>
+  <p class="lead">每天自动去国外网站抓 AI 相关内容，攒起来；你要用的时候，我帮你挑成可以写的选题。</p>
+
+  <h2>它是怎么跑起来的</h2>
+  <div class="figure">
+    <svg width="100%" viewBox="0 0 680 464" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>AI 选题采集工作流全景</title>
+      <desc>四层链路：你改配置文件，GitHub 自动检查改动并每天定时抓取内容，Cloudflare 存储数据，AI 整理成选题简报。</desc>
+      <defs>
+        <marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g>
+        <rect x="160" y="40" width="360" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+        <text x="340" y="60" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">你</text>
+        <text x="340" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">只改 config 里 3 个文件</text>
+      </g>
+      <path d="M340 96 L340 152" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#ar1)"/>
+      <text x="352" y="126" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">网页上点保存</text>
+      <g>
+        <rect x="160" y="156" width="360" height="56" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+        <text x="340" y="176" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">GitHub</text>
+        <text x="340" y="196" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">自动检查改动 + 每天 7:17 定时抓取</text>
+      </g>
+      <path d="M340 212 L340 268" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#ar1)"/>
+      <text x="352" y="242" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">抓到的内容</text>
+      <g>
+        <rect x="160" y="272" width="360" height="56" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+        <text x="340" y="292" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">Cloudflare</text>
+        <text x="340" y="312" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">存最近 30 天，随时能查</text>
+      </g>
+      <path d="M340 328 L340 384" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#ar1)"/>
+      <text x="352" y="358" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">读取整理</text>
+      <g>
+        <rect x="160" y="388" width="360" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+        <text x="340" y="408" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">AI（我）</text>
+        <text x="340" y="428" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">整理成选题简报给你</text>
+      </g>
+    </svg>
+  </div>
+  <div class="legend">
+    <span><i class="sw-blue"></i>蓝色：需要你参与</span>
+    <span><i class="sw-gray"></i>灰色：全自动，不用管</span>
+  </div>
+
+  <h2>你只需要改三个文件</h2>
+  <div class="figure">
+    <svg width="100%" viewBox="0 0 680 142" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>三个配置文件各管什么</title>
+      <desc>sources.json 管去哪儿抓，topics.json 管怎么分类，settings.json 管要什么不要什么。</desc>
+      <g>
+        <rect x="40" y="40" width="180" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+        <text x="130" y="60" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">sources.json</text>
+        <text x="130" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">去哪儿抓：52 个源</text>
+      </g>
+      <g>
+        <rect x="250" y="40" width="180" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+        <text x="340" y="60" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">topics.json</text>
+        <text x="340" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">怎么分类：6 个主题</text>
+      </g>
+      <g>
+        <rect x="460" y="40" width="180" height="56" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+        <text x="550" y="60" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">settings.json</text>
+        <text x="550" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">要什么不要什么</text>
+      </g>
+      <text x="340" y="122" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">改这三个文件 = 你要做的全部事情</text>
+    </svg>
+  </div>
+
+  <p>说白了就两句话：</p>
+  <table>
+    <tr><th>你想达到的效果</th><th>改哪个文件</th></tr>
+    <tr>
+      <td>想多抓一个网站 / 多盯一个 X 账号</td>
+      <td><code>sources.json</code> —— 照着已有格式加一行就行</td>
+    </tr>
+    <tr>
+      <td>不想看到某类内容（比如币圈、赌球）</td>
+      <td><code>settings.json</code> 里的 <code>exclude_keywords</code> —— 默认已经排掉了美股港股、币圈合约、外汇、赌博、色情、诈骗刷单</td>
+    </tr>
+    <tr>
+      <td>想换个选题方向（比如"AI 工具评测"）</td>
+      <td><code>topics.json</code> —— 加一个主题，再把相关来源指过去</td>
+    </tr>
+  </table>
+
+  <h2>一天里它自己会做什么</h2>
+  <div class="figure">
+    <svg width="100%" viewBox="0 0 680 140" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>一天之内的自动节奏</title>
+      <desc>每天 07:17 系统自动抓取，约两分钟后存好。你想看的时候再叫 AI 出选题。</desc>
+      <defs>
+        <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <path d="M60 62 L620 62" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <circle cx="140" cy="62" r="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+      <text x="140" y="86" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">每天 07:17</text>
+      <text x="140" y="106" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">系统自动抓取，你不用管</text>
+      <circle cx="340" cy="62" r="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+      <text x="340" y="86" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">约两分钟后</text>
+      <text x="340" y="106" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">新内容已存好，随时能查</text>
+      <circle cx="540" cy="62" r="6" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+      <text x="540" y="86" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#1f2328" font-family="sans-serif">你想看的时候</text>
+      <text x="540" y="106" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#57606a" font-family="sans-serif">叫 AI 出选题</text>
+    </svg>
+  </div>
+
+  <h2>为什么非得用 GitHub 和 Cloudflare</h2>
+  <p>因为要抓的是 <b>X、Reddit 这类在国内打不开的网站</b>。</p>
+  <p>GitHub 和 Cloudflare 的服务器在国外，它们抓得到；你我这台电脑在国内，直接抓就是超时——这正是之前实测的结果：Reddit、YouTube 在本机全部连不上，但换到 GitHub 的服务器上就都通了。</p>
+  <p>所以这套组合的分工是：<b>GitHub 出服务器和定时器，Cloudflare 出数据库和免费额度</b>，两边都在免费范围内。</p>
+
+  <h2>常见问题</h2>
+  <div class="qa">
+    <b>要一直开着电脑吗？</b>
+    <span>不用。抓取在 GitHub 的服务器上跑，跟你电脑开不开机没关系。</span>
+  </div>
+  <div class="qa">
+    <b>要花钱吗？</b>
+    <span>不用。目前源数量、抓取频率、数据量都在免费额度内。</span>
+  </div>
+  <div class="qa">
+    <b>抓来的东西存在哪？</b>
+    <span>Cloudflare 的数据库里，保留最近 30 天，过期自动清。</span>
+  </div>
+  <div class="qa">
+    <b>怎么让它给我出选题？</b>
+    <span>直接跟我说"出今天的选题"就行。我会把最近一天的内容按主题挑一遍，凑不出至少 3 个具体数字的选题会降到备选。</span>
+  </div>
+  <div class="qa">
+    <b>X 是怎么抓的？不是要付费吗？</b>
+    <span>X 官方接口免费版每月只给 1500 条，付费要 200 美元一个月，所以走了开源的 Nitter 镜像，它提供 RSS 订阅，目前 9 个 X 源全部能正常抓到。</span>
+  </div>
+
+  <div class="key">
+    <b>一句话记住</b>
+    <p style="margin:6px 0 0">想改抓什么就动 <code>config/</code> 里的文件，改完在 GitHub 网页点保存——其余全自动。</p>
+  </div>
+
+</div>
+</body>
+</html>
