@@ -1,0 +1,420 @@
+[
+  {
+    "name": "OpenAI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://openai.com/news/rss.xml"
+  },
+  {
+    "name": "Hugging Face",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://huggingface.co/blog/feed.xml"
+  },
+  {
+    "name": "Google DeepMind",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://deepmind.google/blog/feed/basic/"
+  },
+  {
+    "name": "Google AI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://blog.google/innovation-and-ai/technology/ai/rss/"
+  },
+  {
+    "name": "Microsoft Research",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.microsoft.com/en-us/research/feed"
+  },
+  {
+    "name": "NVIDIA Blog",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://blogs.nvidia.com/feed"
+  },
+  {
+    "name": "TechCrunch",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://techcrunch.com/feed/"
+  },
+  {
+    "name": "The Verge",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.theverge.com/rss/index.xml"
+  },
+  {
+    "name": "MIT Technology Review",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.technologyreview.com/feed/"
+  },
+  {
+    "name": "Wired AI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.wired.com/feed/tag/ai/latest/rss"
+  },
+  {
+    "name": "IEEE Spectrum AI",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"
+  },
+  {
+    "name": "Ars Technica",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  {
+    "name": "AINews via Latent Space",
+    "category": "ai_industry",
+    "type": "ainews",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.latent.space/feed?sectionId=327741",
+    "provenance": {
+      "kind": "aggregated_digest",
+      "platforms": [
+        "x",
+        "reddit"
+      ],
+      "publication_time": "digest_publication_not_original_posts",
+      "coverage_note": "Selected public X/Reddit recap excerpts, not direct platform access or complete coverage. Availability varies per issue. Follow the digest link for its original-post references. Does not cover Telegram or current Discord discussions."
+    }
+  },
+  {
+    "name": "量子位",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.qbitai.com/feed"
+  },
+  {
+    "name": "雷峰网",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.leiphone.com/feed"
+  },
+  {
+    "name": "钛媒体",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.tmtpost.com/rss.xml"
+  },
+  {
+    "name": "爱范儿",
+    "category": "ai_industry",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.ifanr.com/feed"
+  },
+  {
+    "name": "36氪",
+    "category": "ai_industry",
+    "type": "html_scrape",
+    "lang": "zh",
+    "enabled": false,
+    "url": "https://36kr.com/feed",
+    "note": "RSS 已下线，返回网页。需 html_scrape 解析器（未实现前保持 enabled=false）"
+  },
+  {
+    "name": "机器之心",
+    "category": "ai_industry",
+    "type": "html_scrape",
+    "lang": "zh",
+    "enabled": false,
+    "url": "https://www.jiqizhixin.com/rss",
+    "note": "RSS 已下线，重定向到 /data-service。需 html_scrape 解析器"
+  },
+  {
+    "name": "arXiv cs.AI",
+    "category": "ai_tech",
+    "type": "arxiv",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://rss.arxiv.org/rss/cs.AI"
+  },
+  {
+    "name": "arXiv cs.LG",
+    "category": "ai_tech",
+    "type": "arxiv",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://rss.arxiv.org/rss/cs.LG"
+  },
+  {
+    "name": "arXiv cs.CL",
+    "category": "ai_tech",
+    "type": "arxiv",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://rss.arxiv.org/rss/cs.CL"
+  },
+  {
+    "name": "Google Research",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://research.google/blog/rss"
+  },
+  {
+    "name": "NVIDIA Developer Blog",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://developer.nvidia.com/blog/feed/"
+  },
+  {
+    "name": "AWS Machine Learning",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+  },
+  {
+    "name": "Cloudflare Blog",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://blog.cloudflare.com/rss/"
+  },
+  {
+    "name": "GitHub Blog",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://github.blog/feed/"
+  },
+  {
+    "name": "InfoQ 中文",
+    "category": "ai_tech",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.infoq.cn/feed"
+  },
+  {
+    "name": "vLLM Releases",
+    "category": "ai_releases",
+    "type": "github_releases",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://api.github.com/repos/vllm-project/vllm/releases"
+  },
+  {
+    "name": "Ollama Releases",
+    "category": "ai_releases",
+    "type": "github_releases",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://api.github.com/repos/ollama/ollama/releases"
+  },
+  {
+    "name": "Transformers Releases",
+    "category": "ai_releases",
+    "type": "github_releases",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://api.github.com/repos/huggingface/transformers/releases"
+  },
+  {
+    "name": "LangChain Releases",
+    "category": "ai_releases",
+    "type": "github_releases",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://api.github.com/repos/langchain-ai/langchain/releases"
+  },
+  {
+    "name": "llama.cpp Releases",
+    "category": "ai_releases",
+    "type": "github_releases",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/releases"
+  },
+  {
+    "name": "PyTorch Releases",
+    "category": "ai_releases",
+    "type": "github_releases",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://api.github.com/repos/pytorch/pytorch/releases"
+  },
+  {
+    "name": "Hacker News",
+    "category": "ai_tools",
+    "type": "hackernews",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://hacker-news.firebaseio.com/v0/"
+  },
+  {
+    "name": "Simon Willison",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://simonwillison.net/atom/everything/"
+  },
+  {
+    "name": "Product Hunt",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.producthunt.com/feed"
+  },
+  {
+    "name": "少数派",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://sspai.com/feed"
+  },
+  {
+    "name": "稀土掘金",
+    "category": "ai_tools",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://juejin.cn/rss"
+  },
+  {
+    "name": "Hacker News Show HN",
+    "category": "indie",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://hnrss.org/show"
+  },
+  {
+    "name": "Indie Hackers",
+    "category": "indie",
+    "type": "feed",
+    "lang": "en",
+    "enabled": false,
+    "url": "https://www.indiehackers.com/feed.xml",
+    "note": "本机大陆网络超时，未验证；GitHub Actions 海外网络可试。确认可采后改 enabled=true"
+  },
+  {
+    "name": "V2EX",
+    "category": "indie",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": false,
+    "url": "https://www.v2ex.com/index.xml",
+    "note": "本机大陆网络超时，未验证；Actions 海外网络可试"
+  },
+  {
+    "name": "The Rundown AI",
+    "category": "creator",
+    "type": "feed",
+    "lang": "en",
+    "enabled": true,
+    "url": "https://www.therundown.ai/feed"
+  },
+  {
+    "name": "阮一峰的网络日志",
+    "category": "creator",
+    "type": "feed",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://www.ruanyifeng.com/blog/atom.xml"
+  },
+  {
+    "name": "微博热搜",
+    "category": "ai_industry",
+    "type": "hot_api",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://60s.viki.moe/v2/weibo",
+    "include_keywords": [
+      "AI", "人工智能", "大模型", "机器人", "算力", "芯片", "智能体", "算法",
+      "DeepSeek", "豆包", "元宝", "通义", "文心", "自动驾驶", "数字人", "英伟达", "GPT"
+    ],
+    "note": "热搜榜没有发布时间，published_at 记为 null。必须靠 include_keywords 收窄，否则社会娱乐内容会淹没选题池"
+  },
+  {
+    "name": "抖音热搜",
+    "category": "creator",
+    "type": "hot_api",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://60s.viki.moe/v2/douyin",
+    "include_keywords": [
+      "AI", "人工智能", "大模型", "机器人", "算力", "芯片", "智能体",
+      "DeepSeek", "豆包", "数字人", "自动驾驶", "英伟达", "GPT"
+    ],
+    "note": "抖音热点，用于判断平台当下在推什么，category 归 creator"
+  },
+  {
+    "name": "知乎热榜",
+    "category": "ai_industry",
+    "type": "hot_api",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://60s.viki.moe/v2/zhihu",
+    "link_template": "https://www.zhihu.com/search?type=content&q={title}",
+    "include_keywords": [
+      "AI", "人工智能", "大模型", "机器人", "算力", "芯片", "智能体",
+      "DeepSeek", "豆包", "自动驾驶", "英伟达", "GPT"
+    ],
+    "note": "知乎接口不返回原文链接，用 link_template 以标题构造搜索链接"
+  },
+  {
+    "name": "头条热榜",
+    "category": "ai_industry",
+    "type": "hot_api",
+    "lang": "zh",
+    "enabled": true,
+    "url": "https://60s.viki.moe/v2/toutiao",
+    "include_keywords": [
+      "AI", "人工智能", "大模型", "机器人", "算力", "芯片", "智能体",
+      "DeepSeek", "豆包", "自动驾驶", "英伟达", "GPT"
+    ],
+    "note": "热搜榜没有发布时间，published_at 记为 null"
+  }
+]

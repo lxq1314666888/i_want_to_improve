@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-15",
+  "note": "采集与产物的全局设置。改完 push 即生效（经 apply-config.yml 同步到 D1）。",
+
+  "collection": {
+    "schedule_cron": "17 23 * * *",
+    "schedule_note": "UTC 23:17 = 北京时间 07:17。GitHub Actions 的 cron 是 UTC。",
+    "max_items_per_source": 25,
+    "max_sources": 60,
+    "retention_days": 30,
+    "concurrency": 4,
+    "request_interval_sec": 0.3,
+    "timeout_sec": 20
+  },
+
+  "filter": {
+    "note": "采集后过滤。exclude 命中标题即丢弃，用于合规与降噪。",
+    "exclude_keywords": [
+      "股价", "美股", "港股", "A股", "纳斯达克", "道琼斯",
+      "币圈", "加密货币", "比特币", "以太坊", "合约", "杠杆", "爆仓", "永续",
+      "外汇", "炒汇", "贵金属交易",
+      "赌博", "博彩", "彩票", "六合彩",
+      "色情", "涉黄", "约炮",
+      "刷单", "刷量", "拉人头", "传销", "资金盘",
+      "代开发票", "洗钱"
+    ],
+    "include_keywords": [],
+    "include_keywords_note": "留空表示不过滤。填了就只保留标题命中任一关键词的条目。",
+    "min_title_length": 6,
+    "dedupe_across_sources": true
+  },
+
+  "digest": {
+    "note": "日报/选题卡的生成参数。由 WorkBuddy 侧的 Agent 读取执行。",
+    "timezone": "Asia/Shanghai",
+    "deliver_at": "09:00",
+    "items_per_topic": 6,
+    "topic_order": ["ai_industry", "ai_tools", "indie", "creator", "ai_tech", "ai_releases"],
+    "min_numbers_per_pick": 3,
+    "numbers_note": "每个选题至少要有 3 个具体数字才算合格（金额/时间/比例/数量），否则降级到备选。",
+    "compliance_note": "产物不得包含美股港股、币圈合约杠杆、外汇、赌博、色情、诈骗刷单类内容。"
+  },
+
+  "targets": [
+    {
+      "id": "gzh",
+      "name": "公众号",
+      "account": "互联网赚钱拆解",
+      "positioning": "每天一个搞钱实例，只拆具体可操作的项目",
+      "length": "1500-2500 字",
+      "tone": "口语化，第一人称，不端着"
+    },
+    {
+      "id": "xhs",
+      "name": "小红书",
+      "length": "300-600 字",
+      "tone": "短句、多分段、带具体数字"
+    },
+    {
+      "id": "douyin",
+      "name": "抖音",
+      "length": "60-90 秒口播稿",
+      "tone": "前 3 秒给钩子，中间给数字，结尾给行动"
+    }
+  ]
+}
