@@ -137,11 +137,30 @@ def publication_date(value, now):
         return None
 
 
-def normalize(raw, source, now):
+def rewrite_host(url, host):
+    """把条目 URL 的 host 换成指定值。
+
+    镜像站场景专用：同一内容经不同镜像（如各个 Nitter 实例）返回的 URL 不同，
+    不归一化的话，跨实例的同一推文会被当成不同条目、无法去重，多实例冗余也就失去意义。
+    归一化后既让冗余真正生效，也让用户拿到原站链接而不是镜像链接。
+    """
+    if not host or not url:
+        return url
+    parsed = urllib.parse.urlsplit(url)
+    if not parsed.hostname or parsed.hostname.lower() == host.lower():
+        return url
+    # 统一用 https：镜像站的 <link> 常写成 http（如 Nitter），
+    # 但目标是知名原站，http 形式既不规范也会被部分客户端拒收
+    return urllib.parse.urlunsplit(
+        ("https", host, parsed.path, parsed.query, parsed.fragment))
+
+
+def normalize(raw, source, now, canonical_host=None):
     url = canonical_url(raw.get("url"))
     title = clean_text(raw.get("title"), 300)
     if not url or len(url) > 2048 or not title:
         return None
+    url = rewrite_host(url, canonical_host)
     published = publication_date(raw.get("published_at"), now)
     if published and published < now - timedelta(days=30):
         return None
@@ -478,8 +497,9 @@ def collect_source(config, client, now):
     else:
         raise CollectorError("unsupported source type")
     unique = {}
+    canonical_host = config.get("canonical_host")
     for row in raw:
-        item = normalize(row, config["name"], now)
+        item = normalize(row, config["name"], now, canonical_host)
         if item is not None:
             unique.setdefault(item["id"], item)
     return sorted(unique.values(), key=lambda item: item["published_at"] or "", reverse=True)[:MAX_ITEMS]
@@ -615,7 +635,10 @@ def load_filters(path=DEFAULT_SETTINGS):
             minimum if isinstance(minimum, int) and minimum > 0 else 0)
 
 
-def load_sources(path, allowed_topics=None, max_sources=MAX_SOURCES):
+def load_sources(path, allowed_topics=None, max_sources=None):
+    # 未显式指定时跟随 settings.json，避免配置调高了上限、这里还卡在旧常量上
+    if max_sources is None:
+        max_sources = load_limits().get("max_sources", MAX_SOURCES)
     try:
         with open(path, "rb") as handle:
             data = handle.read(256 * 1024 + 1)
@@ -640,6 +663,10 @@ def load_sources(path, allowed_topics=None, max_sources=MAX_SOURCES):
                 raise ValueError()
             category = source.get("category")
             if category is not None and allowed_topics is not None and category not in allowed_topics:
+                raise ValueError()
+            host = source.get("canonical_host")
+            if host is not None and (not isinstance(host, str)
+                                     or not re.fullmatch(r"[a-z0-9.-]+", host)):
                 raise ValueError()
             names.add(name)
         return sources

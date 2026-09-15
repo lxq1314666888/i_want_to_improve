@@ -94,6 +94,16 @@ def check_sources():
         if lang is not None and lang not in ("zh", "en"):
             problem(f"{where}（{name}）：lang 只能是 zh 或 en，实际是 「{lang}」")
 
+        host = source.get("canonical_host")
+        if host is not None and (not isinstance(host, str) or not host.strip()
+                                 or "/" in host or " " in host):
+            problem(f"{where}（{name}）：canonical_host 应是纯主机名（如 x.com），实际是 「{host}」")
+
+        keywords = source.get("include_keywords")
+        if keywords is not None and (not isinstance(keywords, list)
+                                     or not all(isinstance(k, str) and k for k in keywords)):
+            problem(f"{where}（{name}）：include_keywords 必须是非空字符串数组")
+
     if len(enabled) > ceiling:
         problem(f"{relative(path)}：启用 {len(enabled)} 个源，超过上限 {ceiling}"
                 f"（可在 settings.json 的 collection.max_sources 调整）")
