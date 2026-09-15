@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { before, after, test } from 'node:test';
 import { spawn, spawnSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -202,12 +202,16 @@ test('category queries diversify sources and provide bounded pagination', async 
 
 test('source discovery reflects the enabled config and aggregation provenance', async () => {
   const status = await (await request('/api/status')).json();
-  assert.equal(status.configured_sources.length, 44);
-  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, 6);
+  // 期望值从 config/ 推导，而不是硬编码数字——否则每增删一个源都要改测试
+  const declared = JSON.parse(readFileSync(new URL('../config/sources.json', import.meta.url), 'utf8'));
+  const enabled = declared.filter(source => source.enabled !== false);
+  const topics = JSON.parse(readFileSync(new URL('../config/topics.json', import.meta.url), 'utf8')).topics;
+  assert.equal(status.configured_sources.length, enabled.length);
+  assert.equal(new Set(status.configured_sources.map(source => source.category)).size, topics.length);
   assert.ok(status.configured_sources.every(source => source.category !== 'official_ai'), '旧分类不应存在');
   assert.ok(status.configured_sources.some(source => source.name === 'vLLM Releases' && source.type === 'github_releases'));
   assert.ok(status.configured_sources.some(source => source.lang === 'zh'), '应包含中文源');
-  assert.equal(status.topics.length, 6);
+  assert.equal(status.topics.length, topics.length);
   assert.ok(status.topics.some(topic => topic.id === 'ai_industry' && topic.name));
   const digest = status.configured_sources.find(source => source.type === 'ainews');
   assert.equal(digest.category, 'ai_industry');

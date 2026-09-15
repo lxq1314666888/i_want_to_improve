@@ -334,14 +334,17 @@ class CollectionTests(unittest.TestCase):
 
     def test_default_sources_relative_to_script(self):
         sources = c.load_sources(c.DEFAULT_SOURCES)
-        self.assertEqual(len(sources), 44)
-        self.assertTrue({"OpenAI", "Hugging Face", "Hacker News", "AINews via Latent Space"}.issubset({s["name"] for s in sources}))
-        self.assertEqual(len({s["category"] for s in sources}), 6)
-        self.assertEqual(c.DEFAULT_SOURCES, ROOT / "config" / "sources.json")
-        # enabled=false 的源不参与采集，也不占用数量配额
         with open(c.DEFAULT_SOURCES, encoding="utf-8") as handle:
             declared = json.load(handle)
+        enabled = [s for s in declared if s.get("enabled") is not False]
         disabled = [s["name"] for s in declared if s.get("enabled") is False]
+        # 期望值从配置推导，避免每增删一个源都要改测试
+        self.assertEqual(len(sources), len(enabled))
+        self.assertGreaterEqual(len(sources), 30, "启用源数量应保持在可用规模")
+        self.assertTrue({"OpenAI", "Hugging Face", "Hacker News", "AINews via Latent Space"}.issubset({s["name"] for s in sources}))
+        self.assertEqual(len({s["category"] for s in sources}), len(c.load_topic_ids()))
+        self.assertEqual(c.DEFAULT_SOURCES, ROOT / "config" / "sources.json")
+        # enabled=false 的源不参与采集，也不占用数量配额
         self.assertEqual(len(declared), len(sources) + len(disabled))
         self.assertTrue(disabled, "配置中应保留待验证源的停用占位")
 
