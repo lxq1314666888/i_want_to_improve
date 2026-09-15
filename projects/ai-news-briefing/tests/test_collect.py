@@ -239,14 +239,33 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(len(items), 1)
 
     def test_source_limit_remains_bounded_and_matches_api_run_limit(self):
+        # 显式传上限：默认上限来自 settings.json、会随配置变动，不适合当断言基准
+        limit = 5
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "sources.json"
-            configs = [dict(SOURCES[0], name=f"Source {i}") for i in range(c.MAX_SOURCES)]
+            configs = [dict(SOURCES[0], name=f"Source {i}") for i in range(limit)]
             path.write_text(json.dumps(configs))
-            self.assertEqual(len(c.load_sources(path)), c.MAX_SOURCES)
+            self.assertEqual(len(c.load_sources(path, max_sources=limit)), limit)
             path.write_text(json.dumps(configs + [dict(SOURCES[0], name="Source overflow")]))
             with self.assertRaises(c.CollectorError):
-                c.load_sources(path)
+                c.load_sources(path, max_sources=limit)
+
+    def test_canonical_host_rewrites_mirror_urls_for_dedup(self):
+        # 镜像站（如各 Nitter 实例）返回的 URL 主机各不相同但指向同一条内容。
+        # 归一化后既能跨实例去重，也让用户引用到原站链接而不是镜像链接。
+        mirrors = ("https://nitter.example.net", "https://mirror.other.org")
+        items = [c.normalize({"url": f"{host}/someone/status/12345#m", "title": "Same post"},
+                             "X via Nitter", NOW, "x.com") for host in mirrors]
+        self.assertEqual({item["url"] for item in items}, {"https://x.com/someone/status/12345"})
+        self.assertEqual(len({item["id"] for item in items}), 1, "同一内容经不同镜像应得到同一个 id")
+        # 镜像的 <link> 常写成 http，归一后必须是 https
+        http_item = c.normalize({"url": "http://nitter.example.net/someone/status/12345",
+                                 "title": "Same post"}, "X via Nitter", NOW, "x.com")
+        self.assertEqual(http_item["url"], "https://x.com/someone/status/12345")
+        # 未配置 canonical_host 时保持原样，不影响普通源
+        untouched = c.normalize({"url": "https://nitter.example.net/someone/status/12345",
+                                 "title": "Same post"}, "X via Nitter", NOW)
+        self.assertEqual(untouched["url"], "https://nitter.example.net/someone/status/12345")
 
     def test_hn_bounded_sequential_and_skips(self):
         client = Mock()
