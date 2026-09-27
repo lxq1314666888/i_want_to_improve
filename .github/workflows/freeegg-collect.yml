@@ -1,0 +1,32 @@
+# 赛博鸡蛋 · GitHub Actions 定时采集（仅 freeegg 国外源）
+# 与 Cloudflare Worker cron 双通道：数据同时进 GitHub 仓库与 D1
+name: freeegg-collect
+on:
+  schedule:
+    - cron: '30 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Collect freeegg (overseas source only)
+        working-directory: Projects/freeegg-local
+        run: |
+          mkdir -p data/candidates
+          node tools/collect.js --source freeegg
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Projects/freeegg-local/data
+          if git diff --cached --quiet; then
+            echo "no data changes"
+          else
+            git commit -m "chore(freeegg): auto collect overseas eggs [skip ci]"
+            git push
+          fi
