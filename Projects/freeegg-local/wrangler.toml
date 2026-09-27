@@ -1,0 +1,20 @@
+# 赛博鸡蛋 · 云端版（Cloudflare Worker + D1）
+# 部署：CLOUDFLARE_API_TOKEN=<token> CLOUDFLARE_ACCOUNT_ID=<account> npx wrangler deploy
+name = "workbuddy-freeegg"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# 定时采集：每 6 小时抓一次 freeegg.top（仅国外源，不含本地候选）
+[triggers]
+crons = ["15 */6 * * *"]
+
+# D1 数据库（部署前先 wrangler d1 create workbuddy-freeegg 并回填 database_id）
+[[d1_databases]]
+binding = "DB"
+database_name = "workbuddy-freeegg"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+# 前端静态资源（public/）
+[assets]
+directory = "./public"
+binding = "ASSETS"
