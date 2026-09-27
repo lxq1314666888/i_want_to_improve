@@ -19,6 +19,10 @@ jobs:
         run: |
           mkdir -p data/candidates
           node tools/collect.js --source freeegg
+      - name: Refine to topic list
+        working-directory: Projects/freeegg-local
+        run: |
+          node tools/refine.js --file data/eggs.json --out data/refined.md
       - name: Commit and push data
         run: |
           git config user.name "github-actions[bot]"
