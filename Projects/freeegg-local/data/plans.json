@@ -1,0 +1,892 @@
+{
+  "version": "2026-09-24",
+  "vendors": [
+    {
+      "id": "zhipu-glm",
+      "name": "智谱 GLM",
+      "product": "GLM Coding Plan",
+      "tagline": "GLM-5.3 全档可用，Lite 到 Max 统一模型阵容",
+      "models": [
+        "GLM-5.3",
+        "GLM-5.3-Flash"
+      ],
+      "quotaBasis": "5h 2K-28K · 每周 10K-140K",
+      "status": "available",
+      "highlights": [
+        "Flash 原生多模态",
+        "4 类 MCP",
+        "20+ 工具",
+        "非高峰 5 折"
+      ],
+      "entryPrice": "¥118/月起",
+      "entryPriceCny": 118,
+      "plans": [
+        {
+          "name": "Lite",
+          "price": "¥118/月",
+          "note": "年付 ¥94.4/月",
+          "features": [
+            "5h 2K · 每周 10K 积分",
+            "GLM-5.3 全档可用",
+            "支持 ZCode 等 20+ 工具"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥538/月",
+          "note": "年付 ¥430.4/月",
+          "features": [
+            "5h 12K · 每周 60K 积分",
+            "更快生成速度与高峰保障",
+            "精选 MCP 工具"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥1,078/月",
+          "note": "年付 ¥862.4/月",
+          "features": [
+            "5h 28K · 每周 140K 积分",
+            "首发接入最新旗舰模型",
+            "高峰期专属资源优先保障"
+          ]
+        }
+      ],
+      "link": "https://bigmodel.cn/glm-coding",
+      "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "opencode-go",
+      "name": "OpenCode",
+      "product": "OpenCode Go",
+      "tagline": "20+ 款开源模型 6 倍用量，兼容主流接口，可接任意 Agent",
+      "models": [
+        "Grok 4.6",
+        "GLM-5.3",
+        "GLM-5.3-Flash",
+        "Kimi K3",
+        "Qwen3.8 Max",
+        "DeepSeek V4",
+        "MiniMax M3",
+        "LongCat-2.0"
+      ],
+      "quotaBasis": "5h $12 / 周 $30 / 月 $60",
+      "status": "available",
+      "highlights": [
+        "性价比之王",
+        "20+ 款开源模型",
+        "兼容主流 API"
+      ],
+      "entryPrice": "$10/月",
+      "entryPriceCny": 70,
+      "plans": [
+        {
+          "name": "Go",
+          "price": "$10/月",
+          "note": "6 倍用量 · 随时取消",
+          "features": [
+            "20+ 款开源模型",
+            "5h $12 · 周 $30 · 月 $60",
+            "兼容 OpenAI / Anthropic",
+            "DeepSeek V4.1 Flash 限时 4 倍用量"
+          ]
+        }
+      ],
+      "link": "https://opencode.ai/zh/go",
+      "updatedAt": "2026-09-14",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "command-code",
+      "name": "Command Code",
+      "product": "Command Code Plan",
+      "tagline": "$1 起充且 credits 永不过期，Pro 解锁 Claude/GPT",
+      "models": [
+        "MiniMax-M3",
+        "GPT-5.6 Sol",
+        "GLM-5.2",
+        "DeepSeek V4 Flash",
+        "Kimi",
+        "Qwen 3.8",
+        "Claude",
+        "Laguna S 2.1",
+        "LongCat 2.0",
+        "MiMo V2.5"
+      ],
+      "quotaBasis": "$10-300 credits/月（永不过期）",
+      "status": "available",
+      "highlights": [
+        "$1 最低门槛",
+        "31+ 模型",
+        "credits 永不过期",
+        "Laguna 免费"
+      ],
+      "entryPrice": "$1/月起",
+      "entryPriceCny": 7,
+      "plans": [
+        {
+          "name": "Go",
+          "price": "$1/月",
+          "note": "另收支付处理费",
+          "features": [
+            "每月 $10 额度（约 15K 请求）",
+            "开源模型 + taste-1",
+            "MiniMax M3 2× 用量",
+            "MiMo V2.5 低至 1 折",
+            "Laguna / LongCat 免费"
+          ]
+        },
+        {
+          "name": "GOAT",
+          "price": "$10/月",
+          "note": "最高 ~$100 等效用量",
+          "features": [
+            "每月 $70 额度（约 75K 请求）",
+            "30+ 开源与闭源模型",
+            "7× 倍率，含优惠超 $100",
+            "Laguna / LongCat 免费"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$20/月",
+          "note": "",
+          "features": [
+            "每月 $80 额度（约 100K 请求）",
+            "45+ 模型，含 Claude/GPT",
+            "GOAT 全部权益 + $10 额度",
+            "Opus/Fable 需 Max 档"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "$100-200/月",
+          "note": "10× / 20× 双档",
+          "features": [
+            "每月 $150-300 额度",
+            "约 219-437K 请求/月",
+            "全模型解锁（Opus/Fable/Fugu）",
+            "更高速率限制 · 优先支持"
+          ]
+        }
+      ],
+      "link": "https://commandcode.ai/pricing",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "xiaomi-mimo",
+      "name": "小米 MiMo",
+      "product": "MiMo Coding Plan",
+      "tagline": "V2.6 系列 3 款新模型上线，团队版订阅上新",
+      "models": [
+        "MiMo-V2.6-Pro",
+        "MiMo-V2.6-Flash",
+        "MiMo 全模态",
+        "MiMo TTS"
+      ],
+      "quotaBasis": "492-9,840 亿 Credits/年",
+      "status": "available",
+      "highlights": [
+        "V2.6 新旗舰",
+        "团队版上新",
+        "首购 88 折",
+        "夜间 0.8x 消耗"
+      ],
+      "entryPrice": "¥39/月起",
+      "entryPriceCny": 39,
+      "plans": [
+        {
+          "name": "Lite",
+          "price": "¥39/月",
+          "note": "年付 ¥34.32/月",
+          "features": [
+            "492 亿 Credits/年",
+            "V2.6 全新旗舰模型",
+            "V2.5 文本款 10-21 下线",
+            "TTS 限时免费"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "¥99/月",
+          "note": "年付 ¥87.12/月",
+          "features": [
+            "1,320 亿 Credits/年",
+            "2.7× Lite 用量",
+            "夜间 0.8x 消耗"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥329/月",
+          "note": "年付 ¥289.52/月",
+          "features": [
+            "4,560 亿 Credits/年",
+            "9.3× Lite 用量",
+            "MiMo Claw 加购可选"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥659/月",
+          "note": "年付 ¥579.92/月",
+          "features": [
+            "9,840 亿 Credits/年",
+            "20× Lite 用量",
+            "重度开发者首选"
+          ]
+        },
+        {
+          "name": "团队版",
+          "price": "¥99/席/月起",
+          "note": "2 席起购",
+          "features": [
+            "Standard/Pro/Max 三档",
+            "每席 110-820 亿 Credits/月",
+            "成员席位统一管理",
+            "年付约 88 折"
+          ]
+        }
+      ],
+      "link": "https://platform.xiaomimimo.com?ref=MZLQ4G",
+      "updatedAt": "2026-09-22",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "product": "Kimi Code Plan",
+      "tagline": "新会员体系四档，Kimi Code 自 Plus 起可调用",
+      "models": [
+        "Kimi K3",
+        "K3-256K",
+        "Kimi K2.7",
+        "K2.7 Code"
+      ],
+      "quotaBasis": "Agent 额度 1×/2×/4×/14×",
+      "status": "available",
+      "highlights": [
+        "K3 2.8T 参数",
+        "1M 上下文",
+        "新会员体系四档",
+        "Agent 多任务并行"
+      ],
+      "entryPrice": "¥49/月起",
+      "entryPriceCny": 49,
+      "plans": [
+        {
+          "name": "Go",
+          "price": "¥49/月",
+          "note": "日常使用",
+          "features": [
+            "更多 Agent 额度",
+            "Office 文件处理 · 深度研究 · 网站部署",
+            "Kimi Code 需 Plus 及以上"
+          ]
+        },
+        {
+          "name": "Plus",
+          "price": "¥99/月",
+          "note": "效率升级",
+          "features": [
+            "2 倍 Agent 额度",
+            "Office 文件处理 · 深度研究 · 网站部署",
+            "Kimi Code 可调用"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥199/月",
+          "note": "专业优选",
+          "features": [
+            "4 倍 Agent 额度",
+            "Office 文件处理 · 深度研究 · 网站部署",
+            "Agent 多任务并行",
+            "Kimi Code 可调用"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥699/月",
+          "note": "全能尊享",
+          "features": [
+            "14 倍 Agent 额度",
+            "Office 文件处理 · 深度研究 · 网站部署",
+            "Agent 多任务并行",
+            "Kimi Code 可调用"
+          ]
+        }
+      ],
+      "link": "https://www.kimi.com/membership/pricing",
+      "updatedAt": "2026-09-24",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "product": "Token Plan",
+      "tagline": "M3 旗舰与全模态共享额度，按月计算 Token 用量",
+      "models": [
+        "MiniMax M3",
+        "M2.7",
+        "M2.7-highspeed",
+        "M2.5",
+        "H3",
+        "Speech 2.8"
+      ],
+      "quotaBasis": "6 亿-71 亿+ token/月",
+      "status": "available",
+      "highlights": [
+        "M3 旗舰",
+        "全模态共享",
+        "H3 已开源"
+      ],
+      "entryPrice": "¥49/月起",
+      "entryPriceCny": 49,
+      "plans": [
+        {
+          "name": "Plus",
+          "price": "¥49/月",
+          "note": "年付 ¥490",
+          "features": [
+            "6 亿+ token/月",
+            "3-4 Agent 并发",
+            "全模态共享额度"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥119/月",
+          "note": "年付 ¥1,190",
+          "features": [
+            "18 亿+ token/月",
+            "4-5 Agent 并发",
+            "Hailuo 视频 3 条/日"
+          ]
+        },
+        {
+          "name": "Ultra",
+          "price": "¥469/月",
+          "note": "年付 ¥4,690",
+          "features": [
+            "71 亿+ token/月",
+            "6-7 Agent 并发",
+            "Hailuo 视频 5 条/日"
+          ]
+        }
+      ],
+      "link": "https://platform.minimaxi.com/subscribe/token-plan",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "product": "ChatGPT 会员",
+      "tagline": "OpenAI 旗舰助手，GPT-6 Astra 陆续开放，GPT-5.6 全系可用",
+      "models": [
+        "GPT-6 Astra",
+        "GPT-5.6 Sol",
+        "GPT-5.6 Terra",
+        "GPT-5.6 Luna"
+      ],
+      "quotaBasis": "按套餐用量限制",
+      "status": "available",
+      "highlights": [
+        "GPT-6 Astra",
+        "Luna 无限聊",
+        "Codex 多智能体"
+      ],
+      "entryPrice": "$8/月起",
+      "entryPriceCny": 56,
+      "plans": [
+        {
+          "name": "Go",
+          "price": "$8/月",
+          "note": "",
+          "features": [
+            "GPT-5.6 Luna（免费版同款无限聊）",
+            "高于免费版 10 倍消息额度",
+            "文件上传与图像生成"
+          ]
+        },
+        {
+          "name": "Plus",
+          "price": "$20/月",
+          "note": "5 小时+周额度",
+          "features": [
+            "GPT-5.6 Sol 等全系模型",
+            "扩展深度研究与定时任务",
+            "扩展 Codex 与 Work 多智能体"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$100-200/月",
+          "note": "仅周额度",
+          "features": [
+            "GPT-6 Astra 优先开放",
+            "扩展深度研究与定时任务",
+            "扩展 Codex 与 Work 多智能体"
+          ]
+        }
+      ],
+      "link": "https://chatgpt.com/pricing",
+      "updatedAt": "2026-09-14",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "volcengine-ark",
+      "name": "火山引擎方舟",
+      "product": "方舟 Coding Plan",
+      "tagline": "GLM、豆包、DeepSeek 等模型丰富，活动期 2.5 折",
+      "models": [
+        "Doubao-Seed-2.1-turbo",
+        "Doubao-Seed-Evolving",
+        "GLM-5.3",
+        "Kimi-K2.7-Code",
+        "DeepSeek-V4",
+        "MiniMax-M3",
+        "Auto 模式"
+      ],
+      "quotaBasis": "5h ~1,200 次 · 周 ~9,000 次",
+      "status": "limited",
+      "highlights": [
+        "限时 2.5 折",
+        "模型最丰富",
+        "Auto 路由 K3"
+      ],
+      "entryPrice": "¥9.9/月首购",
+      "entryPriceCny": 9.9,
+      "plans": [
+        {
+          "name": "Lite",
+          "price": "¥40/月",
+          "note": "首购 ¥9.9 · 受邀折扣",
+          "features": [
+            "豆包 / GLM / DeepSeek 等",
+            "支持 Auto 模式",
+            "活动期至 11/8，名额有限",
+            "满足个人开发者轻量需求"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥200/月",
+          "note": "前两月 ¥49.9/月",
+          "features": [
+            "5 倍于 Lite 套餐用量",
+            "支持 Auto 模式",
+            "满足高阶用户大规模编程需求"
+          ]
+        }
+      ],
+      "link": "https://ai.volcengine.com/activity/codingplan",
+      "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "volcengine-ark-agent",
+      "name": "火山引擎方舟",
+      "product": "方舟 Agent Plan",
+      "tagline": "全模态不止编程：生图、视频、语音、联网搜索一锅端，限时 9.9 元起（活动至 11/8）",
+      "models": [
+        "Doubao-Seed-Evolving",
+        "GLM-5.3",
+        "DeepSeek-V4",
+        "Kimi-K3",
+        "MiniMax-M3",
+        "Seedance 2.0",
+        "Auto 模式"
+      ],
+      "quotaBasis": "月 20K-500K Agent 燃料值",
+      "status": "limited",
+      "highlights": [
+        "超全模态模型",
+        "Harness 升级",
+        "首两月 2.5 折",
+        "Auto 模式 5 折"
+      ],
+      "entryPrice": "¥9.9/月首购",
+      "entryPriceCny": 9.9,
+      "plans": [
+        {
+          "name": "Small",
+          "price": "¥40/月",
+          "note": "首购 ¥9.9/月（前两月）",
+          "features": [
+            "体验版本，仅供测试",
+            "每月 20,000 Agent 燃料值",
+            "主流编程模型 + 生图/向量化",
+            "联网搜索 Harness 开箱即用"
+          ]
+        },
+        {
+          "name": "Medium",
+          "price": "¥200/月",
+          "note": "前两月 ¥49.9/月",
+          "features": [
+            "5× Small 用量，月 100K 燃料值",
+            "享受 Small 全部权益",
+            "多模态及联网搜索 Harness 升级",
+            "支持 Kimi K3（1M 上下文）"
+          ]
+        },
+        {
+          "name": "Large",
+          "price": "¥500/月",
+          "note": "建议同时 2+ 项目开发",
+          "features": [
+            "12.5× 用量，月 250K 燃料值",
+            "支持 Seedance 2.0 视频生成",
+            "享受 Medium 全部权益",
+            "高阶多模态及联网搜索 Harness"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥1000/月",
+          "note": "顶配旗舰额度",
+          "features": [
+            "25× 用量，月 500K 燃料值",
+            "支持 Seedance 2.0 视频生成",
+            "享受 Large 全部权益",
+            "生产级多模态与 Harness"
+          ]
+        }
+      ],
+      "link": "https://ai.volcengine.com/activity/agentplan",
+      "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "aliyun-bailian",
+      "name": "阿里云百炼",
+      "product": "Token Plan",
+      "tagline": "Credits 制 Token Plan，Qwen3.8-Max 与多模态模型共享额度",
+      "models": [
+        "Qwen3.8-Max",
+        "qwen3.8-flash",
+        "deepseek-v4-pro-0813",
+        "qwen3.7-plus",
+        "qwen-image-3.0-pro",
+        "GLM"
+      ],
+      "quotaBasis": "2,500-40,000 Credits/7天",
+      "status": "available",
+      "highlights": [
+        "Qwen3.8-Max",
+        "多模态共享额度",
+        "夜间五折"
+      ],
+      "entryPrice": "¥39/月起",
+      "entryPriceCny": 39,
+      "plans": [
+        {
+          "name": "Lite",
+          "price": "¥39/月",
+          "note": "原价 ¥60 · 6.5 折",
+          "features": [
+            "2,500 Credits/7天",
+            "1-2 Agent 并发",
+            "夜间 22:00-08:00 五折"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "¥139/月",
+          "note": "原价 ¥180 · 7.7 折",
+          "features": [
+            "10,000 Credits/7天",
+            "3-4 Agent 并发",
+            "夜间五折更省"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥499/月",
+          "note": "原价 ¥600 · 8.3 折",
+          "features": [
+            "40,000 Credits/7天",
+            "6-8 Agent 并发",
+            "夜间五折更省"
+          ]
+        }
+      ],
+      "link": "https://www.aliyun.com/product/bailian",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "product": "Claude 会员",
+      "tagline": "Anthropic 官方，Fable 5.1 已上线，Pro 需另购 credits",
+      "models": [
+        "Fable 5.1",
+        "Fable 5",
+        "Opus 5",
+        "Sonnet 5",
+        "Haiku 4.5"
+      ],
+      "quotaBasis": "Pro 5× / Max 5×-20×",
+      "status": "available",
+      "highlights": [
+        "Fable 5.1 上线",
+        "Opus 5",
+        "扩展思考",
+        "MCP"
+      ],
+      "entryPrice": "$20/月起",
+      "entryPriceCny": 140,
+      "plans": [
+        {
+          "name": "Pro",
+          "price": "$20/月",
+          "note": "年付折合 $17/月",
+          "features": [
+            "比免费版多 5 倍用量",
+            "Opus 5 / Sonnet 5 全部可用",
+            "Fable 5.1 需另购 credits",
+            "200K 上下文",
+            "包含 Claude Code CLI"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "$100-200/月",
+          "note": "",
+          "features": [
+            "5× 或 20× Pro 用量",
+            "Fable 5.1 限每周额度一半",
+            "高峰期优先保障",
+            "新模型与功能优先"
+          ]
+        }
+      ],
+      "link": "https://claude.com/pricing",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "xfyun-astron",
+      "name": "讯飞星火",
+      "product": "Astron Coding Plan",
+      "tagline": "Spark、GLM、DeepSeek、Kimi 次数制套餐，波谷 8 折",
+      "models": [
+        "Spark X2",
+        "Auto",
+        "GLM-5.2",
+        "DeepSeek-V4-Pro",
+        "Kimi-K2.7-Code",
+        "MiniMax-M2.5",
+        "Qwen3.6"
+      ],
+      "quotaBasis": "5h 6,000 次 · 月 90,000 次",
+      "status": "available",
+      "highlights": [
+        "次数制多模型集合",
+        "波谷时段 8 折",
+        "速通版免排队",
+        "Spark X2 自研"
+      ],
+      "entryPrice": "¥199/月起",
+      "entryPriceCny": 199,
+      "plans": [
+        {
+          "name": "高效版",
+          "price": "¥199/月",
+          "note": "季付 ¥538",
+          "features": [
+            "5h 6K · 每月 90K 次",
+            "GLM-5.2/Kimi 抵扣系数 5",
+            "波谷时段 8 折",
+            "仅限编程工具交互场景"
+          ]
+        },
+        {
+          "name": "速通版",
+          "price": "¥999/月",
+          "note": "限时首月 ¥699",
+          "features": [
+            "月 30,000 次请求",
+            "优先响应免高峰排队",
+            "7/23 新上线"
+          ]
+        }
+      ],
+      "link": "https://maas.xfyun.cn/packageSubscription?tab=month",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "google-ai",
+      "name": "Google",
+      "product": "Google AI 会员",
+      "tagline": "Gemini CLI、Antigravity 与 Jules 编码额度，Ultra 已降价",
+      "models": [
+        "Gemini 3.1 Pro",
+        "Gemini 3 Pro",
+        "Gemini CLI",
+        "Jules"
+      ],
+      "quotaBasis": "Gemini CLI 1,500 请求/日",
+      "status": "available",
+      "highlights": [
+        "Ultra $99.99",
+        "Antigravity",
+        "Jules 异步任务",
+        "送 Cloud 抵扣"
+      ],
+      "entryPrice": "$19.99/月起",
+      "entryPriceCny": 140,
+      "plans": [
+        {
+          "name": "AI Pro",
+          "price": "$19.99/月",
+          "note": "",
+          "features": [
+            "Gemini CLI 1,500 请求/日",
+            "Antigravity / Jules 提额",
+            "Gemini 3.1 Pro 全量访问",
+            "每月 $10 Cloud 抵扣"
+          ]
+        },
+        {
+          "name": "AI Ultra",
+          "price": "$99.99/月",
+          "note": "原 $249.99",
+          "features": [
+            "20TB 云存储",
+            "AI Studio 最高限额",
+            "每月 $40 Cloud 抵扣",
+            "优先访问新功能"
+          ]
+        }
+      ],
+      "link": "https://one.google.com/about/google-ai-plans",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "supergrok",
+      "name": "Grok",
+      "product": "SuperGrok",
+      "tagline": "Grok 4.6 与 Grok Build 编码，Plus 提供峰值优先",
+      "models": [
+        "Grok 4.6",
+        "Grok Code Fast 1"
+      ],
+      "quotaBasis": "按速率限制（非额度制）",
+      "status": "available",
+      "highlights": [
+        "Grok 4.6",
+        "Grok Build",
+        "Plus 峰值优先",
+        "Code Fast 编码"
+      ],
+      "entryPrice": "$30/月",
+      "entryPriceCny": 210,
+      "plans": [
+        {
+          "name": "SuperGrok",
+          "price": "$30/月",
+          "note": "",
+          "features": [
+            "Grok 4.6 旗舰模型",
+            "全功能更高限速",
+            "图像与视频生成",
+            "Grok Build beta 可用"
+          ]
+        },
+        {
+          "name": "SuperGrok Plus",
+          "price": "$100/月",
+          "note": "",
+          "features": [
+            "Build 等全功能大幅提量",
+            "1080p 视频生成",
+            "峰值时段优先访问",
+            "闪电回复与新功能尝鲜"
+          ]
+        }
+      ],
+      "link": "https://x.ai/pricing",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "meta-muse-code",
+      "name": "Meta",
+      "product": "Muse Code",
+      "tagline": "Meta 编程 Agent，High 档起可用 Muse Spark 1.3",
+      "models": [
+        "Muse Spark 1.3",
+        "Muse Spark 1.2"
+      ],
+      "quotaBasis": "5h 10-50 请求 · 高档 3×/10×",
+      "status": "available",
+      "highlights": [
+        "$5 最低门槛",
+        "Spark 1.3 上线",
+        "多模态上传",
+        "工作流引擎"
+      ],
+      "entryPrice": "$5/月起",
+      "entryPriceCny": 35,
+      "plans": [
+        {
+          "name": "Everyday Usage",
+          "price": "$5/月",
+          "note": "",
+          "features": [
+            "Muse Spark 1.2 可用",
+            "5h 10-50 次请求",
+            "图片/视频上传",
+            "语音模式 · 网页搜索"
+          ]
+        },
+        {
+          "name": "High Usage",
+          "price": "$15/月",
+          "note": "3× 额度",
+          "features": [
+            "3× Everyday 额度",
+            "可访问 Muse Spark 1.3",
+            "更多多模态输入"
+          ]
+        },
+        {
+          "name": "Power Usage",
+          "price": "$50/月",
+          "note": "10× 额度",
+          "features": [
+            "10× Everyday 额度",
+            "更高文件上传额度",
+            "新功能抢先体验"
+          ]
+        }
+      ],
+      "link": "https://dev.meta.ai/",
+      "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    }
+  ]
+}
