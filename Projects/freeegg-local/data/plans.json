@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-24",
+  "version": "2026-09-27",
   "vendors": [
     {
       "id": "zhipu-glm",
@@ -567,6 +567,74 @@
       ],
       "link": "https://ai.volcengine.com/activity/agentplan",
       "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "baidu-qianfan",
+      "name": "百度千帆",
+      "product": "千帆 Token Plan 个人版",
+      "tagline": "个人 AI 算力流量包，Token 制与积分制双计费",
+      "models": [
+        "GLM-5.3",
+        "DeepSeek-V4-Pro",
+        "GLM-5.2"
+      ],
+      "quotaBasis": "1,000 万-7 亿 Token/月",
+      "status": "available",
+      "highlights": [
+        "首购5折¥4.9起",
+        "续费首享6折",
+        "闲时低至0.5折",
+        "取消三层限流"
+      ],
+      "entryPrice": "¥4.9/月首购",
+      "entryPriceCny": 4.9,
+      "plans": [
+        {
+          "name": "Mini",
+          "price": "¥9.9/月",
+          "note": "首购 ¥4.9/月",
+          "features": [
+            "1,000 万 Token/月（积分 1,400）",
+            "GLM、DeepSeek 等共享额度",
+            "适配 Cursor、Claude Code 等",
+            "仅限交互式使用，不可自动化调用"
+          ]
+        },
+        {
+          "name": "Lite",
+          "price": "¥40/月",
+          "note": "首购 ¥19.9/月",
+          "features": [
+            "4,200 万 Token/月（积分 6,600）",
+            "额度内高峰不降速",
+            "积分制限额当前限时取消"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥200/月",
+          "note": "首购 ¥99.9/月",
+          "features": [
+            "2.3 亿 Token/月（积分 45,000）",
+            "覆盖高频开发场景",
+            "可升配折算补差，不可降配"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥600/月",
+          "note": "首购 ¥299.9/月",
+          "features": [
+            "7 亿 Token/月（积分 165,000）",
+            "重度开发全场景",
+            "支持跨档直升（Mini→Max）"
+          ]
+        }
+      ],
+      "link": "https://cloud.baidu.com/product/codingplan.html",
+      "updatedAt": "2026-09-27",
       "source": "freeegg",
       "localEdit": false
     },
