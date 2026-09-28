@@ -1,6 +1,48 @@
 {
-  "version": "2026-09-27",
+  "version": "2026-09-28",
   "eggs": [
+    {
+      "id": "zcode-flash-100m-daily-202609",
+      "title": "ZCode 补偿每日领 1 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 90,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-07T23:59:59+08:00",
+      "summary": "争议补偿，全体用户每日领 1 亿 Token",
+      "content": "ZCode 就代码上传争议公布补偿方案，9 月 28 日 10:30 起生效，连续 10 天面向全体用户发放 Token。\n\n- 额度：**每日 1 亿 Token，共 10 万份/天**，先到先得\n- 时间：9 月 28 日至 10 月 7 日，连发 10 天\n- 适用：GLM-5.3-Flash（以客户端活动卡为准），仅限客户端内使用\n- 付费用户：另赠 4 张周额度 + 4 张 5 小时额度重置卡\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载并升级客户端至 3.14.3\n2. 登录后进「灵感与活动」领取当日 Token\n3. 模型选择器选 GLM-5.3-Flash 使用\n\n**注意**：活动源于 9/18 代码上传争议，官方已移除上传链路、删除云端数据并开源（Apache-2.0）；「不发起不上云」承诺与每日份额领取细则以官方公告为准。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-09-28",
+      "updatedAt": "2026-09-28",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "minimax-code-checkin-202609",
+      "title": "MiniMax Code 签到双倍积分",
+      "vendor": "MiniMax",
+      "category": "credits",
+      "score": 74,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-07T23:59:59+08:00",
+      "summary": "每日签到领双倍免费积分，至 10/7",
+      "content": "MiniMax Code 官方限时活动，随新模型 M3.1-Flash-Preview 上线开启，9 月 28 日至 10 月 7 日签到积分翻倍。\n\n- 额度：**每日签到领双倍免费积分**\n- 范围：新老用户同享，无需订阅\n- 适用：全模型通用，含 M3.1-Flash-Preview、H3\n- 重置：活动期 Token Plan 另有额度重置，时点以站内信为准\n\n领取步骤：\n\n1. 打开 [MiniMax Code 官网](https://agent.minimax.cn/)下载桌面端并登录\n2. 客户端内完成每日签到，积分到账\n3. 选 M3.1-Flash-Preview 或 H3 系模型使用\n\n**注意**：双倍积分仅 9/28–10/7 有效，每天记得签到；报料称 9/28–9/30 每日 11:00、16:00 额外重置 Token Plan 额度，以客户端站内信为准。",
+      "images": [],
+      "link": "https://agent.minimax.cn/",
+      "publishedAt": "2026-09-28",
+      "updatedAt": "2026-09-28",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "zhipu-qingyan-shuangjie-202609",
       "title": "清言双节每日领 2000 积分",

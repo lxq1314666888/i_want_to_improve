@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-27",
+  "version": "2026-09-28",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -116,8 +116,8 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.238,
-      "outputCost": 0.748,
+      "inputCost": 1.4,
+      "outputCost": 4.4,
       "score": 81.1,
       "source": "freeegg",
       "localEdit": false
@@ -193,7 +193,7 @@
       "name": "GLM-5.3 Flash",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-26",
-      "inputCost": 0.04,
+      "inputCost": 0.15,
       "outputCost": 0.5,
       "score": 72.6,
       "source": "freeegg",
@@ -237,8 +237,8 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.035,
-      "outputCost": 0.29,
+      "inputCost": 0.0245,
+      "outputCost": 0.6,
       "score": 65.7,
       "source": "freeegg",
       "localEdit": false
@@ -325,8 +325,8 @@
       "name": "DeepSeek V4 Pro 0813",
       "vendor": "DeepSeek",
       "releasedAt": "2026-08-13",
-      "inputCost": 0.24502,
-      "outputCost": 3.5,
+      "inputCost": 0.2523,
+      "outputCost": 4.2,
       "score": 51.2,
       "source": "freeegg",
       "localEdit": false
