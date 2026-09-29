@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-28",
+  "version": "2026-09-29",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -94,8 +94,8 @@
       "name": "Grok 4.7",
       "vendor": "xAI",
       "releasedAt": "2026-09-21",
-      "inputCost": 1.6,
-      "outputCost": 4.8,
+      "inputCost": 2,
+      "outputCost": 6,
       "score": 85.1,
       "source": "freeegg",
       "localEdit": false
@@ -237,8 +237,8 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.0245,
-      "outputCost": 0.6,
+      "inputCost": 0.3,
+      "outputCost": 1.2,
       "score": 65.7,
       "source": "freeegg",
       "localEdit": false
@@ -325,7 +325,7 @@
       "name": "DeepSeek V4 Pro 0813",
       "vendor": "DeepSeek",
       "releasedAt": "2026-08-13",
-      "inputCost": 0.2523,
+      "inputCost": 0.4,
       "outputCost": 4.2,
       "score": 51.2,
       "source": "freeegg",
