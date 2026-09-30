@@ -1,6 +1,27 @@
 {
-  "version": "2026-09-28",
+  "version": "2026-09-30",
   "eggs": [
+    {
+      "id": "huawei-codearts-daily-202609",
+      "title": "华为云码道每日领 1000 万",
+      "vendor": "华为云",
+      "category": "token",
+      "score": 75,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "码道全端每日领 1000 万 Token，当日 24:00 清零",
+      "content": "华为云码道 CodeArts「限时领取 Tokens」官方活动，网页版免下载即用，登录自动到账。\n\n- 额度：**每日 1000 万 Tokens**，登录后自动领取\n- 时效：当日 24:00 清零，不累积至次日\n- 入口：IDE / 插件 / 桌面端 / 网页端 / 小程序全支持\n- 计费：福利模型仅消耗福利 Token，与积分包不互通\n\n四款福利模型：deepseek-v4.1-flash、glm-5.3-flash、deepseek-v4-flash-0731、deepseek-v4-pro-0813。\n\n领取步骤：\n\n1. 打开 [码道网页版](https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk)登录华为云账号\n2. 每日 1000 万 Token 自动到账\n3. 模型选择器切福利模型使用\n\n**注意**：官方标注限时福利，结束时间另行通知；福利 Token 用尽后四款模型不可再用，可切其他内置模型；细则以[官方文档](https://support.huaweicloud.com/offers-codeartsagent/codeartsagent_offers_0001.html)为准。",
+      "images": [],
+      "link": "https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk",
+      "publishedAt": "2026-09-30",
+      "updatedAt": "2026-09-30",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "zcode-flash-100m-daily-202609",
       "title": "ZCode 补偿每日领 1 亿 Token",
