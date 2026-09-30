@@ -2,6 +2,29 @@
   "version": "2026-09-30",
   "eggs": [
     {
+      "id": "xfyun-astudio-checkin-202610",
+      "title": "AStudio 打卡领 10 亿 Token",
+      "vendor": "讯飞 AStudio",
+      "category": "credits",
+      "score": 83,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "startsAt": "2026-10-01T00:00:00+08:00",
+      "preview": true,
+      "expiryDate": "2026-10-07T23:59:59+08:00",
+      "summary": "连续打卡 7 天领 3.5 万积分，最高约 10 亿 Token",
+      "content": "讯飞 AStudio 国庆算力礼包，10 月 1 日至 7 日每日登录打卡领星火 X2.5 积分，连续 7 天累计 35,000 积分，最高相当于 10 亿 Token 调用额度。\n\n- 额度：**单日打卡 5,000 积分，7 天累计 35,000 积分**\n- 适用：星火 X2.5 模型，AStudio 客户端内任务调用\n- 条件：需升级至 3.4.4 版，左下角活动弹窗领取\n- 时效：赠送积分有效期至 10 月 31 日\n\n领取步骤：\n\n1. 打开 [AStudio 下载页](https://agent.xfyun.cn/studio-download/)安装 3.4.4 版\n2. 10 月 1 日起每日登录，左下角活动弹窗打卡\n3. 连续打卡 7 天拿满 35,000 积分\n\n**注意**：Token 换算因任务类型有差异，10 亿为最高值；星辰 MaaS 星火 X2.5 API 同步 3 折至 10 月 31 日（输入 0.96 元/百万 Token）；细则以官方活动弹窗为准。",
+      "images": [],
+      "link": "https://agent.xfyun.cn/studio-download/",
+      "publishedAt": "2026-09-30",
+      "updatedAt": "2026-09-30",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "huawei-codearts-daily-202609",
       "title": "华为云码道每日领 1000 万",
       "vendor": "华为云",
