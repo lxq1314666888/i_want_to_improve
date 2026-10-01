@@ -1,12 +1,12 @@
 {
-  "version": "2026-09-30",
+  "version": "2026-10-01",
   "eggs": [
     {
       "id": "xfyun-astudio-checkin-202610",
       "title": "AStudio 打卡领 10 亿 Token",
       "vendor": "讯飞 AStudio",
       "category": "credits",
-      "score": 83,
+      "score": 78,
       "tags": {
         "duration": "limited",
         "region": "cn"
@@ -207,13 +207,13 @@
         "region": "cn"
       },
       "expired": false,
-      "expiryDate": "2026-09-30T23:59:59+08:00",
-      "summary": "Flash 免费用到 9/30，每日再领 100 Credits",
-      "content": "Qoder 官方公告：Qwen3.8-Flash 客户端内限时免费用，另加每日可领的通用额度。\n\n- 限时：**Qwen3.8-Flash 全天免费**，至 9 月 30 日截止\n- 计费：该模型系数由 0.1× 降至 0.0×，不扣 Credits\n- 每日：**登录再领 100 通用 Credits**，漏领不补\n- 时效：每日登录奖励自领取起 30 天有效，可累积\n- 范围：国际版与 CN 版新老个人用户，含免费用户\n- 可用端：桌面端、IDE、JetBrains 插件、CLI\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 模型选择器选 Qwen3.8-Flash 即用，无需领资格\n3. 左下角用量面板 → 礼物图标领 100 Credits\n\n**注意**：Flash 免费 9 月 30 日结束，之后按届时系数计费；每日奖励未公布结束时间，可同享；细则以[官方公告](https://mp.weixin.qq.com/s/8hl-9hfkyLmnBuQOKGE5zQ)为准。",
+      "expiryDate": null,
+      "summary": "Flash 限时免费已延期，截止日待官方公告",
+      "content": "Qoder 官方公告：Qwen3.8-Flash 客户端内限时免费用。原定 9 月 30 日截止，现已**延期**，10 月 1 日起继续免费，新截止日待公布。\n\n- 限时：**全天免费**，延期后截止待公告\n- 计费：系数 0.1× 降至 0.0×，不扣 Credits\n- 无需领取：免费账号、0 Credits 均可直接用\n- 范围：CN 版个人用户均可，企业订阅不适用\n- 可用端：桌面端、IDE、CLI、移动端、网页版\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 模型选择器选 Qwen3.8-Flash 即用\n3. 左下角用量面板可另领每日 100 Credits\n\n**注意**：高峰时段可能响应较慢；结束时间以[官方活动页](https://docs.qoder.cn/events/flashoffer)公告为准，结束后按届时系数计费。",
       "images": [],
       "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
       "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18",
+      "updatedAt": "2026-10-01",
       "source": "freeegg",
       "localEdit": false
     },
