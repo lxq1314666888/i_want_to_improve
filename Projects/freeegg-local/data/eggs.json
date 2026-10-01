@@ -891,22 +891,22 @@
     },
     {
       "id": "trae-work-checkin-202608",
-      "title": "Trae Work 签到领 150 积分",
+      "title": "Trae Work 签到领 100 积分",
       "vendor": "Trae Work",
       "category": "credits",
-      "score": 90,
+      "score": 88,
       "tags": {
         "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "每日签到领 150 积分，月最高 4650；新人再送 4000",
-      "content": "TRAE Work 每日签到福利，长期有效。\n\n- 额度：**每日签到领 150 通用积分**，积分有效期 31 个自然日\n- 月累计：按 31 天计最高 4650 积分\n- 新用户：注册送 2000 通用积分 + 2000 Work 积分\n- 新人积分有效期 31 天\n- 用途：通用积分适用 TraeCode 与 TraeWork\n- Work 专属积分仅限 TraeWork 用\n\n签到步骤：\n\n1. 打开 [TRAE 官网](https://www.trae.cn/)注册并登录\n2. 进入 TraeWork 网页端、桌面端或移动端\n3. 每日签到即可领取 150 积分\n\n**注意**：官方套餐文档暂仍标注每日 200 Work 专属积分，实际到账以客户端为准（2026-09 站长实测 150 通用积分）；细则以[官方套餐文档](https://docs.trae.cn/ide_plans-and-billing)为准。",
+      "summary": "每日签到领 100 积分，月最高 3100；新人再送 4000",
+      "content": "TRAE Work 每日签到福利，长期有效。\n\n- 额度：**每日签到领 100 通用积分**，积分有效期 31 个自然日\n- 月累计：按 31 天计最高 3100 积分\n- 新用户：注册送 2000 通用积分 + 2000 Work 积分\n- 新人积分有效期 31 天\n- 用途：通用积分适用 TraeCode 与 TraeWork\n- Work 专属积分仅限 TraeWork 用\n\n签到步骤：\n\n1. 打开 [TRAE 官网](https://www.trae.cn/)注册并登录\n2. 进入 TraeWork 网页端、桌面端或移动端\n3. 每日签到即可领取 100 积分\n\n**注意**：官方套餐文档仍标注免费用户每日签到 150 积分，实际到账已降为 100 积分（2026-10 实测），细则以[官方套餐文档](https://docs.trae.cn/ide_plans-and-billing)为准。",
       "images": [],
       "link": "https://www.trae.cn/",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-09-04",
+      "updatedAt": "2026-10-01",
       "source": "freeegg",
       "localEdit": false
     },

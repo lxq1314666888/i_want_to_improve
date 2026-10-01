@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-01），云端 Worker 定时采集
-- 生成时间：2026-10-01T06:23:10.481Z
+- 生成时间：2026-10-01T13:45:46.224Z
 - 集合：eggs · 共 44 条 · 未过期 34 条 · 已过期 10 条
 
 ## 一、概览
@@ -20,7 +20,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | WorkBuddy 签到领 100 积分 | WorkBuddy | 积分/点数 | 93 | 长期 | - | 每日签到领 100 积分，体验版每月再送 500 | https://www.workbuddy.cn/events/invite?inviteCode=n4gfo72xe5fnv7m |
 | 2 | ZCode 补偿每日领 1 亿 Token | 智谱 | Token 额度 | 90 | 限时 | 7 天 | 争议补偿，全体用户每日领 1 亿 Token | https://zcode.z.ai/cn |
-| 3 | Trae Work 签到领 150 积分 | Trae Work | 积分/点数 | 90 | 长期 | - | 每日签到领 150 积分，月最高 4650；新人再送 4000 | https://www.trae.cn/ |
+| 3 | Trae Work 签到领 100 积分 | Trae Work | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100；新人再送 4000 | https://www.trae.cn/ |
 | 4 | 智谱 Coding Plan 夜间畅蹬 | 智谱 | API 免费档 | 84 | 限时 | 7 天 | 夜间 ZCode 调 Flash 零消耗，延至 10-7 | https://zcode.z.ai/cn |
 | 5 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 6 | AStudio 打卡领 10 亿 Token | 讯飞 AStudio | 积分/点数 | 78 | 限时 | 7 天 | 连续打卡 7 天领 3.5 万积分，最高约 10 亿 Token | https://agent.xfyun.cn/studio-download/ |
