@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01",
+  "version": "2026-10-02",
   "models": [
     {
       "id": "gpt-6-astra",
@@ -8,6 +8,17 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
+      "score": 97,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "vendor": "Google",
+      "releasedAt": "2026-09-30",
+      "inputCost": null,
+      "outputCost": null,
       "score": 96.6,
       "source": "freeegg",
       "localEdit": false
@@ -19,7 +30,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 95.5,
+      "score": 95.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -30,7 +41,7 @@
       "releasedAt": "2026-09-17",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 95.4,
+      "score": 95.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +52,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 94.8,
+      "score": 94.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +63,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 94.2,
+      "score": 94.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -63,7 +74,7 @@
       "releasedAt": "2026-06-09",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 93.9,
+      "score": 94.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -74,7 +85,7 @@
       "releasedAt": "2026-07-24",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 93.8,
+      "score": 94,
       "source": "freeegg",
       "localEdit": false
     },
@@ -85,7 +96,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 1.25,
       "outputCost": 4.25,
-      "score": 91.5,
+      "score": 91.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -96,7 +107,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 89.5,
+      "score": 89.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -107,7 +118,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 88.6,
+      "score": 88.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +129,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 86.3,
+      "score": 86.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -129,7 +140,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 85,
+      "score": 84.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -140,7 +151,7 @@
       "releasedAt": "2026-07-19",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 83.8,
+      "score": 83.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -149,9 +160,9 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.2219,
-      "outputCost": 6.34,
-      "score": 80.7,
+      "inputCost": 1.4,
+      "outputCost": 4.4,
+      "score": 80.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -162,7 +173,7 @@
       "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 78.9,
+      "score": 78.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -171,9 +182,9 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.28,
+      "inputCost": 0.3537,
       "outputCost": 10,
-      "score": 78,
+      "score": 77.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -217,7 +228,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 73.3,
+      "score": 73.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,7 +239,7 @@
       "releasedAt": "2026-08-26",
       "inputCost": 0.15,
       "outputCost": 0.5,
-      "score": 72.7,
+      "score": 72.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -239,7 +250,7 @@
       "releasedAt": "2026-04-16",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 71.8,
+      "score": 71.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -250,7 +261,7 @@
       "releasedAt": "2026-08-26",
       "inputCost": null,
       "outputCost": null,
-      "score": 70.1,
+      "score": 70,
       "source": "freeegg",
       "localEdit": false
     },
@@ -270,9 +281,9 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.015543,
-      "outputCost": 0.396,
-      "score": 66,
+      "inputCost": 0.02565,
+      "outputCost": 0.63,
+      "score": 65.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -283,7 +294,7 @@
       "releasedAt": "2026-08-13",
       "inputCost": 0.75,
       "outputCost": 3.75,
-      "score": 65.5,
+      "score": 65.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -305,7 +316,7 @@
       "releasedAt": "2026-07-08",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 60,
+      "score": 59.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -316,7 +327,7 @@
       "releasedAt": "2026-04-23",
       "inputCost": 5,
       "outputCost": 30,
-      "score": 59.8,
+      "score": 59.7,
       "source": "freeegg",
       "localEdit": false
     },
