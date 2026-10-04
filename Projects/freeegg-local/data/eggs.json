@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-01",
+  "version": "2026-10-04",
   "eggs": [
+    {
+      "id": "unisound-u2flash-free-202610",
+      "title": "云知声 U2-Flash API 限免调用",
+      "vendor": "云知声",
+      "category": "token",
+      "score": 72,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-31T23:59:59+08:00",
+      "summary": "U2-Flash 限免调用至 10/31，新老用户均可",
+      "content": "云知声 Token Hub 平台 U2-Flash 全新上线，活动期 2026.09.30-2026.10.31 限时免费无限量调用，新老用户均可。U2-Flash 主打 Agent/Coding 场景，300B 规模，512K 上下文，OpenAI/Anthropic 双协议兼容。\n\n- 额度：**限免期间调用全免**，输入/输出均 ¥0/百万 Token\n- 限制：RPM 100，TPM 1000 万，最大输出 128K\n\n领取步骤：\n\n1. 打开 [模型页](https://maas.unisound.com/model-hub/u2-flash)\n2. 注册/登录云知声 Token Hub，创建 API Key\n3. 按 OpenAI 兼容端点调用 u2-flash 模型\n\n**注意**：免费期至 10 月 31 日截止，到期恢复计费；自研新模型，能力待验证，以官方页面为准。",
+      "images": [],
+      "link": "https://maas.unisound.com/model-hub/u2-flash",
+      "publishedAt": "2026-10-04",
+      "updatedAt": "2026-10-04",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "xfyun-astudio-checkin-202610",
       "title": "AStudio 打卡领 10 亿 Token",
