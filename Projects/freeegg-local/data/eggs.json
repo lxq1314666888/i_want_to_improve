@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-04",
+  "version": "2026-10-05",
   "eggs": [
+    {
+      "id": "fiimeopc-register-202610",
+      "title": "FiimeOPC 注册送 1 亿 Token",
+      "vendor": "FiimeOPC",
+      "category": "token",
+      "score": 78,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-12-08T21:00:00+08:00",
+      "summary": "社区注册送 1 亿 Token，每日任务再领 5000 万",
+      "content": "FiimeOPC（opc.fiime.cn）是面向「一人公司」创业者的社区平台，内置模型服务与 API 中转，活动期注册即送 1 亿 Token，按模型倍率计费。\n\n- 注册礼：**1 亿 Token**，每账号一次，活动至 12/08\n- 每日任务：发帖、发项目、发 AI 创意合计最多 5000 万/天\n- Token 榜：每累计使用 10 亿再送 1 亿，每周一次\n- 注册方式：邮箱 / QQ / GitHub，需完成邮箱激活\n\n领取步骤：\n\n1. 打开 [注册页](https://opc.fiime.cn/register?invite=NE7JZHET)\n2. 邮箱或 QQ / GitHub 注册，查收激活邮件完成激活\n3. 额度自动到账，工作台创建 API Key 即可调用\n\n**注意**：模型服务为社区自营中转，底层供应商不公开；调用按模型倍率扣减 Token，实际可用量低于名义额度；平台规模较小，勿存重要数据，额度用完即止。",
+      "images": [],
+      "link": "https://opc.fiime.cn/register?invite=NE7JZHET",
+      "publishedAt": "2026-10-05",
+      "updatedAt": "2026-10-05",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "unisound-u2flash-free-202610",
       "title": "云知声 U2-Flash API 限免调用",
