@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-05",
+  "version": "2026-10-06",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -149,7 +149,7 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.67,
+      "inputCost": 0.95,
       "outputCost": 14,
       "score": 63.6,
       "source": "freeegg",
@@ -193,8 +193,8 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 1.4,
-      "outputCost": 4.4,
+      "inputCost": 0.07,
+      "outputCost": 7,
       "score": 61.8,
       "source": "freeegg",
       "localEdit": false
@@ -292,8 +292,8 @@
       "name": "DeepSeek V4 Pro 0813",
       "vendor": "DeepSeek",
       "releasedAt": "2026-08-13",
-      "inputCost": 0.85,
-      "outputCost": 5,
+      "inputCost": 1.32,
+      "outputCost": 3.96,
       "score": 58.3,
       "source": "freeegg",
       "localEdit": false
