@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-27",
+  "version": "2026-10-06",
   "vendors": [
     {
       "id": "zhipu-glm",
@@ -384,6 +384,78 @@
       ],
       "link": "https://platform.minimaxi.com/subscribe/token-plan",
       "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "stepfun",
+      "name": "StepFun",
+      "product": "Step Plan",
+      "tagline": "订阅制调用旗舰模型，Credit 月池计费，覆盖主流编码工具",
+      "models": [
+        "step-5-preview",
+        "step-3.7-flash",
+        "step-3.5-flash",
+        "step-router-v1"
+      ],
+      "quotaBasis": "400M-40000M Credit/月池",
+      "status": "soldout",
+      "highlights": [
+        "全旗舰模型+智能路由",
+        "1M Credit=¥1",
+        "加赠 40% 创作额度",
+        "加油包随时续量"
+      ],
+      "entryPrice": "¥49/月起",
+      "entryPriceCny": 49,
+      "plans": [
+        {
+          "name": "Mini",
+          "price": "¥49/月",
+          "note": "年付 ¥38/月",
+          "features": [
+            "支持全部旗舰模型与智能路由",
+            "400M Credit 月度额度",
+            "覆盖多款 MCP 工具",
+            "多设备登录"
+          ]
+        },
+        {
+          "name": "Plus",
+          "price": "¥99/月",
+          "note": "年付 ¥78/月",
+          "features": [
+            "Mini 套餐的所有内容",
+            "1600M Credit 月度额度",
+            "优先 API 速率",
+            "优先技术支持"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "¥199/月",
+          "note": "年付 ¥155/月",
+          "features": [
+            "Mini 套餐的所有内容",
+            "8000M Credit 月度额度",
+            "优先 API 速率",
+            "优先技术支持"
+          ]
+        },
+        {
+          "name": "Max",
+          "price": "¥699/月",
+          "note": "年付约 ¥555/月",
+          "features": [
+            "Mini 套餐的所有内容",
+            "40000M Credit 月度额度",
+            "优先 API 速率",
+            "优先技术支持"
+          ]
+        }
+      ],
+      "link": "https://platform.stepfun.com/plan-subscribe",
+      "updatedAt": "2026-10-06",
       "source": "freeegg",
       "localEdit": false
     },
