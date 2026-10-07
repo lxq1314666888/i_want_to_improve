@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-05），云端 Worker 定时采集
-- 生成时间：2026-10-07T06:19:25.148Z
+- 生成时间：2026-10-07T13:44:46.640Z
 - 集合：eggs · 共 46 条 · 未过期 36 条 · 已过期 10 条
 
 ## 一、概览
@@ -23,7 +23,7 @@
 | 3 | Trae Work 签到领 100 积分 | Trae Work | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100；新人再送 4000 | https://www.trae.cn/ |
 | 4 | 智谱 Coding Plan 夜间畅蹬 | 智谱 | API 免费档 | 84 | 限时 | 1 天 | 夜间 ZCode 调 Flash 零消耗，延至 10-7 | https://zcode.z.ai/cn |
 | 5 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
-| 6 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 63 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
+| 6 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 62 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
 | 7 | AStudio 打卡领 10 亿 Token | 讯飞 AStudio | 积分/点数 | 78 | 限时 | 1 天 | 连续打卡 7 天领 3.5 万积分，最高约 10 亿 Token | https://agent.xfyun.cn/studio-download/ |
 | 8 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 9 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
