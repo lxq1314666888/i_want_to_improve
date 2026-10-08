@@ -1,6 +1,48 @@
 {
-  "version": "2026-10-05",
+  "version": "2026-10-08",
   "eggs": [
+    {
+      "id": "antling-ling31flash-free-202610",
+      "title": "蚂蚁百灵 Ling-3.1-flash 限免",
+      "vendor": "蚂蚁百灵",
+      "category": "token",
+      "score": 56,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-14T23:59:59+08:00",
+      "summary": "Ling-3.1-flash 限免至 10/14，需绑支付宝",
+      "content": "蚂蚁百灵上线 Ling-3.1-flash，官方定价页标注「新一代长流程版」，限时免费 2 周。\n\n- 额度：**限免期输入/输出/缓存读取全 ¥0**\n- 时效：免费至 10/14，体验期后转正式计费\n- 协议：OpenAI 兼容，端点 api.ant-ling.com/v1\n- 同步：OpenRouter、ZenMux 同款 $0\n- 门槛：需绑定支付宝账户开通服务\n\n领取步骤：\n\n1. 打开 [API 控制台](https://chat.ant-ling.com/open)注册登录\n2. 绑定支付宝，开通百灵模型服务\n3. 创建令牌，OpenAI 格式直调 Ling-3.1-flash\n\n**注意**：签署小程序云代扣协议的账户，免费额度耗尽或体验期结束后将自动转按量付费；限免起止与细则以[定价页](https://developer.ant-ling.com/zh-CN/docs/models/price/)为准。",
+      "images": [],
+      "link": "https://developer.ant-ling.com/zh-CN/docs/models/price/",
+      "publishedAt": "2026-10-08",
+      "updatedAt": "2026-10-08",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "autoclaw-fangong-chongdianli-202610",
+      "title": "AutoClaw 返工登录领 1 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 68,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-15T23:59:59+08:00",
+      "summary": "10.8 起登录领 1 亿 Token，两日各 5000 万",
+      "content": "智谱 AutoClaw（澳龙）「国庆返工充电礼」，10 月 8 日至 15 日登录分批领 Token 与积分。\n\n- 大额日：**10.8、10.12 各领 5000 万 Token + 5000 积分**\n- 周内 VIP：每日 1000 万 Token + 1000 积分\n- 普通用户：每日 300 万 Token + 300 积分\n- VIP：AutoClaw 付费订阅或智谱 Coding Plan 用户\n- 适用：GLM-5.3-Flash，Token 额度基于其单价换算\n- 时效：活动积分当天 24:00 前有效\n\n领取步骤：\n\n1. 打开 [AutoClaw 官网](https://autoclaw.zhipuai.cn/)下载桌面端登录\n2. 10.8 起进「灵感与活动」领当日 Token 与积分\n3. 10.12 再领一轮，周内每天登录领对应档位\n\n**注意**：大额集中在 10.8 与 10.12 两天，漏领不补；细则以[官方资讯](https://autoclaw.zhipuai.cn/blog/news/national-day-token-gift/)为准。",
+      "images": [],
+      "link": "https://autoclaw.zhipuai.cn/blog/news/national-day-token-gift/",
+      "publishedAt": "2026-10-08",
+      "updatedAt": "2026-10-08",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "fiimeopc-register-202610",
       "title": "FiimeOPC 注册送 1 亿 Token",
@@ -386,27 +428,6 @@
       "localEdit": false
     },
     {
-      "id": "autoclaw-jiayouzhan-202609",
-      "title": "AutoClaw 登录领 2 亿 Token",
-      "vendor": "智谱",
-      "category": "token",
-      "score": 88,
-      "tags": {
-        "duration": "limited",
-        "region": "cn"
-      },
-      "expired": false,
-      "expiryDate": "2026-09-16T23:59:59+08:00",
-      "summary": "9/14-16 每日登录领 2 亿 Token，当天有效",
-      "content": "智谱 AutoClaw（澳龙）「积分加油站第二期」限时开启，官方飞书文档已公告规则。\n\n- 额度：**每日登录领 2 亿 Token**，约 20,000 积分\n- 模型：GLM-5.3-Flash，积分仅限客户端内消耗\n- 规则：每日 0:00 后登录即可领，每天一次\n- 时效：奖励当日 24:00 失效，过期不补\n- 另送：新用户注册再得 1 亿 Token，一次性\n\n领取步骤：\n\n1. 打开 [AutoClaw 官网](https://autoclaw.zhipuai.cn/)下载桌面客户端\n2. 手机号注册登录，进「灵感与活动」领积分\n3. 新用户 1 亿 Token 与新人积分自动到账\n\n**注意**：9/17 起转付费会员档位奖励，非会员只剩新人的 1 亿；积分提不出来，只在客户端内抵扣模型调用；细则以[官方活动说明](https://zhipu-ai.feishu.cn/wiki/IhRKw7vf5iPht6kRPqYcWZlNnsg)为准。",
-      "images": [],
-      "link": "https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=autoclaw&target_app=autoclaw&target_app_version=1.18.4&os=mac&IC=3Q2VMYRL",
-      "publishedAt": "2026-09-15",
-      "updatedAt": "2026-09-15",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "modelscope-magicube-202609",
       "title": "魔搭魔粒免费调旗舰模型",
       "vendor": "魔搭 ModelScope",
@@ -423,27 +444,6 @@
       "images": [],
       "link": "https://modelscope.cn/register?inviteCode=herbqiao2005&invitorName=herbqiao",
       "publishedAt": "2026-09-14",
-      "updatedAt": "2026-09-15",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "zcode-weekend-build-202609",
-      "title": "ZCode 周末构建送 3 亿 Token",
-      "vendor": "智谱",
-      "category": "token",
-      "score": 98,
-      "tags": {
-        "duration": "limited",
-        "region": "cn"
-      },
-      "expired": true,
-      "expiryDate": "2026-09-14T09:00:00+08:00",
-      "summary": "3 亿 Token 周末限时领，GLM-5.3-Flash 可用",
-      "content": "ZCode「周末构建」（Weekend Build）活动新一轮，站长本人已领取到账（用户实测 2026-09，以官方为准）。\n\n- 额度：**3 亿 Token**，仅限 ZCode 内使用\n- 适用：仅 GLM-5.3-Flash，原生 100 万上下文\n- 条件：登录用户可领，往期每账号限一次\n- 时间：9/11 23:00 生效，9/14 09:00 额度到期\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载并升级客户端\n2. 登录后点左下角活动卡片「领取」\n3. 在「模型设置」切「体验套餐」使用\n\n**注意**：生效到到期约 2.4 天，抓紧用完；到期未用自动失效，不可转让折现。",
-      "images": [],
-      "link": "https://zcode.z.ai/cn",
-      "publishedAt": "2026-09-11",
       "updatedAt": "2026-09-15",
       "source": "freeegg",
       "localEdit": false
@@ -554,48 +554,6 @@
       "localEdit": false
     },
     {
-      "id": "tokenrouter-glm53free-202609",
-      "title": "TokenRouter 免费 GLM-5.3",
-      "vendor": "TokenRouter",
-      "category": "api-quota",
-      "score": 76,
-      "tags": {
-        "duration": "longterm",
-        "region": "cn"
-      },
-      "expired": true,
-      "expiryDate": null,
-      "summary": "邮箱注册领 API Key，旗舰 GLM-5.3 免费用",
-      "content": "TokenRouter 是统一模型网关，把智谱、DeepSeek、千问等多家模型整合为一套 OpenAI 兼容接口，一个 Key 全局调用。当前旗舰模型 GLM-5.3 在官方定价页标注 $0.0000/百万 Token。\n\n- 额度：**输入 / 输出均 0 美元**，见官方模型页\n- 模型：z-ai/glm-5.3-free，纯文本，OpenAI 兼容\n- 限制：免费模型限速 8 请求/分钟（8 RPM）\n\n领取步骤：\n\n1. 打开 [TokenRouter](https://www.tokenrouter.com/)，邮箱注册账号\n2. 控制台 API Keys 页创建密钥\n3. 接入参数：Base URL api.tokenrouter.com/v1\n4. 模型名填 z-ai/glm-5.3-free\n\n**注意**：0 美元为当前定价，官方未承诺永久，随时可能调整。",
-      "images": [],
-      "link": "https://www.tokenrouter.com/models/z-ai/glm-5.3-free/",
-      "publishedAt": "2026-09-07",
-      "updatedAt": "2026-09-15",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "zcode-weekend-202609",
-      "title": "ZCode 周末送 3 亿 Token",
-      "vendor": "智谱",
-      "category": "token",
-      "score": 98,
-      "tags": {
-        "duration": "limited",
-        "region": "cn"
-      },
-      "expired": true,
-      "expiryDate": "2026-09-06T23:00:00+08:00",
-      "summary": "3 亿 Token 限时领，GLM-5.3-Flash 周末有效",
-      "content": "ZCode 周末送额度活动，所有登录用户（含 Coding Plan 订阅）可免费领 3 亿 Token，体验 GLM-5 系列首个原生多模态模型 GLM-5.3-Flash。\n\n- 额度：**3 亿 Token**，仅限 ZCode 内使用\n- 适用：仅 GLM-5.3-Flash，原生支持 100 万上下文\n- 条件：升级至 3.11.2，每账号限领一次\n- 时间：额度 9/5 09:00 生效，9/6 23:00 到期\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载或升级至 3.11.2\n2. 登录后点客户端左下角活动卡片「领取」\n3. 在「模型设置」切「体验套餐」即可使用\n\n**注意**：额度仅限 GLM-5.3-Flash，不可转让折现；到期未用自动失效；数量有限先到先得，高峰期可能限流、付费用户优先。",
-      "images": [],
-      "link": "https://zcode.z.ai/cn",
-      "publishedAt": "2026-09-04",
-      "updatedAt": "2026-09-06",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "zhipu-codingplan-flash-zcode-202609",
       "title": "智谱 Coding Plan 夜间畅蹬",
       "vendor": "智谱",
@@ -613,27 +571,6 @@
       "link": "https://zcode.z.ai/cn",
       "publishedAt": "2026-09-03",
       "updatedAt": "2026-09-22",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "zhipu-qingyan-6666-202609",
-      "title": "智谱清言开学红包 6666 积分",
-      "vendor": "智谱清言",
-      "category": "credits",
-      "score": 75,
-      "tags": {
-        "duration": "limited",
-        "region": "cn"
-      },
-      "expired": false,
-      "expiryDate": "2026-09-03T23:59:59+08:00",
-      "summary": "开学红包 6666 积分，9.1-9.3 登录即领，7 天有效",
-      "content": "智谱清言秋季开学档官方活动，全平台用户登录即领开学红包。\n\n- 额度：**6666 积分**，登录即领、零门槛\n- 端口：App / 网页 / PC 客户端均可\n- 有效期：积分领取后 7 天内用完，过期清零\n- 适用：清言内 GLM 对话、Agent 任务等积分消耗场景\n\n领取步骤：\n\n1. 打开 [智谱清言](https://chatglm.cn/)并登录\n2. 活动期间登录即自动发放 6666 积分\n3. 在「我的 - 积分」查看余额\n\n**注意**：活动 2026-09-01 至 09-03，9 月 3 日晚入口关闭；积分领取后仅 7 天有效，建议尽早领、尽快用；细则以 App 内展示为准。",
-      "images": [],
-      "link": "https://chatglm.cn/",
-      "publishedAt": "2026-09-01",
-      "updatedAt": "2026-09-01",
       "source": "freeegg",
       "localEdit": false
     },
@@ -970,6 +907,111 @@
       "link": "https://qwenwork.cn/",
       "publishedAt": "2026-08-30",
       "updatedAt": "2026-08-30",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "autoclaw-jiayouzhan-202609",
+      "title": "AutoClaw 登录领 2 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 88,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-09-16T23:59:59+08:00",
+      "summary": "9/14-16 每日登录领 2 亿 Token，当天有效",
+      "content": "智谱 AutoClaw（澳龙）「积分加油站第二期」限时开启，官方飞书文档已公告规则。\n\n- 额度：**每日登录领 2 亿 Token**，约 20,000 积分\n- 模型：GLM-5.3-Flash，积分仅限客户端内消耗\n- 规则：每日 0:00 后登录即可领，每天一次\n- 时效：奖励当日 24:00 失效，过期不补\n- 另送：新用户注册再得 1 亿 Token，一次性\n\n领取步骤：\n\n1. 打开 [AutoClaw 官网](https://autoclaw.zhipuai.cn/)下载桌面客户端\n2. 手机号注册登录，进「灵感与活动」领积分\n3. 新用户 1 亿 Token 与新人积分自动到账\n\n**注意**：9/17 起转付费会员档位奖励，非会员只剩新人的 1 亿；积分提不出来，只在客户端内抵扣模型调用；细则以[官方活动说明](https://zhipu-ai.feishu.cn/wiki/IhRKw7vf5iPht6kRPqYcWZlNnsg)为准。",
+      "images": [],
+      "link": "https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=autoclaw&target_app=autoclaw&target_app_version=1.18.4&os=mac&IC=3Q2VMYRL",
+      "publishedAt": "2026-09-15",
+      "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "zcode-weekend-build-202609",
+      "title": "ZCode 周末构建送 3 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 98,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": true,
+      "expiryDate": "2026-09-14T09:00:00+08:00",
+      "summary": "3 亿 Token 周末限时领，GLM-5.3-Flash 可用",
+      "content": "ZCode「周末构建」（Weekend Build）活动新一轮，站长本人已领取到账（用户实测 2026-09，以官方为准）。\n\n- 额度：**3 亿 Token**，仅限 ZCode 内使用\n- 适用：仅 GLM-5.3-Flash，原生 100 万上下文\n- 条件：登录用户可领，往期每账号限一次\n- 时间：9/11 23:00 生效，9/14 09:00 额度到期\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载并升级客户端\n2. 登录后点左下角活动卡片「领取」\n3. 在「模型设置」切「体验套餐」使用\n\n**注意**：生效到到期约 2.4 天，抓紧用完；到期未用自动失效，不可转让折现。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-09-11",
+      "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "tokenrouter-glm53free-202609",
+      "title": "TokenRouter 免费 GLM-5.3",
+      "vendor": "TokenRouter",
+      "category": "api-quota",
+      "score": 76,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": true,
+      "expiryDate": null,
+      "summary": "邮箱注册领 API Key，旗舰 GLM-5.3 免费用",
+      "content": "TokenRouter 是统一模型网关，把智谱、DeepSeek、千问等多家模型整合为一套 OpenAI 兼容接口，一个 Key 全局调用。当前旗舰模型 GLM-5.3 在官方定价页标注 $0.0000/百万 Token。\n\n- 额度：**输入 / 输出均 0 美元**，见官方模型页\n- 模型：z-ai/glm-5.3-free，纯文本，OpenAI 兼容\n- 限制：免费模型限速 8 请求/分钟（8 RPM）\n\n领取步骤：\n\n1. 打开 [TokenRouter](https://www.tokenrouter.com/)，邮箱注册账号\n2. 控制台 API Keys 页创建密钥\n3. 接入参数：Base URL api.tokenrouter.com/v1\n4. 模型名填 z-ai/glm-5.3-free\n\n**注意**：0 美元为当前定价，官方未承诺永久，随时可能调整。",
+      "images": [],
+      "link": "https://www.tokenrouter.com/models/z-ai/glm-5.3-free/",
+      "publishedAt": "2026-09-07",
+      "updatedAt": "2026-09-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "zcode-weekend-202609",
+      "title": "ZCode 周末送 3 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 98,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": true,
+      "expiryDate": "2026-09-06T23:00:00+08:00",
+      "summary": "3 亿 Token 限时领，GLM-5.3-Flash 周末有效",
+      "content": "ZCode 周末送额度活动，所有登录用户（含 Coding Plan 订阅）可免费领 3 亿 Token，体验 GLM-5 系列首个原生多模态模型 GLM-5.3-Flash。\n\n- 额度：**3 亿 Token**，仅限 ZCode 内使用\n- 适用：仅 GLM-5.3-Flash，原生支持 100 万上下文\n- 条件：升级至 3.11.2，每账号限领一次\n- 时间：额度 9/5 09:00 生效，9/6 23:00 到期\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载或升级至 3.11.2\n2. 登录后点客户端左下角活动卡片「领取」\n3. 在「模型设置」切「体验套餐」即可使用\n\n**注意**：额度仅限 GLM-5.3-Flash，不可转让折现；到期未用自动失效；数量有限先到先得，高峰期可能限流、付费用户优先。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-09-04",
+      "updatedAt": "2026-09-06",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "zhipu-qingyan-6666-202609",
+      "title": "智谱清言开学红包 6666 积分",
+      "vendor": "智谱清言",
+      "category": "credits",
+      "score": 75,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-09-03T23:59:59+08:00",
+      "summary": "开学红包 6666 积分，9.1-9.3 登录即领，7 天有效",
+      "content": "智谱清言秋季开学档官方活动，全平台用户登录即领开学红包。\n\n- 额度：**6666 积分**，登录即领、零门槛\n- 端口：App / 网页 / PC 客户端均可\n- 有效期：积分领取后 7 天内用完，过期清零\n- 适用：清言内 GLM 对话、Agent 任务等积分消耗场景\n\n领取步骤：\n\n1. 打开 [智谱清言](https://chatglm.cn/)并登录\n2. 活动期间登录即自动发放 6666 积分\n3. 在「我的 - 积分」查看余额\n\n**注意**：活动 2026-09-01 至 09-03，9 月 3 日晚入口关闭；积分领取后仅 7 天有效，建议尽早领、尽快用；细则以 App 内展示为准。",
+      "images": [],
+      "link": "https://chatglm.cn/",
+      "publishedAt": "2026-09-01",
+      "updatedAt": "2026-09-01",
       "source": "freeegg",
       "localEdit": false
     }
