@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-08",
+  "version": "2026-10-09",
   "eggs": [
+    {
+      "id": "kilo-code-autofree-202610",
+      "title": "Kilo Code 免费模型池",
+      "vendor": "Kilo Code",
+      "category": "api-quota",
+      "score": 55,
+      "tags": {
+        "duration": "longterm",
+        "region": "global"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "免绑卡，200 次请求/小时",
+      "content": "Kilo Code 是 MIT 开源 AI 编程助手，VS Code、JetBrains、CLI 多端可用，免绑卡免订阅，内置多条免费模型通道。\n\n- 权益：**Auto Free 路由档 $0**，不消耗 credits\n- 另有：OpenRouter Free Models Router 免费路由档\n- 限速：**200 次请求/小时**（按 IP 计）\n\n使用步骤：\n\n1. 扩展市场搜 Kilo Code 安装，或 curl 装 CLI\n2. 模型下拉选 Auto Free 等免费通道\n3. 直接发起任务，账单 0 元\n\n**注意**：各通道背后的模型与限速由服务端随时调整，上游厂商推广试用渠道部分不稳定，需切换尝试；免费档可能路由到记录对话数据的提供方，勿提交机密代码。",
+      "images": [],
+      "link": "https://kilo.ai/",
+      "publishedAt": "2026-10-09",
+      "updatedAt": "2026-10-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "antling-ling31flash-free-202610",
       "title": "蚂蚁百灵 Ling-3.1-flash 限免",
@@ -544,12 +565,12 @@
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "免 Key 免绑卡，DeepSeek V4.1 Flash 免费",
-      "content": "Cline 是开源 AI 编程工具，提供 VS Code 插件与独立客户端，内置免费模型池，免 API Key、免绑卡，装好即选即用。\n\n- 权益：**内置模型免费用**，无需订阅\n- 实测可用：DeepSeek V4.1 Flash、GLM-5.3-Flash\n\n使用步骤：\n\n1. VS Code 扩展商店搜 Cline 安装，或用独立客户端\n2. 模型列表下拉选择 DeepSeek V4.1 Flash 等免费模型\n3. 直接发起任务，无需配置任何 Key\n\n**注意**：免费池模型名单会轮换调整，以客户端内实际可用为准。",
+      "summary": "免 Key 免绑卡，MiMo-V2.6-Flash 等免费",
+      "content": "Cline 是开源 AI 编程工具，提供 VS Code 插件与独立客户端，内置免费模型池，免 API Key、免绑卡，装好即选即用。\n\n- 权益：**内置模型免费用**，无需订阅\n- 实测可用：MiMo-V2.6-Flash、Step 5 Preview\n- Muse Spark 1.3 Contributor、Solar Mini 4\n\n使用步骤：\n\n1. VS Code 扩展商店搜 Cline 安装，或用独立客户端\n2. 模型列表下拉选择 MiMo-V2.6-Flash 等免费模型\n3. 直接发起任务，无需配置任何 Key\n\n**注意**：以上名单为 2026-10 用户实测，免费池模型会轮换调整，以客户端内实际可用为准。",
       "images": [],
       "link": "https://cline.bot/",
       "publishedAt": "2026-09-08",
-      "updatedAt": "2026-09-14",
+      "updatedAt": "2026-10-09",
       "source": "freeegg",
       "localEdit": false
     },

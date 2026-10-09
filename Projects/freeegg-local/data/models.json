@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-08",
+  "version": "2026-10-09",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -19,7 +19,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": null,
       "outputCost": null,
-      "score": 73.6,
+      "score": 73.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +41,7 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.4,
+      "score": 71.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +52,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.4,
+      "score": 71.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -96,7 +96,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 66,
+      "score": 65.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -129,7 +129,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 0.75,
       "outputCost": 3.75,
-      "score": 64.4,
+      "score": 64.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -138,8 +138,8 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.65,
-      "outputCost": 15,
+      "inputCost": 0.6,
+      "outputCost": 12,
       "score": 63.3,
       "source": "freeegg",
       "localEdit": false
@@ -162,7 +162,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 63,
+      "score": 62.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -206,7 +206,7 @@
       "releasedAt": "2026-04-16",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 62.2,
+      "score": 62.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,7 +228,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.7,
+      "score": 61.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -259,9 +259,20 @@
       "name": "Step 5 Preview",
       "vendor": "StepFun",
       "releasedAt": "2026-09-18",
-      "inputCost": null,
-      "outputCost": null,
-      "score": 60.7,
+      "inputCost": 1,
+      "outputCost": 2.7,
+      "score": 60.6,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-10-07",
+      "inputCost": 0.1,
+      "outputCost": 0.5,
+      "score": 60.6,
       "source": "freeegg",
       "localEdit": false
     },
