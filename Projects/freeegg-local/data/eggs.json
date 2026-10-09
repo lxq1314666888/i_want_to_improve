@@ -2,6 +2,48 @@
   "version": "2026-10-09",
   "eggs": [
     {
+      "id": "tokenharbor-haiku55-free-202610",
+      "title": "Claude Haiku 5.5 限时免费",
+      "vendor": "Token Harbor",
+      "category": "api-quota",
+      "score": 66,
+      "tags": {
+        "duration": "limited",
+        "region": "global"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-15T21:00:00+08:00",
+      "summary": "Claude Haiku 5.5 限免，10-15 截止",
+      "content": "Token Harbor 的 Claude Haiku 5.5 限时免费，标价 0。\n\n- 截止：**2026-10-15 21:00（北京时间）**\n- 规格：**1M 上下文**，支持文字、图片、文件\n- 免费档：**模型名以 :free 结尾走免费额度**，永不扣余额\n- 限速：免费账号 **60 次/分、1800 次/时**\n\n同站另有 DeepSeek V4.1 Flash、MiMo V2.6 Flash 长期免费档。\n\n领取步骤：\n\n1. 打开 [注册页](https://tokenharbor.ai/signup)用邮箱注册，免信用卡\n2. 控制台创建 API Key（thk_live_ 开头）\n3. 模型名填 claude-haiku-5.5:free\n\nBase URL 填 https://tokenharbor.ai/v1。\n\n**注意**：漏填 :free 会走付费通道扣余额；免费额度按个人 7×24 小时滚动计；免费通道数据保留需自行设置，敏感内容慎传。",
+      "images": [],
+      "link": "https://tokenharbor.ai/models?category=free",
+      "publishedAt": "2026-10-09",
+      "updatedAt": "2026-10-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "tokenrhythm-alpha-channel-202610",
+      "title": "TR Alpha Channel 限免内测",
+      "vendor": "基元律动",
+      "category": "token",
+      "score": 66,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "匿名模型内测期 0 元调用，1M 上下文多模态",
+      "content": "基元律动官网模型页上线匿名内测通道 TR Alpha Channel，标价全 0，注册即可调用。\n\n- 额度：**输入、输出、缓存命中单价均为 ¥0.00**，按量计费但单价为零\n- 规格：**1M 上下文 / 512K 最大输出**，支持文本、图像、视频\n- 能力：工具调用、推理、视觉、缓存读取，仅 OpenAI 协议\n- 限制：**实验性内测**，上游供应商匿名，官方未公布关闭时间\n\n领取步骤：\n\n1. 打开 [模型页](https://tokenrhythm.studio/models)用手机号验证码注册\n2. 保存注册页一次性展示的完整 API Key\n3. 模型 ID 填 tr-alpha-channel\n\n调用地址 https://tokenrhythm.studio/v1，OpenAI 格式直连。\n\n**注意**：匿名上游勿传敏感数据；内测随时关闭勿接生产；同站 NeoHorse-Jev 决策模型需充值才可体验，不属免费福利。",
+      "images": [],
+      "link": "https://tokenrhythm.studio/i/rf_tr_UXFE77?share_id=6c09fa21-54b4-4efe-b66f-112f6335ff6d",
+      "publishedAt": "2026-10-09",
+      "updatedAt": "2026-10-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "kilo-code-autofree-202610",
       "title": "Kilo Code 免费模型池",
       "vendor": "Kilo Code",
