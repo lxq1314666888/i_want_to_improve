@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-09",
+  "version": "2026-10-10",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -30,18 +30,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 72.3,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gpt-6-astra",
-      "name": "GPT-6 Astra",
-      "vendor": "OpenAI",
-      "releasedAt": "2026-09-03",
-      "inputCost": 10,
-      "outputCost": 50,
-      "score": 71.3,
+      "score": 72.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,6 +41,17 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
+      "score": 71.4,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "vendor": "OpenAI",
+      "releasedAt": "2026-09-03",
+      "inputCost": 10,
+      "outputCost": 50,
       "score": 71.3,
       "source": "freeegg",
       "localEdit": false
@@ -107,7 +107,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 65.7,
+      "score": 65.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +118,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 1.25,
       "outputCost": 4.25,
-      "score": 65.4,
+      "score": 65.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -129,7 +129,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 0.75,
       "outputCost": 3.75,
-      "score": 64.5,
+      "score": 64.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -138,9 +138,9 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.6,
-      "outputCost": 12,
-      "score": 63.3,
+      "inputCost": 0.64,
+      "outputCost": 13.5,
+      "score": 63.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -182,8 +182,8 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.049,
-      "outputCost": 3.39,
+      "inputCost": 0.039,
+      "outputCost": 4.8,
       "score": 62.4,
       "source": "freeegg",
       "localEdit": false
@@ -239,7 +239,7 @@
       "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.3,
+      "score": 61.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -261,18 +261,7 @@
       "releasedAt": "2026-09-18",
       "inputCost": 1,
       "outputCost": 2.7,
-      "score": 60.6,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-haiku-5-5",
-      "name": "Claude Haiku 5.5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-10-07",
-      "inputCost": 0.1,
-      "outputCost": 0.5,
-      "score": 60.6,
+      "score": 60.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -283,6 +272,17 @@
       "releasedAt": "2026-09-10",
       "inputCost": 0.3,
       "outputCost": 1.2,
+      "score": 60.4,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-10-07",
+      "inputCost": 0.1,
+      "outputCost": 0.5,
       "score": 60.1,
       "source": "freeegg",
       "localEdit": false
@@ -292,8 +292,8 @@
       "name": "DeepSeek V4 Pro 0813",
       "vendor": "DeepSeek",
       "releasedAt": "2026-08-13",
-      "inputCost": 1.32,
-      "outputCost": 3.96,
+      "inputCost": 0.66,
+      "outputCost": 1.98,
       "score": 58.8,
       "source": "freeegg",
       "localEdit": false
@@ -305,7 +305,7 @@
       "releasedAt": "2026-06-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 58.8,
+      "score": 58.7,
       "source": "freeegg",
       "localEdit": false
     },

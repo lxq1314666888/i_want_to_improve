@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-09",
+  "version": "2026-10-10",
   "eggs": [
     {
       "id": "tokenharbor-haiku55-free-202610",
@@ -24,22 +24,22 @@
     },
     {
       "id": "tokenrhythm-alpha-channel-202610",
-      "title": "TR Alpha Channel 限免内测",
+      "title": "基元律动 18 元额度",
       "vendor": "基元律动",
       "category": "token",
       "score": 66,
       "tags": {
-        "duration": "limited",
+        "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "匿名模型内测期 0 元调用，1M 上下文多模态",
-      "content": "基元律动官网模型页上线匿名内测通道 TR Alpha Channel，标价全 0，注册即可调用。\n\n- 额度：**输入、输出、缓存命中单价均为 ¥0.00**，按量计费但单价为零\n- 规格：**1M 上下文 / 512K 最大输出**，支持文本、图像、视频\n- 能力：工具调用、推理、视觉、缓存读取，仅 OpenAI 协议\n- 限制：**实验性内测**，上游供应商匿名，官方未公布关闭时间\n\n领取步骤：\n\n1. 打开 [模型页](https://tokenrhythm.studio/models)用手机号验证码注册\n2. 保存注册页一次性展示的完整 API Key\n3. 模型 ID 填 tr-alpha-channel\n\n调用地址 https://tokenrhythm.studio/v1，OpenAI 格式直连。\n\n**注意**：匿名上游勿传敏感数据；内测随时关闭勿接生产；同站 NeoHorse-Jev 决策模型需充值才可体验，不属免费福利。",
+      "summary": "邀请注册送 18 元额度，模型谷价低于官方",
+      "content": "基元律动用专属邀请链接注册并实名认证，可领 18 元 Token 额度，站内模型价格低于官方。\n\n- 新客礼：**邀请注册 + 实名认证领 18 元 Token 额度**\n- 官方活动：**千问模型全部半价，deepseek 系列全天谷价**\n- 实测：**deepseek-flash 约 5 元可用 1 亿 token**\n- 规格：**1M 上下文**，缓存命中 ¥0.02/1M\n\n领取步骤：\n\n1. 打开 [邀请注册页](https://tokenrhythm.studio/i/rf_tr_UXFE77?share_id=8f58205d-6c2e-4eea-b860-f4e6a7277078)用手机号注册登录\n2. 完成实名认证领取 18 元额度\n3. 控制台创建 API Key，模型 ID 填 deepseek-flash\n\n附加：同站有匿名内测通道 [TR Alpha Channel](https://tokenrhythm.studio/models)，输入输出缓存全 ¥0、1M 上下文，模型 ID 填 tr-alpha-channel 可零成本试。\n\n**注意**：额度与价格以站内实际为准，官方活动可能调整；匿名内测上游勿传敏感数据、勿接生产。",
       "images": [],
-      "link": "https://tokenrhythm.studio/i/rf_tr_UXFE77?share_id=6c09fa21-54b4-4efe-b66f-112f6335ff6d",
+      "link": "https://tokenrhythm.studio/i/rf_tr_UXFE77?share_id=8f58205d-6c2e-4eea-b860-f4e6a7277078",
       "publishedAt": "2026-10-09",
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "source": "freeegg",
       "localEdit": false
     },
