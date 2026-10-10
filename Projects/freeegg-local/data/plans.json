@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-06",
+  "version": "2026-10-10",
   "vendors": [
     {
       "id": "zhipu-glm",
@@ -463,18 +463,19 @@
       "id": "chatgpt",
       "name": "ChatGPT",
       "product": "ChatGPT 会员",
-      "tagline": "OpenAI 旗舰助手，GPT-6 Astra 陆续开放，GPT-5.6 全系可用",
+      "tagline": "OpenAI 旗舰助手，GPT-6 全系上线，Pro 分三档",
       "models": [
         "GPT-6 Astra",
-        "GPT-5.6 Sol",
-        "GPT-5.6 Terra",
-        "GPT-5.6 Luna"
+        "GPT-6.1 Sol",
+        "GPT-6 Sol",
+        "GPT-6 Luna"
       ],
       "quotaBasis": "按套餐用量限制",
       "status": "available",
       "highlights": [
+        "Pro 分三档",
+        "Ultrafast 加速",
         "GPT-6 Astra",
-        "Luna 无限聊",
         "Codex 多智能体"
       ],
       "entryPrice": "$8/月起",
@@ -501,18 +502,39 @@
           ]
         },
         {
-          "name": "Pro",
-          "price": "$100-200/月",
-          "note": "仅周额度",
+          "name": "Pro 100",
+          "price": "$100/月",
+          "note": "5× Plus 用量",
           "features": [
-            "GPT-6 Astra 优先开放",
-            "扩展深度研究与定时任务",
-            "扩展 Codex 与 Work 多智能体"
+            "5× Plus 用量、5× Codex",
+            "Pro 推理（GPT-6 Astra 驱动）",
+            "最长 Codex 与 ChatGPT Work 会话",
+            "最大深度研究、记忆与上下文"
+          ]
+        },
+        {
+          "name": "Pro 200",
+          "price": "$200/月",
+          "note": "10× Plus 用量",
+          "features": [
+            "Pro 推理（GPT-6 Astra 驱动）",
+            "最长 Codex 与 ChatGPT Work 会话",
+            "含 Plus 全部权益，无 Ultrafast"
+          ]
+        },
+        {
+          "name": "Pro 500",
+          "price": "$500/月",
+          "note": "25× Plus 用量",
+          "features": [
+            "Pro 推理（GPT-6 Astra 驱动）",
+            "独享 Ultrafast 加速档",
+            "Codex 约 8× 提速（300 tok/s）"
           ]
         }
       ],
       "link": "https://chatgpt.com/pricing",
-      "updatedAt": "2026-09-14",
+      "updatedAt": "2026-10-10",
       "source": "freeegg",
       "localEdit": false
     },
