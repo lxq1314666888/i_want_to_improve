@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-10），云端 Worker 定时采集
-- 生成时间：2026-10-11T06:12:52.494Z
+- 生成时间：2026-10-11T13:17:53.921Z
 - 集合：eggs · 共 51 条 · 未过期 36 条 · 已过期 15 条
 
 ## 一、概览
@@ -21,7 +21,7 @@
 | 1 | WorkBuddy 签到领 100 积分 | WorkBuddy | 积分/点数 | 93 | 长期 | - | 每日签到领 100 积分，体验版每月再送 500 | https://www.workbuddy.cn/events/invite?inviteCode=h06385rcx |
 | 2 | Trae Work 签到领 100 积分 | Trae Work | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100；新人再送 4000 | https://www.trae.cn/ |
 | 3 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
-| 4 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 59 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
+| 4 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 58 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
 | 5 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 6 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
 | 7 | 商汤小浣熊每日免费 300 积分 | 商汤小浣熊 | 积分/点数 | 75 | 长期 | - | 每日登录领 300 积分，新人再得 6000 一年有效 | https://xiaohuanxiong.com/ |
@@ -35,7 +35,7 @@
 | 15 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 82 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
 | 16 | AutoClaw 返工登录领 1 亿 Token | 智谱 | Token 额度 | 68 | 限时 | 5 天 | 10.8 起登录领 1 亿 Token，两日各 5000 万 | https://autoclaw.zhipuai.cn/blog/news/national-day-token-gift/ |
 | 17 | MonkeyCode 免费档每日 10M Token | 长亭 MonkeyCode | Token 额度 | 68 | 长期 | - | ¥0 永久免费档每天 10M Token，仅限平台内使用 | https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260 |
-| 18 | Claude Haiku 5.5 限时免费 | Token Harbor | API 免费档 | 66 | 限时 | 5 天 | Claude Haiku 5.5 限免，10-15 截止 | https://tokenharbor.ai/models?category=free |
+| 18 | Claude Haiku 5.5 限时免费 | Token Harbor | API 免费档 | 66 | 限时 | 4 天 | Claude Haiku 5.5 限免，10-15 截止 | https://tokenharbor.ai/models?category=free |
 | 19 | 基元律动 18 元额度 | 基元律动 | Token 额度 | 66 | 长期 | - | 邀请注册送 18 元额度，模型谷价低于官方 | https://tokenrhythm.studio/i/rf_tr_UV4N48?share_id=f65e6227-fc53-4625-b49b-247fa033ef68 |
 | 20 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
 | 21 | Cline 免费模型池 | Cline | API 免费档 | 65 | 长期 | - | 免 Key 免绑卡，MiMo-V2.6-Flash 等免费 | https://cline.bot/ |
