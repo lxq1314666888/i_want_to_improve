@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-10",
+  "version": "2026-10-11",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -138,8 +138,8 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.64,
-      "outputCost": 13.5,
+      "inputCost": 0.8,
+      "outputCost": 15,
       "score": 63.2,
       "source": "freeegg",
       "localEdit": false
@@ -239,7 +239,7 @@
       "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.2,
+      "score": 61.3,
       "source": "freeegg",
       "localEdit": false
     },
