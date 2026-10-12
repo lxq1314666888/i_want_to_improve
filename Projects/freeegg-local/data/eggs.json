@@ -1,6 +1,69 @@
 {
-  "version": "2026-10-10",
+  "version": "2026-10-12",
   "eggs": [
+    {
+      "id": "volcengine-ark-collab-reward-202610",
+      "title": "火山方舟 协作奖励计划免费领",
+      "vendor": "火山方舟",
+      "category": "token",
+      "score": 75,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "授权数据采集，单模型日领最高 500 万 Token",
+      "content": "火山方舟（豆包）协作奖励计划，授权数据采集即可免费领 Token 包。\n\n- 冷启动包：首次授权模型接入点即赠免费额度\n- 每日奖励包：按前一日用量**次日等量返还**\n- 上限：**单模型每日最高 500 万 Tokens**\n- 有效期：发放后 **30 天**，到期清零\n\n领取步骤：\n\n1. 打开 [协作奖励计划](https://docs.volcengine.com/docs/ark/collaboration-reward-program?lang=zh)阅读规则\n2. 控制台开通模型并授权数据采集\n3. 「开通管理 → 协作奖励计划」查看奖励包\n\n**注意**：需授权调用数据（输入输出）用于火山引擎模型优化，敏感数据勿用；奖励包仅抵扣后付费推理；同一主体仅限一个账号参与；部分模型已退出，以活动页名单为准。",
+      "images": [],
+      "link": "https://docs.volcengine.com/docs/ark/collaboration-reward-program?lang=zh",
+      "publishedAt": "2026-10-12",
+      "updatedAt": "2026-10-12",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "xfyun-spark-small-models-free-202610",
+      "title": "讯飞星火 Spark 小模型免费",
+      "vendor": "讯飞星火",
+      "category": "api-quota",
+      "score": 42,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "X2.5-1.7B 长期免费，4B 限时免费",
+      "content": "讯飞星火开放平台的 Spark-X2.5 小模型开放免费调用。\n\n- Spark-X2.5-1.7B：**长期免费**调用\n- Spark-X2.5-4B：**限时免费**（截止日未公布）\n- 规格：1.7B / 4B 端侧模型，**1M 上下文**\n- 星辰 MaaS 模型广场另有多款模型可「免费领取」\n\n领取步骤：\n\n1. 打开 [讯飞星火开放平台](https://xinghuo.xfyun.cn/sparkapi)注册并实名\n2. 控制台创建应用，获取 API Key\n3. 模型名选 Spark-X2.5-1.7B 或 Spark-X2.5-4B\n\n**注意**：仅这两个小参数模型免费，旗舰 Spark-X2.5 等仍按量计费；4B 为限时活动，随时可能结束，领取需先完成实名。",
+      "images": [],
+      "link": "https://xinghuo.xfyun.cn/sparkapi",
+      "publishedAt": "2026-10-12",
+      "updatedAt": "2026-10-12",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "doubao-work-30day-sub-202610",
+      "title": "豆包工作 免费领 30 天订阅",
+      "vendor": "字节跳动",
+      "category": "credits",
+      "score": 78,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "限时免费领 30 天标准订阅，可用豆包 2.1 Pro",
+      "content": "豆包工作（豆包专业版）限时活动，免费领 30 天标准订阅。\n\n- 权益：**30 天标准套餐**（额度为免费版 5 倍以上）\n- 可用：**豆包 2.1 Pro**、工作任务（Agent）、定时任务、Office 套件\n- 门槛：需下载**豆包工作电脑版**（约 2GB）\n- 加赠：大学生完成认证，再领 3 个月\n\n领取步骤：\n\n1. 打开 [豆包工作](https://www.doubao.com/work)下载安装电脑版\n2. 用手机号 / 微信 / 抖音登录\n3. 按客户端活动提示领取，在「设置 → 订阅与额度管理」查看到期\n\n**注意**：属限时活动，官方未公布截止日，已领过可滚动续领；标准套餐连续包月价 ¥68，30 天后继续使用需付费；免费版基础问答不受影响。用户实测（2026-10）可正常领取。",
+      "images": [],
+      "link": "https://www.doubao.com/work",
+      "publishedAt": "2026-10-12",
+      "updatedAt": "2026-10-12",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "tokenharbor-haiku55-free-202610",
       "title": "Claude Haiku 5.5 限时免费",
