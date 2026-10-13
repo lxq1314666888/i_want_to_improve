@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-12",
+  "version": "2026-10-13",
   "eggs": [
+    {
+      "id": "zcode-invite-friend-202610",
+      "title": "ZCode 邀请好友领 1 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 68,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "受邀完成三步新手任务，领 1 亿 Flash Token",
+      "content": "ZCode 随 v3.15.1 上线「邀请好友·免费蹬蹬」活动，受邀用户完成新手任务即可领夜间蹬蹬卡。\n\n- 额度：**1 亿 Token**（GLM-5.3-Flash）\n- 任务：**绑定邀请码 → 登录客户端 → 发送消息**\n- 范围：**仅限 ZCode 客户端内使用**，非 API Key\n- 上线版本：**v3.15.1**（2026-10-12）\n\n领取步骤：\n\n1. 打开 [邀请链接](https://zcode.z.ai/invite/CA2ZEAUJ)登录或注册账号\n2. 绑定邀请码，下载客户端登录\n3. 客户端内发一条消息，夜间蹬蹬卡自动到账\n\n**注意**：官方未公布活动截止日；需从邀请链接进入并绑定邀请码；额度到账与有效期以客户端「模型设置」实显为准；活动为「共得权益」，邀请人奖励另计、以客户端内活动页为准。",
+      "images": [],
+      "link": "https://zcode.z.ai/invite/CA2ZEAUJ",
+      "publishedAt": "2026-10-13",
+      "updatedAt": "2026-10-13",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "volcengine-ark-collab-reward-202610",
       "title": "火山方舟 协作奖励计划免费领",
@@ -996,8 +1017,8 @@
     },
     {
       "id": "trae-work-checkin-202608",
-      "title": "Trae Work 签到领 100 积分",
-      "vendor": "Trae Work",
+      "title": "TRAE 每日签到领 100 积分",
+      "vendor": "TRAE",
       "category": "credits",
       "score": 88,
       "tags": {
@@ -1006,12 +1027,12 @@
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "每日签到领 100 积分，月最高 3100；新人再送 4000",
-      "content": "TRAE Work 每日签到福利，长期有效。\n\n- 额度：**每日签到领 100 通用积分**，积分有效期 31 个自然日\n- 月累计：按 31 天计最高 3100 积分\n- 新用户：注册送 2000 通用积分 + 2000 Work 积分\n- 新人积分有效期 31 天\n- 用途：通用积分适用 TraeCode 与 TraeWork\n- Work 专属积分仅限 TraeWork 用\n\n签到步骤：\n\n1. 打开 [TRAE 官网](https://www.trae.cn/)注册并登录\n2. 进入 TraeWork 网页端、桌面端或移动端\n3. 每日签到即可领取 100 积分\n\n**注意**：官方套餐文档仍标注免费用户每日签到 150 积分，实际到账已降为 100 积分（2026-10 实测），细则以[官方套餐文档](https://docs.trae.cn/ide_plans-and-billing)为准。",
+      "summary": "每日签到领 100 积分，月最高 3100，新人送 4000",
+      "content": "TRAE（TraeWork 与 TraeCode 已于 2026-10-09 合并）每日签到福利，长期有效。\n\n- 签到：免费用户**每日 100 积分**，会员**每日 200 积分**\n- 月累计：按 31 天计，免费最高 3100 积分\n- 新人：注册一次性送 **4000 积分**，有效期 31 天\n- 另有：每月登录送 500，邀请新用户双方各 500\n- 积分类型：**会员积分**（订阅/增购）与**奖励积分**（活动获取），全平台通用\n\n签到步骤：\n\n1. 打开 [TRAE 官网](https://www.trae.cn/)注册并登录\n2. 点击头像，在菜单中选择「签到」\n3. 每日签到即可领取积分\n\n**注意**：积分有效期为 31 个自然日，多类积分并存时优先消耗最快到期者；仅调用内置模型消耗积分，自定义模型不扣；细则以[官方计费文档](https://docs.trae.cn/ide_plans-and-billing)为准。",
       "images": [],
       "link": "https://www.trae.cn/",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-10-01",
+      "updatedAt": "2026-10-13",
       "source": "freeegg",
       "localEdit": false
     },
