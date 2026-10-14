@@ -132,7 +132,7 @@
       "title": "Kilo Code 免费模型池",
       "vendor": "Kilo Code",
       "category": "api-quota",
-      "score": 55,
+      "score": 62,
       "tags": {
         "duration": "longterm",
         "region": "global"
@@ -684,7 +684,7 @@
       "title": "Cline 免费模型池",
       "vendor": "Cline",
       "category": "api-quota",
-      "score": 65,
+      "score": 80,
       "tags": {
         "duration": "longterm",
         "region": "cn"
@@ -870,22 +870,22 @@
     },
     {
       "id": "opencode-zen-free-202608",
-      "title": "OpenCode Zen 免费模型",
+      "title": "OpenCode 内置免费模型",
       "vendor": "OpenCode",
       "category": "api-quota",
-      "score": 55,
+      "score": 83,
       "tags": {
         "duration": "longterm",
         "region": "global"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "自带一组免费模型，无需创建账户即可用",
-      "content": "OpenCode 官网明确：自带一组免费模型，无需创建账户即可使用。\n\n- 额度：**免费模型 $0 调用**，输入输出均免费\n- 模型：MiMo-V2.6-Flash Free 新上，免费端点共 10 款\n- 门槛：**无需账户、无需绑卡、无需取 Key**\n- 接入：安装即内置免费模型，开箱直用；可 /connect 接其他提供商\n\n使用步骤：\n\n1. 打开 [OpenCode 官网](https://opencode.ai/zh)按引导安装\n2. 启动 opencode，选自带免费模型即可对话\n3. 需要更强模型时，再自选付费提供商接入\n\n**注意**：免费模型多为限时提供、可能限速；Muse Spark 1.3 Contributor Free 会用对话数据训练 Meta 模型，Nemotron 免费端点提示勿提交机密数据；后续若绑卡接 Zen 付费模型，记得关闭自动充值（默认低于 $5 自动扣 $20）；免费名单以[官方文档](https://opencode.ai/docs/zh-cn/zen/)为准。",
+      "summary": "内置免费模型，免登录、免绑卡、免 Key",
+      "content": "OpenCode 是开源 AI 编程代理（终端 / 桌面 / IDE 扩展），**内置免费模型**，装完即用，也可接其他提供商。\n\n- 额度：**免费模型 $0 调用**，输入输出均免费\n- 模型：MiMo-V2.6-Flash Free 等，名单随官方增删\n- 门槛：**无需登录、无需绑卡、无需取 Key**\n- 接入：安装即内置免费模型；也可 /connect 接其他模型\n\n使用步骤：\n\n1. 打开 [OpenCode 官网](https://opencode.ai/zh)按引导安装\n2. 启动 opencode，选自带免费模型即可对话\n3. 需要更强模型时，再自选付费提供商接入\n\n**注意**：免费模型多为限时提供、可能限速，部分会用对话数据改进模型，勿提交机密数据；**Console（原 Zen）是可选网关**，接付费模型才需登录充值（默认余额低于 $5 自动扣 $20，可关）；名单以[官方文档](https://opencode.ai/docs/zh-cn)为准。",
       "images": [],
       "link": "https://opencode.ai/zh",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-09-21",
+      "updatedAt": "2026-10-14",
       "source": "freeegg",
       "localEdit": false
     },
