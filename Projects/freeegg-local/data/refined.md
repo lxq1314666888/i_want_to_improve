@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
-- 数据源：freeegg.top（2026-10-13），云端 Worker 定时采集
-- 生成时间：2026-10-13T23:01:10.368Z
+- 数据源：freeegg.top（2026-10-14），云端 Worker 定时采集
+- 生成时间：2026-10-14T05:13:25.551Z
 - 集合：eggs · 共 55 条 · 未过期 40 条 · 已过期 15 条
 
 ## 一、概览
@@ -18,11 +18,11 @@
 
 | # | 标题 | 厂商 | 类别 | 评分 | 时效 | 剩余天数 | 摘要 | 链接 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | WorkBuddy 签到领 100 积分 | WorkBuddy | 积分/点数 | 93 | 长期 | - | 每日签到领 100 积分，体验版每月再送 500 | https://www.workbuddy.cn/events/invite?inviteCode=h06385rcx |
-| 2 | TRAE 每日签到领 100 积分 | TRAE | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100，新人送 4000 | https://www.trae.cn/ |
-| 3 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
-| 4 | 豆包工作 免费领 30 天订阅 | 字节跳动 | 积分/点数 | 78 | 限时 | - | 限时免费领 30 天标准订阅，可用豆包 2.1 Pro | https://www.doubao.com/work |
-| 5 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 56 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
+| 1 | TRAE 每日签到领 100 积分 | TRAE | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100，新人送 4000 | https://www.trae.cn/ |
+| 2 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
+| 3 | 豆包工作 免费领 30 天订阅 | 字节跳动 | 积分/点数 | 78 | 限时 | - | 限时免费领 30 天标准订阅，可用豆包 2.1 Pro | https://www.doubao.com/work |
+| 4 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 56 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
+| 5 | WorkBuddy 签到暂停中 | WorkBuddy | 积分/点数 | 78 | 长期 | - | 签到暂停，限免 Hy3/Step-5-Preview 可用 | https://www.workbuddy.cn/events/invite?inviteCode=h06385rcx |
 | 6 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 7 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
 | 8 | 火山方舟 协作奖励计划免费领 | 火山方舟 | Token 额度 | 75 | 长期 | - | 授权数据采集，单模型日领最高 500 万 Token | https://docs.volcengine.com/docs/ark/collaboration-reward-program?lang=zh |
@@ -47,7 +47,7 @@
 | 27 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
 | 28 | Cloudflare Workers AI 免费额度 | Cloudflare | API 免费档 | 59 | 长期 | - | 注册即用免绑卡，每天 10,000 Neurons 免费额度 | https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fai%2Fworkers-ai |
 | 29 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 79 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
-| 30 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 多款模型免费调用：GLM-Z1-9B、Kolors 生图等 | https://siliconflow.cn/ |
+| 30 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
 | 31 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
 | 32 | 蚂蚁百灵 Ling-3.1-flash 限免 | 蚂蚁百灵 | Token 额度 | 56 | 限时 | 1 天 | Ling-3.1-flash 限免至 10/14，需绑支付宝 | https://developer.ant-ling.com/zh-CN/docs/models/price/ |
 | 33 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 55 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
