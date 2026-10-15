@@ -1,6 +1,48 @@
 {
-  "version": "2026-10-14",
+  "version": "2026-10-15",
   "eggs": [
+    {
+      "id": "baidu-dumate-checkin-202610",
+      "title": "百度搭子 签到领 500 积分",
+      "vendor": "百度搭子",
+      "category": "credits",
+      "score": 75,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "免费版每日签到领 500 积分，全量功能开放",
+      "content": "百度官方桌面 AI 办公智能体 DuMate，免费版 ¥0 即可用全量产品功能，积分限时赠送。\n\n- 额度：**每日签到领 500 积分**（限时活动）\n- 版本：免费版 **全量产品功能开放**，高峰时段响应可能受限\n- 场景：文件管理、数据分析、汇报生成、网页自动化等桌面任务\n- 安全：本地沙箱运行，数据不出设备，风险操作二次确认\n\n领取步骤：\n\n1. 打开 [DuMate 官网](https://www.dumate.cn/)下载桌面版（macOS / Windows）\n2. 百度账号或手机号注册登录\n3. 客户端内每日签到，积分自动到账\n\n**注意**：签到送积分属限时活动，赠送机制官方保留调整权、以客户端内实领为准；赠送积分到期清零；基础版不另含订阅积分，用量全靠每日签到。",
+      "images": [],
+      "link": "https://www.dumate.cn/",
+      "publishedAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "qclaw-migration-202610",
+      "title": "QClaw 停服迁移送 1000 积分",
+      "vendor": "腾讯 QClaw",
+      "category": "credits",
+      "score": 58,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-12-24T00:00:00+08:00",
+      "summary": "QClaw 老用户迁移 WorkBuddy 得 1000 积分",
+      "content": "腾讯 QClaw（小龙虾）宣布 2026-12-24 停止运营，存量用户迁移数据可获 WorkBuddy 积分补贴。\n\n- 补贴：**1000 WorkBuddy 积分**，到账后有效期 1 个月\n- 条件：完成 WorkBuddy 授权并实际完成有效数据迁移\n- 范围：此前是否已用 WorkBuddy 均可领\n- 附加：迁移新用户首购单月会员再赠 500 到 5000 积分\n\n领取步骤：\n\n1. 打开[迁移页面](https://qclaw.qq.com/migration)登录 QClaw 账号\n2. 登录或注册 WorkBuddy 完成授权，确认迁移范围\n3. 在 QClaw 客户端运行一键迁移助手，补贴 24 小时内自动到账\n\n**注意**：仅限 QClaw 存量用户，新注册已关闭；仅支持个人版 WorkBuddy 账号；补贴积分 1 个月有效；首购赠送积分 7 个工作日内自动发放。",
+      "images": [],
+      "link": "https://qclaw.qq.com/migration",
+      "publishedAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "zcode-invite-friend-202610",
       "title": "ZCode 邀请好友领 1 亿 Token",
@@ -357,27 +399,6 @@
       "link": "https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0",
       "publishedAt": "2026-09-19",
       "updatedAt": "2026-09-19",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "zcode-weekend-build2-202609",
-      "title": "ZCode 周末构建送 3 亿 Token",
-      "vendor": "智谱",
-      "category": "token",
-      "score": 98,
-      "tags": {
-        "duration": "limited",
-        "region": "cn"
-      },
-      "expired": true,
-      "expiryDate": "2026-09-18T23:59:59+08:00",
-      "summary": "3 亿 Token 今夜生效，用到 9/20 09:00",
-      "content": "ZCode「周末构建」（Weekend Build）新一轮开启，时间为站长一手报料（2026-09-18，以官方为准）。\n\n- 额度：**3 亿 Token**，仅限 ZCode 内使用\n- 适用：仅 GLM-5.3-Flash，原生 100 万上下文\n- 时间：Token 9/18 23:00 生效，9/20 09:00 额度到期\n- 领取：**9/18 当天有效**，今天不领错过本轮\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载并升级客户端\n2. 登录后点左下角活动卡片「领取」\n3. 在「模型设置」切「体验套餐」使用\n\n**注意**：生效到到期仅约 34 小时，抓紧用完；到期未用自动失效，不可转让折现；限领规则以客户端活动卡为准。",
-      "images": [],
-      "link": "https://zcode.z.ai/cn",
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18",
       "source": "freeegg",
       "localEdit": false
     },
@@ -881,11 +902,11 @@
       "expired": false,
       "expiryDate": null,
       "summary": "内置免费模型，免登录、免绑卡、免 Key",
-      "content": "OpenCode 是开源 AI 编程代理（终端 / 桌面 / IDE 扩展），**内置免费模型**，装完即用，也可接其他提供商。\n\n- 额度：**免费模型 $0 调用**，输入输出均免费\n- 模型：MiMo-V2.6-Flash Free 等，名单随官方增删\n- 门槛：**无需登录、无需绑卡、无需取 Key**\n- 接入：安装即内置免费模型；也可 /connect 接其他模型\n\n使用步骤：\n\n1. 打开 [OpenCode 官网](https://opencode.ai/zh)按引导安装\n2. 启动 opencode，选自带免费模型即可对话\n3. 需要更强模型时，再自选付费提供商接入\n\n**注意**：免费模型多为限时提供、可能限速，部分会用对话数据改进模型，勿提交机密数据；**Console（原 Zen）是可选网关**，接付费模型才需登录充值（默认余额低于 $5 自动扣 $20，可关）；名单以[官方文档](https://opencode.ai/docs/zh-cn)为准。",
+      "content": "OpenCode 是开源 AI 编程代理（终端 / 桌面 / IDE 扩展），**内置免费模型**，装完即用，也可接其他提供商。\n\n- 额度：**免费模型 $0 调用**，输入输出均免费\n- 模型：DeepSeek V4.1 Flash 等，名单随官方增删\n- 门槛：**无需登录、无需绑卡、无需取 Key**\n- 接入：安装即内置免费模型；也可 /connect 接其他模型\n\n使用步骤：\n\n1. 打开 [OpenCode 官网](https://opencode.ai/zh)按引导安装\n2. 启动 opencode，选自带免费模型即可对话\n3. 需要更强模型时，再自选付费提供商接入\n\n**注意**：免费模型多为限时提供、可能限速，部分会用对话数据改进模型，勿提交机密数据；**Console（原 Zen）是可选网关**，接付费模型才需登录充值（默认余额低于 $5 自动扣 $20，可关）；名单以[官方文档](https://opencode.ai/docs/zh-cn)为准。",
       "images": [],
       "link": "https://opencode.ai/zh",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "source": "freeegg",
       "localEdit": false
     },
@@ -1054,6 +1075,27 @@
       "link": "https://qwenwork.cn/",
       "publishedAt": "2026-08-30",
       "updatedAt": "2026-08-30",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "zcode-weekend-build2-202609",
+      "title": "ZCode 周末构建送 3 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 98,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": true,
+      "expiryDate": "2026-09-18T23:59:59+08:00",
+      "summary": "3 亿 Token 今夜生效，用到 9/20 09:00",
+      "content": "ZCode「周末构建」（Weekend Build）新一轮开启，时间为站长一手报料（2026-09-18，以官方为准）。\n\n- 额度：**3 亿 Token**，仅限 ZCode 内使用\n- 适用：仅 GLM-5.3-Flash，原生 100 万上下文\n- 时间：Token 9/18 23:00 生效，9/20 09:00 额度到期\n- 领取：**9/18 当天有效**，今天不领错过本轮\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载并升级客户端\n2. 登录后点左下角活动卡片「领取」\n3. 在「模型设置」切「体验套餐」使用\n\n**注意**：生效到到期仅约 34 小时，抓紧用完；到期未用自动失效，不可转让折现；限领规则以客户端活动卡为准。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18",
       "source": "freeegg",
       "localEdit": false
     },
