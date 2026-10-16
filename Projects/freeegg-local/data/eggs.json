@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-15",
+  "version": "2026-10-16",
   "eggs": [
+    {
+      "id": "wuwen-oct-token-202610",
+      "title": "无问社区 签到领 3500 万",
+      "vendor": "无问社区",
+      "category": "token",
+      "score": 62,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "网安模型平台，每日签到领 3500 万 Token",
+      "content": "无问社区（wwlib.cn）是网安垂直大模型平台，十月 Token 活动总盘子 3000 亿，注册即可参与。\n\n- 每日签到：**3500 万 Token/天**，访问开发者控制台自动到账\n- 十月兑换码：**WUWEN_OCT_TOKEN_TICKET**，在礼品卡页兑换\n- 转发奖励：活动原文转发朋友圈集 30 赞，得 **1 亿 Token**\n- 模型：N1PROMAX、N1PROFLASH、N1、WUWEN、MINI、G1\n\n领取步骤：\n\n1. 打开 [领取链接](https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c)注册账号\n2. 每日访问开发者控制台，签到 Token 自动到账\n3. 礼品卡页输入兑换码，叠加额度\n\n**注意**：官方未公示活动截止日，兑换码建议尽早兑换；额度有效期与模型计费以控制台实际显示为准。",
+      "images": [],
+      "link": "https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c",
+      "publishedAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "baidu-dumate-checkin-202610",
       "title": "百度搭子 签到领 500 积分",
@@ -74,14 +95,14 @@
         "duration": "longterm",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": null,
       "summary": "授权数据采集，单模型日领最高 500 万 Token",
       "content": "火山方舟（豆包）协作奖励计划，授权数据采集即可免费领 Token 包。\n\n- 冷启动包：首次授权模型接入点即赠免费额度\n- 每日奖励包：按前一日用量**次日等量返还**\n- 上限：**单模型每日最高 500 万 Tokens**\n- 有效期：发放后 **30 天**，到期清零\n\n领取步骤：\n\n1. 打开 [协作奖励计划](https://docs.volcengine.com/docs/ark/collaboration-reward-program?lang=zh)阅读规则\n2. 控制台开通模型并授权数据采集\n3. 「开通管理 → 协作奖励计划」查看奖励包\n\n**注意**：需授权调用数据（输入输出）用于火山引擎模型优化，敏感数据勿用；奖励包仅抵扣后付费推理；同一主体仅限一个账号参与；部分模型已退出，以活动页名单为准。",
       "images": [],
       "link": "https://docs.volcengine.com/docs/ark/collaboration-reward-program?lang=zh",
       "publishedAt": "2026-10-12",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-16",
       "source": "freeegg",
       "localEdit": false
     },
