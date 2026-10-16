@@ -1,18 +1,18 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-16），云端 Worker 定时采集
-- 生成时间：2026-10-16T04:51:01.052Z
-- 集合：eggs · 共 58 条 · 未过期 39 条 · 已过期 19 条
+- 生成时间：2026-10-16T11:47:18.914Z
+- 集合：eggs · 共 59 条 · 未过期 40 条 · 已过期 19 条
 
 ## 一、概览
 
 | 类别 | 条数 | 副业视角 |
 | --- | --- | --- |
 | Token 额度 | 12 | 直接顶钱用：做内容/开发工具的算力成本归零 |
-| 积分/点数 | 12 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
+| 积分/点数 | 13 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
 | API 免费档 | 15 | 注册即得 Key：适合接 API、做小工具、聚合网关类副业 |
 
-- 地域分布：国内 31 / 国外 8
+- 地域分布：国内 32 / 国外 8
 
 ## 二、可薅清单（按评分排序）
 
@@ -51,12 +51,13 @@
 | 31 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 77 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
 | 32 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
 | 33 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
-| 34 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
-| 35 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
-| 36 | NVIDIA NIM 百款模型免费试用 | NVIDIA | API 免费档 | 52 | 长期 | - | 100+ 模型免费试用推理，按模型限速 | https://build.nvidia.com/models |
-| 37 | 智谱 GLM-4.7-Flash 永久免费 | 智谱 | API 免费档 | 45 | 长期 | - | 官方免费档：200K 上下文 / 128K 输出，高峰可用性差 | https://open.bigmodel.cn/ |
-| 38 | 讯飞星火 Spark 小模型免费 | 讯飞星火 | API 免费档 | 42 | 长期 | - | X2.5-1.7B 长期免费，4B 限时免费 | https://xinghuo.xfyun.cn/sparkapi |
-| 39 | 七牛云 AI 推理注册领 300 万 Token | 七牛云 | Token 额度 | 35 | 长期 | - | 注册领 300 万 Token，企业认证再领 1200 万 | https://s.qiniu.com/NniYJb |
+| 34 | WorkBuddy 补偿领 500 积分 | 腾讯 CodeBuddy | 积分/点数 | 57 | 限时 | 7 天 | DeepSeek 故障补偿：全量用户领 500 积分 | https://www.codebuddy.cn/profile/plans-usage |
+| 35 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
+| 36 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
+| 37 | NVIDIA NIM 百款模型免费试用 | NVIDIA | API 免费档 | 52 | 长期 | - | 100+ 模型免费试用推理，按模型限速 | https://build.nvidia.com/models |
+| 38 | 智谱 GLM-4.7-Flash 永久免费 | 智谱 | API 免费档 | 45 | 长期 | - | 官方免费档：200K 上下文 / 128K 输出，高峰可用性差 | https://open.bigmodel.cn/ |
+| 39 | 讯飞星火 Spark 小模型免费 | 讯飞星火 | API 免费档 | 42 | 长期 | - | X2.5-1.7B 长期免费，4B 限时免费 | https://xinghuo.xfyun.cn/sparkapi |
+| 40 | 七牛云 AI 推理注册领 300 万 Token | 七牛云 | Token 额度 | 35 | 长期 | - | 注册领 300 万 Token，企业认证再领 1200 万 | https://s.qiniu.com/NniYJb |
 
 ## 三、已过期（供选题复盘参考）
 

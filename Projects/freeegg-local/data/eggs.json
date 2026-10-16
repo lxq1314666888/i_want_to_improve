@@ -23,6 +23,27 @@
       "localEdit": false
     },
     {
+      "id": "workbuddy-deepseek-comp-202610",
+      "title": "WorkBuddy 补偿领 500 积分",
+      "vendor": "腾讯 CodeBuddy",
+      "category": "credits",
+      "score": 57,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-22T23:59:59+08:00",
+      "summary": "DeepSeek 故障补偿：全量用户领 500 积分",
+      "content": "腾讯 CodeBuddy / WorkBuddy 国内版全量用户补偿福利，因 DeepSeek 10 月 15 日服务故障，官方发放两项补偿。\n\n- 补偿：**全量用户手动领 500 积分**，到账后有效期 1 个月\n- 返还：10.8–14 端内 DeepSeek 消耗积分全额返还，7 个工作日到账\n- 范围：不限于故障期间用过 DeepSeek 的用户\n- 截止：**10 月 22 日 24 点**前领取，过期不候\n\n领取步骤：\n\n1. 打开 [用量管理页](https://www.codebuddy.cn/profile/plans-usage)登录账号\n2. 在「套餐与用量」页面手动领取 500 积分\n3. 返还部分无需操作，个人在积分详情页查看到账\n\n**注意**：积分自到账起 1 个月有效，到期清零；返还以官方核算为准，企业用户在企业管理端查看。",
+      "images": [],
+      "link": "https://www.codebuddy.cn/profile/plans-usage",
+      "publishedAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "baidu-dumate-checkin-202610",
       "title": "百度搭子 签到领 500 积分",
       "vendor": "百度搭子",
