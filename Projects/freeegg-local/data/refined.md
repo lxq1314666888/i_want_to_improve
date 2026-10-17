@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-16），云端 Worker 定时采集
-- 生成时间：2026-10-17T11:03:48.369Z
+- 生成时间：2026-10-17T15:49:41.800Z
 - 集合：eggs · 共 59 条 · 未过期 40 条 · 已过期 19 条
 
 ## 一、概览
@@ -24,7 +24,7 @@
 | 4 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 5 | Cline 免费模型池 | Cline | API 免费档 | 80 | 长期 | - | 免 Key 免绑卡，MiMo-V2.6-Flash 等免费 | https://cline.bot/ |
 | 6 | 豆包工作 免费领 30 天订阅 | 字节跳动 | 积分/点数 | 78 | 限时 | - | 限时免费领 30 天标准订阅，可用豆包 2.1 Pro | https://www.doubao.com/work |
-| 7 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 53 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
+| 7 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 52 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
 | 8 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 9 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
 | 10 | 百度搭子 签到领 500 积分 | 百度搭子 | 积分/点数 | 75 | 限时 | - | 免费版每日签到领 500 积分，全量功能开放 | https://www.dumate.cn/ |
