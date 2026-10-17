@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-16",
+  "version": "2026-10-17",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -19,7 +19,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 73,
+      "score": 72.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -30,7 +30,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 72.1,
+      "score": 72.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +41,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.3,
+      "score": 71.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +52,7 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.2,
+      "score": 71.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -74,7 +74,7 @@
       "releasedAt": "2026-06-09",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 69.9,
+      "score": 69.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -85,7 +85,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.9,
+      "score": 68.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -156,23 +156,23 @@
       "localEdit": false
     },
     {
-      "id": "kimi-k3",
-      "name": "Kimi K3",
-      "vendor": "Moonshot AI",
-      "releasedAt": "2026-07-16",
-      "inputCost": 0.405,
-      "outputCost": 15.45,
-      "score": 63.2,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "claude-opus-4-8",
       "name": "Claude Opus 4.8",
       "vendor": "Anthropic",
       "releasedAt": "2026-05-28",
       "inputCost": 5,
       "outputCost": 25,
+      "score": 63.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-07-16",
+      "inputCost": 0.304,
+      "outputCost": 11.936,
       "score": 63.1,
       "source": "freeegg",
       "localEdit": false
@@ -200,17 +200,6 @@
       "localEdit": false
     },
     {
-      "id": "mimo-v2-6-pro",
-      "name": "MiMo-V2.6-Pro",
-      "vendor": "Xiaomi",
-      "releasedAt": "2026-09-21",
-      "inputCost": 0.435,
-      "outputCost": 0.87,
-      "score": 62.7,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "glm-5-3",
       "name": "GLM-5.3",
       "vendor": "Z.ai",
@@ -222,13 +211,24 @@
       "localEdit": false
     },
     {
+      "id": "mimo-v2-6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "vendor": "Xiaomi",
+      "releasedAt": "2026-09-21",
+      "inputCost": 0.435,
+      "outputCost": 0.87,
+      "score": 62.6,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "claude-opus-4-7",
       "name": "Claude Opus 4.7",
       "vendor": "Anthropic",
       "releasedAt": "2026-04-16",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 62.5,
+      "score": 62.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -250,7 +250,7 @@
       "releasedAt": "2026-10-07",
       "inputCost": 0.1,
       "outputCost": 0.5,
-      "score": 61.7,
+      "score": 61.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -303,8 +303,8 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.3,
-      "outputCost": 1.2,
+      "inputCost": 0.15,
+      "outputCost": 0.6,
       "score": 60.3,
       "source": "freeegg",
       "localEdit": false
@@ -317,6 +317,17 @@
       "inputCost": 2,
       "outputCost": 10,
       "score": 59.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "muse-spark-open",
+      "name": "Muse Spark Open",
+      "vendor": "Meta",
+      "releasedAt": "2026-10-15",
+      "inputCost": 1.25,
+      "outputCost": 4.25,
+      "score": 59,
       "source": "freeegg",
       "localEdit": false
     },
