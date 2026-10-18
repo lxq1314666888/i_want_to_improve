@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-16），云端 Worker 定时采集
-- 生成时间：2026-10-18T04:57:45.054Z
+- 生成时间：2026-10-18T11:34:43.150Z
 - 集合：eggs · 共 59 条 · 未过期 40 条 · 已过期 19 条
 
 ## 一、概览
@@ -24,25 +24,25 @@
 | 4 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 限时 | - | Flash 限时免费已延期，截止日待官方公告 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 5 | Cline 免费模型池 | Cline | API 免费档 | 80 | 长期 | - | 免 Key 免绑卡，MiMo-V2.6-Flash 等免费 | https://cline.bot/ |
 | 6 | 豆包工作 免费领 30 天订阅 | 字节跳动 | 积分/点数 | 78 | 限时 | - | 限时免费领 30 天标准订阅，可用豆包 2.1 Pro | https://www.doubao.com/work |
-| 7 | FiimeOPC 注册送 1 亿 Token | FiimeOPC | Token 额度 | 78 | 限时 | 52 天 | 社区注册送 1 亿 Token，每日任务再领 5000 万 | https://opc.fiime.cn/register?invite=NE7JZHET |
-| 8 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
-| 9 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
-| 10 | 百度搭子 签到领 500 积分 | 百度搭子 | 积分/点数 | 75 | 限时 | - | 免费版每日签到领 500 积分，全量功能开放 | https://www.dumate.cn/ |
-| 11 | 商汤小浣熊每日免费 300 积分 | 商汤小浣熊 | 积分/点数 | 75 | 长期 | - | 每日登录领 300 积分，新人再得 6000 一年有效 | https://xiaohuanxiong.com/ |
-| 12 | 有道龙虾每日签到领 100 积分 | 网易有道 | 积分/点数 | 74 | 长期 | - | 每日签到领 100 积分（一个月有效），邀请码新人礼 300 | https://lobsterai.youdao.com/ |
-| 13 | 千问办公每日领 100 积分 | 千问办公 | 积分/点数 | 74 | 长期 | - | 个人版每日登录领 100 积分，每天 00:00 刷新，长期可领 | https://qwenwork.cn/ |
-| 14 | OrcaRouter 免费模型池 | OrcaRouter | API 免费档 | 73 | 长期 | - | 注册领 API Key，GLM-5.3 Flash 等免费用 | https://www.orcarouter.ai/zh-CN |
-| 15 | 云知声 U2-Flash API 限免调用 | 云知声 | Token 额度 | 72 | 限时 | 14 天 | U2-Flash 限免调用至 10/31，新老用户均可 | https://maas.unisound.com/model-hub/u2-flash |
-| 16 | Atria API 三款模型限免 | 上海AI实验室 | API 免费档 | 72 | 限时 | - | 书生-S2 等 3 款限免，OpenAI 协议直连 | https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0 |
-| 17 | 华为云码道每日领 1000 万 | 华为云 | Token 额度 | 71 | 长期 | - | 每日领 1000 万 Token，签到再得 1000 积分 | https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk |
-| 18 | 魔搭魔粒免费调旗舰模型 | 魔搭 ModelScope | API 免费档 | 70 | 长期 | - | 每日登录领魔粒，白嫖 DeepSeek 等旗舰 API | https://modelscope.cn/register?inviteCode=herbqiao2005&invitorName=herbqiao |
-| 19 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 75 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
-| 20 | ZCode 邀请好友领 1 亿 Token | 智谱 | Token 额度 | 68 | 限时 | - | 受邀完成三步新手任务，领 1 亿 Flash Token | https://zcode.z.ai/invite/CA2ZEAUJ |
-| 21 | MonkeyCode 免费档每日 10M Token | 长亭 MonkeyCode | Token 额度 | 68 | 长期 | - | ¥0 永久免费档每天 10M Token，仅限平台内使用 | https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260 |
-| 22 | 基元律动 18 元额度 | 基元律动 | Token 额度 | 66 | 长期 | - | 邀请注册送 18 元额度，模型谷价低于官方 | https://tokenrhythm.studio/i/rf_tr_UV4N48?share_id=f65e6227-fc53-4625-b49b-247fa033ef68 |
-| 23 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
-| 24 | OpenRouter 免费模型池 | OpenRouter | API 免费档 | 65 | 长期 | - | 免费模型池：Ling 3.0 Flash Fin 等 $0 模型 | https://openrouter.ai/models?max_price=0 |
-| 25 | 阿里云百炼新人最高 7000 万 | 阿里云百炼 | Token 额度 | 65 | 长期 | - | 每模型送 100 万 Token，多模型叠加最高 7000 万 | https://www.aliyun.com/product/bailian |
+| 7 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
+| 8 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
+| 9 | 百度搭子 签到领 500 积分 | 百度搭子 | 积分/点数 | 75 | 限时 | - | 免费版每日签到领 500 积分，全量功能开放 | https://www.dumate.cn/ |
+| 10 | 商汤小浣熊每日免费 300 积分 | 商汤小浣熊 | 积分/点数 | 75 | 长期 | - | 每日登录领 300 积分，新人再得 6000 一年有效 | https://xiaohuanxiong.com/ |
+| 11 | 有道龙虾每日签到领 100 积分 | 网易有道 | 积分/点数 | 74 | 长期 | - | 每日签到领 100 积分（一个月有效），邀请码新人礼 300 | https://lobsterai.youdao.com/ |
+| 12 | 千问办公每日领 100 积分 | 千问办公 | 积分/点数 | 74 | 长期 | - | 个人版每日登录领 100 积分，每天 00:00 刷新，长期可领 | https://qwenwork.cn/ |
+| 13 | OrcaRouter 免费模型池 | OrcaRouter | API 免费档 | 73 | 长期 | - | 注册领 API Key，GLM-5.3 Flash 等免费用 | https://www.orcarouter.ai/zh-CN |
+| 14 | 云知声 U2-Flash API 限免调用 | 云知声 | Token 额度 | 72 | 限时 | 14 天 | U2-Flash 限免调用至 10/31，新老用户均可 | https://maas.unisound.com/model-hub/u2-flash |
+| 15 | Atria API 三款模型限免 | 上海AI实验室 | API 免费档 | 72 | 限时 | - | 书生-S2 等 3 款限免，OpenAI 协议直连 | https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0 |
+| 16 | 华为云码道每日领 1000 万 | 华为云 | Token 额度 | 71 | 长期 | - | 每日领 1000 万 Token，签到再得 1000 积分 | https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk |
+| 17 | 魔搭魔粒免费调旗舰模型 | 魔搭 ModelScope | API 免费档 | 70 | 长期 | - | 每日登录领魔粒，白嫖 DeepSeek 等旗舰 API | https://modelscope.cn/register?inviteCode=herbqiao2005&invitorName=herbqiao |
+| 18 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 75 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
+| 19 | ZCode 邀请好友领 1 亿 Token | 智谱 | Token 额度 | 68 | 限时 | - | 受邀完成三步新手任务，领 1 亿 Flash Token | https://zcode.z.ai/invite/CA2ZEAUJ |
+| 20 | MonkeyCode 免费档每日 10M Token | 长亭 MonkeyCode | Token 额度 | 68 | 长期 | - | ¥0 永久免费档每天 10M Token，仅限平台内使用 | https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260 |
+| 21 | 基元律动 18 元额度 | 基元律动 | Token 额度 | 66 | 长期 | - | 邀请注册送 18 元额度，模型谷价低于官方 | https://tokenrhythm.studio/i/rf_tr_UV4N48?share_id=f65e6227-fc53-4625-b49b-247fa033ef68 |
+| 22 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
+| 23 | OpenRouter 免费模型池 | OpenRouter | API 免费档 | 65 | 长期 | - | 免费模型池：Ling 3.0 Flash Fin 等 $0 模型 | https://openrouter.ai/models?max_price=0 |
+| 24 | 阿里云百炼新人最高 7000 万 | 阿里云百炼 | Token 额度 | 65 | 长期 | - | 每模型送 100 万 Token，多模型叠加最高 7000 万 | https://www.aliyun.com/product/bailian |
+| 25 | FiimeOPC 社区任务领 Token | FiimeOPC | Token 额度 | 64 | 限时 | 52 天 | 社区任务每日合计最多5000万；Token榜累计10亿送1亿 | https://opc.fiime.cn/register?invite=NE7JZHET |
 | 26 | 无问社区 签到领 3500 万 | 无问社区 | Token 额度 | 62 | 限时 | - | 网安模型平台，每日签到领 3500 万 Token | https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c |
 | 27 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 62 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
 | 28 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
