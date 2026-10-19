@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-18",
+  "version": "2026-10-19",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -156,23 +156,23 @@
       "localEdit": false
     },
     {
-      "id": "kimi-k3",
-      "name": "Kimi K3",
-      "vendor": "Moonshot AI",
-      "releasedAt": "2026-07-16",
-      "inputCost": 0.304,
-      "outputCost": 11.936,
-      "score": 63.1,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "claude-opus-4-8",
       "name": "Claude Opus 4.8",
       "vendor": "Anthropic",
       "releasedAt": "2026-05-28",
       "inputCost": 5,
       "outputCost": 25,
+      "score": 63.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-07-16",
+      "inputCost": 0.249,
+      "outputCost": 11.936,
       "score": 63.1,
       "source": "freeegg",
       "localEdit": false
@@ -205,7 +205,7 @@
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
       "inputCost": 0.079,
-      "outputCost": 3.2,
+      "outputCost": 1.4,
       "score": 62.6,
       "source": "freeegg",
       "localEdit": false
@@ -303,8 +303,8 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.072,
-      "outputCost": 0.144,
+      "inputCost": 0.048,
+      "outputCost": 0.12,
       "score": 60.3,
       "source": "freeegg",
       "localEdit": false
