@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-16",
+  "version": "2026-10-19",
   "eggs": [
+    {
+      "id": "trae-1024-giveaway-202610",
+      "title": "TRAE 1024 签到抽 100 万积分",
+      "vendor": "TRAE",
+      "category": "credits",
+      "score": 56,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-24T18:00:00+08:00",
+      "summary": "IDE 每日签到抽奖，最高 100 万积分",
+      "content": "TRAE 面向中国区用户的 1024 程序员节签到抽奖活动。\n\n- 玩法：10 月 19 日至 24 日，IDE 内**每日签到**得一次随机奖励\n- 奖励：**88 积分**（每日 0.5%）或 **888 积分**（0.04%）\n- 优惠券：**10 元**（92.5%）或 **20 元**（2.4%）连续包月券\n- 锦鲤：1 名 **100 万积分**，10 月 24 日 19:00 直播间开奖\n- 有效期：签到积分 1 个月，优惠券至 10 月 31 日，锦鲤大奖 1 年\n\n领取步骤：\n\n1. 打开 [活动规则页](https://docs.trae.cn/ide_million-credits-giveaway-on-oct-24)了解细则\n2. 登录 TRAE IDE，在活动弹窗或头像下拉活动区点「签到」\n3. 奖励弹窗即时发放，积分入 TRAE 官网积分明细\n\n**注意**：签到与锦鲤登记截止 10 月 24 日 18:00；优惠券限连续包月套餐购买或升级、不可叠加；需使用支持本活动的 TRAE 客户端，细则以[官方活动页](https://docs.trae.cn/ide_million-credits-giveaway-on-oct-24)为准。",
+      "images": [],
+      "link": "https://docs.trae.cn/ide_million-credits-giveaway-on-oct-24",
+      "publishedAt": "2026-10-19",
+      "updatedAt": "2026-10-19",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "wuwen-oct-token-202610",
       "title": "无问社区 签到领 3500 万",

@@ -1,18 +1,18 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
-- 数据源：freeegg.top（2026-10-16），云端 Worker 定时采集
-- 生成时间：2026-10-19T05:06:16.454Z
-- 集合：eggs · 共 59 条 · 未过期 40 条 · 已过期 19 条
+- 数据源：freeegg.top（2026-10-19），云端 Worker 定时采集
+- 生成时间：2026-10-19T13:48:35.758Z
+- 集合：eggs · 共 60 条 · 未过期 41 条 · 已过期 19 条
 
 ## 一、概览
 
 | 类别 | 条数 | 副业视角 |
 | --- | --- | --- |
 | Token 额度 | 12 | 直接顶钱用：做内容/开发工具的算力成本归零 |
-| 积分/点数 | 13 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
+| 积分/点数 | 14 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
 | API 免费档 | 15 | 注册即得 Key：适合接 API、做小工具、聚合网关类副业 |
 
-- 地域分布：国内 32 / 国外 8
+- 地域分布：国内 33 / 国外 8
 
 ## 二、可薅清单（按评分排序）
 
@@ -42,7 +42,7 @@
 | 22 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
 | 23 | OpenRouter 免费模型池 | OpenRouter | API 免费档 | 65 | 长期 | - | 免费模型池：Ling 3.0 Flash Fin 等 $0 模型 | https://openrouter.ai/models?max_price=0 |
 | 24 | 阿里云百炼新人最高 7000 万 | 阿里云百炼 | Token 额度 | 65 | 长期 | - | 每模型送 100 万 Token，多模型叠加最高 7000 万 | https://www.aliyun.com/product/bailian |
-| 25 | FiimeOPC 社区任务领 Token | FiimeOPC | Token 额度 | 64 | 限时 | 51 天 | 社区任务每日合计最多5000万；Token榜累计10亿送1亿 | https://opc.fiime.cn/register?invite=NE7JZHET |
+| 25 | FiimeOPC 社区任务领 Token | FiimeOPC | Token 额度 | 64 | 限时 | 50 天 | 社区任务每日合计最多5000万；Token榜累计10亿送1亿 | https://opc.fiime.cn/register?invite=NE7JZHET |
 | 26 | 无问社区 签到领 3500 万 | 无问社区 | Token 额度 | 62 | 限时 | - | 网安模型平台，每日签到领 3500 万 Token | https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c |
 | 27 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 62 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
 | 28 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
@@ -52,12 +52,12 @@
 | 32 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
 | 33 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
 | 34 | WorkBuddy 补偿领 500 积分 | 腾讯 CodeBuddy | 积分/点数 | 57 | 限时 | 4 天 | DeepSeek 故障补偿：全量用户领 500 积分 | https://www.codebuddy.cn/profile/plans-usage |
-| 35 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
-| 36 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
-| 37 | NVIDIA NIM 百款模型免费试用 | NVIDIA | API 免费档 | 52 | 长期 | - | 100+ 模型免费试用推理，按模型限速 | https://build.nvidia.com/models |
-| 38 | 智谱 GLM-4.7-Flash 永久免费 | 智谱 | API 免费档 | 45 | 长期 | - | 官方免费档：200K 上下文 / 128K 输出，高峰可用性差 | https://open.bigmodel.cn/ |
-| 39 | 讯飞星火 Spark 小模型免费 | 讯飞星火 | API 免费档 | 42 | 长期 | - | X2.5-1.7B 长期免费，4B 限时免费 | https://xinghuo.xfyun.cn/sparkapi |
-| 40 | 七牛云 AI 推理注册领 300 万 Token | 七牛云 | Token 额度 | 35 | 长期 | - | 注册领 300 万 Token，企业认证再领 1200 万 | https://s.qiniu.com/NniYJb |
+| 35 | TRAE 1024 签到抽 100 万积分 | TRAE | 积分/点数 | 56 | 限时 | 5 天 | IDE 每日签到抽奖，最高 100 万积分 | https://docs.trae.cn/ide_million-credits-giveaway-on-oct-24 |
+| 36 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
+| 37 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
+| 38 | NVIDIA NIM 百款模型免费试用 | NVIDIA | API 免费档 | 52 | 长期 | - | 100+ 模型免费试用推理，按模型限速 | https://build.nvidia.com/models |
+| 39 | 智谱 GLM-4.7-Flash 永久免费 | 智谱 | API 免费档 | 45 | 长期 | - | 官方免费档：200K 上下文 / 128K 输出，高峰可用性差 | https://open.bigmodel.cn/ |
+| 40 | 讯飞星火 Spark 小模型免费 | 讯飞星火 | API 免费档 | 42 | 长期 | - | X2.5-1.7B 长期免费，4B 限时免费 | https://xinghuo.xfyun.cn/sparkapi |
 
 ## 三、已过期（供选题复盘参考）
 
