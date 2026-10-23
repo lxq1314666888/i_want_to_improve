@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-22），云端 Worker 定时采集
-- 生成时间：2026-10-23T05:12:36.064Z
+- 生成时间：2026-10-23T11:57:02.901Z
 - 集合：eggs · 共 62 条 · 未过期 41 条 · 已过期 21 条
 
 ## 一、概览
@@ -52,7 +52,7 @@
 | 32 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 70 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
 | 33 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
 | 34 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
-| 35 | TRAE 1024 签到抽 100 万积分 | TRAE | 积分/点数 | 56 | 限时 | 2 天 | IDE 每日签到抽奖，最高 100 万积分 | https://docs.trae.cn/ide_million-credits-giveaway-on-oct-24 |
+| 35 | TRAE 1024 签到抽 100 万积分 | TRAE | 积分/点数 | 56 | 限时 | 1 天 | IDE 每日签到抽奖，最高 100 万积分 | https://docs.trae.cn/ide_million-credits-giveaway-on-oct-24 |
 | 36 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
 | 37 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
 | 38 | NVIDIA NIM 百款模型免费试用 | NVIDIA | API 免费档 | 52 | 长期 | - | 100+ 模型免费试用推理，按模型限速 | https://build.nvidia.com/models |
