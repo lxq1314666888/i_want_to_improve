@@ -1,6 +1,50 @@
 {
-  "version": "2026-10-22",
+  "version": "2026-10-23",
   "eggs": [
+    {
+      "id": "autoclaw-weekly-100m-202610",
+      "title": "AutoClaw 登录领 1 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 69,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "startsAt": "2026-10-26T00:00:00+08:00",
+      "preview": true,
+      "expiryDate": "2026-11-01T23:59:59+08:00",
+      "summary": "10 月 26 日起登录领 1 亿 Token，限领一次",
+      "content": "AutoClaw 新一周福利：10 月 26 日（周一）00:00 至 11 月 1 日（周日）23:59，登录即领 1 亿 Token。\n\n- 额度：**1 亿 Token**（官方口径相当于 10,000 积分）\n- 门槛：活动期间登录即可，每账号限领一次\n- 时效：越早领取，可用时间越充足\n\n领取步骤：\n\n1. 打开 [AutoClaw 官网](https://autoclaw.zhipuai.cn/)下载桌面端并登录\n2. 26 日 00:00 后登录客户端，在活动入口领取\n3. 额度到账后直接派任务使用\n\n**注意**：奖励 11 月 1 日 23:59 统一失效，不结转；活动 26 日才开领，当前登录无效；领取入口位置以客户端实显为准，细则见[官方公告](https://autoclaw.zhipuai.cn/blog/news/M10W4/)。",
+      "images": [],
+      "link": "https://autoclaw.zhipuai.cn/blog/news/M10W4/",
+      "publishedAt": "2026-10-23",
+      "updatedAt": "2026-10-23",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "zcode-1024-500m-202610",
+      "title": "ZCode 1024 送 5 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 99,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-10-24T00:00:00+08:00",
+      "summary": "客户端弹窗领 5 亿 Token，26 日 09:00 清零",
+      "content": "1024 程序员节官方心意：10 月 23 日 20:00 起，20 万份 5 亿 Token 福利包先到先得，不限 Coding Plan 用户，免费账号也能领，GLM-5.3 与 GLM-5.3-Flash 都能用。\n\n- 额度：**5 亿 Token**，每份一次性发放\n- 领取：23 日 20:00 起，20 万份先到先得\n- 可用：23 日 23:00 ～ 26 日 09:00，到期清零\n\n领取步骤：\n\n1. 到 [ZCode 官网](https://zcode.z.ai/cn) 下载或更新最新版客户端\n2. 登录账号，在端内活动弹窗点击领取\n3. 23:00 生效后在「模型设置」确认模型可用\n\n**注意**：仅限客户端弹窗领取，无网页入口；领取后需等 23:00 才生效，空窗期发起对话仍扣自有额度；额度用不完不结转，剩余名额以客户端实显为准。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-10-23",
+      "updatedAt": "2026-10-23",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "sensetime-raccoon-ds1017-free-202610",
       "title": "小浣熊 DeepSeek-1017 限免",
@@ -161,11 +205,11 @@
       "expired": false,
       "expiryDate": null,
       "summary": "受邀完成三步新手任务，领 1 亿 Flash Token",
-      "content": "ZCode 随 v3.15.1 上线「邀请好友·免费蹬蹬」活动，受邀用户完成新手任务即可领夜间蹬蹬卡。\n\n- 额度：**1 亿 Token**（GLM-5.3-Flash）\n- 任务：**绑定邀请码 → 登录客户端 → 发送消息**\n- 范围：**仅限 ZCode 客户端内使用**，非 API Key\n- 上线版本：**v3.15.1**（2026-10-12）\n\n领取步骤：\n\n1. 打开 [邀请链接](https://zcode.z.ai/invite/CA2ZEAUJ)登录或注册账号\n2. 绑定邀请码，下载客户端登录\n3. 客户端内发一条消息，夜间蹬蹬卡自动到账\n\n**注意**：官方未公布活动截止日；需从邀请链接进入并绑定邀请码；额度到账与有效期以客户端「模型设置」实显为准；活动为「共得权益」，邀请人奖励另计、以客户端内活动页为准。",
+      "content": "ZCode 随 v3.15.1 上线「邀请好友·免费蹬蹬」活动，受邀用户完成新手任务即可领夜间蹬蹬卡。\n\n- 额度：**1 亿 Token**（GLM-5.3-Flash）\n- 任务：**绑定邀请码 → 登录客户端 → 发送消息**\n- 范围：**仅限 ZCode 客户端内使用**，非 API Key\n- 上线版本：**v3.15.1**（2026-10-12）\n\n领取步骤：\n\n1. 打开 [邀请链接](https://zcode.z.ai/invite/S6CEA5NN)登录或注册账号\n2. 绑定邀请码，下载客户端登录\n3. 客户端内发一条消息，夜间蹬蹬卡自动到账\n\n**注意**：官方未公布活动截止日；需从邀请链接进入并绑定邀请码；额度到账与有效期以客户端「模型设置」实显为准；活动为「共得权益」，邀请人奖励另计、以客户端内活动页为准。",
       "images": [],
-      "link": "https://zcode.z.ai/invite/CA2ZEAUJ",
+      "link": "https://zcode.z.ai/invite/S6CEA5NN",
       "publishedAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-23",
       "source": "freeegg",
       "localEdit": false
     },
