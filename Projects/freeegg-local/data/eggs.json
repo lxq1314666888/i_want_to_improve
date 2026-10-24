@@ -35,7 +35,7 @@
         "region": "cn"
       },
       "expired": false,
-      "expiryDate": "2026-10-24T00:00:00+08:00",
+      "expiryDate": "2026-10-25T00:00:00+08:00",
       "summary": "客户端弹窗领 5 亿 Token，26 日 09:00 清零",
       "content": "1024 程序员节官方心意：10 月 23 日 20:00 起，20 万份 5 亿 Token 福利包先到先得，不限 Coding Plan 用户，免费账号也能领，GLM-5.3 与 GLM-5.3-Flash 都能用。\n\n- 额度：**5 亿 Token**，每份一次性发放\n- 领取：23 日 20:00 起，20 万份先到先得\n- 可用：23 日 23:00 ～ 26 日 09:00，到期清零\n\n领取步骤：\n\n1. 到 [ZCode 官网](https://zcode.z.ai/cn) 下载或更新最新版客户端\n2. 登录账号，在端内活动弹窗点击领取\n3. 23:00 生效后在「模型设置」确认模型可用\n\n**注意**：仅限客户端弹窗领取，无网页入口；领取后需等 23:00 才生效，空窗期发起对话仍扣自有额度；额度用不完不结转，剩余名额以客户端实显为准。",
       "images": [],
@@ -77,13 +77,13 @@
         "region": "cn"
       },
       "expired": false,
-      "expiryDate": "2026-10-25T00:00:00+08:00",
+      "expiryDate": "2026-11-01T00:00:00+08:00",
       "summary": "DeepSeek-Flash 限免，0× 不耗 Credits",
-      "content": "Qoder CN 个人版限时免费用 DeepSeek-Flash：模型选择器里选它，消耗倍率显示 0×，调用不扣 Credits。\n\n- 限时：**至 10 月 25 日 00:00（UTC+8）**\n- 模型：DeepSeek-V4.1-Flash-1017，深度求索正式版\n- 计费：倍率 0×，调用不消耗 Credits\n- 范围：Qoder CN 个人版新老用户，企业订阅不适用\n- 门槛：无需领取，0 Credits 账号也能直接跑\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe) 下载桌面端并登录\n2. 在模型选择器里选 **DeepSeek-Flash**，确认倍率显示 0×\n3. 正常对话或跑 Agent 任务，用量面板可核对未扣 Credits\n\n**注意**：到期后按届时公示系数恢复计费（该模型为峰谷计价）；倍率随客户端版本与账号批次变化，以模型选择器显示为准。",
+      "content": "Qoder CN 个人版限时免费用 DeepSeek-Flash：模型选择器里选它，消耗倍率显示 0×，调用不扣 Credits。\n\n- 限时：**至 11 月 1 日 00:00（UTC+8）**\n- 模型：DeepSeek-V4.1-Flash-1017，深度求索正式版\n- 计费：倍率 0×，调用不消耗 Credits\n- 范围：Qoder CN 个人版新老用户，企业订阅不适用\n- 门槛：无需领取，0 Credits 账号也能直接跑\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe) 下载桌面端并登录\n2. 在模型选择器里选 **DeepSeek-Flash**，确认倍率显示 0×\n3. 正常对话或跑 Agent 任务，用量面板可核对未扣 Credits\n\n**注意**：到期后按届时公示系数恢复计费（该模型为峰谷计价）；限免截止与倍率随客户端版本与账号批次变化，以模型选择器实显为准。",
       "images": [],
       "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
       "publishedAt": "2026-10-20",
-      "updatedAt": "2026-10-20",
+      "updatedAt": "2026-10-24",
       "source": "freeegg",
       "localEdit": false
     },
