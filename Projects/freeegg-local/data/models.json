@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-23",
+  "version": "2026-10-24",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -8,7 +8,7 @@
       "releasedAt": "2026-09-17",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 73.3,
+      "score": 73.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -19,7 +19,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 72.8,
+      "score": 72.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -30,7 +30,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.6,
+      "score": 71.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +41,7 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.2,
+      "score": 71.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +52,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71,
+      "score": 70.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -63,7 +63,7 @@
       "releasedAt": "2026-10-12",
       "inputCost": null,
       "outputCost": null,
-      "score": 69.9,
+      "score": 69.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -85,7 +85,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.9,
+      "score": 68.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -96,7 +96,7 @@
       "releasedAt": "2026-07-24",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 68.2,
+      "score": 68.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -107,7 +107,7 @@
       "releasedAt": "2026-10-12",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 67.7,
+      "score": 67.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +118,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 66.1,
+      "score": 66,
       "source": "freeegg",
       "localEdit": false
     },
@@ -129,7 +129,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 65.8,
+      "score": 65.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -140,7 +140,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 1.25,
       "outputCost": 4.25,
-      "score": 64.9,
+      "score": 64.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -151,7 +151,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 0.825,
       "outputCost": 4.125,
-      "score": 64.5,
+      "score": 64.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -160,9 +160,9 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.3,
-      "outputCost": 1.2,
-      "score": 63.5,
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "score": 63.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -172,8 +172,8 @@
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
       "inputCost": 0.239,
-      "outputCost": 11.936,
-      "score": 63.1,
+      "outputCost": 10.8,
+      "score": 63,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,7 +228,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 62.4,
+      "score": 62.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -261,18 +261,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.8,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-haiku-5-5",
-      "name": "Claude Haiku 5.5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-10-07",
-      "inputCost": 0.1,
-      "outputCost": 0.5,
-      "score": 61.5,
+      "score": 61.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -283,7 +272,7 @@
       "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.4,
+      "score": 61.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -294,7 +283,7 @@
       "releasedAt": "2026-10-19",
       "inputCost": 0.15,
       "outputCost": 0.6,
-      "score": 61,
+      "score": 61.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -314,9 +303,20 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.165,
-      "outputCost": 0.66,
-      "score": 60.5,
+      "inputCost": 0.02,
+      "outputCost": 1,
+      "score": 60.4,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-10-07",
+      "inputCost": 0.1,
+      "outputCost": 0.5,
+      "score": 60.4,
       "source": "freeegg",
       "localEdit": false
     },
