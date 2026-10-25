@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24",
+  "version": "2026-10-25",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -19,7 +19,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 72.6,
+      "score": 72.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +52,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 70.9,
+      "score": 70.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -68,13 +68,24 @@
       "localEdit": false
     },
     {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-10-23",
+      "inputCost": 2,
+      "outputCost": 10,
+      "score": 69.4,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "claude-fable-5",
       "name": "Claude Fable 5",
       "vendor": "Anthropic",
       "releasedAt": "2026-06-09",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 69.2,
+      "score": 69.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -96,7 +107,7 @@
       "releasedAt": "2026-07-24",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 68.1,
+      "score": 68,
       "source": "freeegg",
       "localEdit": false
     },
@@ -294,7 +305,7 @@
       "releasedAt": "2026-09-18",
       "inputCost": 1,
       "outputCost": 2.7,
-      "score": 60.8,
+      "score": 60.7,
       "source": "freeegg",
       "localEdit": false
     },
