@@ -1,18 +1,18 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
-- 数据源：freeegg.top（2026-10-25），云端 Worker 定时采集
-- 生成时间：2026-10-25T21:06:17.454Z
-- 集合：eggs · 共 66 条 · 未过期 43 条 · 已过期 23 条
+- 数据源：freeegg.top（2026-10-26），云端 Worker 定时采集
+- 生成时间：2026-10-26T05:09:47.291Z
+- 集合：eggs · 共 67 条 · 未过期 44 条 · 已过期 23 条
 
 ## 一、概览
 
 | 类别 | 条数 | 副业视角 |
 | --- | --- | --- |
 | Token 额度 | 14 | 直接顶钱用：做内容/开发工具的算力成本归零 |
-| 积分/点数 | 14 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
+| 积分/点数 | 15 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
 | API 免费档 | 15 | 注册即得 Key：适合接 API、做小工具、聚合网关类副业 |
 
-- 地域分布：国内 35 / 国外 8
+- 地域分布：国内 36 / 国外 8
 
 ## 二、可薅清单（按评分排序）
 
@@ -40,24 +40,24 @@
 | 20 | 魔搭魔粒免费调旗舰模型 | 魔搭 ModelScope | API 免费档 | 70 | 长期 | - | 每日登录领魔粒，白嫖 DeepSeek 等旗舰 API | https://modelscope.cn/register?inviteCode=herbqiao2005&invitorName=herbqiao |
 | 21 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 67 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
 | 22 | AutoClaw 登录领 1 亿 Token | 智谱 | Token 额度 | 69 | 限时 | 7 天 | 10 月 26 日起登录领 1 亿 Token，限领一次 | https://autoclaw.zhipuai.cn/blog/news/M10W4/ |
-| 23 | ZCode 邀请好友领 1 亿 Token | 智谱 | Token 额度 | 68 | 限时 | - | 受邀完成三步新手任务，领 1 亿 Flash Token | https://zcode.z.ai/invite/S6CEA5NN |
-| 24 | Cline 免费模型池 | Cline | API 免费档 | 68 | 长期 | - | 免 Key 免绑卡，免费池剩 5 款 | https://cline.bot/ |
-| 25 | MonkeyCode 免费档每日 10M Token | 长亭 MonkeyCode | Token 额度 | 68 | 长期 | - | ¥0 永久免费档每天 10M Token，仅限平台内使用 | https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260 |
-| 26 | 基元律动 18 元额度 | 基元律动 | Token 额度 | 66 | 长期 | - | 邀请注册送 18 元额度，模型谷价低于官方 | https://tokenrhythm.studio/i/rf_tr_UV4N48?share_id=f65e6227-fc53-4625-b49b-247fa033ef68 |
-| 27 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
-| 28 | OpenRouter 免费模型池 | OpenRouter | API 免费档 | 65 | 长期 | - | 免费模型池：Ling 3.0 Flash Fin 等 $0 模型 | https://openrouter.ai/models?max_price=0 |
-| 29 | 阿里云百炼新人最高 7000 万 | 阿里云百炼 | Token 额度 | 65 | 长期 | - | 每模型送 100 万 Token，多模型叠加最高 7000 万 | https://www.aliyun.com/product/bailian |
-| 30 | 无问社区 签到领 3500 万 | 无问社区 | Token 额度 | 62 | 限时 | - | 网安模型平台，每日签到领 3500 万 Token | https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c |
-| 31 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 62 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
-| 32 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
-| 33 | Cloudflare Workers AI 免费额度 | Cloudflare | API 免费档 | 59 | 长期 | - | 注册即用免绑卡，每天 10,000 Neurons 免费额度 | https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fai%2Fworkers-ai |
-| 34 | QClaw 停服迁移送 1000 积分 | 腾讯 QClaw | 积分/点数 | 58 | 限时 | 59 天 | QClaw 老用户迁移 WorkBuddy 得 1000 积分 | https://qclaw.qq.com/migration |
-| 35 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 67 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
-| 36 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
-| 37 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
-| 38 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
-| 39 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
-| 40 | NVIDIA NIM 百款模型免费试用 | NVIDIA | API 免费档 | 52 | 长期 | - | 100+ 模型免费试用推理，按模型限速 | https://build.nvidia.com/models |
+| 23 | DeepSeek Harness 赠 6 元 | DeepSeek | 积分/点数 | 68 | 限时 | - | 登录桌面端送 6 元赠金，限量发放，7 天有效 | https://www.deepseek.com/harness/ |
+| 24 | ZCode 邀请好友领 1 亿 Token | 智谱 | Token 额度 | 68 | 限时 | - | 受邀完成三步新手任务，领 1 亿 Flash Token | https://zcode.z.ai/invite/S6CEA5NN |
+| 25 | Cline 免费模型池 | Cline | API 免费档 | 68 | 长期 | - | 免 Key 免绑卡，免费池剩 5 款 | https://cline.bot/ |
+| 26 | MonkeyCode 免费档每日 10M Token | 长亭 MonkeyCode | Token 额度 | 68 | 长期 | - | ¥0 永久免费档每天 10M Token，仅限平台内使用 | https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260 |
+| 27 | 基元律动 18 元额度 | 基元律动 | Token 额度 | 66 | 长期 | - | 邀请注册送 18 元额度，模型谷价低于官方 | https://tokenrhythm.studio/i/rf_tr_UV4N48?share_id=f65e6227-fc53-4625-b49b-247fa033ef68 |
+| 28 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
+| 29 | OpenRouter 免费模型池 | OpenRouter | API 免费档 | 65 | 长期 | - | 免费模型池：Ling 3.0 Flash Fin 等 $0 模型 | https://openrouter.ai/models?max_price=0 |
+| 30 | 阿里云百炼新人最高 7000 万 | 阿里云百炼 | Token 额度 | 65 | 长期 | - | 每模型送 100 万 Token，多模型叠加最高 7000 万 | https://www.aliyun.com/product/bailian |
+| 31 | 无问社区 签到领 3500 万 | 无问社区 | Token 额度 | 62 | 限时 | - | 网安模型平台，每日签到领 3500 万 Token | https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c |
+| 32 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 62 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
+| 33 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
+| 34 | Cloudflare Workers AI 免费额度 | Cloudflare | API 免费档 | 59 | 长期 | - | 注册即用免绑卡，每天 10,000 Neurons 免费额度 | https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fai%2Fworkers-ai |
+| 35 | QClaw 停服迁移送 1000 积分 | 腾讯 QClaw | 积分/点数 | 58 | 限时 | 59 天 | QClaw 老用户迁移 WorkBuddy 得 1000 积分 | https://qclaw.qq.com/migration |
+| 36 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 67 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
+| 37 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
+| 38 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
+| 39 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
+| 40 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
 
 ## 三、已过期（供选题复盘参考）
 

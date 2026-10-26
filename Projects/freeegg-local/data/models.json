@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-25",
+  "version": "2026-10-26",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -171,8 +171,8 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
+      "inputCost": 0.3,
+      "outputCost": 1.2,
       "score": 63.8,
       "source": "freeegg",
       "localEdit": false
@@ -182,8 +182,8 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.239,
-      "outputCost": 10.8,
+      "inputCost": 0.202,
+      "outputCost": 16,
       "score": 63,
       "source": "freeegg",
       "localEdit": false

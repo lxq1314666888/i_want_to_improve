@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-25",
+  "version": "2026-10-26",
   "eggs": [
+    {
+      "id": "deepseek-harness-credit-202610",
+      "title": "DeepSeek Harness 赠 6 元",
+      "vendor": "DeepSeek",
+      "category": "credits",
+      "score": 68,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "登录桌面端送 6 元赠金，限量发放，7 天有效",
+      "content": "DeepSeek Harness 是 DeepSeek 官方开源的 Agent 桌面端，官方公告同步开放了 6 元体验赠金，无需充值即可上手最新模型。\n\n- 额度：**6 元体验赠金**，到账后 **7 天**内有效\n- 适用：活动前已注册的老用户，及活动后用 +86 手机号注册的新号\n- 范围：可直接调用 DeepSeek-V4.1-Flash 等官方模型\n- 限制：赠金限量发放、赠完即止，每账号限领一次\n\n领取步骤：\n\n1. 打开 [DeepSeek Harness 官网](https://www.deepseek.com/harness/) 下载桌面端\n2. 用 DeepSeek 账号登录，此前登录过的需先退出再重登\n3. 到「账户中心 → 余额明细」查看赠金是否到账\n\n**注意**：赠金不弹窗提醒，入口较深；7 天从到账起算，过期作废；新号需用 +86 手机号，不含虚拟号段；规则可能随业务调整，以页面实显为准。",
+      "images": [],
+      "link": "https://www.deepseek.com/harness/",
+      "publishedAt": "2026-10-26",
+      "updatedAt": "2026-10-26",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "xfyun-maas-sparkx26-10b-202610",
       "title": "星辰 MaaS 领 10 亿 Token",
