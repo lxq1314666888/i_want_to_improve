@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26",
+  "version": "2026-10-27",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -74,7 +74,7 @@
       "releasedAt": "2026-10-23",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 69.4,
+      "score": 69.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -96,7 +96,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.8,
+      "score": 68.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -173,7 +173,7 @@
       "releasedAt": "2026-10-17",
       "inputCost": 0.3,
       "outputCost": 1.2,
-      "score": 63.8,
+      "score": 64.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -182,8 +182,8 @@
       "name": "Kimi K3",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-07-16",
-      "inputCost": 0.202,
-      "outputCost": 16,
+      "inputCost": 0.2,
+      "outputCost": 20,
       "score": 63,
       "source": "freeegg",
       "localEdit": false
@@ -248,7 +248,7 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.079,
+      "inputCost": 0.0769,
       "outputCost": 1.4,
       "score": 62.2,
       "source": "freeegg",
@@ -305,7 +305,7 @@
       "releasedAt": "2026-09-18",
       "inputCost": 1,
       "outputCost": 2.7,
-      "score": 60.7,
+      "score": 60.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -314,19 +314,8 @@
       "name": "DeepSeek V4.1 Flash",
       "vendor": "DeepSeek",
       "releasedAt": "2026-09-10",
-      "inputCost": 0.02,
-      "outputCost": 1,
-      "score": 60.4,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-haiku-5-5",
-      "name": "Claude Haiku 5.5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-10-07",
-      "inputCost": 0.1,
-      "outputCost": 0.5,
+      "inputCost": 0.14,
+      "outputCost": 0.42,
       "score": 60.4,
       "source": "freeegg",
       "localEdit": false
@@ -338,6 +327,17 @@
       "releasedAt": "2026-08-05",
       "inputCost": 1.25,
       "outputCost": 4.25,
+      "score": 60.4,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-10-07",
+      "inputCost": 0.1,
+      "outputCost": 0.5,
       "score": 60.4,
       "source": "freeegg",
       "localEdit": false
