@@ -1,24 +1,45 @@
 {
-  "version": "2026-10-26",
+  "version": "2026-10-28",
   "eggs": [
     {
+      "id": "zcode-flash-300m-daily-202610",
+      "title": "ZCode 每日送 3 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 92,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "每天可领 3 亿 Token，只在 23 点后能用",
+      "content": "ZCode 把周末限时福利改成每日发放：每人每天 3 亿 GLM-5.3-Flash Token，天天可领，官方未公布截止日。\n\n- 额度：**3 亿 Token/天**，次日 09:00 清零、不累积\n- 领取：每天 19:00 起，客户端内点卡片领当日份额\n- 可用：当晚 23:00 ～ 次日 09:00，共 10 小时\n- 范围：仅客户端内，切 Global Building 选 Flash\n\n领取步骤：\n\n1. 更新 [ZCode 客户端](https://zcode.z.ai/cn)到最新版，低于 3.10 无入口\n2. 每天 19:00 后登录，点左下角活动卡片领取\n3. 模型设置切到 Global Building，选 GLM-5.3-Flash\n\n**注意**：领完要等 23:00 才生效，白天调用仍扣套餐额度；额度只在当夜有效、不结转；不能导出成 API Key；截止日未公布，以客户端实显为准。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-10-28",
+      "updatedAt": "2026-10-28",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "huaweicloud-codearts-checkin-202610",
-      "title": "华为云码道每日签到领 1000 积分",
+      "title": "华为云码道每日签到领积分",
       "vendor": "华为云",
       "category": "credits",
-      "score": 85,
+      "score": 70,
       "tags": {
         "duration": "limited",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": "2026-12-31T23:59:59+08:00",
-      "summary": "华为云码道每日签到领 1000 积分",
-      "content": "华为云码道 CodeArts 每日签到福利；原每日 1000 万 Token 活动已于 2026-10-20 结束，本蛋仅覆盖签到积分。\n\n- 额度：每日签到领 **1000 积分**\n- 门槛：限积分计费用户，免费版不参与\n- 路径：头像-活动福利-每日领取\n- 时效：活动至 **2026-12-31** 结束\n- 入口：IDE / 插件 / 桌面 / 网页 / 小程序\n\n领取步骤：\n\n1. 打开 [码道网页版](https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk) 登录华为云账号\n2. 点头像进「活动福利」，点每日领取\n3. 积分到账后于 CodeArts 内使用，以客户端显示为准\n\n**注意**：签到积分仅限积分计费体系；细则以华为云页面为准。",
+      "summary": "按套餐档位发放，体验版 100 积分/天",
+      "content": "华为云码道（CodeArts）每日签到仍在，但 2026-10-27 20:00 起改为**按套餐档位**发放，且**领取后 24 小时内有效**，不再是每日 1000 分、30 天有效。\n\n- 体验版：每日 **100 积分**\n- 标准版：每日 **150 积分**\n- 高级版/旗舰版：每日 **200 积分**\n- 时效：领取后 **24 小时**内有效，过期清零\n- 活动期：至 **2026-12-31** 23:59:59\n- 门槛：需已切换到积分计费模式\n\n领取路径：\n\n1. IDE/插件：右上角「限时福利」→「每日领取」\n2. 控制台/桌面端/网页端：左下角头像 →「活动福利」→「每日领取」\n3. 小程序：左上角侧边栏 → 头像 →「活动福利」→「每日领取」\n\n**注意**：计费说明页仍写「1000 积分 / 30 天有效」，与活动页新规则不一致；实测按新规则发放，以客户端实际到账为准。",
       "images": [],
       "link": "https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk",
       "publishedAt": "2026-10-26",
-      "updatedAt": "2026-10-26",
+      "updatedAt": "2026-10-28",
       "source": "freeegg",
       "localEdit": false
     },
@@ -349,14 +370,14 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": null,
       "summary": "限时免费领 30 天标准订阅，可用豆包 2.1 Pro",
       "content": "豆包工作（豆包专业版）限时活动，免费领 30 天标准订阅。\n\n- 权益：**30 天标准套餐**（额度为免费版 5 倍以上）\n- 可用：**豆包 2.1 Pro**、工作任务（Agent）、定时任务、Office 套件\n- 门槛：需下载**豆包工作电脑版**（约 2GB）\n- 加赠：大学生完成认证，再领 3 个月\n\n领取步骤：\n\n1. 打开 [豆包工作](https://www.doubao.com/work)下载安装电脑版\n2. 用手机号 / 微信 / 抖音登录\n3. 按客户端活动提示领取，在「设置 → 订阅与额度管理」查看到期\n\n**注意**：属限时活动，官方未公布截止日，已领过可滚动续领；标准套餐连续包月价 ¥68，30 天后继续使用需付费；免费版基础问答不受影响。用户实测（2026-10）可正常领取。",
       "images": [],
       "link": "https://www.doubao.com/work",
       "publishedAt": "2026-10-12",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-28",
       "source": "freeegg",
       "localEdit": false
     },
@@ -583,13 +604,13 @@
         "region": "cn"
       },
       "expired": false,
-      "expiryDate": null,
-      "summary": "Flash 限时免费已延期，截止日待官方公告",
-      "content": "Qoder 官方公告：Qwen3.8-Flash 客户端内限时免费用。原定 9 月 30 日截止，现已**延期**，10 月 1 日起继续免费，新截止日待公布。\n\n- 限时：**全天免费**，延期后截止待公告\n- 计费：系数 0.1× 降至 0.0×，不扣 Credits\n- 无需领取：免费账号、0 Credits 均可直接用\n- 范围：CN 版个人用户均可，企业订阅不适用\n- 可用端：桌面端、IDE、CLI、移动端、网页版\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 模型选择器选 Qwen3.8-Flash 即用\n3. 左下角用量面板可另领每日 100 Credits\n\n**注意**：高峰时段可能响应较慢；结束时间以[官方活动页](https://docs.qoder.cn/events/flashoffer)公告为准，结束后按届时系数计费。",
+      "expiryDate": "2026-11-01T00:00:00+08:00",
+      "summary": "Flash 限时免费，11月1日0点截止",
+      "content": "Qoder 官方公告：Qwen3.8-Flash 客户端内限时免费用。原定 9 月 30 日截止，现已**延期**，10 月 1 日起继续免费，官方确认**11 月 1 日 0 点截止**。\n\n- 限时：**全天免费**，11 月 1 日 0 点截止\n- 计费：系数 0.1× 降至 0.0×，不扣 Credits\n- 无需领取：免费账号、0 Credits 均可直接用\n- 范围：CN 版个人用户均可，企业订阅不适用\n- 可用端：桌面端、IDE、CLI、移动端、网页版\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 模型选择器选 Qwen3.8-Flash 即用\n3. 左下角用量面板可另领每日 100 Credits\n\n**注意**：高峰时段可能响应较慢；结束时间以[官方活动页](https://docs.qoder.cn/events/flashoffer)为准，11 月 1 日 0 点后按届时系数计费。",
       "images": [],
       "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
       "publishedAt": "2026-09-18",
-      "updatedAt": "2026-10-01",
+      "updatedAt": "2026-10-28",
       "source": "freeegg",
       "localEdit": false
     },
