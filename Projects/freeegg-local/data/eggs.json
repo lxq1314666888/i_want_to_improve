@@ -2,6 +2,27 @@
   "version": "2026-10-28",
   "eggs": [
     {
+      "id": "doubao-daily-quota-202610",
+      "title": "豆包电脑版签到领 200 额度",
+      "vendor": "字节跳动",
+      "category": "credits",
+      "score": 68,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "电脑版签到领 200 额度，任务每项 100",
+      "content": "豆包官方「天天领额度」活动，在电脑版签到、做任务换活动赠送额度，可用于生图、PPT、专家模式等高级功能。\n\n- 签到：**每日 200 额度**，周一翻倍，次日刷新\n- 累计：连续签到 30 天最高 8800 额度\n- 任务：办公任务每项 **+100 额度**，需手动领取\n- 有效期：每笔自发放起 **30 天**，到期自动失效\n- 消耗：活动额度 → 免费额度 → 付费额度，优先用赠送\n- 端：豆包电脑版、豆包工作电脑版双端进度打通\n\n领取步骤：\n\n1. 打开[活动页](https://www.doubao.com/pc/agent-explore)下载豆包电脑版并登录\n2. 左下角头像 →「免费领额度」，进活动页点「签到」\n3. 任务做完要再点「去领取」，额度才真正到账\n\n**注意**：网页版和手机 App 没有入口；基础聊天不扣额度；赠送额度不提高每日使用上限；活动随时可能调整或下架，数值以活动页展示为准。",
+      "images": [],
+      "link": "https://www.doubao.com/pc/agent-explore",
+      "publishedAt": "2026-10-28",
+      "updatedAt": "2026-10-28",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "zcode-flash-300m-daily-202610",
       "title": "ZCode 每日送 3 亿 Token",
       "vendor": "智谱",
