@@ -1078,22 +1078,22 @@
     },
     {
       "id": "sensenova-free-202608",
-      "title": "商汤日日新 6 万积分/5 小时",
+      "title": "商汤日日新 12 万积分/5 小时",
       "vendor": "商汤日日新",
       "category": "credits",
-      "score": 58,
+      "score": 64,
       "tags": {
         "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "公测期免费 6 万积分/5 小时刷新，注册即用",
-      "content": "商汤日日新 SenseNova 大模型平台公测福利，公测期完全免费（用户实测 2026-08，以官方为准）。\n\n- 额度：**Free 档 60,000 积分 / 5 小时**，周期自动刷新\n- 模型：SenseNova 6.8 Flash Lite、U1 Fast\n- 特殊模型除外\n- 实测：另可调 DeepSeek-V4-Pro、Kimi K3 等\n- 含 GLM-5.2 共 7 个模型\n- 附加：原生多模态、Cowork-Skills 办公特化\n- 最多建 20 个 API Key\n\n使用步骤：\n\n1. 打开 [日日新官网](https://www.sensenova.cn/)注册并登录\n2. 进入控制台创建 API Key\n3. 调用即消耗免费积分，每 5 小时刷新\n\n**注意**：Free 档标注「限时放量」，实测短时调用限速较严、周用量约 60 万；付费档位（Lite / Pro）即将上线，以[官方公告](https://www.sensenova.cn/token-plan)为准。",
+      "summary": "5 小时窗口 12 万积分，滚动周上限 120 万",
+      "content": "商汤日日新 SenseNova 大模型平台公测期免费，2026-10-27 起通用积分池窗口额度翻倍。\n\n- 额度：**5 小时窗口 12 万积分**，周窗口 120 万\n- 调整：上限翻倍，生效时统一重置可用额度\n- 适用：新注册用户同享，存量积分不清零、有效期保留\n- 模型：SenseNova 6.8 Flash Lite、U1 Fast 等\n- 返赠：Flash-Lite 消费返赠 10-27 已下线\n- 其他：原生多模态、Cowork-Skills 办公特化\n- 限制：最多建 20 个 API Key\n\n领取步骤：\n\n1. 打开 [日日新官网](https://www.sensenova.cn/)注册并登录\n2. 进入控制台创建 API Key\n3. 调用消耗积分，额度按 5 小时滚动窗口恢复\n\n**注意**：免费档标注「限时放量」，实测短时调用限速较严；付费档位（Lite / Pro）即将上线，以[官方公告](https://www.sensenova.cn/token-plan)为准。",
       "images": [],
       "link": "https://www.sensenova.cn/token-plan",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-09-15",
+      "updatedAt": "2026-10-28",
       "source": "freeegg",
       "localEdit": false
     },

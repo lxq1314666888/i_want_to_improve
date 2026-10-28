@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-10-28），云端 Worker 定时采集
-- 生成时间：2026-10-28T06:04:04.234Z
+- 生成时间：2026-10-28T13:22:53.149Z
 - 集合：eggs · 共 69 条 · 未过期 44 条 · 已过期 25 条
 
 ## 一、概览
@@ -48,14 +48,14 @@
 | 28 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key 免费调 6 款模型，OpenAI 兼容 | https://developer.amd.com.cn/radeon/tokenfactory |
 | 29 | OpenRouter 免费模型池 | OpenRouter | API 免费档 | 65 | 长期 | - | 免费模型池：多款 $0 模型，以模型页实时为准 | https://openrouter.ai/models?max_price=0 |
 | 30 | 阿里云百炼新人最高 7000 万 | 阿里云百炼 | Token 额度 | 65 | 长期 | - | 每模型送 100 万 Token，多模型叠加最高 7000 万 | https://www.aliyun.com/product/bailian |
-| 31 | 无问社区 签到领 3500 万 | 无问社区 | Token 额度 | 62 | 限时 | - | 网安模型平台，每日签到领 3500 万 Token | https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c |
-| 32 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 62 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
-| 33 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
-| 34 | Cloudflare Workers AI 免费额度 | Cloudflare | API 免费档 | 59 | 长期 | - | 注册即用免绑卡，每天 10,000 Neurons 免费额度 | https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fai%2Fworkers-ai |
-| 35 | QClaw 停服迁移送 1000 积分 | 腾讯 QClaw | 积分/点数 | 58 | 限时 | 57 天 | QClaw 老用户迁移 WorkBuddy 得 1000 积分 | https://qclaw.qq.com/migration |
-| 36 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 65 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
-| 37 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
-| 38 | 商汤日日新 6 万积分/5 小时 | 商汤日日新 | 积分/点数 | 58 | 长期 | - | 公测期免费 6 万积分/5 小时刷新，注册即用 | https://www.sensenova.cn/token-plan |
+| 31 | 商汤日日新 12 万积分/5 小时 | 商汤日日新 | 积分/点数 | 64 | 长期 | - | 5 小时窗口 12 万积分，滚动周上限 120 万 | https://www.sensenova.cn/token-plan |
+| 32 | 无问社区 签到领 3500 万 | 无问社区 | Token 额度 | 62 | 限时 | - | 网安模型平台，每日签到领 3500 万 Token | https://www.wwlib.cn/index.php/login/icode/4a15b80af3a5ef4c |
+| 33 | Kilo Code 免费模型池 | Kilo Code | API 免费档 | 62 | 长期 | - | 免绑卡，200 次请求/小时 | https://kilo.ai/ |
+| 34 | Agnes AI 全模态免费 API | Agnes AI | API 免费档 | 62 | 长期 | - | 全模态免费调用，文本免费档实际 RPM 10 | https://platform.agnes-ai.com |
+| 35 | Cloudflare Workers AI 免费额度 | Cloudflare | API 免费档 | 59 | 长期 | - | 注册即用免绑卡，每天 10,000 Neurons 免费额度 | https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fai%2Fworkers-ai |
+| 36 | QClaw 停服迁移送 1000 积分 | 腾讯 QClaw | 积分/点数 | 58 | 限时 | 57 天 | QClaw 老用户迁移 WorkBuddy 得 1000 积分 | https://qclaw.qq.com/migration |
+| 37 | 微信 AI 小程序成长计划送 10 亿 Token | 腾讯云 CloudBase | Token 额度 | 58 | 限时 | 65 天 | 报名送 10 亿 Token 与 10 万生图，仅限小程序内用 | https://cloud.tencent.com/developer/article/2705075 |
+| 38 | 硅基流动多款模型免费调用 | 硅基流动 | API 免费档 | 58 | 长期 | - | 免费调用 Kolors 生图、星尘 ASR、bge 向量等模型 | https://siliconflow.cn/ |
 | 39 | BazaarLink 免费模型 API | BazaarLink | API 免费档 | 55 | 长期 | - | 注册领 Key，2 款模型免费调，每日 50 次 | https://bazaarlink.ai/free |
 | 40 | LongCat 新人礼最高 2000 万 | LongCat | Token 额度 | 55 | 长期 | - | 实名送 1000 万 Tokens，叠加邀请最高 2000 万 | https://longcat.chat/platform/product?inviteCode=HJGT9NID |
 
