@@ -1,6 +1,27 @@
 {
-  "version": "2026-10-28",
+  "version": "2026-10-29",
   "eggs": [
+    {
+      "id": "cmcc-lingxi-daily-checkin-202610",
+      "title": "灵犀每日签到领 200 算力豆",
+      "vendor": "中国移动",
+      "category": "credits",
+      "score": 52,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "每日签到 200 算力豆≈200 万 Token，31 天有效",
+      "content": "中国移动灵犀「AI每日畅想计划」：客户端内签到领算力豆，算力豆是跨客户端的统一算力计量单位，按 Token 用量实时扣减。\n\n- 额度：**签到领 200 算力豆**，约 200 万 Token\n- 有效期：每笔自发放起 **31 天**，过期作废\n- 兑换：1 算力豆 ≈ 150–11000 Token，按模型区分\n- 范围：GLM、Kimi、DeepSeek、Qwen 等主流模型\n- 通用：灵犀、WorkBuddy、Qoder CN、千问共用账号\n- 门槛：需用中国移动手机号登录客户端\n\n领取步骤：\n\n1. 打开[灵犀 AI 助手](https://ai.soho.komect.com)，用移动手机号登录\n2. 客户端内点「算力豆免费领」活动卡片，进活动详情领 200 豆\n3. 到账后在个人中心「算力豆」查余额与消耗明细\n\n**注意**：用户实测（2026-10）签到到手 200 豆、31 天有效；[兑换比例](https://ai.soho.komect.com/ai/llm/order-center/public/pages/exchange-rules)不定期调整，以活动页实显为准。",
+      "images": [],
+      "link": "https://ai.soho.komect.com",
+      "publishedAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "doubao-daily-quota-202610",
       "title": "豆包电脑版签到领 200 额度",
@@ -572,7 +593,7 @@
     },
     {
       "id": "atria-tokenplan-202609",
-      "title": "Atria API 三款模型限免",
+      "title": "Atria API 四款模型限免",
       "vendor": "上海AI实验室",
       "category": "api-quota",
       "score": 72,
@@ -582,12 +603,12 @@
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "书生-S2 等 3 款限免，OpenAI 协议直连",
-      "content": "上海AI实验室开源 744B 模型 Atria Dawn，配套 API 服务 TokenPlan 公示三款模型限时免费，价格全 0。\n\n- 免费：**书生-S2、Atria-Dawn-Preview、Agents-A1**\n- 收费：DeepSeek 等 7 款按墨点计费\n- 协议：OpenAI / Anthropic 兼容，可接编码工具\n- 规格：三款均 256K，书生-S2 支持图像\n\n领取步骤：\n\n1. 打开 [TokenPlan 控制台](https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0)注册\n2. 创建 API Key（10 个上限，共享额度限速）\n3. Base URL 用控制台展示的网关地址\n\n**注意**：限时免费无截止公示；赠送墨点以控制台为准；Atria-Dawn-Preview 仅纯文本。",
+      "summary": "书生-S2 等 4 款限免，OpenAI 协议直连",
+      "content": "上海AI实验室开源 744B 模型 Atria Dawn，配套 TokenPlan 对外公示四款模型限时免费，价格全 0。\n\n- 免费：**Agents-A1、Atria-Dawn、Sage-A1.5、书生-S2**\n- 收费：DeepSeek、GLM、Kimi 等 6 款按墨点计费\n- 协议：OpenAI / Anthropic 兼容，可接编码工具\n- 规格：Atria-Dawn、Sage-A1.5 为 512K，另两款 256K\n\n领取步骤：\n\n1. 打开 [TokenPlan 控制台](https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0)注册\n2. 创建 API Key（10 个上限，共享额度限速）\n3. Base URL 用控制台展示的网关地址\n\n**注意**：限时免费无截止公示；Sage-A1.5 站内标 New 属新上架；Atria-Dawn 仅纯文本，其余三款支持图像。",
       "images": [],
       "link": "https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0",
       "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19",
+      "updatedAt": "2026-10-29",
       "source": "freeegg",
       "localEdit": false
     },

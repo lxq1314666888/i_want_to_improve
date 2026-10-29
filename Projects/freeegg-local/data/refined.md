@@ -1,18 +1,18 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
-- 数据源：freeegg.top（2026-10-28），云端 Worker 定时采集
-- 生成时间：2026-10-29T06:15:54.574Z
-- 集合：eggs · 共 70 条 · 未过期 45 条 · 已过期 25 条
+- 数据源：freeegg.top（2026-10-29），云端 Worker 定时采集
+- 生成时间：2026-10-29T13:32:00.365Z
+- 集合：eggs · 共 71 条 · 未过期 46 条 · 已过期 25 条
 
 ## 一、概览
 
 | 类别 | 条数 | 副业视角 |
 | --- | --- | --- |
 | Token 额度 | 14 | 直接顶钱用：做内容/开发工具的算力成本归零 |
-| 积分/点数 | 16 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
+| 积分/点数 | 17 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
 | API 免费档 | 15 | 注册即得 Key：适合接 API、做小工具、聚合网关类副业 |
 
-- 地域分布：国内 37 / 国外 8
+- 地域分布：国内 38 / 国外 8
 
 ## 二、可薅清单（按评分排序）
 
@@ -35,7 +35,7 @@
 | 15 | OrcaRouter 免费模型池 | OrcaRouter | API 免费档 | 73 | 长期 | - | 注册领 API Key，GLM-5.3 Flash 等免费用 | https://www.orcarouter.ai/zh-CN |
 | 16 | 星辰 MaaS 领 10 亿 Token | 讯飞星辰 MaaS | Token 额度 | 72 | 限时 | - | 限 Spark-X2.6，10 亿额度 31 天有效 | https://maas.xfyun.cn/overview |
 | 17 | 云知声 U2-Flash API 限免调用 | 云知声 | Token 额度 | 72 | 限时 | 3 天 | U2-Flash 限免调用至 10/31，新老用户均可 | https://maas.unisound.com/model-hub/u2-flash |
-| 18 | Atria API 三款模型限免 | 上海AI实验室 | API 免费档 | 72 | 限时 | - | 书生-S2 等 3 款限免，OpenAI 协议直连 | https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0 |
+| 18 | Atria API 四款模型限免 | 上海AI实验室 | API 免费档 | 72 | 限时 | - | 书生-S2 等 4 款限免，OpenAI 协议直连 | https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0 |
 | 19 | 华为云码道每日签到领积分 | 华为云 | 积分/点数 | 70 | 限时 | 64 天 | 按套餐档位发放，体验版 100 积分/天 | https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk |
 | 20 | 魔搭魔粒免费调旗舰模型 | 魔搭 ModelScope | API 免费档 | 70 | 长期 | - | 每日登录领魔粒，白嫖 DeepSeek 等旗舰 API | https://modelscope.cn/register?inviteCode=herbqiao2005&invitorName=herbqiao |
 | 21 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 64 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
