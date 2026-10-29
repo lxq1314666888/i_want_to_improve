@@ -1,6 +1,17 @@
 {
-  "version": "2026-10-28",
+  "version": "2026-10-29",
   "models": [
+    {
+      "id": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "vendor": "Google",
+      "releasedAt": "2026-10-28",
+      "inputCost": null,
+      "outputCost": null,
+      "score": 73.6,
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "claude-opus-5-5",
       "name": "Claude Opus 5.5",
@@ -8,7 +19,7 @@
       "releasedAt": "2026-09-17",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 73.3,
+      "score": 73,
       "source": "freeegg",
       "localEdit": false
     },
@@ -19,7 +30,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 72.7,
+      "score": 71.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -30,7 +41,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.6,
+      "score": 71.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +52,7 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.3,
+      "score": 70.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +63,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71,
+      "score": 70.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -63,29 +74,7 @@
       "releasedAt": "2026-10-12",
       "inputCost": null,
       "outputCost": null,
-      "score": 69.8,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "kimi-k3-1-pro",
-      "name": "Kimi K3.1 Pro",
-      "vendor": "Moonshot AI",
-      "releasedAt": "2026-10-23",
-      "inputCost": 2,
-      "outputCost": 10,
-      "score": 69.8,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-fable-5",
-      "name": "Claude Fable 5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-06-09",
-      "inputCost": 10,
-      "outputCost": 50,
-      "score": 69.2,
+      "score": 69.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -96,29 +85,18 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.9,
+      "score": 68.6,
       "source": "freeegg",
       "localEdit": false
     },
     {
-      "id": "claude-opus-5",
-      "name": "Claude Opus 5",
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
       "vendor": "Anthropic",
-      "releasedAt": "2026-07-24",
-      "inputCost": 5,
-      "outputCost": 25,
-      "score": 68.1,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "muse-wonder",
-      "name": "Muse Wonder",
-      "vendor": "Meta",
-      "releasedAt": "2026-10-12",
-      "inputCost": 4,
-      "outputCost": 20,
-      "score": 67.8,
+      "releasedAt": "2026-06-09",
+      "inputCost": 10,
+      "outputCost": 50,
+      "score": 68.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -129,7 +107,40 @@
       "releasedAt": "2026-10-26",
       "inputCost": 1,
       "outputCost": 5,
+      "score": 68.2,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-10-23",
+      "inputCost": 2,
+      "outputCost": 10,
+      "score": 68.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-07-24",
+      "inputCost": 5,
+      "outputCost": 25,
       "score": 67.8,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "muse-wonder",
+      "name": "Muse Wonder",
+      "vendor": "Meta",
+      "releasedAt": "2026-10-12",
+      "inputCost": 4,
+      "outputCost": 20,
+      "score": 67.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -140,7 +151,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 66.1,
+      "score": 65.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -151,7 +162,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 65.7,
+      "score": 65,
       "source": "freeegg",
       "localEdit": false
     },
@@ -162,18 +173,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 1.25,
       "outputCost": 4.25,
-      "score": 64.9,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gemini-3-8-flash",
-      "name": "Gemini 3.8 Flash",
-      "vendor": "Google",
-      "releasedAt": "2026-09-02",
-      "inputCost": 0.825,
-      "outputCost": 4.125,
-      "score": 64.5,
+      "score": 64,
       "source": "freeegg",
       "localEdit": false
     },
@@ -184,7 +184,18 @@
       "releasedAt": "2026-10-17",
       "inputCost": 0.3,
       "outputCost": 1.2,
-      "score": 64.3,
+      "score": 63.8,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash",
+      "vendor": "Google",
+      "releasedAt": "2026-09-02",
+      "inputCost": 0.825,
+      "outputCost": 4.125,
+      "score": 63.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -195,18 +206,7 @@
       "releasedAt": "2026-04-23",
       "inputCost": 5,
       "outputCost": 30,
-      "score": 63.1,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "kimi-k3",
-      "name": "Kimi K3",
-      "vendor": "Moonshot AI",
-      "releasedAt": "2026-07-16",
-      "inputCost": 0.159,
-      "outputCost": 11.5,
-      "score": 63.1,
+      "score": 62.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -217,7 +217,18 @@
       "releasedAt": "2026-08-13",
       "inputCost": 0.75,
       "outputCost": 3.75,
-      "score": 62.8,
+      "score": 62.5,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-07-16",
+      "inputCost": 0.192,
+      "outputCost": 20,
+      "score": 62.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,50 +239,6 @@
       "releasedAt": "2026-05-28",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 62.7,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "mimo-v2-6-pro",
-      "name": "MiMo-V2.6-Pro",
-      "vendor": "Xiaomi",
-      "releasedAt": "2026-09-21",
-      "inputCost": 0.435,
-      "outputCost": 0.87,
-      "score": 62.4,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-opus-4-7",
-      "name": "Claude Opus 4.7",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-04-16",
-      "inputCost": 5,
-      "outputCost": 25,
-      "score": 62.3,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "glm-5-3",
-      "name": "GLM-5.3",
-      "vendor": "Z.ai",
-      "releasedAt": "2026-08-18",
-      "inputCost": 0.0699,
-      "outputCost": 1.4,
-      "score": 62.2,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gpt-5-6-terra",
-      "name": "GPT-5.6 Terra",
-      "vendor": "OpenAI",
-      "releasedAt": "2026-07-09",
-      "inputCost": 2,
-      "outputCost": 12,
       "score": 61.8,
       "source": "freeegg",
       "localEdit": false
@@ -288,13 +255,79 @@
       "localEdit": false
     },
     {
+      "id": "glm-5-3",
+      "name": "GLM-5.3",
+      "vendor": "Z.ai",
+      "releasedAt": "2026-08-18",
+      "inputCost": 0.0699,
+      "outputCost": 1.4,
+      "score": 61.6,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "mimo-v2-6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "vendor": "Xiaomi",
+      "releasedAt": "2026-09-21",
+      "inputCost": 0.435,
+      "outputCost": 0.87,
+      "score": 61.5,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "qwen3-8-max-0902",
+      "name": "Qwen3.8 Max 0902",
+      "vendor": "Alibaba",
+      "releasedAt": "2026-09-01",
+      "inputCost": 2,
+      "outputCost": 6,
+      "score": 61.3,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-04-16",
+      "inputCost": 5,
+      "outputCost": 25,
+      "score": 61.2,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT-5.6 Terra",
+      "vendor": "OpenAI",
+      "releasedAt": "2026-07-09",
+      "inputCost": 2,
+      "outputCost": 12,
+      "score": 61.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "grok-4-6",
       "name": "Grok 4.6",
       "vendor": "xAI",
       "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.4,
+      "score": 61,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-10-07",
+      "inputCost": 0.1,
+      "outputCost": 0.5,
+      "score": 61,
       "source": "freeegg",
       "localEdit": false
     },
@@ -338,17 +371,6 @@
       "releasedAt": "2026-08-05",
       "inputCost": 1.25,
       "outputCost": 4.25,
-      "score": 60.4,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-haiku-5-5",
-      "name": "Claude Haiku 5.5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-10-07",
-      "inputCost": 0.1,
-      "outputCost": 0.5,
       "score": 60.4,
       "source": "freeegg",
       "localEdit": false
@@ -482,17 +504,6 @@
       "inputCost": 2,
       "outputCost": 12,
       "score": 56.1,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "qwen3-8-max-0902",
-      "name": "Qwen3.8 Max 0902",
-      "vendor": "Alibaba",
-      "releasedAt": "2026-09-01",
-      "inputCost": 2,
-      "outputCost": 6,
-      "score": 73.1,
       "source": "freeegg",
       "localEdit": false
     },
