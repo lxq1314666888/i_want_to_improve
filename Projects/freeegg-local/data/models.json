@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-29",
+  "version": "2026-10-30",
   "models": [
     {
       "id": "gemini-4-carbon",
@@ -8,7 +8,7 @@
       "releasedAt": "2026-10-28",
       "inputCost": null,
       "outputCost": null,
-      "score": 73.6,
+      "score": 75.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -30,7 +30,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.2,
+      "score": 71.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -85,7 +85,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.6,
+      "score": 68.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +118,7 @@
       "releasedAt": "2026-10-23",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.1,
+      "score": 68.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -195,7 +195,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 0.825,
       "outputCost": 4.125,
-      "score": 63.3,
+      "score": 63.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -222,23 +222,23 @@
       "localEdit": false
     },
     {
-      "id": "kimi-k3",
-      "name": "Kimi K3",
-      "vendor": "Moonshot AI",
-      "releasedAt": "2026-07-16",
-      "inputCost": 0.192,
-      "outputCost": 20,
-      "score": 62.3,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "claude-opus-4-8",
       "name": "Claude Opus 4.8",
       "vendor": "Anthropic",
       "releasedAt": "2026-05-28",
       "inputCost": 5,
       "outputCost": 25,
+      "score": 61.8,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-07-16",
+      "inputCost": 0.192,
+      "outputCost": 15,
       "score": 61.8,
       "source": "freeegg",
       "localEdit": false
@@ -259,8 +259,8 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.0699,
-      "outputCost": 1.4,
+      "inputCost": 0.08,
+      "outputCost": 3.6,
       "score": 61.6,
       "source": "freeegg",
       "localEdit": false
@@ -272,7 +272,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 61.5,
+      "score": 61.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -283,7 +283,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.3,
+      "score": 61.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -310,23 +310,23 @@
       "localEdit": false
     },
     {
-      "id": "grok-4-6",
-      "name": "Grok 4.6",
-      "vendor": "xAI",
-      "releasedAt": "2026-08-12",
-      "inputCost": 2,
-      "outputCost": 6,
-      "score": 61,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "claude-haiku-5-5",
       "name": "Claude Haiku 5.5",
       "vendor": "Anthropic",
       "releasedAt": "2026-10-07",
       "inputCost": 0.1,
       "outputCost": 0.5,
+      "score": 61,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "grok-4-6",
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "releasedAt": "2026-08-12",
+      "inputCost": 2,
+      "outputCost": 6,
       "score": 61,
       "source": "freeegg",
       "localEdit": false
