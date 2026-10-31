@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-30",
+  "version": "2026-10-31",
   "models": [
     {
       "id": "gemini-4-carbon",
@@ -8,7 +8,7 @@
       "releasedAt": "2026-10-28",
       "inputCost": null,
       "outputCost": null,
-      "score": 75.2,
+      "score": 75.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -19,7 +19,7 @@
       "releasedAt": "2026-09-17",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 73,
+      "score": 73.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -30,7 +30,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.3,
+      "score": 71.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +41,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 71.1,
+      "score": 71.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,7 +52,7 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 70.7,
+      "score": 70.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -63,7 +63,7 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 70.5,
+      "score": 70.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -74,40 +74,7 @@
       "releasedAt": "2026-10-12",
       "inputCost": null,
       "outputCost": null,
-      "score": 69.5,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gpt-6-1-sol",
-      "name": "GPT-6.1 Sol",
-      "vendor": "OpenAI",
-      "releasedAt": "2026-09-29",
-      "inputCost": 2,
-      "outputCost": 10,
-      "score": 68.7,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "claude-fable-5",
-      "name": "Claude Fable 5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-06-09",
-      "inputCost": 10,
-      "outputCost": 50,
-      "score": 68.5,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gpt-6-1-terra",
-      "name": "GPT-6.1 Terra",
-      "vendor": "OpenAI",
-      "releasedAt": "2026-10-26",
-      "inputCost": 1,
-      "outputCost": 5,
-      "score": 68.2,
+      "score": 69.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +85,40 @@
       "releasedAt": "2026-10-23",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 68.2,
+      "score": 69.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "name": "GPT-6.1 Sol",
+      "vendor": "OpenAI",
+      "releasedAt": "2026-09-29",
+      "inputCost": 2,
+      "outputCost": 10,
+      "score": 68.9,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-06-09",
+      "inputCost": 10,
+      "outputCost": 50,
+      "score": 68.7,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gpt-6-1-terra",
+      "name": "GPT-6.1 Terra",
+      "vendor": "OpenAI",
+      "releasedAt": "2026-10-26",
+      "inputCost": 1,
+      "outputCost": 5,
+      "score": 68.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -129,7 +129,7 @@
       "releasedAt": "2026-07-24",
       "inputCost": 5,
       "outputCost": 25,
-      "score": 67.8,
+      "score": 68,
       "source": "freeegg",
       "localEdit": false
     },
@@ -140,7 +140,7 @@
       "releasedAt": "2026-10-12",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 67.3,
+      "score": 67.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -151,7 +151,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 65.9,
+      "score": 66,
       "source": "freeegg",
       "localEdit": false
     },
@@ -162,7 +162,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 65,
+      "score": 65.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -173,7 +173,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 1.25,
       "outputCost": 4.25,
-      "score": 64,
+      "score": 64.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -182,8 +182,8 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.3,
-      "outputCost": 1.2,
+      "inputCost": 0.15,
+      "outputCost": 0.6,
       "score": 63.8,
       "source": "freeegg",
       "localEdit": false
@@ -195,7 +195,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 0.825,
       "outputCost": 4.125,
-      "score": 63.4,
+      "score": 63.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -206,7 +206,7 @@
       "releasedAt": "2026-04-23",
       "inputCost": 5,
       "outputCost": 30,
-      "score": 62.6,
+      "score": 62.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -217,7 +217,7 @@
       "releasedAt": "2026-08-13",
       "inputCost": 0.75,
       "outputCost": 3.75,
-      "score": 62.5,
+      "score": 62.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -250,7 +250,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 61.7,
+      "score": 61.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -259,8 +259,8 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.08,
-      "outputCost": 3.6,
+      "inputCost": 0.0699,
+      "outputCost": 1.4,
       "score": 61.6,
       "source": "freeegg",
       "localEdit": false
@@ -272,7 +272,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 61.6,
+      "score": 61.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -305,6 +305,17 @@
       "releasedAt": "2026-07-09",
       "inputCost": 2,
       "outputCost": 12,
+      "score": 61.2,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "grok-4-6",
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "releasedAt": "2026-08-12",
+      "inputCost": 2,
+      "outputCost": 6,
       "score": 61.1,
       "source": "freeegg",
       "localEdit": false
@@ -316,18 +327,7 @@
       "releasedAt": "2026-10-07",
       "inputCost": 0.1,
       "outputCost": 0.5,
-      "score": 61,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "grok-4-6",
-      "name": "Grok 4.6",
-      "vendor": "xAI",
-      "releasedAt": "2026-08-12",
-      "inputCost": 2,
-      "outputCost": 6,
-      "score": 61,
+      "score": 61.1,
       "source": "freeegg",
       "localEdit": false
     },
