@@ -1,6 +1,48 @@
 {
-  "version": "2026-10-31",
+  "version": "2026-11-01",
   "eggs": [
+    {
+      "id": "unisound-uplan-free-202611",
+      "title": "云知声 U Plan 每周 2500 积分",
+      "vendor": "云知声",
+      "category": "credits",
+      "score": 65,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "每周 2500 积分，含 ASR 8 小时、TTS 4 万字",
+      "content": "云知声 U Plan 上线，Free 档 0 元订阅，按周发积分，并赠送语音与文档识别额度。\n\n- 积分：**每周 2500**，另加 5 小时动态窗口 500\n- 文本：U2-Flash（编程办公）、U2-Med（医疗）\n- 赠送：ASR 8 小时、TTS 4 万字\n- 赠送：OCR 与 OCR-Med 各 737.5 万 Token\n- 赠送：RadiMed 47.5 万 Token\n- 参考：官方估 90% 缓存命中时约 6068 万 Token/周\n\n领取步骤：\n\n1. 打开 [U Plan 套餐页](https://maas.unisound.com/token-plan)\n2. 注册登录 Token Hub\n3. 订阅 Free 档，拿专属 API Key 与 Base URL\n4. 在 Agent 工具里填模型与端点即可调用\n\n**注意**：积分每周刷新不结转；忙时双倍消耗目前免除；赠送额度不随周刷新，用完即止；额度按 90% 缓存命中估算，实际按抵扣系数结算。",
+      "images": [],
+      "link": "https://maas.unisound.com/token-plan",
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "apigoto-realname-plus-202611",
+      "title": "APIGOTO 实名送 1 个月 PLUS",
+      "vendor": "APIGOTO",
+      "category": "credits",
+      "score": 62,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": true,
+      "expiryDate": null,
+      "summary": "活动已取消，实名不再送会员",
+      "content": "APIGOTO 是统一的 LLM API 网关，桌面端叫 RouterCode。原「实名认证送一个月 PLUS」活动已于 2026 年 11 月 1 日公告取消，完成实名不再赠送会员。\n\n- 活动期：至 2026 年 11 月 1 日，官方当天发公告叫停\n- 已领用户：不受影响，按原额度和有效期用到期满\n- 现行 PLUS：月付 **29.9 元**，总额度 5000 万 TCredits\n- 另调整：国产模型订阅计算比例统一上调至 **125%**\n- 限制：**不含 Claude**，所有订阅套餐均不支持\n\n当时领取步骤（已失效）：\n\n1. 注册账号并完成实名认证\n2. 实名通过后在订阅页领一个月 PLUS\n\n**注意**：活动已结束，不再有免费会员；平台未公示经营主体，备案信息存疑，付费前请自行评估风险。",
+      "images": [],
+      "link": "https://www.apigoto.com/",
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "minimax-code-checkin-202610",
       "title": "MiniMax Code 周签 4000 积分",
@@ -307,14 +349,14 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": "2026-11-01T00:00:00+08:00",
-      "summary": "DeepSeek-Flash 限免，0× 不耗 Credits",
-      "content": "Qoder CN 个人版限时免费用 DeepSeek-Flash：模型选择器里选它，消耗倍率显示 0×，调用不扣 Credits。\n\n- 限时：**至 11 月 1 日 00:00（UTC+8）**\n- 模型：DeepSeek-V4.1-Flash-1017，深度求索正式版\n- 计费：倍率 0×，调用不消耗 Credits\n- 范围：Qoder CN 个人版新老用户，企业订阅不适用\n- 门槛：无需领取，0 Credits 账号也能直接跑\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe) 下载桌面端并登录\n2. 在模型选择器里选 **DeepSeek-Flash**，确认倍率显示 0×\n3. 正常对话或跑 Agent 任务，用量面板可核对未扣 Credits\n\n**注意**：到期后按届时公示系数恢复计费（该模型为峰谷计价）；限免截止与倍率随客户端版本与账号批次变化，以模型选择器实显为准。",
+      "summary": "限免已结束，现按峰谷系数计费",
+      "content": "Qoder CN 个人版限时免费用 DeepSeek-Flash：模型选择器里选它，消耗倍率显示 0×，调用不扣 Credits。\n\n- 限时：**至 11 月 1 日 00:00（UTC+8）**\n- 模型：DeepSeek-V4.1-Flash-1017，深度求索正式版\n- 计费：倍率 0×，调用不消耗 Credits\n- 范围：Qoder CN 个人版新老用户，企业订阅不适用\n- 门槛：无需领取，0 Credits 账号也能直接跑\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe) 下载桌面端并登录\n2. 在模型选择器里选 **DeepSeek-Flash**，确认倍率显示 0×\n3. 正常对话或跑 Agent 任务，用量面板可核对未扣 Credits\n\n**注意**：限免已于 11 月 1 日 0 点结束，现按峰谷系数计费（用户实测 2026-11）；倍率随客户端版本与账号批次变化，以模型选择器实显为准。",
       "images": [],
       "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
       "publishedAt": "2026-10-20",
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-11-01",
       "source": "freeegg",
       "localEdit": false
     },
@@ -643,14 +685,14 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": "2026-10-31T23:59:59+08:00",
-      "summary": "U2-Flash 限免调用至 10/31，新老用户均可",
-      "content": "云知声 Token Hub 平台 U2-Flash 全新上线，活动期 2026.09.30-2026.10.31 限时免费无限量调用，新老用户均可。U2-Flash 主打 Agent/Coding 场景，300B 规模，512K 上下文，OpenAI/Anthropic 双协议兼容。\n\n- 额度：**限免期间调用全免**，输入/输出均 ¥0/百万 Token\n- 限制：RPM 100，TPM 1000 万，最大输出 128K\n\n领取步骤：\n\n1. 打开 [模型页](https://maas.unisound.com/model-hub/u2-flash)\n2. 注册/登录云知声 Token Hub，创建 API Key\n3. 按 OpenAI 兼容端点调用 u2-flash 模型\n\n**注意**：免费期至 10 月 31 日截止，到期恢复计费；自研新模型，能力待验证，以官方页面为准。",
+      "summary": "U2-Flash 限免已结束，由 U Plan 接棒",
+      "content": "云知声 Token Hub 平台 U2-Flash 全新上线，活动期 2026.09.30-2026.10.31 限时免费无限量调用，新老用户均可。U2-Flash 主打 Agent/Coding 场景，300B 规模，512K 上下文，OpenAI/Anthropic 双协议兼容。\n\n- 额度：**限免期间调用全免**，输入/输出均 ¥0/百万 Token\n- 限制：RPM 100，TPM 1000 万，最大输出 128K\n\n领取步骤：\n\n1. 打开 [模型页](https://maas.unisound.com/model-hub/u2-flash)\n2. 注册/登录云知声 Token Hub，创建 API Key\n3. 按 OpenAI 兼容端点调用 u2-flash 模型\n\n**注意**：免费期已于 10 月 31 日结束，现由 [U Plan Free 档](https://maas.unisound.com/token-plan) 接棒（每周送积分）；自研新模型，能力待验证，以官方页面为准。",
       "images": [],
       "link": "https://maas.unisound.com/model-hub/u2-flash",
       "publishedAt": "2026-10-04",
-      "updatedAt": "2026-10-04",
+      "updatedAt": "2026-11-01",
       "source": "freeegg",
       "localEdit": false
     },
@@ -726,17 +768,17 @@
       "category": "credits",
       "score": 82,
       "tags": {
-        "duration": "limited",
+        "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
-      "expiryDate": "2026-11-01T00:00:00+08:00",
-      "summary": "Flash 限时免费，11月1日0点截止",
-      "content": "Qoder 官方公告：Qwen3.8-Flash 客户端内限时免费用。原定 9 月 30 日截止，现已**延期**，10 月 1 日起继续免费，官方确认**11 月 1 日 0 点截止**。\n\n- 限时：**全天免费**，11 月 1 日 0 点截止\n- 计费：系数 0.1× 降至 0.0×，不扣 Credits\n- 无需领取：免费账号、0 Credits 均可直接用\n- 范围：CN 版个人用户均可，企业订阅不适用\n- 可用端：桌面端、IDE、CLI、移动端、网页版\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 模型选择器选 Qwen3.8-Flash 即用\n3. 左下角用量面板可另领每日 100 Credits\n\n**注意**：高峰时段可能响应较慢；结束时间以[官方活动页](https://docs.qoder.cn/events/flashoffer)为准，11 月 1 日 0 点后按届时系数计费。",
+      "expiryDate": null,
+      "summary": "Flash 每日免费额度，官方未设截止",
+      "content": "Qoder 官方公告：Qwen3.8-Flash 每日免费额度继续开放。活动两度延期，现官方不再写死截止日，改为「结束前在活动页公告」。\n\n- 计费：免费额度内系数 **0.0×**，不扣 Credits\n- 额度：每账号每日一定次数，付费用户次数更多\n- 范围：CN 版个人用户，免费账号与 0 Credits 账号均可\n- 可用端：桌面端、IDE、JetBrains 插件、CLI、移动端、网页版\n- 门槛：无需领取，自动生效，企业订阅不适用\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 模型选择器选 Qwen3.8-Flash，即享每日免费额度\n3. 左下角用量面板可另领每日 100 Credits\n\n**注意**：免费只覆盖 Qwen3.8-Flash 实际完成的调用；额度用尽后按 0.1× 扣 Credits，次日恢复；高峰时段可能较慢。",
       "images": [],
       "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
       "publishedAt": "2026-09-18",
-      "updatedAt": "2026-10-28",
+      "updatedAt": "2026-11-01",
       "source": "freeegg",
       "localEdit": false
     },
@@ -1238,9 +1280,9 @@
       "summary": "每日签到领 100 积分，体验版每月再送 500",
       "content": "腾讯旗下 WorkBuddy（AI Agent 办公工作台）免费权益。\n\n- 签到：**每日签到领 100 积分**，自领取日起 1 个月有效\n- 入口：客户端左下角头像 → 今日礼包\n- 限免模型：**Hy3 免费**，Hy4-Preview 夜间免费\n- 额度：**体验版每月发放 500 积分**（限免），当月有效、不结转\n- 用途：执行文档 / 表格 / 网页等办公 Agent 任务\n- 其他：代码补全 5,000 次/月、3 个自动任务、Auto 模型调度\n\n使用步骤：\n\n1. 打开 [WorkBuddy 官网](https://www.workbuddy.cn/)下载客户端并登录\n2. 每日在客户端「今日礼包」签到领 100 积分\n3. 体验版积分按月自动发放，在「设置 - 用量」查看余额\n\n**注意**：签到入口以客户端实际为准；限免名单以客户端内为准；积分规则详见[官方积分说明](https://www.workbuddy.cn/docs/workbuddy/Credits)。",
       "images": [],
-      "link": "https://www.workbuddy.cn/events/invite?inviteCode=h06385rcx",
+      "link": "https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-10-30",
+      "updatedAt": "2026-11-01",
       "source": "freeegg",
       "localEdit": false
     },
