@@ -1,6 +1,27 @@
 {
-  "version": "2026-11-01",
+  "version": "2026-11-02",
   "eggs": [
+    {
+      "id": "trae-bao-free-week-202611",
+      "title": "TRAE 宝限免一周不扣积分",
+      "vendor": "TRAE",
+      "category": "credits",
+      "score": 75,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-08T23:59:59+08:00",
+      "summary": "TRAE 宝问答与派任务不扣积分，到 11 月 8 日",
+      "content": "TRAE 宝是 TRAE 桌面端的开发者个人助理，11 月 2 日官宣限时免费一周。\n\n- 时间：11 月 2 日起至 11 月 8 日 23:59（北京时间）\n- 范围：用 TRAE 宝问答、下达任务，全部不扣积分\n- 场景：写功能、修 bug、审 PR、整理文档等开发任务\n- 限制：暂不支持视频生成；无邀请码、无需报名\n\n领取步骤：\n\n1. 打开 [TRAE 下载中心](https://www.trae.cn/download)装最新版桌面端\n2. 登录后进 Agent 窗口，点左侧导航栏「TRAE 宝」\n3. 直接说需求；要处理项目可先打开项目文件夹\n\n**注意**：免费只覆盖 TRAE 宝内的问答与任务，不是 TRAE 全部功能免费；结束后恢复按用量扣积分，细则以[官方活动页](https://docs.trae.cn/ide_use-trae-bao-for-free-with-no-credits-required)为准。",
+      "images": [],
+      "link": "https://www.trae.cn/download",
+      "publishedAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "unisound-uplan-free-202611",
       "title": "云知声 U Plan 每周 2500 积分",
