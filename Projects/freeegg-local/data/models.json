@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-02",
+  "version": "2026-11-03",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -138,9 +138,9 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "score": 65.6,
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "score": 65.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -277,10 +277,10 @@
       "localEdit": false
     },
     {
-      "id": "qwen3-8-max",
-      "name": "Qwen3.8 Max",
-      "vendor": "Alibaba",
-      "releasedAt": "2026-07-19",
+      "id": "grok-4-6",
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
       "score": 61.8,
@@ -288,10 +288,10 @@
       "localEdit": false
     },
     {
-      "id": "grok-4-6",
-      "name": "Grok 4.6",
-      "vendor": "xAI",
-      "releasedAt": "2026-08-12",
+      "id": "qwen3-8-max",
+      "name": "Qwen3.8 Max",
+      "vendor": "Alibaba",
+      "releasedAt": "2026-07-19",
       "inputCost": 2,
       "outputCost": 6,
       "score": 61.8,
