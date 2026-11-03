@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-02",
+  "version": "2026-11-03",
   "eggs": [
     {
       "id": "trae-bao-free-week-202611",
@@ -1246,7 +1246,7 @@
     },
     {
       "id": "longcat-newbie-202608",
-      "title": "LongCat 新人礼最高 2000 万",
+      "title": "LongCat 新老用户送 1000 万",
       "vendor": "LongCat",
       "category": "token",
       "score": 55,
@@ -1256,12 +1256,12 @@
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "实名送 1000 万 Tokens，叠加邀请最高 2000 万",
-      "content": "美团 LongCat AI 开放平台新人福利，LongCat-2.0 上线期多重赠送。\n\n- 额度：**完成实名认证即送 1000 万 Tokens**\n- 叠加：通过邀请链接注册，双方各得 1000 万，叠加新人礼包最高 2000 万\n- 首购：下单返实付金额 5%\n\n使用步骤：\n\n1. 打开 [LongCat 开放平台](https://longcat.chat/platform/product)注册美团账号\n2. 完成实名认证领取新人礼包\n3. 开发者可在控制台创建 API Key 接入\n\n**注意**：邀请奖励需通过邀请链接注册并实名后到账；规则以[官方文档](https://longcat.chat/platform/docs/zh/)为准。",
+      "summary": "新用户 1000 万，老用户 2×500 万，30 天有效",
+      "content": "美团 LongCat AI 开放平台福利，新用户实名赠送、老用户上线加赠。\n\n- 新用户：**完成实名认证即送 1000 万 Token**\n- 老用户：登录可领 2 份 500 万 Token 体验包，共 1000 万\n- 有效期：发放后 30 天内有效，到期自动失效\n- 叠加：邀请新用户实名，双方各再得 1000 万，最高 2000 万\n- 返现：受邀人拼团首购返实付 5%\n- 模型：LongCat-2.5，兼容 OpenAI/Anthropic\n\n使用步骤：\n\n1. 打开 [LongCat 开放平台](https://longcat.chat/platform/product?inviteCode=HJGT9NID)注册并登录\n2. 新用户完成实名认证，老用户在资源权益领 2 份体验包\n3. 到账后可在「费用中心」资源包钱包查看余额\n\n**注意**：老用户体验包需手动领取、发放后 30 天内有效；返现充入余额、不可提现；企业认证账号不可参与邀请活动；规则以[官方活动页](https://longcat.chat/platform/product)为准。",
       "images": [],
       "link": "https://longcat.chat/platform/product?inviteCode=HJGT9NID",
       "publishedAt": "2026-08-30",
-      "updatedAt": "2026-08-30",
+      "updatedAt": "2026-11-03",
       "source": "freeegg",
       "localEdit": false
     },
