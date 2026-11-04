@@ -1,6 +1,27 @@
 {
-  "version": "2026-11-03",
+  "version": "2026-11-04",
   "eggs": [
+    {
+      "id": "workbuddy-hy4-free-202611",
+      "title": "WorkBuddy Hy4 限时免费",
+      "vendor": "WorkBuddy",
+      "category": "credits",
+      "score": 67,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-15T23:59:59+08:00",
+      "summary": "Hy4 限免至 11 月 15 日，每日送免费额度",
+      "content": "腾讯混元 Hy4 于 11 月 4 日正式上线，WorkBuddy 国内版与国际版同步首发接入，客户端模型列表直接标「限时免费」。\n\n- 时间：11 月 4 日至 11 月 15 日 23:59（北京时间）\n- 定位：最新旗舰模型，Agent 与多模专长\n- 计费：消耗速度 **0.00x**，额度内不扣积分\n- 额度：**每日赠送免费额度**，订阅用户享更高配额\n- 触及额度：可继续消耗积分使用，页面提示重置时间\n- 同期：Hy3 限免一并延长至 11 月 15 日 23:59\n\n领取步骤：\n\n1. 打开 [WorkBuddy](https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10) 注册并下载客户端\n2. 登录后在模型选择器选带「限时免费」标记的 Hy4\n3. 正常对话或跑 Agent 任务，用量处核对倍率 0.00x\n\n**注意**：生图、生视频任务会切换多模态模型，按正常规则消耗积分；资源繁忙时会排队；额度与倍率以客户端模型选择器实显为准。",
+      "images": [],
+      "link": "https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10",
+      "publishedAt": "2026-11-04",
+      "updatedAt": "2026-11-04",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "trae-bao-free-week-202611",
       "title": "TRAE 宝限免一周不扣积分",
