@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-04",
+  "version": "2026-11-05",
   "models": [
     {
       "id": "claude-opus-5-5",
@@ -41,7 +41,7 @@
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.5,
+      "score": 71.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -90,23 +90,23 @@
       "localEdit": false
     },
     {
-      "id": "kimi-k3-1-pro",
-      "name": "Kimi K3.1 Pro",
-      "vendor": "Moonshot AI",
-      "releasedAt": "2026-10-23",
-      "inputCost": 2,
-      "outputCost": 10,
-      "score": 68.9,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "claude-fable-5",
       "name": "Claude Fable 5",
       "vendor": "Anthropic",
       "releasedAt": "2026-06-09",
       "inputCost": 10,
       "outputCost": 50,
+      "score": 68.8,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "vendor": "Moonshot AI",
+      "releasedAt": "2026-10-23",
+      "inputCost": 2,
+      "outputCost": 10,
       "score": 68.8,
       "source": "freeegg",
       "localEdit": false
@@ -193,9 +193,9 @@
       "name": "GLM-5.3",
       "vendor": "Z.ai",
       "releasedAt": "2026-08-18",
-      "inputCost": 0.08,
-      "outputCost": 3.6,
-      "score": 62.7,
+      "inputCost": 0.0699,
+      "outputCost": 1.4,
+      "score": 62.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,7 +228,7 @@
       "releasedAt": "2026-08-13",
       "inputCost": 0.75,
       "outputCost": 3.75,
-      "score": 62.6,
+      "score": 62.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -250,7 +250,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 62.3,
+      "score": 62.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -283,7 +283,7 @@
       "releasedAt": "2026-08-12",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 62,
+      "score": 61.9,
       "source": "freeegg",
       "localEdit": false
     },
