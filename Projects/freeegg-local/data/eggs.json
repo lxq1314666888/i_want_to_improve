@@ -2,6 +2,48 @@
   "version": "2026-11-06",
   "eggs": [
     {
+      "id": "zcode-weekend-500m-202611",
+      "title": "ZCode 周末送 5 亿 Token",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 93,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-09T09:00:00+08:00",
+      "summary": "弹窗领 5 亿，周五 23 点生效、周一 09:00 清零",
+      "content": "智谱 ZCode 的周末定量包（WEEKEND BUILD），客户端弹窗一键领，周五晚 23:00 生效、周一早 9:00 清零。\n\n- 额度：**5 亿 GLM-5.3-Flash Token**\n- 生效：**11-06 23:00**，领取后显示「待生效」\n- 失效：**11-09 09:00**，到点清零、不累积\n- 模型：限 **GLM-5.3-Flash**\n- 门槛：登录客户端点弹窗领取即可\n\n领取步骤：\n\n1. 打开 [ZCode 官网](https://zcode.z.ai/cn)下载并更新到最新版\n2. 登录后看左侧弹窗，点「领取」拿到 WEEKEND BUILD\n3. 模型设置 → Start Plan 确认 GLM-5.3-Flash 已启用\n\n**注意**：没弹窗先更新或重启客户端，部分账号到账有延迟；实际额度以客户端弹窗为准，周一 9 点后余额归零。",
+      "images": [],
+      "link": "https://zcode.z.ai/cn",
+      "publishedAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "wps-lingxi-points-202611",
+      "title": "WPS 灵犀 800 智点/月 + 签到",
+      "vendor": "WPS 灵犀",
+      "category": "credits",
+      "score": 72,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "首月约 2300 智点，之后每月 800 + 签到",
+      "content": "金山办公 WPS 灵犀的 AI 办公助手，免费体验版每月发智点，新手任务与签到还能叠加。\n\n- 额度：体验版 **每月 800 智点**，免费领取\n- 新手：任务中心全做完，首月约 **2300 智点**\n- 签到：前 6 天 **100 智点/天**，第 7 天起 **200/天**\n- 免费：快速模式**不消耗智点**，问答、表格、基础 PPT\n- 专家模式：消耗智点，可选 Pro/Max 或内置模型\n- 平台：Windows、macOS、Android、iOS，另可网页版\n\n领取步骤：\n\n1. 打开 [灵犀官网](https://www.lingxi.cn/)下载客户端，或直接用网页版\n2. 左下角智点余额 → 任务中心，签到并领任务奖励\n3. 「智点详情」可看余额、获得明细与到期时间\n\n**注意**：2300 = 月度 800＋客户端 800＋群聊 400＋专家 200＋首日签到 100，任务与到账以任务中心为准；智点只用于专家模式；额度以[官方说明文档](https://www.lingxi.cn/docs)为准。",
+      "images": [],
+      "link": "https://www.lingxi.cn/download",
+      "publishedAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "workbuddy-hy4-free-202611",
       "title": "WorkBuddy Hy4 限时免费",
       "vendor": "WorkBuddy",
@@ -245,7 +287,7 @@
       "expired": false,
       "expiryDate": "2026-12-31T23:59:59+08:00",
       "summary": "体验版每日 100 分，新用户注册送 5000 积分",
-      "content": "华为云码道（CodeArts）每日签到自 10 月 27 日 20:00 起改为**按套餐档位**发放，**领取后 24 小时内有效**，过期清零。\n\n- 体验版：每日 **100 积分**\n- 标准版：每日 **150 积分**\n- 高级版/旗舰版：每日 **200 积分**\n- 活动期：至 **2026-12-31** 23:59:59\n- 门槛：需已切换到积分计费模式\n\n新用户注册礼（至 **11 月 15 日** 23:59）：从未用过码道的新账号（含 IDE、插件）注册即领 **4000 积分**，走邀请链接再得 **1000**，合计 **5000 积分**，到账起 1 个月有效。\n\n领取：头像 →「活动福利」→「每日领取」；IDE/插件为右上角「限时福利」。\n\n**注意**：计费说明页仍写 1000 分 / 30 天有效，与活动页不一致，以实际到账为准。",
+      "content": "华为云码道（CodeArts）每日签到自 10 月 27 日 20:00 起改为**按套餐档位**发放，**领取后 24 小时内有效**，过期清零。\n\n- 体验版：每日 **100 积分**\n- 标准版：每日 **150 积分**\n- 高级版/旗舰版：每日 **200 积分**\n- 活动期：至 **2026-12-31** 23:59:59\n- 门槛：需已切换到积分计费模式\n\n新用户注册礼：从未用过码道的新账号（含 IDE、插件）注册即领 **4000 积分**，走邀请链接再得 **1000**（邀请活动至 **11 月 15 日** 23:59），合计 **5000 积分**，到账起 1 个月有效。\n\n领取：头像 →「活动福利」→「每日领取」；IDE/插件为右上角「限时福利」。\n\n**注意**：计费说明页仍写 1000 分 / 30 天有效，与活动页不一致，以实际到账为准。",
       "images": [],
       "link": "https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk",
       "publishedAt": "2026-10-26",
