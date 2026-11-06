@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-04",
+  "version": "2026-11-06",
   "eggs": [
     {
       "id": "workbuddy-hy4-free-202611",
@@ -1291,15 +1291,15 @@
       "title": "商汤日日新 12 万积分/5 小时",
       "vendor": "商汤日日新",
       "category": "credits",
-      "score": 64,
+      "score": 45,
       "tags": {
         "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "5 小时窗口 12 万积分，滚动周上限 120 万",
-      "content": "商汤日日新 SenseNova 大模型平台公测期免费，2026-10-27 起通用积分池窗口额度翻倍。\n\n- 额度：**5 小时窗口 12 万积分**，周窗口 120 万\n- 调整：上限翻倍，生效时统一重置可用额度\n- 适用：新注册用户同享，存量积分不清零、有效期保留\n- 模型：SenseNova 6.8 Flash Lite、U1 Fast 等\n- 返赠：Flash-Lite 消费返赠 10-27 已下线\n- 其他：原生多模态、Cowork-Skills 办公特化\n- 限制：最多建 20 个 API Key\n\n领取步骤：\n\n1. 打开 [日日新官网](https://www.sensenova.cn/)注册并登录\n2. 进入控制台创建 API Key\n3. 调用消耗积分，额度按 5 小时滚动窗口恢复\n\n**注意**：免费档标注「限时放量」，实测短时调用限速较严；付费档位（Lite / Pro）即将上线，以[官方公告](https://www.sensenova.cn/token-plan)为准。",
+      "summary": "5 小时 12 万积分，注册已转邀请制",
+      "content": "商汤日日新 SenseNova 大模型平台公测期免费，**2026-11-04 起注册转为邀请制**，额度本身不变。\n\n- 注册：**暂停公开注册**，新用户需邀请码\n- 申请：注册页「申请通道」提交信息，评估后发放\n- 老用户：登录、调用与现有权益均不受影响\n- 额度：5 小时窗口 **12 万积分**，周上限 120 万\n- 模型：SenseNova 6.8 Flash Lite、U1 Fast 等\n- 限制：最多建 20 个 API Key，短时调用限速较严\n\n领取步骤：\n\n1. 打开 [日日新官网](https://www.sensenova.cn/)注册页\n2. 已有账号直接登录；新用户走申请通道等邀请码\n3. 进控制台建 API Key，额度按 5 小时窗口恢复\n\n**注意**：申请为人工评估、不保证通过；免费档标注「限时放量」；付费档 Lite / Pro 即将上线，以[官方公告](https://www.sensenova.cn/token-plan)为准。",
       "images": [],
       "link": "https://www.sensenova.cn/token-plan",
       "publishedAt": "2026-08-30",
