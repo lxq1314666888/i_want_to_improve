@@ -1,6 +1,153 @@
 {
-  "version": "2026-11-08",
+  "version": "2026-11-09",
   "eggs": [
+    {
+      "id": "autoclaw-double11-50m-202611",
+      "title": "AutoClaw 双十一领 5000 万",
+      "vendor": "智谱",
+      "category": "token",
+      "score": 66,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-15T23:59:59+08:00",
+      "summary": "登录即得 5000 万 Token，15 日 23:59 清零",
+      "content": "智谱 AutoClaw（澳龙）双十一福利，活动期间登录国内版即可领 5000 万 Tokens。\n\n- 额度：**5000 万 Tokens**，登录即到账，每账号限一次\n- 时间：**11 月 9 日 0 点至 11 月 15 日 23:59**，逾期不发\n- 用途：仅限 AutoClaw 内使用，不是通用 API 额度\n- 可用：GLM-5.3、GLM-5.3-Flash、GLM-5-Turbo 等\n\n领取步骤：\n\n1. 打开 [AutoClaw 国内版](https://autoclaw.zhipuai.cn/) 登录\n2. 5000 万 Tokens 自动到账，无需另外领\n3. 在客户端新建任务即开始消耗\n\n**注意**：积分有效期同样到 11 月 15 日 23:59，逾期自动失效，别囤着；自接模型 API 另行计费；仅国内版账号可参与。",
+      "images": [],
+      "link": "https://autoclaw.zhipuai.cn/blog/news/M11W2/",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "meoo-daily-2000-202611",
+      "title": "秒悟每天登录领 2000 积分",
+      "vendor": "秒悟 Meoo",
+      "category": "credits",
+      "score": 70,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "每日首次登录送 2000 积分，新人首月再送 5000",
+      "content": "秒悟（Meoo）用一句话生成可上线的 AI 应用，免费版靠每日登录攒积分。\n\n- 额度：每日首次登录 **2000 积分**，所有档位都有\n- 新人：免费版首月另送 **5000 积分**，付费档另有月度额度\n- 抵扣：DeepSeek V4.1 Flash 每千输入 2 分、输出 8 分\n- 可用：Qwen3.8、DeepSeek V4、GLM-5.3、Kimi K3\n\n领取步骤：\n\n1. 打开 [秒悟](https://meoo.com/) 用手机号登录\n2. 每天首次进控制台自动到账，不用手动点\n3. 在应用里调模型或生成图片视频时扣积分\n\n**注意**：免费版每月套餐额度是 0，只有每日赠送与新人礼；付费档默认开连续包月，到期前 1 天自动扣款，不需要记得在设置里关。",
+      "images": [],
+      "link": "https://meoo.com/",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "antling-monthly-10cny-202611",
+      "title": "蚂蚁百灵每月 1 日送 10 元券",
+      "vendor": "蚂蚁百灵",
+      "category": "credits",
+      "score": 63,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "每月 1 日发 10 元抵扣券，新用户再送 20 元",
+      "content": "百灵把原来的每日免费额度改成按月发券，新老账户都有份。\n\n- 月度：每月 1 日发 **10 元 Token 抵扣券**，当月有效不结转\n- 新人：注册即得 **20 元券**，老账户升级也补一次，60 天有效\n- 范围：百灵全部模型，按实际计费金额抵扣\n- 门槛：需开通百灵新钱包并完成实名\n\n领取步骤：\n\n1. 打开[百灵开放平台](https://developer.ant-ling.com/)注册\n2. 开通新钱包、创建 API Key\n3. 每月 1 日后券自动入账，调用模型时自动抵扣\n\n**注意**：月中才完成升级的账户当月不补发月度券，从下月 1 日开始发；原每日 50 万 Token 免费额度已停止；券不可提现或转让。",
+      "images": [],
+      "link": "https://developer.ant-ling.com/zh-CN/docs/getting-started/changelog/billing-upgrade/",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "scnet-maas-10m-202611",
+      "title": "超算互联网新用户领 1000 万",
+      "vendor": "超算互联网",
+      "category": "token",
+      "score": 62,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "注册即领 1000 万 Token，限新用户",
+      "content": "国家超算互联网的 MaaS 专区给新用户送 Token 量包，注册即到账。\n\n- 额度：**1000 万 Tokens**，仅新用户可参与\n- 模型：当前发放 **GLM-5.3-Flash**，1024K 上下文\n- 场景：代码生成、科研辅助、数据分析、长文档\n- 领取：在 MaaS 特惠专场点「免费领取」，实时到账\n\n领取步骤：\n\n1. 打开 [MaaS 特惠专场](https://www.scnet.cn/home/subject/maas/index.html)\n2. 注册账号并完成实名认证\n3. 领包后在控制台创建 API Key 调用\n\n**注意**：仅限新用户，老账号领不到；需完成实名认证；量包当前对应 GLM-5.3-Flash，实际可用范围以控制台为准。",
+      "images": [],
+      "link": "https://www.scnet.cn/home/subject/maas/index.html",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "aliyun-yungongkaiwu-300-202611",
+      "title": "云工开物学生 300 元代金券",
+      "vendor": "阿里云",
+      "category": "credits",
+      "score": 76,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2027-03-31T23:59:59+08:00",
+      "summary": "学生认证每 12 个月领 300 元，可抵云服务器与大模型服务",
+      "content": "阿里云高校用云支持计划「云工开物」，学生完成认证后领 300 元无门槛抵扣金，每 12 个月一张。\n\n- 额度：**300 元抵扣金**，每 12 个月一张，券 1 年内有效\n- 抵扣：百炼推理、训练、部署，Wan 等 3 款模型除外\n- 也能买：云服务器、AI Coding、数据库等公共云产品\n- 限制：需**中国高校学生认证**，同商品仅抵扣一次、不叠加优惠\n- 另有：可抵 Qoder CN 学生版 1 个月专业订阅\n\n领取步骤：\n\n1. 打开[学生权益页](https://university.aliyun.com/buycenter/)\n2. 完成学生身份认证后点「立即申请」领券\n3. 在权益专区选规格下单，支付页勾选代金券\n\n**注意**：本期活动到 2027 年 3 月 31 日，每日名额有限先到先得；券到期未用即作废，订单退款券不返还。教师另有 5 折权益（原价上限 40 万），需提交场景并通过审核。",
+      "images": [],
+      "link": "https://university.aliyun.com/buycenter/",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "freebuff-free-hours-202611",
+      "title": "Freebuff 每日免费 5 小时",
+      "vendor": "Freebuff",
+      "category": "credits",
+      "score": 57,
+      "tags": {
+        "duration": "longterm",
+        "region": "global"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "免绑卡免 Key，限速区每天 5 小时编程额度",
+      "content": "Freebuff 是靠广告养活的免费编程 Agent，终端、桌面、网页共用一个账号，免绑卡也免 API Key。\n\n- 额度：全量地区每天 30 小时，其余地区限速模式 5 小时\n- 挂 VPN 或代理：每天 4 小时\n- 计量：1 次会话算 1 小时、期间不限消息，贵模型按倍率扣\n- 模型：GLM 5.3 Flash、DeepSeek V4.1 Flash 等\n- 代价：界面常驻 Sponsored 广告；标注训练的模型可外售\n\n领取步骤：\n\n1. 终端执行 npm install -g freebuff\n2. 首次运行按提示登录浏览器授权\n3. 进项目目录敲 freebuff 开工\n\n**注意**：中国大陆属限速区，只给 5 小时；额度每天 0 点本地时区重置、不累积；官方标 beta，模型与小时数随时变；付费档 $8/月起。",
+      "images": [],
+      "link": "https://freebuff.com",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "perch-starter-20usd-202611",
+      "title": "Perch AI 每月送 $20 额度",
+      "vendor": "Perch AI",
+      "category": "credits",
+      "score": 62,
+      "tags": {
+        "duration": "longterm",
+        "region": "global"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "免绑卡，每月 20,000 PT（约 $20），仅限产品内用",
+      "content": "Perch AI 是面向法律、财务、研究的可验证型工作台，网页、桌面、CLI 共用额度。\n\n- 额度：**每月 20,000 PT**，1 PT = $0.001，约合 **$20**\n- 模型：DeepSeek V4.1 Flash、GLM 5.3 Flash 轮换\n- 限制：免绑卡；**无公开 API**，额度只在三端内用\n- 数据：原文不授权，任务流程会做成衍生数据对外授权\n- 开关：**Starter 数据计划**，默认开、可关\n\n领取步骤：\n\n1. 打开 [chat.perchai.app](https://chat.perchai.app)，用 Google 或 GitHub 登录\n2. 首次登录选 **Starter**，不用邀请码、不排队\n\n**注意**：免费池轮换，Qwen 3.8 Max 只到 11 月 20 日；关掉开关只停未来采集，去标识化后的数据删不掉。",
+      "images": [],
+      "link": "https://chat.perchai.app",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "tokenrouter-free-models-202611",
       "title": "TokenRouter 免费模型池",
