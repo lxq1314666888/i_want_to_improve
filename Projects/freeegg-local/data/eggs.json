@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-09",
+  "version": "2026-11-10",
   "eggs": [
     {
       "id": "autoclaw-double11-50m-202611",
@@ -1309,18 +1309,18 @@
     },
     {
       "id": "monkeycode-free-tier-202608",
-      "title": "MonkeyCode 免费档每日 10M Token",
+      "title": "MonkeyCode 送 5000 积分",
       "vendor": "长亭 MonkeyCode",
-      "category": "token",
-      "score": 68,
+      "category": "credits",
+      "score": 48,
       "tags": {
         "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "¥0 永久免费档每天 10M Token，仅限平台内使用",
-      "content": "长亭科技出品的在线 AI 编程开发平台，免费档长期可用。\n\n- 额度：**¥0 永久免费，每天 10M Token**\n- 环境：云开发环境 1C / 4G、1 个任务并发，浏览器即用\n- 攒额度：每日签到 100 积分，邀请 1 位新用户 +5000 积分\n- 模型：内置 GLM、Kimi、MiniMax、Qwen、DeepSeek 等\n- 免费档：仅基础模型可用\n\n使用步骤：\n\n1. 打开 [MonkeyCode 官网](https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260)注册\n2. 控制台创建开发任务，每日额度自动到账\n3. 每日签到与邀请好友攒积分\n\n**注意**：额度仅限 MonkeyCode 平台内使用，不可导出或用于 API；免费档限基础模型范围与单任务并发；平台 GitHub 开源（AGPLv3），规则以官网为准。",
+      "summary": "基础档取消每日额度，注册送 5000 积分",
+      "content": "长亭科技 AI 编程平台，11 月 11 日起免费档改为积分制。\n\n- 新用户：注册额外赠送 **5000 初始积分**\n- 基础档：**11 月 11 日起取消每日 10M Token 额度**\n- 积分用途：基础档的 Token 调用全部走积分\n- 签到：每日 100 积分；邀请 1 人 +5000，上限 10 人\n- 升级：专业 ¥99/月 100M，旗舰 ¥499/月 300M\n- 环境：1 任务并发，云开发环境 1C / 4G\n- 模型：GLM、Kimi、MiniMax、Qwen、DeepSeek 等\n\n领取步骤：\n\n1. 打开 [MonkeyCode 官网](https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260)注册\n2. 在钱包页确认 5000 积分到账\n3. 每日签到攒积分，用量看积分账单\n\n**注意**：基础档 11 月 11 日起无每日额度，Token 用量全额走积分；专业、旗舰档每日额度与权益不变；仅限平台内使用，不可导出 API，规则以官网为准。",
       "images": [],
       "link": "https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260",
       "publishedAt": "2026-08-31",
