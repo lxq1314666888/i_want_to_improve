@@ -1,6 +1,48 @@
 {
-  "version": "2026-11-10",
+  "version": "2026-11-11",
   "eggs": [
+    {
+      "id": "minekuai-ds41flash-free-202611",
+      "title": "麦块云 DeepSeek 免费不限量",
+      "vendor": "麦块云",
+      "category": "token",
+      "score": 70,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "免费不限量，实名送 5000 万，签到兑 1 亿",
+      "content": "麦块云自部署 DeepSeek、GLM，注册即 Lite 档，免费模型不扣鱼币。\n\n- 模型：DeepSeek V4.1 Flash 1017，256K\n- 模型 ID：deepseek-v4.1-flash-1017\n- 额度：不设总量上限，高峰排队，会话限 1\n- 实名：认证后送 5000 万永久 Token\n- 新手：首次调用送 1000 万，填 QQ 再送 1000 万\n- 签到：10 鱼币兑 1 亿 Token，优先处理\n- 接入：Claude Code、Codex 直连，双协议\n\n领取步骤：\n\n1. 打开 [模型广场](https://minekuai.cn/llm)确认免费清单\n2. 用手机号验证码注册，完成实名认证领奖励\n3. 控制台创建 API 密钥，端点填 https://minekuai.cn/v1\n\n**注意**：官方标「临时部署测试」，无截止日；额度用尽自动切回不限量通道；一人一号，仅服务中国大陆，海外 IP 一律 403。",
+      "images": [],
+      "link": "https://minekuai.cn/r/YNXXU4CF",
+      "publishedAt": "2026-11-11",
+      "updatedAt": "2026-11-11",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "antling-ling32flash-free-202611",
+      "title": "蚂蚁百灵 Ling-3.2-flash 限免",
+      "vendor": "蚂蚁百灵",
+      "category": "token",
+      "score": 58,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-19T23:59:59+08:00",
+      "summary": "原生多模态旗舰，上线 2 周免费，需绑支付宝",
+      "content": "蚂蚁百灵 11 月 5 日上线新一代原生多模态模型 Ling-3.2-flash，上线起 2 周内调用不计费。\n\n- 规格：560B 总参数、25B 激活，1M 上下文\n- 多模态：原生支持图像、文本与视频输入\n- 额度：限免期输入、输出、缓存读取全 **¥0**\n- 接口：OpenAI 与 Anthropic 双协议\n- 端点：api.ant-ling.com/v1\n- 门槛：需绑支付宝开通服务，API 的 QPS 限 2\n\n领取步骤：\n\n1. 打开 [API 控制台](https://chat.ant-ling.com/open)注册登录\n2. 绑定支付宝并开通百灵模型服务\n3. 创建令牌，model 填 Ling-3.2-flash 即可调\n\n**注意**：2 周从 11/5 上线起算，官方未公布恢复后的原价；同期 3.1-flash 2.5 折、3.0-flash 2.8 折优惠中，对话页也能在线体验。",
+      "images": [],
+      "link": "https://developer.ant-ling.com/zh-CN/docs/models/price/",
+      "publishedAt": "2026-11-11",
+      "updatedAt": "2026-11-11",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "autoclaw-double11-50m-202611",
       "title": "AutoClaw 双十一领 5000 万",
@@ -1023,14 +1065,14 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
-      "expiryDate": null,
-      "summary": "匿名模型每日免费，CN 版与国际版客户端都能用",
-      "content": "Qoder 的匿名模型 Qoduck 于 11 月 7 日上架，身份暂不公布，CN 版与国际版同步开放限时每日免费额度。\n\n- 额度：**每日一定次数免费**，付费用户次数更多\n- 计费：额度内系数 **0.0×**，思考拉满也免费\n- 额度外：继续用按 **0.5×** 扣 Credits，次日恢复\n- 入口：**CN／国际版客户端**都能选，IDE、插件、CLI 暂不支持\n- 人群：个人用户含会员卡用户；团队版、企业版看不到该模型\n\n使用步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe)下载 CN 版客户端登录\n2. 客户端更新到最新版，模型选择器里选 **Qoduck**\n3. 直接对话或跑 Agent 任务，免费额度内不扣 Credits\n\n**注意**：无需领取，选中即生效；国际版客户端同样能选到；活动结束时间未定，会提前公告；模型身份未知，公司代码、客户数据、未公开方案别往里放。",
+      "expired": true,
+      "expiryDate": "2026-11-11T10:00:00+08:00",
+      "summary": "匿名模型每日免费，官方 11/11 10:00 已结束",
+      "content": "Qoder 的匿名模型 Qoduck 于 11 月 7 日上架，身份始终未公布，CN 版与国际版曾同步开放限时每日免费额度，官方现已结束活动、模型下线。\n\n- 额度：**每日一定次数免费**，付费用户次数更多\n- 计费：额度内系数 **0.0×**，思考拉满也免费\n- 额度外：继续用按 **0.5×** 扣 Credits，次日恢复\n- 入口：**CN／国际版客户端**都能选，IDE、插件、CLI 不支持\n- 人群：个人用户含会员卡用户；团队版、企业版看不到该模型\n\n原步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe)下载 CN 版客户端登录\n2. 客户端更新到最新版，模型选择器里选 **Qoduck**\n3. 直接对话或跑 Agent 任务，免费额度内不扣 Credits\n\n**注意**：活动于 2026 年 11 月 11 日 10:00（UTC+8）结束，Qoduck 已下线，需切换到其他模型；模型身份未知，历史对话别放公司代码与客户数据。",
       "images": [],
       "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
       "publishedAt": "2026-11-07",
-      "updatedAt": "2026-11-07",
+      "updatedAt": "2026-11-11",
       "source": "freeegg",
       "localEdit": false
     },
