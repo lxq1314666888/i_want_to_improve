@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-11-11），云端 Worker 定时采集
-- 生成时间：2026-11-11T06:57:12.791Z
+- 生成时间：2026-11-11T19:48:15.805Z
 - 集合：eggs · 共 92 条 · 未过期 54 条 · 已过期 38 条
 
 ## 一、概览
@@ -21,8 +21,8 @@
 | 1 | WorkBuddy 签到领 100 积分 | WorkBuddy | 积分/点数 | 93 | 长期 | - | 每日签到领 100 积分，体验版每月再送 500 | https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10 |
 | 2 | TRAE 每日签到领 100 积分 | TRAE | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100，新人送 4000 | https://www.trae.cn/ |
 | 3 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 长期 | - | Flash 每日免费额度，官方未设截止 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
-| 4 | 七牛云 Conatus 免费 1 亿/日 | 七牛云 | Token 额度 | 81 | 限时 | 20 天 | 实名后每日 1 亿 Token，免费用到 11 月底 | https://www.qiniu.com/ai/free-models/conatus-2026 |
-| 5 | 云工开物学生 300 元代金券 | 阿里云 | 积分/点数 | 76 | 限时 | 141 天 | 学生认证每 12 个月领 300 元，可抵云服务器与大模型服务 | https://university.aliyun.com/buycenter/ |
+| 4 | 七牛云 Conatus 免费 1 亿/日 | 七牛云 | Token 额度 | 81 | 限时 | 19 天 | 实名后每日 1 亿 Token，免费用到 11 月底 | https://www.qiniu.com/ai/free-models/conatus-2026 |
+| 5 | 云工开物学生 300 元代金券 | 阿里云 | 积分/点数 | 76 | 限时 | 140 天 | 学生认证每 12 个月领 300 元，可抵云服务器与大模型服务 | https://university.aliyun.com/buycenter/ |
 | 6 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 7 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
 | 8 | OpenCode 内置免费模型 | OpenCode | API 免费档 | 76 | 长期 | - | 内置免费模型，免登录、免绑卡、免 Key | https://opencode.ai/zh |
@@ -38,14 +38,14 @@
 | 18 | MiniMax Code 周签 4000 积分 | MiniMax | 积分/点数 | 71 | 长期 | - | 每日签到 400 积分，第 4、7 天各 1000 | https://agent.minimaxi.com/download |
 | 19 | 麦块云 DeepSeek 免费不限量 | 麦块云 | Token 额度 | 70 | 长期 | - | 免费不限量，实名送 5000 万，签到兑 1 亿 | https://minekuai.cn/r/YNXXU4CF |
 | 20 | 秒悟每天登录领 2000 积分 | 秒悟 Meoo | 积分/点数 | 70 | 长期 | - | 每日首次登录送 2000 积分，新人首月再送 5000 | https://meoo.com/ |
-| 21 | 华为云码道每日签到领积分 | 华为云 | 积分/点数 | 70 | 限时 | 51 天 | 体验版每日 100 分，新用户注册送 5000 积分 | https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk |
+| 21 | 华为云码道每日签到领积分 | 华为云 | 积分/点数 | 70 | 限时 | 50 天 | 体验版每日 100 分，新用户注册送 5000 积分 | https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk |
 | 22 | 魔搭魔粒免费调旗舰模型 | 魔搭 ModelScope | API 免费档 | 70 | 长期 | - | 每日登录领魔粒，白嫖 DeepSeek 等旗舰 API | https://modelscope.cn/register?inviteCode=herbqiao2005&invitorName=herbqiao |
-| 23 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 51 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
+| 23 | 腾讯云 TokenHub 新人免费体验包 | 腾讯云 TokenHub | Token 额度 | 70 | 限时 | 50 天 | 语言与多模态理解模型各 100 万 Tokens（1 年） | https://cloud.tencent.com/product/tokenhub |
 | 24 | 豆包电脑版签到领 200 额度 | 字节跳动 | 积分/点数 | 68 | 限时 | - | 电脑版签到领 200 额度，任务每项 100 | https://www.doubao.com/pc/agent-explore |
 | 25 | ZCode 邀请好友领 1 亿 Token | 智谱 | Token 额度 | 68 | 限时 | - | 受邀完成三步新手任务，领 1 亿 Flash Token | https://zcode.z.ai/invite/S6CEA5NN |
 | 26 | Cline 免费模型池 | Cline | API 免费档 | 68 | 长期 | - | 免 Key 免绑卡，免费池剩 5 款 | https://cline.bot/ |
-| 27 | WorkBuddy Hy4 限时免费 | WorkBuddy | 积分/点数 | 67 | 限时 | 5 天 | Hy4 限免至 11 月 15 日，每日送免费额度 | https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10 |
-| 28 | AutoClaw 双十一领 5000 万 | 智谱 | Token 额度 | 66 | 限时 | 5 天 | 登录即得 5000 万 Token，15 日 23:59 清零 | https://autoclaw.zhipuai.cn/blog/news/M11W2/ |
+| 27 | WorkBuddy Hy4 限时免费 | WorkBuddy | 积分/点数 | 67 | 限时 | 4 天 | Hy4 限免至 11 月 15 日，每日送免费额度 | https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10 |
+| 28 | AutoClaw 双十一领 5000 万 | 智谱 | Token 额度 | 66 | 限时 | 4 天 | 登录即得 5000 万 Token，15 日 23:59 清零 | https://autoclaw.zhipuai.cn/blog/news/M11W2/ |
 | 29 | 讯飞 AStudio 每日领 100 积分 | 讯飞 AStudio | 积分/点数 | 66 | 长期 | - | 体验版每日 100 积分，新人再送 1000 | https://agent.xfyun.cn/studio-download |
 | 30 | 云知声 U Plan 每周 2500 积分 | 云知声 | 积分/点数 | 65 | 长期 | - | 每周 2500 积分，含 ASR 8 小时、TTS 4 万字 | https://maas.unisound.com/token-plan |
 | 31 | AMD TokenFactory 免费 API | AMD | API 免费档 | 65 | 长期 | - | 注册领 Key，免费池现挂 11 款模型 | https://developer.amd.com.cn/radeon/tokenfactory |
