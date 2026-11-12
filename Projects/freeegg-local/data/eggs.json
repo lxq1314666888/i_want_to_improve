@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-11",
+  "version": "2026-11-12",
   "eggs": [
     {
       "id": "minekuai-ds41flash-free-202611",
@@ -11,14 +11,14 @@
         "duration": "longterm",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": null,
-      "summary": "免费不限量，实名送 5000 万，签到兑 1 亿",
-      "content": "麦块云自部署 DeepSeek、GLM，注册即 Lite 档，免费模型不扣鱼币。\n\n- 模型：DeepSeek V4.1 Flash 1017，256K\n- 模型 ID：deepseek-v4.1-flash-1017\n- 额度：不设总量上限，高峰排队，会话限 1\n- 实名：认证后送 5000 万永久 Token\n- 新手：首次调用送 1000 万，填 QQ 再送 1000 万\n- 签到：10 鱼币兑 1 亿 Token，优先处理\n- 接入：Claude Code、Codex 直连，双协议\n\n领取步骤：\n\n1. 打开 [模型广场](https://minekuai.cn/llm)确认免费清单\n2. 用手机号验证码注册，完成实名认证领奖励\n3. 控制台创建 API 密钥，端点填 https://minekuai.cn/v1\n\n**注意**：官方标「临时部署测试」，无截止日；额度用尽自动切回不限量通道；一人一号，仅服务中国大陆，海外 IP 一律 403。",
+      "summary": "免费不限量通道暂停，官方未公布恢复时间",
+      "content": "麦块云自部署 DeepSeek、GLM，免费模型不扣鱼币；官方现已挂出维护通知，免费不限量通道暂时关闭。\n\n- 公告原文：因算力资源不足，优先保证会员使用\n- 影响：免费不限量用户暂时无法使用，恢复时间未公布\n- 出路：官方称待新设备上架后恢复，急需可购买按量使用\n- 原额度：不设总量上限，高峰排队，会话限 1\n\n原步骤：\n\n1. 打开 [模型广场](https://minekuai.cn/llm)确认免费清单\n2. 手机号验证码注册，完成实名认证领奖励\n3. 控制台创建 API 密钥，端点填 https://minekuai.cn/v1\n\n**注意**：公告未给恢复日期，公开模型列表接口当前为空；实名送 5000 万永久 Token、签到兑 1 亿属暂停前的规则，恢复后是否延续以官网为准。",
       "images": [],
       "link": "https://minekuai.cn/r/YNXXU4CF",
       "publishedAt": "2026-11-11",
-      "updatedAt": "2026-11-11",
+      "updatedAt": "2026-11-12",
       "source": "freeegg",
       "localEdit": false
     },
@@ -813,8 +813,8 @@
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "X2.5-1.7B 长期免费，4B 限时免费",
-      "content": "讯飞星火开放平台的 Spark-X2.5 小模型开放免费调用。\n\n- Spark-X2.5-1.7B：**长期免费**调用\n- Spark-X2.5-4B：**限时免费**（截止日未公布）\n- 规格：1.7B / 4B 端侧模型，**1M 上下文**\n- 星辰 MaaS 模型广场另有多款模型可「免费领取」\n\n领取步骤：\n\n1. 打开 [讯飞星火开放平台](https://xinghuo.xfyun.cn/sparkapi)注册并实名\n2. 控制台创建应用，获取 API Key\n3. 模型名选 Spark-X2.5-1.7B 或 Spark-X2.5-4B\n\n**注意**：仅这两个小参数模型免费，旗舰 Spark-X2.5 等仍按量计费；4B 为限时活动，随时可能结束，领取需先完成实名。",
+      "summary": "X2.6-4B 限时免费，X2.5-1.7B 免费",
+      "content": "讯飞星火开放平台把两款端侧小模型放进免费档，旗舰模型仍按量计费。\n\n- Spark-X2.6-4B：**限时免费**，官方未标截止日\n- Spark-X2.5-1.7B：**免费**调用，页面未标限时\n- 规格：端侧 Dense，原生 **1M 上下文**，200+ 语言\n- 门槛：注册 + 实名，控制台建应用拿 API Key\n- 精调：两款模型的精调也标「限时免费」\n- 渠道：星辰 MaaS 广场也能「免费领取」\n\n领取步骤：\n\n1. 打开 [讯飞星火开放平台](https://xinghuo.xfyun.cn/sparkapi)注册并实名\n2. 控制台创建应用，获取 API Key\n3. 模型名填 Spark-X2.6-4B 或 Spark-X2.5-1.7B\n\n**注意**：免费只覆盖小参数端侧模型，旗舰 Spark-X2.6／X2.5 分别按 6 折、3 折计费；官网首页 4B 档已由 X2.5-4B 换成 X2.6-4B，老款是否仍免费未标注；限免无截止日，随时结束。",
       "images": [],
       "link": "https://xinghuo.xfyun.cn/sparkapi",
       "publishedAt": "2026-10-12",
