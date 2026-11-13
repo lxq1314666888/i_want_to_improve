@@ -542,7 +542,7 @@
       "id": "volcengine-ark",
       "name": "火山引擎方舟",
       "product": "方舟 Coding Plan",
-      "tagline": "GLM、豆包、DeepSeek 等模型丰富，活动期 2.5 折",
+      "tagline": "GLM、豆包、DeepSeek 等模型丰富，可自由切换",
       "models": [
         "Doubao-Seed-2.1-turbo",
         "Doubao-Seed-Evolving",
@@ -553,30 +553,30 @@
         "Auto 模式"
       ],
       "quotaBasis": "5h ~1,200 次 · 周 ~9,000 次",
-      "status": "limited",
+      "status": "available",
       "highlights": [
-        "限时 2.5 折",
+        "按刊例价销售",
         "模型最丰富",
-        "Auto 路由 K3"
+        "Auto 智能路由"
       ],
-      "entryPrice": "¥9.9/月首购",
-      "entryPriceCny": 9.9,
+      "entryPrice": "¥40/月起",
+      "entryPriceCny": 40,
       "plans": [
         {
           "name": "Lite",
           "price": "¥40/月",
-          "note": "首购 ¥9.9 · 受邀折扣",
+          "note": "按刊例价销售",
           "features": [
             "豆包 / GLM / DeepSeek 等",
             "支持 Auto 模式",
-            "活动期至 11/8，名额有限",
+            "月约 18,000 次请求",
             "满足个人开发者轻量需求"
           ]
         },
         {
           "name": "Pro",
           "price": "¥200/月",
-          "note": "前两月 ¥49.9/月",
+          "note": "5× Lite，按刊例价",
           "features": [
             "5 倍于 Lite 套餐用量",
             "支持 Auto 模式",
@@ -585,7 +585,7 @@
         }
       ],
       "link": "https://ai.volcengine.com/activity/codingplan",
-      "updatedAt": "2026-09-15",
+      "updatedAt": "2026-11-12",
       "source": "freeegg",
       "localEdit": false
     },
@@ -593,7 +593,7 @@
       "id": "volcengine-ark-agent",
       "name": "火山引擎方舟",
       "product": "方舟 Agent Plan",
-      "tagline": "全模态不止编程：生图、视频、语音、联网搜索一锅端，限时 9.9 元起（活动至 11/8）",
+      "tagline": "全模态不止编程：生图、视频、语音、联网搜索一锅端，首两月 2.5 折",
       "models": [
         "Doubao-Seed-Evolving",
         "GLM-5.3",
@@ -608,8 +608,7 @@
       "highlights": [
         "超全模态模型",
         "Harness 升级",
-        "首两月 2.5 折",
-        "Auto 模式 5 折"
+        "首两月 2.5 折"
       ],
       "entryPrice": "¥9.9/月首购",
       "entryPriceCny": 9.9,
@@ -660,7 +659,7 @@
         }
       ],
       "link": "https://ai.volcengine.com/activity/agentplan",
-      "updatedAt": "2026-09-15",
+      "updatedAt": "2026-11-12",
       "source": "freeegg",
       "localEdit": false
     },

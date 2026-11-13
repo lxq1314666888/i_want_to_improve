@@ -1,7 +1,7 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-11-12），云端 Worker 定时采集
-- 生成时间：2026-11-12T20:17:34.119Z
+- 生成时间：2026-11-13T07:04:12.508Z
 - 集合：eggs · 共 92 条 · 未过期 53 条 · 已过期 39 条
 
 ## 一、概览
@@ -22,15 +22,15 @@
 | 2 | TRAE 每日签到领 100 积分 | TRAE | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100，新人送 4000 | https://www.trae.cn/ |
 | 3 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 长期 | - | Flash 每日免费额度，官方未设截止 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 4 | 七牛云 Conatus 免费 1 亿/日 | 七牛云 | Token 额度 | 81 | 限时 | 18 天 | 实名后每日 1 亿 Token，免费用到 11 月底 | https://www.qiniu.com/ai/free-models/conatus-2026 |
-| 5 | 云工开物学生 300 元代金券 | 阿里云 | 积分/点数 | 76 | 限时 | 139 天 | 学生认证每 12 个月领 300 元，可抵云服务器与大模型服务 | https://university.aliyun.com/buycenter/ |
-| 6 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
-| 7 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
-| 8 | OpenCode 内置免费模型 | OpenCode | API 免费档 | 76 | 长期 | - | 内置免费模型，免登录、免绑卡、免 Key | https://opencode.ai/zh |
-| 9 | 百度搭子 签到领 500 积分 | 百度搭子 | 积分/点数 | 75 | 限时 | - | 免费版每日签到领 500 积分，全量功能开放 | https://www.dumate.cn/ |
-| 10 | 商汤小浣熊每日免费 300 积分 | 商汤小浣熊 | 积分/点数 | 75 | 长期 | - | 每日登录领 300 积分，新人再得 6000 一年有效 | https://xiaohuanxiong.com/ |
+| 5 | 商汤小浣熊每日免费 300 积分 | 商汤小浣熊 | 积分/点数 | 77 | 长期 | - | 每日 300 积分，新人任务最高 12000 | https://xiaohuanxiong.com/events/refer?code=1f70b8ba520d4b8798b07a7710a8ccee |
+| 6 | 云工开物学生 300 元代金券 | 阿里云 | 积分/点数 | 76 | 限时 | 139 天 | 学生认证每 12 个月领 300 元，可抵云服务器与大模型服务 | https://university.aliyun.com/buycenter/ |
+| 7 | Qoder 每日领 100 Credits | 阿里云 Qoder | 积分/点数 | 76 | 长期 | - | 每日登录领 100 通用 Credits，可累积 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
+| 8 | 讯飞 Loomy 每日送 5000 积分 | 讯飞 Loomy | 积分/点数 | 76 | 长期 | - | 注册送 5000，新手任务拿满 15000，每日再送 5000 | https://loomy.xunfei.cn/download |
+| 9 | OpenCode 内置免费模型 | OpenCode | API 免费档 | 76 | 长期 | - | 内置免费模型，免登录、免绑卡、免 Key | https://opencode.ai/zh |
+| 10 | 百度搭子 签到领 500 积分 | 百度搭子 | 积分/点数 | 75 | 限时 | - | 免费版每日签到领 500 积分，全量功能开放 | https://www.dumate.cn/ |
 | 11 | 有道龙虾每日签到领 100 积分 | 网易有道 | 积分/点数 | 74 | 长期 | - | 每日签到领 100 积分（一个月有效），邀请码新人礼 300 | https://lobsterai.youdao.com/ |
 | 12 | 千问办公每日领 100 积分 | 千问办公 | 积分/点数 | 74 | 长期 | - | 个人版每日登录领 100 积分，每天 00:00 刷新，长期可领 | https://qwenwork.cn/ |
-| 13 | 扣子每日登录领 1500 积分 | 扣子 Coze | 积分/点数 | 73 | 长期 | - | 每日登录领 1500 活动积分，当日有效 | https://www.coze.cn/ |
+| 13 | 扣子每日登录领 60 积分 | 扣子 Coze | 积分/点数 | 73 | 长期 | - | 每日登录领 60 活动积分，当日有效 | https://www.coze.cn/ |
 | 14 | OrcaRouter 免费模型池 | OrcaRouter | API 免费档 | 73 | 长期 | - | 免费 6 个 -free 模型，默认 50 次/日 | https://www.orcarouter.ai/zh-CN |
 | 15 | WPS 灵犀 800 智点/月 + 签到 | WPS 灵犀 | 积分/点数 | 72 | 长期 | - | 首日做满约 2300 智点，之后每月 800 + 签到 | https://www.lingxi.cn/download |
 | 16 | 星辰 MaaS 领 10 亿 Token | 讯飞星辰 MaaS | Token 额度 | 72 | 限时 | - | 限 Spark-X2.6，10 亿额度 31 天有效 | https://maas.xfyun.cn/overview |
