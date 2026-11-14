@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13",
+  "version": "2026-11-14",
   "models": [
     {
       "id": "claude-fable-5-2",
@@ -8,7 +8,7 @@
       "releasedAt": "2026-11-09",
       "inputCost": 8,
       "outputCost": 40,
-      "score": 80.7,
+      "score": 80.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -19,7 +19,7 @@
       "releasedAt": "2026-10-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 77.5,
+      "score": 77.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -35,13 +35,24 @@
       "localEdit": false
     },
     {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "vendor": "Google",
+      "releasedAt": "2026-11-12",
+      "inputCost": 1.5,
+      "outputCost": 7.5,
+      "score": 72.9,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "claude-fable-5-1",
       "name": "Claude Fable 5.1",
       "vendor": "Anthropic",
       "releasedAt": "2026-09-01",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 72.7,
+      "score": 72.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -52,18 +63,7 @@
       "releasedAt": "2026-09-03",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 72.2,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gemini-4-argon",
-      "name": "Gemini 4 Argon",
-      "vendor": "Google",
-      "releasedAt": "2026-09-30",
-      "inputCost": 2,
-      "outputCost": 10,
-      "score": 71.9,
+      "score": 72.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -74,7 +74,18 @@
       "releasedAt": "2026-09-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.9,
+      "score": 71.8,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "vendor": "Google",
+      "releasedAt": "2026-09-30",
+      "inputCost": 2,
+      "outputCost": 10,
+      "score": 71.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -90,24 +101,24 @@
       "localEdit": false
     },
     {
-      "id": "claude-opus-5",
-      "name": "Claude Opus 5",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-07-24",
-      "inputCost": 5,
-      "outputCost": 25,
-      "score": 69.8,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "gpt-6-1-terra",
       "name": "GPT-6.1 Terra",
       "vendor": "OpenAI",
       "releasedAt": "2026-10-26",
       "inputCost": 1,
       "outputCost": 5,
-      "score": 69.5,
+      "score": 69.4,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-07-24",
+      "inputCost": 5,
+      "outputCost": 25,
+      "score": 69.3,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +129,7 @@
       "releasedAt": "2026-06-09",
       "inputCost": 10,
       "outputCost": 50,
-      "score": 69.1,
+      "score": 68.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -127,9 +138,9 @@
       "name": "Kimi K3.1 Pro",
       "vendor": "Moonshot AI",
       "releasedAt": "2026-10-23",
-      "inputCost": 0.2375,
-      "outputCost": 8.4114,
-      "score": 67.9,
+      "inputCost": 2,
+      "outputCost": 10,
+      "score": 67.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -140,7 +151,18 @@
       "releasedAt": "2026-10-12",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 67.6,
+      "score": 67.5,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gpt-5-6-sol",
+      "name": "GPT-5.6 Sol",
+      "vendor": "OpenAI",
+      "releasedAt": "2026-07-09",
+      "inputCost": 4,
+      "outputCost": 20,
+      "score": 66.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -151,18 +173,7 @@
       "releasedAt": "2026-11-04",
       "inputCost": 0.417,
       "outputCost": 1.2505,
-      "score": 66.8,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gpt-5-6-sol",
-      "name": "GPT-5.6 Sol",
-      "vendor": "OpenAI",
-      "releasedAt": "2026-07-09",
-      "inputCost": 4.4,
-      "outputCost": 22,
-      "score": 66.5,
+      "score": 66.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -173,7 +184,7 @@
       "releasedAt": "2026-11-09",
       "inputCost": 0.1,
       "outputCost": 0.5,
-      "score": 66.3,
+      "score": 66,
       "source": "freeegg",
       "localEdit": false
     },
@@ -182,9 +193,9 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.3,
-      "outputCost": 1.2,
-      "score": 65.9,
+      "inputCost": 0.038,
+      "outputCost": 0.5,
+      "score": 65.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -195,7 +206,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 65.6,
+      "score": 65.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -217,7 +228,7 @@
       "releasedAt": "2026-09-02",
       "inputCost": 0.825,
       "outputCost": 4.125,
-      "score": 63.4,
+      "score": 63.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,6 +239,17 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
+      "score": 63.3,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "glm-5-3",
+      "name": "GLM-5.3",
+      "vendor": "Z.ai",
+      "releasedAt": "2026-08-18",
+      "inputCost": 0.084,
+      "outputCost": 3.6,
       "score": 63.2,
       "source": "freeegg",
       "localEdit": false
@@ -239,17 +261,6 @@
       "releasedAt": "2026-09-01",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 63.1,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "glm-5-3",
-      "name": "GLM-5.3",
-      "vendor": "Z.ai",
-      "releasedAt": "2026-08-18",
-      "inputCost": 0.084,
-      "outputCost": 3.6,
       "score": 63,
       "source": "freeegg",
       "localEdit": false
@@ -261,7 +272,7 @@
       "releasedAt": "2026-04-23",
       "inputCost": 5,
       "outputCost": 30,
-      "score": 62.7,
+      "score": 62.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -272,18 +283,7 @@
       "releasedAt": "2026-07-16",
       "inputCost": 0.192,
       "outputCost": 16,
-      "score": 62.6,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "gemini-3-7-flash",
-      "name": "Gemini 3.7 Flash",
-      "vendor": "Google",
-      "releasedAt": "2026-08-13",
-      "inputCost": 0.75,
-      "outputCost": 3.75,
-      "score": 62.6,
+      "score": 62.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -294,18 +294,18 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 62.6,
+      "score": 62.7,
       "source": "freeegg",
       "localEdit": false
     },
     {
-      "id": "claude-opus-4-8",
-      "name": "Claude Opus 4.8",
-      "vendor": "Anthropic",
-      "releasedAt": "2026-05-28",
-      "inputCost": 5,
-      "outputCost": 25,
-      "score": 62.3,
+      "id": "gemini-3-7-flash",
+      "name": "Gemini 3.7 Flash",
+      "vendor": "Google",
+      "releasedAt": "2026-08-13",
+      "inputCost": 0.75,
+      "outputCost": 3.75,
+      "score": 62.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -317,6 +317,17 @@
       "inputCost": 0.1,
       "outputCost": 0.5,
       "score": 62.3,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "vendor": "Anthropic",
+      "releasedAt": "2026-05-28",
+      "inputCost": 5,
+      "outputCost": 25,
+      "score": 62.2,
       "source": "freeegg",
       "localEdit": false
     },
