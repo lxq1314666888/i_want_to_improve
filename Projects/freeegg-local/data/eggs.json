@@ -1,6 +1,27 @@
 {
-  "version": "2026-11-14",
+  "version": "2026-11-16",
   "eggs": [
+    {
+      "id": "workbuddy-hy4-flash-free-202611",
+      "title": "WorkBuddy Hy4 flash 限免",
+      "vendor": "WorkBuddy",
+      "category": "credits",
+      "score": 59,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-30T23:59:59+08:00",
+      "summary": "Hy4 flash 限免至 11 月 30 日，每日送免费额度",
+      "content": "腾讯混元 Hy4 flash 于 11 月 16 日上线，WorkBuddy 国内版与国际版同步首发，端内限时免费。\n\n- 时间：11 月 16 日至 11 月 30 日 23:59（北京时间）\n- 计费：消耗速度 **0.00x**，每日免费额度内不扣积分\n- 定位：更轻量、更高效的日常主力，办公高频场景\n- 规格：224B 总参数、激活 12B，多模态 1M 上下文\n- 触顶：可消耗积分继续用，页面会提示额度重置时间\n- 同期：Hy4 限免已结束（0.29x），Hy3 端内下线\n\n领取步骤：\n\n1. 打开 [WorkBuddy](https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10) 注册并下载客户端\n2. 输入框下方模型选择器选「Hy4 flash 限时免费」\n3. 确认消耗速度显示 **0.00x** 再开跑\n\n**注意**：生图、生视频会切到多模态模型按正常规则扣积分；上下文窗口客户端最高 960K（模型支持 1M）；额度与倍率以客户端实显为准。",
+      "images": [],
+      "link": "https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10",
+      "publishedAt": "2026-11-16",
+      "updatedAt": "2026-11-16",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "scnet-double11-100m-202611",
       "title": "超算互联网 送 1 亿 + 算力",
@@ -1186,15 +1207,15 @@
       "title": "MonkeyCode 送 5000 积分",
       "vendor": "长亭 MonkeyCode",
       "category": "credits",
-      "score": 48,
+      "score": 55,
       "tags": {
         "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "基础档取消每日额度，注册送 5000 积分",
-      "content": "长亭科技 AI 编程平台，11 月 11 日起免费档改为积分制。\n\n- 新用户：注册额外赠送 **5000 初始积分**\n- 基础档：**11 月 11 日起取消每日 10M Token 额度**\n- 积分用途：基础档的 Token 调用全部走积分\n- 签到：每日 100 积分；邀请 1 人 +5000，上限 10 人\n- 升级：专业 ¥99/月 100M，旗舰 ¥499/月 300M\n- 环境：1 任务并发，云开发环境 1C / 4G\n- 模型：GLM、Kimi、MiniMax、Qwen、DeepSeek 等\n\n领取步骤：\n\n1. 打开 [MonkeyCode 官网](https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260)注册\n2. 在钱包页确认 5000 积分到账\n3. 每日签到攒积分，用量看积分账单\n\n**注意**：基础档 11 月 11 日起无每日额度，Token 用量全额走积分；专业、旗舰档每日额度与权益不变；仅限平台内使用，不可导出 API，规则以官网为准。",
+      "summary": "注册送 5000 积分，签到 100 分/天仍在",
+      "content": "长亭科技 AI 编程平台，11 月 11 日起基础档取消每日额度。\n\n- 注册：新用户一次性赠 **5000 积分**\n- 签到：每日 100 积分，长期有效不清空\n- 邀请：每人 5000 积分，上限 10 人 / 5 万积分\n- 额度变化：基础档每日 10M 专属模型额度已取消\n- 基础模型：不扣积分，官方称永久免费（以控制台标记为准）\n- 积分用途：调专业/旗舰模型、联网搜索等工具\n- 升级：专业 ¥99/月每天 100M，旗舰 ¥499/月每天 300M\n- 环境：1 任务并发，云开发环境 1C / 4G\n\n领取步骤：\n\n1. 打开 [MonkeyCode 官网](https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260)注册\n2. 在钱包页确认 5000 积分到账\n3. 每天签到领 100 积分，积分账单看消耗\n\n**注意**：取消的是每日专属模型额度，基础模型仍免费用；专业、旗舰档额度与权益不变；仅限平台内使用，不可导出 API，规则以官网为准。",
       "images": [],
       "link": "https://monkeycode-ai.com/?ic=01a06a38-7da4-7e06-bac9-c8c2a8158260",
       "publishedAt": "2026-08-31",
