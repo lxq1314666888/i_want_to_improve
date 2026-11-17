@@ -2,27 +2,6 @@
   "version": "2026-11-17",
   "eggs": [
     {
-      "id": "workbuddy-hy4-flash-free-202611",
-      "title": "WorkBuddy Hy4 flash 限免",
-      "vendor": "WorkBuddy",
-      "category": "credits",
-      "score": 59,
-      "tags": {
-        "duration": "limited",
-        "region": "cn"
-      },
-      "expired": false,
-      "expiryDate": "2026-11-30T23:59:59+08:00",
-      "summary": "Hy4 flash 限免至 11 月 30 日，每日送免费额度",
-      "content": "腾讯混元 Hy4 flash 于 11 月 16 日上线，WorkBuddy 国内版与国际版同步首发，端内限时免费。\n\n- 时间：11 月 16 日至 11 月 30 日 23:59（北京时间）\n- 计费：消耗速度 **0.00x**，每日免费额度内不扣积分\n- 定位：更轻量、更高效的日常主力，办公高频场景\n- 规格：224B 总参数、激活 12B，多模态 1M 上下文\n- 触顶：可消耗积分继续用，页面会提示额度重置时间\n- 同期：Hy4 限免已结束（0.29x），Hy3 端内下线\n\n领取步骤：\n\n1. 打开 [WorkBuddy](https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10) 注册并下载客户端\n2. 输入框下方模型选择器选「Hy4 flash 限时免费」\n3. 确认消耗速度显示 **0.00x** 再开跑\n\n**注意**：生图、生视频会切到多模态模型按正常规则扣积分；上下文窗口客户端最高 960K（模型支持 1M）；额度与倍率以客户端实显为准。",
-      "images": [],
-      "link": "https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10",
-      "publishedAt": "2026-11-16",
-      "updatedAt": "2026-11-16",
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "scnet-double11-100m-202611",
       "title": "超算互联网 送 1 亿 + 算力",
       "vendor": "超算互联网",
@@ -39,6 +18,27 @@
       "images": [],
       "link": "https://www.scnet.cn/sso/register?service=https%3A%2F%2Fwww.scnet.cn%2Fac%2Fapi%2Fauth%2FloginSsoRedirect.action%3ForiginalUrl%3Dhttps%253A%252F%252Fwww.scnet.cn%252Fhome%252Fsubject%252Ftjg%252Findex.html%253Fshow%253Dtrue%2526inviterId%253D11364989896%2526marketActivityId%253DGy0KImwg",
       "publishedAt": "2026-11-14",
+      "updatedAt": "2026-11-17",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "cmcc-mobileclaw-token-100m-202611",
+      "title": "移动 MobileClaw 最高送 1 亿 Token",
+      "vendor": "中国移动",
+      "category": "token",
+      "score": 69,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-12-31T23:59:59+08:00",
+      "summary": "实名当天可领 3600 万，最高 1 亿 Token",
+      "content": "移动云双 11「领取 1 亿 Token」活动，MobileClaw 客户端实名注册领体验额度。\n\n- 实名：**2500 万**，实名后需要重启客户端领取\n- 每月：登录再领 **1000 万**，当日可领\n- 每日：登录再领 **100 万**，当日可领\n- 当天合计：**3600 万**，最高累计 1 亿\n- 模型：DeepSeek-V4.1-Flash、GLM-5.3-Flash 等\n- 限制：仅客户端内用，支持 Win / macOS / Linux\n- 节点：华北-呼和浩特资源池\n- 有效期：每次领取后 30 天，过期清零\n- 时间：2026 年 11 月 6 日～12 月 31 日\n\n领取步骤：\n\n1. 下载 MobileClaw 客户端（见下方活动页链接）\n2. 完成移动云账号注册与实名认证\n3. **重启客户端**后领取三项额度\n\n**注意**：不支持退订，额度不能导出 API。",
+      "images": [],
+      "link": "https://ecloud.10086.cn/mobilecloud/act/2026-double11",
+      "publishedAt": "2026-11-17",
       "updatedAt": "2026-11-17",
       "source": "freeegg",
       "localEdit": false
@@ -1451,6 +1451,27 @@
       "link": "https://qwenwork.cn/",
       "publishedAt": "2026-08-30",
       "updatedAt": "2026-08-30",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "workbuddy-hy4-flash-free-202611",
+      "title": "WorkBuddy Hy4 flash 限免",
+      "vendor": "WorkBuddy",
+      "category": "credits",
+      "score": 59,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-30T23:59:59+08:00",
+      "summary": "Hy4 flash 限免至 11 月 30 日，每日送免费额度",
+      "content": "腾讯混元 Hy4 flash 于 11 月 16 日上线，WorkBuddy 国内版与国际版同步首发，端内限时免费。\n\n- 时间：11 月 16 日至 11 月 30 日 23:59（北京时间）\n- 计费：消耗速度 **0.00x**，每日免费额度内不扣积分\n- 定位：更轻量、更高效的日常主力，办公高频场景\n- 规格：224B 总参数、激活 12B，多模态 1M 上下文\n- 触顶：可消耗积分继续用，页面会提示额度重置时间\n- 同期：Hy4 限免已结束（0.29x），Hy3 端内下线\n\n领取步骤：\n\n1. 打开 [WorkBuddy](https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10) 注册并下载客户端\n2. 输入框下方模型选择器选「Hy4 flash 限时免费」\n3. 确认消耗速度显示 **0.00x** 再开跑\n\n**注意**：生图、生视频会切到多模态模型按正常规则扣积分；上下文窗口客户端最高 960K（模型支持 1M）；额度与倍率以客户端实显为准。",
+      "images": [],
+      "link": "https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10",
+      "publishedAt": "2026-11-16",
+      "updatedAt": "2026-11-16",
       "source": "freeegg",
       "localEdit": false
     },

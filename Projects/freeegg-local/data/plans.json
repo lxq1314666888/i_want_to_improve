@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-10",
+  "version": "2026-11-17",
   "vendors": [
     {
       "id": "zhipu-glm",
@@ -100,6 +100,50 @@
       "localEdit": false
     },
     {
+      "id": "cline",
+      "name": "Cline",
+      "product": "ClinePass",
+      "tagline": "$9.99 月费换 2–5× 速率，15 款开源编码模型随选",
+      "models": [
+        "DeepSeek V4.1 Flash",
+        "GLM-5.3",
+        "GLM-5.3 Flash",
+        "Kimi K3",
+        "Kimi K3.1 Pro",
+        "MiniMax M3",
+        "MiMo V2.6 Pro",
+        "Qwen3.8 Max",
+        "Qwen3.7 Max"
+      ],
+      "quotaBasis": "2–5× API 速率 · 15 款开源模型",
+      "status": "available",
+      "highlights": [
+        "开源版免费",
+        "2–5× 速率",
+        "15 款开源模型",
+        "BYOK 可接任意商"
+      ],
+      "entryPrice": "$9.99/月",
+      "entryPriceCny": 70,
+      "plans": [
+        {
+          "name": "ClinePass",
+          "price": "$9.99/月",
+          "note": "2–5× API 速率",
+          "features": [
+            "2–5× 标准 API 速率",
+            "15 款开源编码模型随选",
+            "含 GLM·Kimi·DeepSeek",
+            "BYOK 可接任意服务商"
+          ]
+        }
+      ],
+      "link": "https://cline.bot/pricing",
+      "updatedAt": "2026-11-17",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
       "id": "command-code",
       "name": "Command Code",
       "product": "Command Code Plan",
@@ -175,6 +219,81 @@
       ],
       "link": "https://commandcode.ai/pricing",
       "updatedAt": "2026-09-10",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "open-design",
+      "name": "OpenDesign",
+      "product": "OpenDesign Go",
+      "tagline": "设计 Agent 附带 Coding 额度，可一键接入 Claude Code",
+      "models": [
+        "DeepSeek V4.1 Flash",
+        "GLM-5.3 Flash",
+        "Kimi K2.7 Code",
+        "MiniMax M3.1 Flash",
+        "MiMo V2.6 Pro",
+        "GPT-6 Astra",
+        "Claude Fable 5.2"
+      ],
+      "quotaBasis": "月 $220–1,430 Coding 额度",
+      "status": "available",
+      "highlights": [
+        "支持 Claude 编码",
+        "含 Coding 额度",
+        "152+ 设计系统",
+        "设计 Agent"
+      ],
+      "entryPrice": "$8/月",
+      "entryPriceCny": 56,
+      "plans": [
+        {
+          "name": "Go",
+          "price": "$8/月",
+          "note": "首月 $8，次月 $10",
+          "features": [
+            "每月 Coding 额度 $220",
+            "10 个共享任务并发",
+            "含 152+ 设计系统",
+            "可一键接入 Claude Code"
+          ]
+        },
+        {
+          "name": "Go Plus",
+          "price": "$16/月",
+          "note": "首月 $16，次月 $20",
+          "features": [
+            "每月 Coding 额度 $290",
+            "旗舰模型额度 $20",
+            "20 个共享任务并发",
+            "含 152+ 设计系统"
+          ]
+        },
+        {
+          "name": "Go Pro",
+          "price": "$80/月",
+          "note": "首月 $80，次月 $100",
+          "features": [
+            "每月 Coding 额度 $660",
+            "旗舰模型额度 $120",
+            "30 个共享任务并发",
+            "优先邮件支持"
+          ]
+        },
+        {
+          "name": "Go Max",
+          "price": "$160/月",
+          "note": "首月 $160，次月 $200",
+          "features": [
+            "每月 Coding 额度 $1,110",
+            "旗舰模型额度 $320",
+            "50 个共享任务并发",
+            "高峰优先算力"
+          ]
+        }
+      ],
+      "link": "https://open-design.ai/zh/pricing/",
+      "updatedAt": "2026-11-17",
       "source": "freeegg",
       "localEdit": false
     },
