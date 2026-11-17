@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-16",
+  "version": "2026-11-17",
   "eggs": [
     {
       "id": "workbuddy-hy4-flash-free-202611",
@@ -27,7 +27,7 @@
       "title": "超算互联网 送 1 亿 + 算力",
       "vendor": "超算互联网",
       "category": "token",
-      "score": 76,
+      "score": 80,
       "tags": {
         "duration": "limited",
         "region": "cn"
@@ -39,28 +39,28 @@
       "images": [],
       "link": "https://www.scnet.cn/sso/register?service=https%3A%2F%2Fwww.scnet.cn%2Fac%2Fapi%2Fauth%2FloginSsoRedirect.action%3ForiginalUrl%3Dhttps%253A%252F%252Fwww.scnet.cn%252Fhome%252Fsubject%252Ftjg%252Findex.html%253Fshow%253Dtrue%2526inviterId%253D11364989896%2526marketActivityId%253DGy0KImwg",
       "publishedAt": "2026-11-14",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-17",
       "source": "freeegg",
       "localEdit": false
     },
     {
       "id": "officeace-login-points-202611",
-      "title": "华为果办 注册送 4000 积分",
+      "title": "华为果办 每日签到领 50 积分",
       "vendor": "华为云",
       "category": "credits",
-      "score": 68,
+      "score": 45,
       "tags": {
         "duration": "longterm",
         "region": "cn"
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "免费版首次注册送 4000 积分，每日登录再送 100",
-      "content": "华为云果办 OfficeAce 是 AI 办公助手，个人体验版 0 元，注册与每日登录都有积分。\n\n- 新人：首次注册登录送 **4000 积分**\n- 日常：体验版每日登录送 **100 积分**，当日有效\n- 进阶档：标准版 150/天、高级版 200/天（需订阅）\n- 能力：汇报材料生成、深度报告、文件整理、IM 远程办公\n- 形态：客户端或微信小程序均可\n\n领取步骤：\n\n1. 打开 [活动页](https://activity.huaweicloud.com/officeace.html)\n2. 下载果办 OfficeAce 客户端或进入小程序\n3. 完成首次注册登录，积分自动到账\n\n**注意**：每日积分当日清零、不累计；各套餐档位每日额度不同，以官方套餐说明为准。",
+      "summary": "免费体验版每日签到送 50 积分，注册另送 300",
+      "content": "华为云果办 OfficeAce 自 2026 年 11 月 15 日起调整个人版套餐，免费体验版积分额度整体下调。\n\n- 签到：体验版每日登录送 **50 积分**，当日有效\n- 注册：活动期间新用户注册赠 **300 积分**\n- 新版套餐：轻享 ¥39/800、畅享 ¥98/2000、优享 ¥198/4000\n- 旧权益到期：原 4000 注册礼与每日 100 已于 11 月 15 日调整\n- 能力：汇报材料、深度报告、文件整理、IM 远程办公\n- 形态：客户端或微信小程序均可\n\n领取步骤：\n\n1. 打开[活动页](https://activity.huaweicloud.com/officeace.html)下载客户端或进小程序\n2. 完成首次注册登录领取注册积分\n3. 每日登录后在「订阅与积分」核对签到到账\n\n**注意**：每日积分当日清零、不累计；官方活动页仍挂旧版 4000 与每日 100，但都标了「限时」，实际以客户端内实显为准；积分消耗随所选模型与任务复杂度变化。",
       "images": [],
       "link": "https://activity.huaweicloud.com/officeace.html",
       "publishedAt": "2026-11-14",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-17",
       "source": "freeegg",
       "localEdit": false
     },
@@ -538,8 +538,8 @@
       },
       "expired": false,
       "expiryDate": "2026-12-31T23:59:59+08:00",
-      "summary": "体验版每日 100 分，新用户注册送 5000 积分",
-      "content": "华为云码道（CodeArts）每日签到自 10 月 27 日 20:00 起改为**按套餐档位**发放，**领取后 24 小时内有效**，过期清零。\n\n- 体验版：每日 **100 积分**\n- 标准版：每日 **150 积分**\n- 高级版/旗舰版：每日 **200 积分**\n- 活动期：至 **2026-12-31** 23:59:59\n- 门槛：需已切换到积分计费模式\n\n新用户注册礼：从未用过码道的新账号（含 IDE、插件）注册即领 **4000 积分**，走邀请链接再得 **1000**（邀请活动至 **11 月 15 日** 23:59），合计 **5000 积分**，到账起 1 个月有效。\n\n领取：头像 →「活动福利」→「每日领取」；IDE/插件为右上角「限时福利」。\n\n**注意**：计费说明页仍写 1000 分 / 30 天有效，与活动页不一致，以实际到账为准。",
+      "summary": "体验版每日 100 分，新用户注册送 4000 积分",
+      "content": "华为云码道（CodeArts）每日签到自 10 月 27 日 20:00 起改为**按套餐档位**发放，**领取后当天有效**，过期清零。\n\n- 体验版：每日 **100 积分**\n- 标准版：每日 **150 积分**\n- 高级版/旗舰版：每日 **200 积分**\n- 活动期：至 **2026-12-31** 23:59:59\n- 门槛：需已切换到积分计费模式\n\n新用户注册礼：即日起至 **12 月 31 日**，从未用过码道的新账号（含 IDE、插件）注册即领 **4000 积分**，自发放起 30 天内有效；邀请得 1000 积分的活动已于 11 月 15 日结束。\n\n领取：头像 →「活动福利」→「每日领取」；IDE/插件为右上角「限时福利」。\n\n**注意**：计费说明页仍写 1000 分 / 30 天有效，与活动页不一致，以实际到账为准。",
       "images": [],
       "link": "https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-WEK3nw2gEbOMA9i8SsoVbOp85EsyUhe5KiJHSanbF9wLgMQbqa9a0c0dcKpuJ1DA2-5s6yb9DwRuaqveaUc-BGdCRGHh4H-yQD25Uw9ToWj8zC1vMXq8chgByu5jIWOTRFUTKuyTXEqVbYk",
       "publishedAt": "2026-10-26",

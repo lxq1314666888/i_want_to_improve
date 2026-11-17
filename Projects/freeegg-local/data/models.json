@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-16",
+  "version": "2026-11-17",
   "models": [
     {
       "id": "claude-fable-5-2",
@@ -8,7 +8,7 @@
       "releasedAt": "2026-11-09",
       "inputCost": 8,
       "outputCost": 40,
-      "score": 79.9,
+      "score": 79.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -41,7 +41,7 @@
       "releasedAt": "2026-11-12",
       "inputCost": 1.5,
       "outputCost": 7.5,
-      "score": 72.5,
+      "score": 72.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -97,6 +97,17 @@
       "inputCost": 2,
       "outputCost": 10,
       "score": 70.1,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "qwen4-max",
+      "name": "Qwen4 Max",
+      "vendor": "Alibaba",
+      "releasedAt": "2026-11-16",
+      "inputCost": 1.425,
+      "outputCost": 4.275,
+      "score": 69.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -162,7 +173,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 66.7,
+      "score": 66.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -173,7 +184,7 @@
       "releasedAt": "2026-11-04",
       "inputCost": 0.417,
       "outputCost": 1.2505,
-      "score": 66.5,
+      "score": 66.6,
       "source": "freeegg",
       "localEdit": false
     },
@@ -193,8 +204,8 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.3,
-      "outputCost": 1.2,
+      "inputCost": 0.036,
+      "outputCost": 0.5,
       "score": 65.7,
       "source": "freeegg",
       "localEdit": false
@@ -239,7 +250,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 63.2,
+      "score": 63.5,
       "source": "freeegg",
       "localEdit": false
     },
