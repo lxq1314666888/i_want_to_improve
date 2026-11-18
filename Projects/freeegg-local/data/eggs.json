@@ -1,6 +1,48 @@
 {
-  "version": "2026-11-17",
+  "version": "2026-11-18",
   "eggs": [
+    {
+      "id": "todayai-register-300m-pro-202611",
+      "title": "Today 注册送 3 亿 Tokens + 3 个月 Pro",
+      "vendor": "Today AI",
+      "category": "token",
+      "score": 85,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "注册送 3 亿 Tokens + 3 个月 Pro，基础版免费",
+      "content": "Today 国内版新用户注册即送 3 亿 Tokens 与 3 个月 Pro 权益，Pro 到期不自动续费，之后可继续永久免费使用基础版。官方称权益自动到账，无需兑换码。\n\n- 额度：**3 亿 Tokens**，注册后自动到账\n- 会员：**3 个月 Pro**，覆盖前沿模型与记忆等能力\n- 门槛：仅支持中国大陆手机号，免绑卡、免兑换码\n- 注意：官方未公布 Tokens 有效期与活动截止日\n\n领取步骤：\n\n1. 点击「去领取」用中国大陆手机号注册并登录\n2. 权益自动到账，可在账户页核对剩余额度\n\n**注意**：国际站 today.ai 是另一套 Free、Pro、Ultra 方案，不含本条 Tokens；额度与活动期随时可能调整，以官网与客户端内实时显示为准。",
+      "images": [],
+      "link": "https://todayai.cn/login?utm_source=invitation&utm_id=ZIc2vGX1mdyA",
+      "publishedAt": "2026-11-18",
+      "updatedAt": "2026-11-18",
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "huawei-xhs-skill-contest-202611",
+      "title": "华为开发者大赛·小红书 Skill 创新赛",
+      "vendor": "华为云",
+      "category": "credits",
+      "score": 77,
+      "tags": {
+        "duration": "limited",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": "2026-11-29T23:59:59+08:00",
+      "summary": "报名领 2000 积分 + 200 元券，每日再领 1000",
+      "content": "华为与小红书科技联合主办的 Skill 创新赛道，为参赛选手准备积分与云资源代金券，名额有限。\n\n- 报名礼：**2000 积分**，报名即可领\n- 新人加码：报名后首开通码道再送 **3000 积分**\n- 每日签到：**1000 积分/天**，所有参赛选手\n- 代金券：**200 元华为云无门槛云资源券**\n- 报名截止：2026-11-29，积分有效期至 12/26\n- 代金券发放：11/12 ～ 11/24，工作日 10:00\n- 门槛：需实名认证，限华为云主账号\n- [领取方法](https://developer.huaweicloud.com/competition/information/1300000350/html1)\n\n领取步骤：\n\n1. 点击「去领取」完成大赛报名与实名认证\n2. 等约 10 分钟，登录码道 CodeArts 网页端或 IDE\n3. 头像「活动福利」领报名礼，之后每天领 1000\n4. 云宝助手发送口令领 200 元代金券\n\n**注意**：代金券每人限领一次、子账号不可领；作品须用码道或果办开发并提交。",
+      "images": [],
+      "link": "https://developer.huaweicloud.com/competition/information/1300000350/myteam",
+      "publishedAt": "2026-11-18",
+      "updatedAt": "2026-11-18",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "scnet-double11-100m-202611",
       "title": "超算互联网 送 1 亿 + 算力",
@@ -911,7 +953,7 @@
       "title": "Qoder 每日领 100 Credits",
       "vendor": "阿里云 Qoder",
       "category": "credits",
-      "score": 76,
+      "score": 90,
       "tags": {
         "duration": "longterm",
         "region": "cn"
@@ -1425,9 +1467,9 @@
       "expired": false,
       "expiryDate": null,
       "summary": "每日签到领 100 积分，月最高 3100，新人送 4000",
-      "content": "TRAE（TraeWork 与 TraeCode 已于 2026-10-09 合并）每日签到福利，长期有效。\n\n- 签到：免费用户**每日 100 积分**，会员**每日 200 积分**\n- 月累计：按 31 天计，免费最高 3100 积分\n- 新人：注册一次性送 **4000 积分**，有效期 31 天\n- 另有：每月登录送 500，邀请新用户双方各 500\n- 积分类型：**会员积分**（订阅/增购）与**奖励积分**（活动获取），全平台通用\n\n签到步骤：\n\n1. 打开 [TRAE 官网](https://www.trae.cn/)注册并登录\n2. 点击头像，在菜单中选择「签到」\n3. 每日签到即可领取积分\n\n**注意**：积分有效期为 31 个自然日，多类积分并存时优先消耗最快到期者；仅调用内置模型消耗积分，自定义模型不扣；细则以[官方计费文档](https://docs.trae.cn/ide_plans-and-billing)为准。",
+      "content": "TRAE（TraeWork 与 TraeCode 已于 2026-10-09 合并）每日签到福利，长期有效。\n\n- 签到：免费用户**每日 100 积分**，会员**每日 200 积分**\n- 月累计：按 31 天计，免费最高 3100 积分\n- 新人：注册一次性送 **4000 积分**，有效期 31 天\n- 另有：每月登录送 500，邀请新用户双方各 500\n- 积分类型：**会员积分**（订阅/增购）与**奖励积分**（活动获取），全平台通用\n\n签到步骤：\n\n1. 点击「去领取」注册并登录\n2. 点击头像，在菜单中选择「签到」\n3. 每日签到即可领取积分\n\n**注意**：积分有效期为 31 个自然日，多类积分并存时优先消耗最快到期者；仅调用内置模型消耗积分，自定义模型不扣；细则以[官方计费文档](https://docs.trae.cn/ide_plans-and-billing)为准。",
       "images": [],
-      "link": "https://www.trae.cn/",
+      "link": "https://www.trae.cn/events/code-fission/CF7WC3XV8XXC?utm_source=copy_link&utm_medium=code_fission",
       "publishedAt": "2026-08-30",
       "updatedAt": "2026-10-13",
       "source": "freeegg",
