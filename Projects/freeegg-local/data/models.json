@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-17",
+  "version": "2026-11-18",
   "models": [
     {
       "id": "claude-fable-5-2",
@@ -41,7 +41,7 @@
       "releasedAt": "2026-11-12",
       "inputCost": 1.5,
       "outputCost": 7.5,
-      "score": 72.6,
+      "score": 72.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -57,23 +57,23 @@
       "localEdit": false
     },
     {
-      "id": "gpt-6-astra",
-      "name": "GPT-6 Astra",
-      "vendor": "OpenAI",
-      "releasedAt": "2026-09-03",
-      "inputCost": 10,
-      "outputCost": 50,
-      "score": 71.5,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
       "id": "gemini-4-argon",
       "name": "Gemini 4 Argon",
       "vendor": "Google",
       "releasedAt": "2026-09-30",
       "inputCost": 2,
       "outputCost": 10,
+      "score": 71.5,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "vendor": "OpenAI",
+      "releasedAt": "2026-09-03",
+      "inputCost": 10,
+      "outputCost": 50,
       "score": 71.5,
       "source": "freeegg",
       "localEdit": false
@@ -96,18 +96,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 70.1,
-      "source": "freeegg",
-      "localEdit": false
-    },
-    {
-      "id": "qwen4-max",
-      "name": "Qwen4 Max",
-      "vendor": "Alibaba",
-      "releasedAt": "2026-11-16",
-      "inputCost": 1.425,
-      "outputCost": 4.275,
-      "score": 69.4,
+      "score": 70,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +107,7 @@
       "releasedAt": "2026-10-26",
       "inputCost": 1,
       "outputCost": 5,
-      "score": 69.1,
+      "score": 69,
       "source": "freeegg",
       "localEdit": false
     },
@@ -130,6 +119,17 @@
       "inputCost": 5,
       "outputCost": 25,
       "score": 68.9,
+      "source": "freeegg",
+      "localEdit": false
+    },
+    {
+      "id": "qwen4-max",
+      "name": "Qwen4 Max",
+      "vendor": "Alibaba",
+      "releasedAt": "2026-11-16",
+      "inputCost": 1.425,
+      "outputCost": 4.275,
+      "score": 68.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -173,7 +173,7 @@
       "releasedAt": "2026-07-09",
       "inputCost": 4,
       "outputCost": 20,
-      "score": 66.8,
+      "score": 66.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -184,7 +184,7 @@
       "releasedAt": "2026-11-04",
       "inputCost": 0.417,
       "outputCost": 1.2505,
-      "score": 66.6,
+      "score": 66.7,
       "source": "freeegg",
       "localEdit": false
     },
@@ -195,7 +195,7 @@
       "releasedAt": "2026-11-09",
       "inputCost": 0.1,
       "outputCost": 0.5,
-      "score": 65.9,
+      "score": 66,
       "source": "freeegg",
       "localEdit": false
     },
@@ -206,7 +206,7 @@
       "releasedAt": "2026-10-17",
       "inputCost": 0.036,
       "outputCost": 0.5,
-      "score": 65.7,
+      "score": 65.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -217,7 +217,7 @@
       "releasedAt": "2026-09-22",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 65.6,
+      "score": 65.5,
       "source": "freeegg",
       "localEdit": false
     },
@@ -316,7 +316,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 0.435,
       "outputCost": 0.87,
-      "score": 62.6,
+      "score": 62.7,
       "source": "freeegg",
       "localEdit": false
     },
