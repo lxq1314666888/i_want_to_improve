@@ -1,12 +1,12 @@
 {
-  "version": "2026-11-18",
+  "version": "2026-11-19",
   "eggs": [
     {
       "id": "todayai-register-300m-pro-202611",
       "title": "Today 注册送 3 亿 Tokens + 3 个月 Pro",
       "vendor": "Today AI",
       "category": "token",
-      "score": 85,
+      "score": 75,
       "tags": {
         "duration": "longterm",
         "region": "cn"
@@ -158,7 +158,7 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": "2026-11-15T23:59:59+08:00",
       "summary": "登录即得 5000 万 Token，15 日 23:59 清零",
       "content": "智谱 AutoClaw（澳龙）双十一福利，活动期间登录国内版即可领 5000 万 Tokens。\n\n- 额度：**5000 万 Tokens**，登录即到账，每账号限一次\n- 时间：**11 月 9 日 0 点至 11 月 15 日 23:59**，逾期不发\n- 用途：仅限 AutoClaw 内使用，不是通用 API 额度\n- 可用：GLM-5.3、GLM-5.3-Flash、GLM-5-Turbo 等\n\n领取步骤：\n\n1. 打开 [AutoClaw 国内版](https://autoclaw.zhipuai.cn/) 登录\n2. 5000 万 Tokens 自动到账，无需另外领\n3. 在客户端新建任务即开始消耗\n\n**注意**：积分有效期同样到 11 月 15 日 23:59，逾期自动失效，别囤着；自接模型 API 另行计费；仅国内版账号可参与。",
@@ -347,7 +347,7 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": "2026-11-15T23:59:59+08:00",
       "summary": "Hy4 限免至 11 月 15 日，每日送免费额度",
       "content": "腾讯混元 Hy4 于 11 月 4 日正式上线，WorkBuddy 国内版与国际版同步首发接入，客户端模型列表直接标「限时免费」。\n\n- 时间：11 月 4 日至 11 月 15 日 23:59（北京时间）\n- 定位：最新旗舰模型，Agent 与多模专长\n- 计费：消耗速度 **0.00x**，额度内不扣积分\n- 额度：**每日赠送免费额度**，订阅用户享更高配额\n- 触及额度：可继续消耗积分使用，页面提示重置时间\n- 同期：Hy3 限免一并延长至 11 月 15 日 23:59\n\n领取步骤：\n\n1. 打开 [WorkBuddy](https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10) 注册并下载客户端\n2. 登录后在模型选择器选带「限时免费」标记的 Hy4\n3. 正常对话或跑 Agent 任务，用量处核对倍率 0.00x\n\n**注意**：生图、生视频任务会切换多模态模型，按正常规则消耗积分；资源繁忙时会排队；额度与倍率以客户端模型选择器实显为准。",
@@ -368,7 +368,7 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": "2026-11-08T23:59:59+08:00",
       "summary": "TRAE 宝问答与派任务不扣积分，到 11 月 8 日",
       "content": "TRAE 宝是 TRAE 桌面端的开发者个人助理，11 月 2 日官宣限时免费一周。\n\n- 时间：11 月 2 日起至 11 月 8 日 23:59（北京时间）\n- 范围：用 TRAE 宝问答、下达任务，全部不扣积分\n- 场景：写功能、修 bug、审 PR、整理文档等开发任务\n- 限制：暂不支持视频生成；无邀请码、无需报名\n\n领取步骤：\n\n1. 打开 [TRAE 下载中心](https://www.trae.cn/download)装最新版桌面端\n2. 登录后进 Agent 窗口，点左侧导航栏「TRAE 宝」\n3. 直接说需求；要处理项目可先打开项目文件夹\n\n**注意**：免费只覆盖 TRAE 宝内的问答与任务，不是 TRAE 全部功能免费；结束后恢复按用量扣积分，细则以[官方活动页](https://docs.trae.cn/ide_use-trae-bao-for-free-with-no-credits-required)为准。",
@@ -531,7 +531,7 @@
       "title": "豆包电脑版签到领 200 额度",
       "vendor": "字节跳动",
       "category": "credits",
-      "score": 68,
+      "score": 85,
       "tags": {
         "duration": "limited",
         "region": "cn"
@@ -636,7 +636,7 @@
       "title": "七牛云 Conatus 免费 1 亿/日",
       "vendor": "七牛云",
       "category": "token",
-      "score": 81,
+      "score": 79,
       "tags": {
         "duration": "limited",
         "region": "cn"
@@ -662,7 +662,7 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "startsAt": "2026-10-26T00:00:00+08:00",
       "preview": true,
       "expiryDate": "2026-11-01T23:59:59+08:00",
@@ -685,7 +685,7 @@
         "duration": "limited",
         "region": "cn"
       },
-      "expired": false,
+      "expired": true,
       "expiryDate": "2026-10-31T23:59:59+08:00",
       "summary": "DeepSeek-1017 限免，0× 不扣积分",
       "content": "商汤小浣熊桌面端 v1.1.0 新增 DeepSeek-V4.1-Flash-1017，同步开了限时免费档：倍率 0×，跑任务不扣积分。\n\n- 限时：**至 10 月 31 日**（11 月 1 日 0 点截止）\n- 计费：倍率 **0×**，调用不消耗积分\n- 模型：DeepSeek-V4.1-Flash-1017\n- 门槛：需升级桌面端到 v1.1.0\n- 其他：DeepSeek V4.1 Flash 仍为 0.25 倍\n\n领取步骤：\n\n1. 下载并升级[小浣熊桌面端](https://xiaohuanxiong.com/)至 v1.1.0\n2. 新建任务，在模型选择器选 DeepSeek-V4.1-Flash-1017\n3. 面板显示「限免中」，跑完在用量处核对未扣积分\n\n**注意**：0× 只覆盖该型号，换其他模型照常扣积分；到期按届时倍率计费，个人版每日积分规则不受影响。",
@@ -950,10 +950,10 @@
     },
     {
       "id": "qoder-daily-credits-202609",
-      "title": "Qoder 每日领 100 Credits",
+      "title": "Qoder 新用户注册送 300 Credits",
       "vendor": "阿里云 Qoder",
       "category": "credits",
-      "score": 90,
+      "score": 55,
       "tags": {
         "duration": "longterm",
         "region": "cn"
@@ -962,10 +962,10 @@
       "startsAt": "2026-10-01T10:00:00+08:00",
       "preview": false,
       "expiryDate": null,
-      "summary": "每日登录领 100 通用 Credits，可累积",
-      "content": "Qoder「每日登录有礼」长期奖励，官方公告暂无结束时间，每天可领一份通用额度。\n\n- 额度：**每日登录领 100 通用 Credits**\n- 时效：自领取起 30 天有效，未用完可累积\n- 领取：每天 10:00 开放新一轮，每账号一轮一次\n- 到账：计入 Add-on Credits，不改变订阅档位\n- 范围：国际版与 CN 版新老个人用户，含免费用户\n- 可用端：Qoder、IDE、JetBrains 插件、CLI 等\n\n领取步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)下载桌面端登录\n2. 左下角用量面板 → 礼物图标领当日奖励\n3. 每天 10:00 后记得回来再领，漏领不补\n\n**注意**：未到期的额度可以累积，今天没用完也能留到后面用；细则以[官方公告](https://mp.weixin.qq.com/s/8hl-9hfkyLmnBuQOKGE5zQ)为准。",
+      "summary": "新人注册领 300 Credits，2 周免费试用",
+      "content": "Qoder CN 新用户注册即得 **300 Credits**，另有 **2 周免费试用**，免费注册、无需绑卡（官方活动页口径，2026-11 核实）。\n\n- 额度：**新人一次性 300 Credits**\n- 附加：**2 周免费试用**，可体验完整功能\n- 门槛：注册免费，中国大陆个人用户\n- 用途：Qoder CN 全系产品通用（桌面端、IDE、插件、CLI、网页版等）\n\n领取步骤：\n\n1. 打开 [Qoder 中文站](https://qoder.cn/)点击「立即注册」\n2. 用手机号或账号完成注册，300 Credits 自动到账\n3. 需要时可在客户端左下角用量面板查看余额\n\n**注意**：原「每日登录领 100 Credits」已下线（官方活动页改为订阅用户专属，免费版不再显示该入口）；官方文档页仍可访问但口径已变，以客户端实际为准。",
       "images": [],
-      "link": "https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe",
+      "link": "https://qoder.cn/",
       "publishedAt": "2026-09-18",
       "updatedAt": "2026-10-20",
       "source": "freeegg",
@@ -1046,12 +1046,12 @@
       },
       "expired": false,
       "expiryDate": null,
-      "summary": "注册领 Key，免费池现挂 11 款模型",
-      "content": "AMD TokenFactory（Beta）免费开放一批公有模型，注册发 Key、免绑卡、OpenAI / Anthropic 双协议。\n\n- 模型：官方负载接口现列 **11 款免费**\n- 主力：**DeepSeek-V4 / V4.1-Flash**、Qwen3.8-27B\n- 另含 **GLM-5.3-Flash**、Gemma-4-31B、MiMo-V2.6\n- 轻量：MiniCPM5-2B、MiniCPM-V-4.7\n- 接口：developer.amd.com.cn/radeon/api/v1\n- 门槛：无需绑卡，Beta 期免费\n\n领取步骤：\n\n1. 打开 [TokenFactory 页](https://developer.amd.com.cn/radeon/tokenfactory)注册登录\n2. 在「Public Free Model APIs」开模型卡片\n3. 复制弹窗内 API Key，全模型通用\n\n**注意**：免费池常年满载（热门款 90%+ 负载），要排队；清单与限额随时调整。",
+      "summary": "注册领 Key，免费池常驻多款模型",
+      "content": "AMD TokenFactory（Beta）免费开放一批公有模型，注册发 Key、免绑卡、OpenAI / Anthropic 双协议。\n\n- 模型：官方「Public Free Model APIs」常驻一批免费模型\n- 主力：**DeepSeek-V4 / V4.1-Flash**、Qwen3.8-27B\n- 另含 **GLM-5.3-Flash**、Gemma-4-31B、MiMo-V2.6\n- 接口：developer.amd.com.cn/radeon/api/v1\n- 门槛：无需绑卡，Beta 期免费\n\n领取步骤：\n\n1. 打开 [TokenFactory 页](https://developer.amd.com.cn/radeon/tokenfactory)注册登录\n2. 在「Public Free Model APIs」开模型卡片\n3. 复制弹窗内 API Key，全模型通用\n\n**注意**：免费池常年满载（热门款 90%+ 负载），要排队；清单与限额随时调整。",
       "images": [],
       "link": "https://developer.amd.com.cn/radeon/tokenfactory",
       "publishedAt": "2026-09-16",
-      "updatedAt": "2026-09-16",
+      "updatedAt": "2026-11-19",
       "source": "freeegg",
       "localEdit": false
     },
