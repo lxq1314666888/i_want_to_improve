@@ -1,25 +1,25 @@
 # 赛博鸡蛋 · 云端采集加工清单
 
 - 数据源：freeegg.top（2026-11-19），云端 Worker 定时采集
-- 生成时间：2026-11-22T19:55:20.718Z
-- 集合：eggs · 共 98 条 · 未过期 56 条 · 已过期 42 条
+- 生成时间：2026-11-23T08:00:26.322Z
+- 集合：eggs · 共 98 条 · 未过期 55 条 · 已过期 43 条
 
 ## 一、概览
 
 | 类别 | 条数 | 副业视角 |
 | --- | --- | --- |
-| Token 额度 | 14 | 直接顶钱用：做内容/开发工具的算力成本归零 |
+| Token 额度 | 13 | 直接顶钱用：做内容/开发工具的算力成本归零 |
 | 积分/点数 | 28 | 每天签到攒积分 ≈ 每天白得几十块额度，适合"羊毛日报"选题 |
 | API 免费档 | 14 | 注册即得 Key：适合接 API、做小工具、聚合网关类副业 |
 
-- 地域分布：国内 46 / 国外 10
+- 地域分布：国内 45 / 国外 10
 
 ## 二、可薅清单（按评分排序）
 
 | # | 标题 | 厂商 | 类别 | 评分 | 时效 | 剩余天数 | 摘要 | 链接 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | WorkBuddy 签到领 100 积分 | WorkBuddy | 积分/点数 | 93 | 长期 | - | 每日签到领 100 积分，体验版每月再送 500 | https://www.workbuddy.cn/events/invite?inviteCode=9k2j6pspbtl10 |
-| 2 | TRAE 每日签到领 100 积分 | TRAE | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100，新人送 4000 | https://www.trae.cn/events/code-fission/CF7WC3XV8XXC?utm_source=copy_link&utm_medium=code_fission |
+| 2 | TRAE 每日签到领 100 积分 | TRAE | 积分/点数 | 88 | 长期 | - | 每日签到领 100 积分，月最高 3100，新人送 1500 | https://www.trae.cn/ |
 | 3 | 豆包电脑版签到领 200 额度 | 字节跳动 | 积分/点数 | 85 | 限时 | - | 电脑版签到领 200 额度，任务每项 100 | https://www.doubao.com/pc/agent-explore |
 | 4 | Qoder 免费用 Qwen3.8-Flash | 阿里云 Qoder | 积分/点数 | 82 | 长期 | - | Flash 每日免费额度，官方未设截止 | https://qoder.cn/activities?referral_code=40lCR97yJ2EwoNKavQ5pOCF4pOZjXtxe |
 | 5 | 超算互联网 送 1 亿 + 算力 | 超算互联网 | Token 额度 | 80 | 限时 | 39 天 | 注册领 1 亿 Token，链接加送算力礼包 | https://www.scnet.cn/sso/register?service=https%3A%2F%2Fwww.scnet.cn%2Fac%2Fapi%2Fauth%2FloginSsoRedirect.action%3ForiginalUrl%3Dhttps%253A%252F%252Fwww.scnet.cn%252Fhome%252Fsubject%252Ftjg%252Findex.html%253Fshow%253Dtrue%2526inviterId%253D11364989896%2526marketActivityId%253DGy0KImwg |
@@ -61,4 +61,4 @@
 
 ## 三、已过期（供选题复盘参考）
 
-共 42 条：麦块云 DeepSeek 免费不限量、蚂蚁百灵 Ling-3.2-flash 限免、AutoClaw 双十一领 5000 万、TokenRouter 免费模型池、ZCode 周末送 5 亿 Token、WorkBuddy Hy4 限时免费、TRAE 宝限免一周不扣积分、APIGOTO 实名送 1 个月 PLUS、ZCode 每日送 3 亿 Token、DeepSeek Harness 赠 6 元、AutoClaw 登录领 1 亿 Token、小浣熊 DeepSeek-1017 限免、Qoder DeepSeek-Flash 限免、火山方舟 协作奖励计划免费领、基元律动 18 元额度、FiimeOPC 社区任务领 Token、云知声 U2-Flash API 限免调用、Qoder 每日免费用 Qoduck、ZCode 1024 送 5 亿 Token、TRAE 1024 签到抽 100 万积分、WorkBuddy 补偿领 500 积分、豆包工作 免费领 30 天订阅、Claude Haiku 5.5 限时免费、蚂蚁百灵 Ling-3.1-flash 限免、AutoClaw 返工登录领 1 亿 Token、华为云码道每日 1000 万 Token 已结束、小程序大赛送 10 亿 Token、智谱 GLM-4.7-Flash 永久免费、AStudio 打卡领 10 亿 Token、ZCode 补偿每日领 1 亿 Token、MiniMax Code 签到双倍积分、清言双节每日领 2000 积分、AutoClaw 中秋领 5 亿 Token、小米 MiMo Desktop 免费内测、Union Alpha 匿名模型限免、智谱 Coding Plan 夜间畅蹬、ZCode 周末构建送 3 亿 Token、AutoClaw 登录领 2 亿 Token、ZCode 周末构建送 3 亿 Token、TokenRouter 免费 GLM-5.3、ZCode 周末送 3 亿 Token、智谱清言开学红包 6666 积分
+共 43 条：麦块云 DeepSeek 免费不限量、蚂蚁百灵 Ling-3.2-flash 限免、AutoClaw 双十一领 5000 万、TokenRouter 免费模型池、ZCode 周末送 5 亿 Token、WorkBuddy Hy4 限时免费、TRAE 宝限免一周不扣积分、APIGOTO 实名送 1 个月 PLUS、ZCode 每日送 3 亿 Token、DeepSeek Harness 赠 6 元、AutoClaw 登录领 1 亿 Token、小浣熊 DeepSeek-1017 限免、Qoder DeepSeek-Flash 限免、火山方舟 协作奖励计划免费领、基元律动 18 元额度、FiimeOPC 社区任务领 Token、云知声 U2-Flash API 限免调用、Qoder 每日免费用 Qoduck、七牛云 AI 推理注册领 300 万 Token、ZCode 1024 送 5 亿 Token、TRAE 1024 签到抽 100 万积分、WorkBuddy 补偿领 500 积分、豆包工作 免费领 30 天订阅、Claude Haiku 5.5 限时免费、蚂蚁百灵 Ling-3.1-flash 限免、AutoClaw 返工登录领 1 亿 Token、华为云码道每日 1000 万 Token 已结束、小程序大赛送 10 亿 Token、智谱 GLM-4.7-Flash 永久免费、AStudio 打卡领 10 亿 Token、ZCode 补偿每日领 1 亿 Token、MiniMax Code 签到双倍积分、清言双节每日领 2000 积分、AutoClaw 中秋领 5 亿 Token、小米 MiMo Desktop 免费内测、Union Alpha 匿名模型限免、智谱 Coding Plan 夜间畅蹬、ZCode 周末构建送 3 亿 Token、AutoClaw 登录领 2 亿 Token、ZCode 周末构建送 3 亿 Token、TokenRouter 免费 GLM-5.3、ZCode 周末送 3 亿 Token、智谱清言开学红包 6666 积分
