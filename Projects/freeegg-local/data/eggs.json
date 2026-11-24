@@ -1,6 +1,27 @@
 {
-  "version": "2026-11-19",
+  "version": "2026-11-23",
   "eggs": [
+    {
+      "id": "bailu-ai-invite-register-202611",
+      "title": "白鹿 AI 注册送 8000 Credits 与 3.1 亿 Tokens",
+      "vendor": "白鹿 AI",
+      "category": "api-quota",
+      "score": 65,
+      "tags": {
+        "duration": "longterm",
+        "region": "cn"
+      },
+      "expired": false,
+      "expiryDate": null,
+      "summary": "注册送 8000 Credits 与 3.1 亿 Tokens",
+      "content": "白鹿 AI 的额度分两块：BAILU CODE 编码额度与开放平台 API 额度，各自独立。\n\n- 编码：**8,000 Credits**，每日签到 **3,500 Credits**\n- API：送 **3.1 亿 Tokens**，全模型可用\n- API 令牌额度每日 **500 万 Tokens**\n- `/v1/messages` 接入每日 **500 万定向 Tokens**\n\n领取步骤：\n\n1. 打开下方链接注册并登录\n2. 编码额度在 BAILU CODE 中使用\n3. API 额度在开放平台创建令牌后调用\n\n**注意**：以上为实测（2026-11）。官方注册页口径为 1,000 Credits + 1000 万 Tokens；实测直接注册 1.6 亿 Tokens，走下方邀请链接 3.1 亿 Tokens，以控制台为准。",
+      "images": [],
+      "link": "https://bailucode.com/auth/register?invite=INV-RF28-WZB3-JJF2",
+      "publishedAt": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "source": "freeegg",
+      "localEdit": false
+    },
     {
       "id": "todayai-register-300m-pro-202611",
       "title": "Today 注册送 3 亿 Tokens + 3 个月 Pro",
