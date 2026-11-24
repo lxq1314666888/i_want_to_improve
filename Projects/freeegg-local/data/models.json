@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-23",
+  "version": "2026-11-24",
   "models": [
     {
       "id": "claude-fable-5-2",
@@ -118,7 +118,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.2,
+      "score": 71.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -140,7 +140,7 @@
       "releasedAt": "2026-11-16",
       "inputCost": 1.425,
       "outputCost": 4.275,
-      "score": 69.4,
+      "score": 69.1,
       "source": "freeegg",
       "localEdit": false
     },
@@ -237,9 +237,9 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "DeepSeek",
       "releasedAt": "2026-10-17",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "score": 66,
+      "inputCost": 0.03,
+      "outputCost": 0.2,
+      "score": 65.9,
       "source": "freeegg",
       "localEdit": false
     },
@@ -261,7 +261,7 @@
       "releasedAt": "2026-09-21",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 64.1,
+      "score": 64,
       "source": "freeegg",
       "localEdit": false
     },
@@ -305,7 +305,7 @@
       "releasedAt": "2026-09-01",
       "inputCost": 2,
       "outputCost": 6,
-      "score": 63.5,
+      "score": 63.4,
       "source": "freeegg",
       "localEdit": false
     },
@@ -316,7 +316,7 @@
       "releasedAt": "2026-10-07",
       "inputCost": 0.1,
       "outputCost": 0.5,
-      "score": 63.3,
+      "score": 63.2,
       "source": "freeegg",
       "localEdit": false
     },
