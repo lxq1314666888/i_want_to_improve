@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-24",
+  "version": "2026-11-25",
   "models": [
     {
       "id": "claude-fable-5-2",
@@ -19,7 +19,7 @@
       "releasedAt": "2026-10-28",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 76.9,
+      "score": 76.8,
       "source": "freeegg",
       "localEdit": false
     },
@@ -118,7 +118,7 @@
       "releasedAt": "2026-09-29",
       "inputCost": 2,
       "outputCost": 10,
-      "score": 71.1,
+      "score": 71.2,
       "source": "freeegg",
       "localEdit": false
     },
@@ -228,7 +228,7 @@
       "releasedAt": "2026-11-09",
       "inputCost": 0.1,
       "outputCost": 0.5,
-      "score": 66.2,
+      "score": 66.1,
       "source": "freeegg",
       "localEdit": false
     },
